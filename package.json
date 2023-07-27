@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "buildClient": "cd client/ && npm install && npm run build",
-    "serve": "cd client && serve -s build"
+    "serveClient": "cd client && serve -s build"
   },
   "repository": {
     "type": "git",
