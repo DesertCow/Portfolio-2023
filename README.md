@@ -10,7 +10,7 @@
 <br>
 
 <p align="center">
-  <a href="portfolio2023-production.up.railway.app">portfolio2023-production.up.railway.app</a>
+  <a href="https://portfolio2023-production.up.railway.app/">https://portfolio2023-production.up.railway.app/</a>
 <p/>
 
 <br>
