@@ -24,6 +24,11 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 /*? ============= Font Import ============= */
 
+@font-face {
+  font-family: "NextStep-1";
+  src: local("NextStep-1"),
+    url("./fonts/NextStep_FONT/NEXTSTEP.ttf") format("truetype");
+}
 
 
 

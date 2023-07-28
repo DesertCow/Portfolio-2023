@@ -50,10 +50,11 @@ const Header = () => {
         unmountOnExit
       >
         <nav className="Nav">
-          <a href="/">Lession Plans</a>
-          <a href="/">My Smart Course</a>
-          <a href="/">My meetings</a>
-          <button>Logout</button>
+          <a className="text-center" href="/DevPortfolio">Developer<br></br>Portfolio</a>
+          <a href="/Media">Media</a>
+          <a href="/About">About</a>
+          <a href="/Contact">Contact</a>
+          {/* <button>Logout</button> */}
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="Burger">

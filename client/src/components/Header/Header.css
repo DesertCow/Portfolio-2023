@@ -3,13 +3,15 @@
   top: 0; /* Stick it to the top */
   height: 200px;
   width: 100vw;
-
+  font-family: NextStep-1;
+  font-weight: 900;
+  color: #9cf6f6;
   display: grid;
   grid-template-areas: "logo nav";
 
   /* Cosmetics */
   /* background-color: #9663b6; */
-  background-color: #E8883F;
+  background-color: #ef8f46;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -27,7 +29,7 @@
 }
 .Nav a {
   color: #fff;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 500;
   transition: 0.5s;
   text-decoration: none;
