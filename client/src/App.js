@@ -10,6 +10,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact'
 import Portfolio from './pages/DeveloperPortfolio'
+import MediaGallery from './pages/MediaGallery';
+import MediaVideo from './pages/MediaVideo';
 
 
 
@@ -29,6 +31,8 @@ export default function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/DevPortfolio" element={<Portfolio />} />
+        <Route path="/MediaGallery" element={<MediaGallery />} />
+        <Route path="/MediaVideo" element={<MediaVideo />} />
       </Routes>
     </Router>
   );

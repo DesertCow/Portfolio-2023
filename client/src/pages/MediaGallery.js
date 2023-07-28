@@ -10,13 +10,13 @@ const MediaGallery = () => {
 
   return (
 
-    <div className="d-flex flex-column min-vh-100 mainBG">
+    <div className="min-vh-100 divMain">
 
-      <header className="">
+      <header className="w-100">
         <Header />
       </header>
 
-      <div>
+      <div className='HeaderSpacer'>
         <h1>Media Gallery</h1>
       </div>
 
