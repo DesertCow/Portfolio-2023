@@ -36,4 +36,16 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .homePageMainPhoto {
      margin-top: 250px;
+     width: 70%;
+     margin-bottom: 50px;
+}
+
+.divMain {
+     background-color: #75b9be9d;
+}
+
+.HeaderSpacer{
+
+     margin-top: 200px;
+     
 }

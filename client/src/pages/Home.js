@@ -6,18 +6,16 @@ import Header from '../components/Header';
 function Home() {
 
   return(
-    <div className="d-flex flex-column min-vh-100">
+    <div className="d-flex flex-column min-vh-100 divMain">
 
       <header className="">
         <Header />
       </header>
 
-      {/* <h1 className='text-center mt-4'>Hello World...</h1> */}
-      <div className='text-center mt-5'>
+      <div className='d-flex flex-column min-vh-100 align-items-center justify-content-center' >
         <img src={require("../img/Woodz_Selfie.jpeg")}
           className="align-items-center justify-content-center homePageMainPhoto"
-          alt="Clayton Skaggs Snowy Woods"
-          width="800" height="600" />  
+          alt="Clayton Skaggs Snowy Woods"/>  
       </div>
 
     </div>

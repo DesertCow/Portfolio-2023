@@ -3,9 +3,11 @@ import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { CSSTransition } from "react-transition-group";
 
-
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+
+  const navigate = useNavigate();
 
   const [isNavVisible, setNavVisibility] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -32,6 +34,14 @@ const Header = () => {
     setNavVisibility(!isNavVisible);
   };
 
+  const handleLogoClick = async (event) => {
+  event.preventDefault();
+
+  console.log("Logo Clicked");
+  navigate("/home");
+  
+  };
+
   return (
 
     // <div className="HeaderClass mt-auto mb-0">
@@ -42,12 +52,13 @@ const Header = () => {
     
     // </div>
     <header className="Header">
-      <img src={require("../../img/ClaytonSkaggsDEV_Logo.png")} className="Logo mt-2 mx-2" alt="logo" />
+      <img src={require("../../img/ClaytonSkaggsDEV_Logo.png")} onClick={(event) => handleLogoClick(event)} className="Logo mt-2 mx-2" alt="logo" />
       <CSSTransition
         in={!isSmallScreen || isNavVisible}
         timeout={350}
         classNames="NavAnimation"
         unmountOnExit
+        
       >
         <nav className="Nav">
           <a className="text-center" href="/DevPortfolio">Developer<br></br>Portfolio</a>

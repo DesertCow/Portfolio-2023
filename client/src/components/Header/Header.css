@@ -11,7 +11,7 @@
 
   /* Cosmetics */
   /* background-color: #9663b6; */
-  background-color: #ef8f46;
+  background-color: #ef8f46dc;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -29,7 +29,7 @@
 }
 .Nav a {
   color: #fff;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 500;
   transition: 0.5s;
   text-decoration: none;
