@@ -55,5 +55,37 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .HeaderPhotoSpacer {
      margin-top: 175px;
-     background-color: #75b9be9d !important;
+     /* background-color: #75b9be9d; */
+}
+
+/*? ============= Contact Page ============= */
+
+.contactHeaderText {
+     font-family: NextStep-1;
+     font-size: 80px;
+     color: black;
+}
+
+.contactBox {
+     width: 800px;
+     height: 800px;
+     background-color: #9CF6F6;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+}
+
+contact {
+     font-family: NextStep-1;
+     font-size: 50px;
+}
+
+.emailFont{
+     font-size: 35px;
+}
+
+.emailLinkText{
+     font-size: 25px;
 }
