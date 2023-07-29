@@ -13,7 +13,7 @@ function Home() {
         <Header />
       </header>
 
-      <div className='d-flex flex-column min-vh-100 align-items-center justify-content-center' >
+      <div className='d-flex flex-column min-vh-100 align-items-center justify-content-center HeaderSpacer' >
         <img src={require("../img/Woodz_Selfie.jpeg")}
           className="align-items-center justify-content-center homePageMainPhoto"
           alt="Clayton Skaggs Snowy Woods"/>  

@@ -2,11 +2,11 @@
 
 
 //* Component Import
-import Header from '../components/Header';
+import Header from '../../components/Header';
 
+import React, { useState } from 'react';
 
-
-const MediaGallery = () => {
+const MediaVideo = () => {
 
   return (
 
@@ -17,7 +17,7 @@ const MediaGallery = () => {
       </header>
 
       <div className='HeaderSpacer'>
-        <h1>Media Gallery</h1>
+        <h1>Media Video</h1>
       </div>
 
     </div>
@@ -26,7 +26,7 @@ const MediaGallery = () => {
 
 }
 
-export default MediaGallery;
+export default MediaVideo;
 
 
 //!========================= EOF =========================
