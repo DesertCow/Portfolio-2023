@@ -38,6 +38,11 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      margin-top: 100px;
      width: 70%;
      margin-bottom: 50px;
+     border-radius: 150px;
+     -webkit-border-radius: 150px;
+     -moz-border-radius: 150px;
+     -ms-border-radius: 150px;
+     -o-border-radius: 150px;
 }
 
 .divMain {
