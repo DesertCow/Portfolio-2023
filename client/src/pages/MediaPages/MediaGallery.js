@@ -16,8 +16,10 @@ const MediaGallery = () => {
         <Header />
       </header>
 
-      <div className='HeaderSpacer'>
-        <h1>Media Gallery</h1>
+      <div className='d-flex flex-column min-vh-100 align-items-center justify-content-center HeaderSpacer' >
+        <img src={require("../../img/PhotoGallery/Woodz_Selfie.jpeg")}
+          className="align-items-center justify-content-center homePageMainPhoto"
+          alt="Clayton Skaggs Snowy Woods"/>  
       </div>
 
     </div>
