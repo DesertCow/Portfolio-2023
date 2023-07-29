@@ -4,6 +4,7 @@
 //* Component Import
 import Header from '../../components/Header';
 
+//* Photo Gallery Package
 import PhotoAlbum from "react-photo-album";
 
 
