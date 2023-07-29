@@ -33,7 +33,7 @@ const Header = () => {
       <img src={require("../../img/ClaytonSkaggsDEV_Logo.png")} onClick={(event) => handleLogoClick(event)} className="Logo mt-2 mx-2" alt="logo" />
       <Navbar className="d-flex">
         <Container fluid className="mx-5">
-          <Navbar.Brand className="mx-5 navBarText" href="#home">Development Portfolio</Navbar.Brand>
+          <Navbar.Brand className="mx-5 navBarText" href="/DevPortfolio">Development Portfolio</Navbar.Brand>
           {/* <Navbar.Toggle aria-controls="navbar-dark-example" /> */}
           <Navbar.Toggle/>
           <Navbar.Collapse className="navBarText mx-5">
@@ -43,13 +43,15 @@ const Header = () => {
                 menuVariant="dark"
                 className="DropMenu"
               >
-                <NavDropdown.Item href="#action/3.1">Photo Gallery</NavDropdown.Item>
+                <NavDropdown.Item href="/MediaGallery">Photo Gallery</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.1">Video Gallery</NavDropdown.Item>
+                <NavDropdown.Item href="/MediaVideo">Video Gallery</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.3">Blog</NavDropdown.Item>
               </NavDropdown>
             </Nav>
+          <Nav.Link className="navBarText mx-5" href="/About">About</Nav.Link>
+          <Nav.Link className="navBarText mx-5" href="/Contact">Contact</Nav.Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>
