@@ -45,7 +45,10 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .HeaderSpacer{
-
      margin-top: 175px;
-     
+}
+
+.HeaderPhotoSpacer {
+     margin-top: 175px;
+     background-color: #75b9be9d !important;
 }
