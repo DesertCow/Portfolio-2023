@@ -50,11 +50,11 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .HeaderSpacer{
-     margin-top: 175px;
+     margin-top: 125px;
 }
 
 .HeaderPhotoSpacer {
-     margin-top: 175px;
+     margin-top: 125px;
      /* background-color: #75b9be9d; */
 }
 
@@ -62,13 +62,14 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .contactHeaderText {
      font-family: NextStep-1;
-     font-size: 80px;
+     font-size: 60px;
      color: black;
 }
 
 .contactBox {
-     width: 800px;
-     height: 800px;
+     width: 700px;
+     height: 700px;
+     margin-bottom: 100px;
      background-color: #9CF6F6;
      border-radius: 60px;
      -webkit-border-radius: 60px;
@@ -88,4 +89,13 @@ contact {
 
 .emailLinkText{
      font-size: 25px;
+     text-decoration: none !important;
+}
+
+.contactPhoto {
+     border-radius: 50px;
+     -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+     -ms-border-radius: 50px;
+     -o-border-radius: 50px;
 }
