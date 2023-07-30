@@ -113,10 +113,34 @@ contact {
      -ms-border-radius: 60px;
      -o-border-radius: 60px;
      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     font-size: 25px;
+     font-size: 20px;
 }
 
 .aboutMeTitle {
      font-family: NextStep-1;
      font-size: 50px;
+}
+
+.programLanguagesBox {
+     width: 320px;
+     height: 380px;
+     margin-bottom: 100px;
+     background-color: #EE7674;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+}
+
+.programLanguagesBox2 {
+     width: 500px;
+     height: 400px;
+     margin-bottom: 100px;
+     background-color: #EE7674;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
 }
