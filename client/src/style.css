@@ -30,6 +30,10 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
     url("./fonts/NextStep_FONT/NEXTSTEP.ttf") format("truetype");
 }
 
+:root {
+  --main-font: "NextStep-1"
+}
+
 
 
 /*? ============= Home Page ============= */
@@ -50,10 +54,134 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .HeaderSpacer{
-     margin-top: 175px;
+     margin-top: 125px;
 }
 
 .HeaderPhotoSpacer {
-     margin-top: 175px;
-     background-color: #75b9be9d !important;
+     margin-top: 125px;
+     /* background-color: #75b9be9d; */
+}
+
+/*? ============= Contact Page ============= */
+
+.contactHeaderText {
+     font-family: var(--main-font);
+     font-size: 60px;
+     color: black;
+}
+
+.contactBox {
+     width: 700px;
+     height: 700px;
+     margin-bottom: 100px;
+     background-color: #9CF6F6;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+}
+
+contact {
+     font-family: var(--main-font);
+     font-size: 50px;
+}
+
+.emailFont{
+     font-size: 35px;
+}
+
+.emailLinkText{
+     font-size: 25px;
+     text-decoration: none !important;
+}
+
+.contactPhoto {
+     border-radius: 50px;
+     -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+     -ms-border-radius: 50px;
+     -o-border-radius: 50px;
+}
+
+/*? ============= About Me Page ============= */
+
+.aboutMeBox{
+     width: 900px;
+     /* height: 1500px; */
+     margin-bottom: 100px;
+     background-color: #9CF6F6;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 20px;
+}
+
+.aboutMeSubBoxes {
+     width: 900px;
+     /* margin-bottom: 100px; */
+     background-color: #9CF6F6;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 20px;
+}
+
+.aboutMeTitle {
+     font-family: NextStep-1;
+     font-size: 50px;
+}
+
+.aboutRightBox {
+     margin-right: 10%;
+}
+
+.aboutLeftBox {
+     margin-left: 10%;
+}
+
+
+.programLanguagesBox {
+     width: 320px;
+     height: 380px;
+     margin-bottom: 100px;
+     background-color: #f9b5acd4;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+}
+
+.programLanguagesBox2 {
+     width: 600px;
+     height: 380px;
+     margin-bottom: 100px;
+     background-color: #ef8f46d3;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+}
+
+.languagesList{
+     font-size: 17px;
+     font-family: var(--main-font);
+}
+
+.languagesListTitle{
+     font-size: 28px;
+     font-family: var(--main-font);
+}
+
+.HeaderAboutSpacer {
+     margin-top: 125px;
+     padding-top: 50px;
 }

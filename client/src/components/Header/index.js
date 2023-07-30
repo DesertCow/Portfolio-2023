@@ -33,9 +33,7 @@ const Header = () => {
       <img src={require("../../img/ClaytonSkaggsDEV_Logo.png")} onClick={(event) => handleLogoClick(event)} className="Logo my-2 mx-2" alt="logo" />
       <Navbar className="d-flex">
         <Container fluid className="mx-5">
-          {/* <Navbar.Brand className="mx-5 navBarText" href="/DevPortfolio">Development Portfolio</Navbar.Brand> */}
           <Nav.Link className="navBarText mx-5 text-center" href="/DevPortfolio">Dev Portfolio</Nav.Link>
-          {/* <Navbar.Toggle aria-controls="navbar-dark-example" /> */}
           <Navbar.Toggle/>
           <Navbar.Collapse className="navBarText mx-5">
             <Nav>

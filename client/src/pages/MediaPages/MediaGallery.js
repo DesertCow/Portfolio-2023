@@ -40,7 +40,24 @@ const MediaGallery = () => {
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PXL_20230419_185820452-01.jpeg", width: 4032, height: 3024 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PXL_20230421_165124818-01.jpeg", width: 4032, height: 3024 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PXL_20230422_164755640-01.jpeg", width: 4032, height: 3024 },
-    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PXL_20230422_231609052-01.jpeg", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/20160124_111209-01.jpeg", width: 1648, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/20160922_192639-01.jpeg", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_0586.jpg", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_0607.jpg", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_1101.JPG", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_1350_700-01.jpeg", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_1364.JPG", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20150124_075203-EFFECTS.jpg", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20170212_124339-PANO.jpg", width: 7680, height: 1792 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20170222_152159_245.jpg", width: 3024, height: 4032 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20180331_112950.jpg", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20180331_145959.jpg", width: 3024, height: 4032 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20180405_125218_729.jpg", width: 927, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20191019_053348-01.jpeg", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20191019_071542-01.jpeg", width: 3024, height: 4032},
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMGP0606.jpg", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/Pallisade Ice.jpg", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PANO_20180113_103234.jpg", width: 7680, height: 1792 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/Woodz_Selfie.jpeg", width: 4032, height: 3024 }
   ];
 
@@ -54,7 +71,7 @@ const MediaGallery = () => {
       </header>
 
       <div className='HeaderPhotoSpacer' >
-        <PhotoAlbum layout="masonry" photos={photos} padding="25"/>
+        <PhotoAlbum layout="rows" photos={photos} padding="25"/>
       </div>
       
 

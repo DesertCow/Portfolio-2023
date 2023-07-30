@@ -1,7 +1,7 @@
 .Header {
   position: fixed;
   top: 0; /* Stick it to the top */
-  height: 175px;
+  height: 125px;
   width: 100vw;
   font-family: NextStep-1;
   font-weight: 900;
