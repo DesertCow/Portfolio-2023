@@ -30,6 +30,10 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
     url("./fonts/NextStep_FONT/NEXTSTEP.ttf") format("truetype");
 }
 
+:root {
+  --main-font: "NextStep-1"
+}
+
 
 
 /*? ============= Home Page ============= */
@@ -61,7 +65,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 /*? ============= Contact Page ============= */
 
 .contactHeaderText {
-     font-family: NextStep-1;
+     font-family: var(--main-font);
      font-size: 60px;
      color: black;
 }
@@ -79,7 +83,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 contact {
-     font-family: NextStep-1;
+     font-family: var(--main-font);
      font-size: 50px;
 }
 
@@ -102,10 +106,23 @@ contact {
 
 /*? ============= About Me Page ============= */
 
-.AboutMeBox{
+.aboutMeBox{
      width: 900px;
-     height: 1500px;
+     /* height: 1500px; */
      margin-bottom: 100px;
+     background-color: #9CF6F6;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 20px;
+}
+
+.aboutMeSubBoxes {
+     width: 900px;
+     /* margin-bottom: 100px; */
      background-color: #9CF6F6;
      border-radius: 60px;
      -webkit-border-radius: 60px;
@@ -121,11 +138,20 @@ contact {
      font-size: 50px;
 }
 
+.aboutRightBox {
+     margin-right: 10%;
+}
+
+.aboutLeftBox {
+     margin-left: 10%;
+}
+
+
 .programLanguagesBox {
      width: 320px;
      height: 380px;
      margin-bottom: 100px;
-     background-color: #EE7674;
+     background-color: #f9b5acd4;
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
@@ -134,13 +160,28 @@ contact {
 }
 
 .programLanguagesBox2 {
-     width: 500px;
-     height: 400px;
+     width: 600px;
+     height: 380px;
      margin-bottom: 100px;
-     background-color: #EE7674;
+     background-color: #ef8f46d3;
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
      -ms-border-radius: 60px;
      -o-border-radius: 60px;
+}
+
+.languagesList{
+     font-size: 17px;
+     font-family: var(--main-font);
+}
+
+.languagesListTitle{
+     font-size: 28px;
+     font-family: var(--main-font);
+}
+
+.HeaderAboutSpacer {
+     margin-top: 125px;
+     padding-top: 50px;
 }

@@ -40,7 +40,7 @@ const MediaGallery = () => {
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PXL_20230419_185820452-01.jpeg", width: 4032, height: 3024 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PXL_20230421_165124818-01.jpeg", width: 4032, height: 3024 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PXL_20230422_164755640-01.jpeg", width: 4032, height: 3024 },
-    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/20160124_111209-01.jpeg", width: 4032, height: 3024 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/20160124_111209-01.jpeg", width: 1648, height: 927 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/20160922_192639-01.jpeg", width: 4032, height: 3024 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_0586.jpg", width: 4032, height: 3024 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_0607.jpg", width: 4032, height: 3024 },
@@ -71,7 +71,7 @@ const MediaGallery = () => {
       </header>
 
       <div className='HeaderPhotoSpacer' >
-        <PhotoAlbum layout="masonry" photos={photos} padding="25"/>
+        <PhotoAlbum layout="rows" photos={photos} padding="25"/>
       </div>
       
 
