@@ -99,3 +99,24 @@ contact {
      -ms-border-radius: 50px;
      -o-border-radius: 50px;
 }
+
+/*? ============= About Me Page ============= */
+
+.AboutMeBox{
+     width: 900px;
+     height: 1500px;
+     margin-bottom: 100px;
+     background-color: #9CF6F6;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 25px;
+}
+
+.aboutMeTitle {
+     font-family: NextStep-1;
+     font-size: 50px;
+}

@@ -18,23 +18,20 @@ const Contact = () => {
       </header>
 
       <div className='d-flex flex-column align-items-center justify-content-center HeaderPhotoSpacer'>
-
-        {/* <h1 className='contactHeaderText mt-5'>CONTACT PAGE</h1>         */}
           <contact className='d-flex flex-column align-items-center mt-5 contactBox'>
 
             <div className='d-flex flex-column align-items-center mt-5'>
               Email
             </div>
             <div className='d-flex flex-column align-items-center mt-3 emailFont'>
+
               clayton.skaggs89@gmail.com
-              <a className="mt-1 emailLinkText" href = "mailto: clayton.skaggs89@gmail.com">
-                {/* <SendIcon className="emailLinkText" fontSize="large" /> */}               
+              <a className="mt-1 emailLinkText" href = "mailto: clayton.skaggs89@gmail.com">             
                 <img src={require('../img/Icons/SendEmail.png')}
                   className=""
                   width="100"
                   alt="Instagram Icon"/>  
               </a>
-              
               <div class="container">
                 <div class="row">
                   <div class="col">
