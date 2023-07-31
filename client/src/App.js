@@ -16,14 +16,7 @@ import Blog from './pages/MediaPages/Blog';
 // import PDF from ''
 
 //* PDF Handler
-import PSPDFKit from "./assets/pspdfkit.js";
-const baseUrl = `${window.location.protocol}//${window.location.host}/assets/`;
 
-PSPDFKit.load({
-	baseUrl,
-	container: "#pspdfkit",
-	document: "../public/Clayton_Skaggs_Resume.pdf"
-})
 
 //* Main App / Routing
 

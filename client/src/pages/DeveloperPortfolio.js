@@ -1,12 +1,22 @@
 
 
+import React, { useState, useRef } from 'react';
+import { usePdf } from '@mikecousins/react-pdf';
+
 
 //* Component Import
 import Header from '../components/Header';
 
-import PdfViewerComponent from '../components/PdfViewerComponent';
-
 const Portfolio = () => {
+
+  const [page, setPage] = useState(1);
+  const canvasRef = useRef(null);
+
+  const { pdfDocument, pdfPage } = usePdf({
+    file: 'Clayton_Skaggs_Resume.pdf',
+    page,
+    canvasRef,
+  });
 
   return (
 
@@ -17,11 +27,11 @@ const Portfolio = () => {
       </header>
 
       <div className='HeaderSpacer'>
-        
-        <div className="text-center py-5">
-          <h1 className="portfioloTitle">Featured Projects</h1> 
+        <div className="d-flex col justify-content-center">
+          <div className="text-center py-5">
+            <h1 className="portfioloTitle p-3">Featured Projects</h1> 
+          </div>
         </div>
-       
         <div className="py-3">
           <div className="container text-center">
             <div className="row portfioloDemoBox">
@@ -45,10 +55,11 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="text-center py-5">
-          <h1 className="portfioloTitle">About Me</h1> 
+        <div className="d-flex col justify-content-center">
+          <div className="text-center py-5">
+            <h1 className="portfioloTitle p-3">About Me</h1> 
+          </div>
         </div>
-
         <div className="d-flex col justify-content-center">
           <div className="row portfolioAboutMe p-5 d-flex">
             <p className='d-flex col'>
@@ -102,22 +113,28 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <div className="text-center py-5">
-        <h1 className="portfioloTitle">Resume</h1> 
+      <div className="d-flex col justify-content-center">
+        <div className="text-center py-5">
+          <h1 className="portfioloTitle p-3">Resume</h1> 
+        </div>
       </div>
-
       <div className="d-flex col justify-content-center">
         <div className="PDFViewer">
-          <PdfViewerComponent document={"Clayton_Skaggs_Resume.pdf"}/>
+          {/* <PdfViewerComponent document={"Clayton_Skaggs_Resume.pdf"}/> */}
+          <div className="d-flex col justify-content-center">
+            {!pdfDocument && <span>Loading...</span>}
+            <canvas ref={canvasRef} />
+            {Boolean(pdfDocument)}
+          </div>
         </div>
       </div>
 
 
-        {/* <div className="d-flex col justify-content-center">
-          <div className="text-center py-5">
-            <h1 className="mt-5 p-4 resumeDownloadText">Download Resume</h1>
-          </div>
-        </div> */}
+      <div className="d-flex col justify-content-center">
+        <div className="text-center resumeDownloadBox">
+          <h1 className="mt-0 p-3 resumeDownloadText">Download Resume</h1>
+        </div>
+      </div>
 
       </div>
 
