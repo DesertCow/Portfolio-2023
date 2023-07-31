@@ -36,7 +36,7 @@ const Contact = () => {
                 <div class="row">
                   <div class="col">
                       <div className="mt-5 flex-row align-items-center justify-content-center">
-                        <img src={require('../img/Clayton_Skaggs.jpg')}
+                        <img src={require('../img/Clayton_Skaggs_4.jpg')}
                         className="mt-3 contactPhoto"
                         width="350"
                         alt="Clayton Skaggs profile picture"/>  

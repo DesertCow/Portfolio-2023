@@ -178,8 +178,8 @@ contact {
      -o-border-radius: 60px;
 }
 
-.programLanguagesBox2 {
-     width: 600px;
+.programToolBox {
+     width: 320px;
      height: 380px;
      margin-bottom: 100px;
      background-color: #ef8f46d3;
@@ -190,13 +190,25 @@ contact {
      -o-border-radius: 60px;
 }
 
+.programOldLanguagesBox {
+     width: 600px;
+     height: 380px;
+     margin-bottom: 100px;
+     background-color: #f9b5acd4;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+}
+
 .languagesList{
-     font-size: 17px;
+     font-size: 14px;
      font-family: "SF-Mono";
 }
 
 .languagesListTitle{
-     font-size: 28px;
+     font-size: 23px;
      font-family: "SF-Mono";
 }
 
@@ -255,6 +267,8 @@ contact {
      -o-border-radius: 10px;
 }
 
+a { color: inherit; } 
+
 .demoTitle {
      font-size: 30px;
 }
@@ -278,7 +292,7 @@ contact {
 
 .resumeDownloadText {
      font-family: "SF-Mono";
-     font-size: 60px;
+     font-size: 45px;
      border-style: groove;
      width: 100%;
      border-width: 10px;
@@ -293,4 +307,10 @@ contact {
 .resumeDownloadBox {
      padding-top: 100px;
      padding-bottom: 200px;
+}
+
+.devLinksBox {
+     /* width: 100%; */
+     border-style: groove;
+     border-width: 10px;
 }
