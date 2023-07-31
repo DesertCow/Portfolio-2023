@@ -4,7 +4,7 @@
 //* Component Import
 import Header from '../components/Header';
 
-
+import PdfViewerComponent from '../components/PdfViewerComponent';
 
 const Portfolio = () => {
 
@@ -23,22 +23,22 @@ const Portfolio = () => {
         </div>
        
         <div className="py-3">
-          <div class="container text-center">
-            <div class="row portfioloDemoBox">
-              <demo class="col portfioloSubBoxLeft">
+          <div className="container text-center">
+            <div className="row portfioloDemoBox">
+              <div className="col demoText portfioloSubBoxLeft">
                 <h1 className="mt-3 demoTitle">The Board Club</h1>
                 <img className="img-fluid mt-3 mb-4 demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
-                </demo>
-              <div class="col portfioloSubBoxRight">
+                </div>
+              <div className="col portfioloSubBoxRight">
                 Project Info...
               </div>
             </div>
-             <div class="row mt-5 portfioloDemoBox">
-              <demo class="col portfioloSubBoxLeft">
+             <div className="row mt-5 portfioloDemoBox">
+              <div className="col demoText portfioloSubBoxLeft">
                 <h1 className="mt-3 demoTitle">BBQ Food Truck</h1>
                 <img className="img-fluid mt-3 mb-4 demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
-                </demo>
-              <div class="col portfioloSubBoxRight">
+                </div>
+              <div className="col portfioloSubBoxRight">
                 Project Info...
               </div>
             </div>
@@ -61,19 +61,13 @@ const Portfolio = () => {
           </div>  
         </div>
 
-        <div className="d-flex col justify-content-center">
-          <div className="text-center py-5">
-            <h1 className="mt-5 p-4 resumeDownloadText">View Resume</h1> 
-          </div>
-        </div>
-
-      <div class="mt-5 container d-flex lex-column align-items-center justify-content-center">
-        <div class="row mt-5">
-          <div class="col mx-5 programLanguagesBox">
-            <div class="mt-4 text-center languagesListTitle">
+      <div className="mt-5 container d-flex flex-column align-items-center justify-content-center">
+        <div className="row mt-5">
+          <div className="col mx-5 programLanguagesBox">
+            <div className="mt-4 text-center languagesListTitle">
               Current
             </div>
-            <div class="text-center languagesListTitle">
+            <div className="text-center languagesListTitle">
               Languages/Tools
             </div>
             <ul className="mt-4 mx-5 px-3 text-left languagesList">
@@ -87,11 +81,11 @@ const Portfolio = () => {
               <li className="mt-3">&#9642; FreeCAD</li>
             </ul>
           </div>
-          <div class="col mx-5 programLanguagesBox2">
-            <div class="mt-4 text-center languagesListTitle">
+          <div className="col mx-5 programLanguagesBox2">
+            <div className="mt-4 text-center languagesListTitle">
               Previous
             </div>
-            <div class="text-center languagesListTitle">
+            <div className="text-center languagesListTitle">
               Languages/Tools
             </div>
             <ul className="mt-4 mx-5 text-left languagesList ">
@@ -108,7 +102,22 @@ const Portfolio = () => {
         </div>
       </div>
 
+      <div className="text-center py-5">
+        <h1 className="portfioloTitle">Resume</h1> 
+      </div>
 
+      <div className="d-flex col justify-content-center">
+        <div className="PDFViewer">
+          <PdfViewerComponent document={"Clayton_Skaggs_Resume.pdf"}/>
+        </div>
+      </div>
+
+
+        {/* <div className="d-flex col justify-content-center">
+          <div className="text-center py-5">
+            <h1 className="mt-5 p-4 resumeDownloadText">Download Resume</h1>
+          </div>
+        </div> */}
 
       </div>
 

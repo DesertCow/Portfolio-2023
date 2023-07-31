@@ -256,7 +256,7 @@ contact {
      font-size: 30px;
 }
 
-demo {
+.demoText {
      font-family: "SF-Mono";
      font-size: 25px;
 }
@@ -279,4 +279,10 @@ demo {
      border-style: groove;
      width: 100%;
      border-width: 10px;
+}
+
+.PDFViewer {
+     width: 900px;
+     padding-bottom: 200px;
+     /* height: 1200px; */
 }
