@@ -41,8 +41,29 @@ const Portfolio = () => {
                 <h1 className="mt-3 demoTitle">The Board Club</h1>
                 <img className="img-fluid mt-3 mb-4 demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
                 </div>
-              <div className="col portfioloSubBoxRight">
-                Project Info...
+                <div className="col d-flex portfioloSubBoxRight">
+                <div className="col softwareStackBox">
+                  <div className="mt-3">Software Stack</div>
+                  <div className="mt-3 d-flex justify-content-start">
+                    <ul className="softwareStackList text-left">
+                      <li className="py-3">&#9642; App Type: Progressive Web App</li>
+                      <li className="py-3">&#9642; Frontend: React (18.2.0)</li>
+                      <li className="py-3">&#9642; Backend: NodeJS (16.15.1)</li>
+                      <li className="py-3">&#9642; Database: MongoDB (5.6.0)</li>
+                      <li className="py-3">&#9642; Photo Host: AWS S3</li>
+                      <li className="pt-3">&#9642; App Hosting: railway.app</li>
+                      {/* <li className="pt-2">&ensp; &#9642; https://railway.app/</li> */}
+                    </ul>
+                  </div>
+                  
+                </div>
+                <div className="col">
+                  <div className="mt-3 projectDesTitles">Project Goal</div>
+                  <p>Goal of this project was </p>
+                  <div className="mt-5 projectDesTitles">Project Overview</div>
+                  <div className="mt-5 projectDesTitles">Project Highlights</div>
+                  <div className="mt-5 projectDesTitles">Project Improvements</div>
+                </div>
               </div>
             </div>
              <div className="row mt-5 portfioloDemoBox">
@@ -63,7 +84,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div class="d-flex col align-items-center justify-content-center">
+        <div className="d-flex col align-items-center justify-content-center">
           <div className="flex-row mt-3 mb-4 align-items-center justify-content-center">
             <img src={require('../img/Clayton_Skaggs_4.jpg')}
             className="mt-3 contactPhoto"
@@ -85,10 +106,10 @@ const Portfolio = () => {
           </div>  
         </div>
 
-        <div class="container">
-          <div class="col text-center">
+        <div className="container">
+          <div className="col text-center">
 
-            <div class="row d-flex container devLinksBox mt-5">
+            <div className="row d-flex container devLinksBox mt-5">
               <div className="d-flex container flex-row py-3 align-items-center justify-content-around" >
                 
                 <div className="flex-row align-items-center justify-content-center">
@@ -129,7 +150,7 @@ const Portfolio = () => {
 
               </div>
             </div>
-            <div class="w-100"></div>
+            <div className="w-100"></div>
           </div>
         </div>
 

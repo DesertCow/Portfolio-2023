@@ -314,3 +314,22 @@ a { color: inherit; }
      border-style: groove;
      border-width: 10px;
 }
+
+.softwareStackBox {
+     font-family: "SF-Mono";
+     font-size: 28px;
+     border-width: 0px 5px 0px 0px;
+     border-style: solid;
+     /* border-width: 10px; */
+}
+
+.softwareStackList {
+     text-align:left;
+     font-size: 17px;
+}
+
+.projectDesTitles {
+     text-align:center;
+     font-family: "SF-Mono";
+     font-size: 28px;
+}
