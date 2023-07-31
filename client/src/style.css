@@ -30,8 +30,27 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
     url("./fonts/NextStep_FONT/NEXTSTEP.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Arvo-Bold";
+  src: local("Arvo-Bold"),
+    url("./fonts/Arvo/Arvo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Arvo-Bold"),
+    url("./fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF-Mono";
+  src: local("SF-Mono"),
+    url("./fonts/SFMono-Regular.otf") format("truetype");
+}
+
 :root {
   --main-font: "NextStep-1"
+  /* --text-font: "Arvo-Bold" */
 }
 
 
@@ -83,7 +102,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 contact {
-     font-family: var(--main-font);
+     font-family: "SF-Mono";
      font-size: 50px;
 }
 
@@ -116,25 +135,25 @@ contact {
      -moz-border-radius: 60px;
      -ms-border-radius: 60px;
      -o-border-radius: 60px;
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-family: "Arvo-Bold";
      font-size: 20px;
 }
 
 .aboutMeSubBoxes {
      width: 900px;
      /* margin-bottom: 100px; */
-     background-color: #9CF6F6;
+     background-color: #9cf6f6c2;
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
      -ms-border-radius: 60px;
      -o-border-radius: 60px;
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-family: "Inter";
      font-size: 20px;
 }
 
 .aboutMeTitle {
-     font-family: NextStep-1;
+     font-family: "SF-Mono";
      font-size: 50px;
 }
 
@@ -173,15 +192,97 @@ contact {
 
 .languagesList{
      font-size: 17px;
-     font-family: var(--main-font);
+     font-family: "SF-Mono";
 }
 
 .languagesListTitle{
      font-size: 28px;
-     font-family: var(--main-font);
+     font-family: "SF-Mono";
 }
 
 .HeaderAboutSpacer {
      margin-top: 125px;
      padding-top: 50px;
+}
+
+
+/*? ============= Dev Portfolio ============= */
+
+.portfolioMainBox {
+     /* background-color: #ef8f46d3; */
+     width: 80%;
+     height: 510px;
+     border-style: solid;
+     border-width: 5px;
+}
+
+.portfioloDemoBox {
+     background-color: #898989;
+     width: 100%;
+     /* height: 450px; */
+     border-style: solid;
+     border-width: 5px;
+}
+
+.portfioloSubBoxLeft {
+     border-width: 0px 5px 0px 0px;
+     border-style: solid;
+     max-width: 400px;
+     /* border-width: 5px; */
+}
+
+.portfioloSubBoxRight {
+     /* border-right: 5px; */
+     /* border-style: solid; */
+     /* border-width: 5px; */
+}
+
+.portfioloTitle {
+     font-size: 50px;
+     font-family: "SF-Mono";
+}
+
+.demoGIF1{
+     /*margin-top: 25%;
+     */width: 300px;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+}
+
+.demoTitle {
+     font-size: 30px;
+}
+
+.demoText {
+     font-family: "SF-Mono";
+     font-size: 25px;
+}
+
+.portfolioAboutMe {
+     max-width: 800px;
+     background-color: #9CF6F6;
+     border-radius: 50px;
+     -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+     -ms-border-radius: 50px;
+     -o-border-radius: 50px;
+     font-family: "Arvo-Bold";
+     font-size: 18px;
+}
+
+.resumeDownloadText {
+     font-family: "SF-Mono";
+     font-size: 60px;
+     border-style: groove;
+     width: 100%;
+     border-width: 10px;
+}
+
+.PDFViewer {
+     width: 900px;
+     padding-bottom: 200px;
+     /* height: 1200px; */
 }

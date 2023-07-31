@@ -18,7 +18,7 @@ const About = () => {
       <div className='HeaderAboutSpacer'>
         
         <div className="col d-flex align-items-center justify-content-center">
-          <h1 className="my-4 aboutMeTitle ">About Me</h1>
+          <h1 className="my-4 mb-5 aboutMeTitle ">About Me</h1>
         </div>
         
 
