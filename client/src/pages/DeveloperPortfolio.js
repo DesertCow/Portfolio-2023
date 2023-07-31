@@ -18,20 +18,54 @@ const Portfolio = () => {
 
       <div className='HeaderSpacer'>
         
-        <div className="py-5">
-          <div class="container text-center portfolioMainBox">
-            <div class="row">
-              <div class="col portfioloDemoBox">col 1-1</div>
-              <div class="col mt-5">col 1-2</div>
+        <div className="text-center py-5">
+          <h1 className="portfioloTitle">Featured Projects</h1> 
+        </div>
+       
+        <div className="py-3">
+          <div class="container text-center">
+            <div class="row portfioloDemoBox">
+              <demo class="col portfioloSubBoxLeft">
+                <h1 className="mt-3 demoTitle">The Board Club</h1>
+                <img className="img-fluid mt-3 mb-4 demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
+                </demo>
+              <div class="col portfioloSubBoxRight">
+                Project Info...
+              </div>
             </div>
-            <div class="row">
-              <div class="col portfioloDemoBox">col 2-1</div>
-              <div class="col mt-5">col 2-2</div>
+             <div class="row mt-5 portfioloDemoBox">
+              <demo class="col portfioloSubBoxLeft">
+                <h1 className="mt-3 demoTitle">BBQ Food Truck</h1>
+                <img className="img-fluid mt-3 mb-4 demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
+                </demo>
+              <div class="col portfioloSubBoxRight">
+                Project Info...
+              </div>
             </div>
           </div>
         </div>
 
+        <div className="text-center py-5">
+          <h1 className="portfioloTitle">About Me</h1> 
+        </div>
 
+        <div className="d-flex col justify-content-center">
+          <div className="row portfolioAboutMe p-5 d-flex">
+            <p className='d-flex col'>
+              I am a Full stack web developer with a degree in Computer Engineering from Oklahoma State University 
+              and 5+ years experience working as a Product Development Engineer at Intel developing Xeon class 
+              processors and chipsets. I have earned a Web Development certificate from the University Of 
+              California, Irvine to leverage my existing programming skills to include key web development 
+              technologies like HTML, CSS, Javascript, React, and Node.
+            </p>
+          </div>  
+        </div>
+
+        <div className="d-flex col justify-content-center">
+          <div className="text-center py-5">
+            <h1 className="mt-5 p-4 resumeDownloadText">View Resume</h1> 
+          </div>
+        </div>
 
       <div class="mt-5 container d-flex lex-column align-items-center justify-content-center">
         <div class="row mt-5">
