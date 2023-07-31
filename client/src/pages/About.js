@@ -15,10 +15,12 @@ const About = () => {
         <Header />
       </header>
 
-      <div className='d-flex flex-column HeaderAboutSpacer'>
-        <h1 className="my-4 row aboutMeTitle align-items-center justify-content-center">About Me</h1>
-
-        <div className="mt-5 d-flex flex-column">
+      <div className='HeaderAboutSpacer'>
+        
+        <div className="col d-flex align-items-center justify-content-center">
+          <h1 className="my-4 aboutMeTitle ">About Me</h1>
+        </div>
+        
 
           <div className="row aboutLeftBox align-items-center justify-content-start">
             <div className="aboutMeSubBoxes mx-5 pb-5">
@@ -46,7 +48,6 @@ const About = () => {
               </p>
             </div>
           </div>
-
           <div className="row aboutRightBox align-items-center justify-content-end">
             <div className="aboutMeSubBoxes mt-4 mx-5 pb-5">
               <p className="mt-5 px-5">
@@ -70,11 +71,10 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div> 
       </div>   
 
       <div class="mt-5 container d-flex lex-column align-items-center justify-content-center">
-        <div class="row">
+        <div class="row mt-5">
           <div class="col mx-5 programLanguagesBox">
             <div class="mt-4 text-center languagesListTitle">
               Current
