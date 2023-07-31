@@ -238,8 +238,11 @@ contact {
 }
 
 .portfioloTitle {
+     /* width: 550px; */
      font-size: 50px;
      font-family: "SF-Mono";
+     border-style: groove;
+     border-width: 10px;
 }
 
 .demoGIF1{
@@ -283,6 +286,11 @@ contact {
 
 .PDFViewer {
      width: 900px;
-     padding-bottom: 200px;
+     
      /* height: 1200px; */
+}
+
+.resumeDownloadBox {
+     padding-top: 100px;
+     padding-bottom: 200px;
 }
