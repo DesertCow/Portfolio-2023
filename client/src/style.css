@@ -355,3 +355,12 @@ a { color: inherit; }
      font-size: 13px;
      width: 80%;
 }
+
+.railwayLogo {
+     width: 300px;
+     border-radius: 15px;
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     -ms-border-radius: 15px;
+     -o-border-radius: 15px;
+}

@@ -52,10 +52,12 @@ const Portfolio = () => {
                     <li className="py-3">&#9642; App Type: Progressive Web App</li>
                     <li className="py-3">&#9642; Frontend: React (18.2.0)</li>
                     <li className="py-3">&#9642; Framework: Bootstrap (2.5.0)</li>
+                    <li className="py-3">&#9642; API: GraphQL (16.6.0)</li>
                     <li className="py-3">&#9642; Backend: NodeJS (16.15.1)</li>
                     <li className="py-3">&#9642; Database: MongoDB (5.6.0)</li>
                     <li className="py-3">&#9642; Photo Host: AWS S3</li>
-                    <li className="pt-3">&#9642; App Hosting: www.railway.app</li>
+                    <li className="pt-3">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li>
+                    <img className="img-fluid mt-4 mb-4 mx-4 railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img>
                     {/* <li className="pt-2">&ensp; &#9642; https://railway.app/</li> */}
                   </ul>
                 </div>
@@ -98,10 +100,12 @@ const Portfolio = () => {
                     <li className="py-3">&#9642; App Type: Progressive Web App</li>
                     <li className="py-3">&#9642; Frontend: React (18.2.0)</li>
                     <li className="py-3">&#9642; Framework: Bootstrap (5.2.1)</li>
+                    <li className="py-3">&#9642; API: GraphQL (15.3.0)</li>
                     <li className="py-3">&#9642; Backend: NodeJS (16.15.1)</li>
                     <li className="py-3">&#9642; Database: MongoDB (5.6.0)</li>
                     <li className="py-3">&#9642; Database: MySQL (2.3.3)</li>
-                    <li className="pt-3">&#9642; App Hosting: www.railway.app</li>
+                    <li className="pt-3">&#9642; App Hosting: <a href="https://saltlicktruck-production.up.railway.app/">Chuckwagon (Live)</a></li>
+                    <img className="img-fluid mt-4 mb-4 mx-4 railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img>
                     {/* <li className="pt-2">&ensp; &#9642; https://railway.app/</li> */}
                   </ul>
                 </div>
