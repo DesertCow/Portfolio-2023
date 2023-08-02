@@ -93,7 +93,7 @@ const About = () => {
               <li className="mt-3">&#9642; FreeCAD</li>
             </ul>
           </div>
-          <div class="col mx-5 programLanguagesBox2">
+          <div class="col mx-5 programOldLanguagesBox">
             <div class="mt-4 text-center languagesListTitle">
               Previous
             </div>
