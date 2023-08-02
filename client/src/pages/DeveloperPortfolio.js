@@ -116,14 +116,14 @@ const Portfolio = () => {
                   <p className="mt-3 px-5 projectDesText ">Chuckwagon is A comprehensive Food Truck management application with a customer ordering App and a separate "In Kitchen" App (React) for order execution and application administration built using MongoDB, Express, React, and NodeJS (MERN Stack).</p>
                 
                 <div className="mt-5 projectDesTitles">Project Goal</div>
-                <p className="mt-3 px-5 projectDesText">TBD</p>
+                <p className="mt-3 px-5 projectDesText">Application that could be deploy to the internet or run locally on a food truck and served via WiFi to enable customers to order food without needing an internet connection.</p>
                 <ul className="projectSubDesText projectGoalText px-3 mt-3 text-center">
-                  <li className="mt-3">&#9642; TBD</li>
-                  <li className="mt-3">&#9642; TBD</li>
-                  <li className="mt-3">&#9642; TBD</li>
-                  <li className="mt-3">&#9642; TBD</li>
-                  <li className="mt-3">&#9642; TBD</li>
-                  <li className="mt-3">&#9642; TBD</li>
+                  <li className="mt-3">&#9642; Enable customers to view the menu and add items to the cart for checkout/purchase.</li>
+                  <li className="mt-3">&#9642; Customers also create an account that provides an email for marketing purposes thus enabling higher likelyhood of repeat customers</li>
+                  <li className="mt-3">&#9642; Menu is dynamically served from SQL database enabling realtime item availabity to adjusted as items availabity is exhausted.</li>
+                  <li className="mt-3">&#9642; Customers can also track the status of their order via the app. <br></br>(Submitted/WIP/Ready/Picked Up)</li>
+                  <li className="mt-3">&#9642; Kitchen page allows employees to track, manage, and complete orders.</li>
+                  <li className="mt-3">&#9642; Orders are stored in database thus enabling analytics to be created to return valuble information to business owners and increase profit margin.</li>
                 </ul>
                 {/* <div className="mt-5 projectDesTitles">Project Highlights</div>
                 <div className="mt-5 projectDesTitles">Project Improvements</div> */}
@@ -151,12 +151,15 @@ const Portfolio = () => {
 
         <div className="d-flex col justify-content-center">
           <div className="row portfolioAboutMe p-5 d-flex">
-            <p className='d-flex col'>
-              I am a Full stack web developer with a degree in Computer Engineering from Oklahoma State University 
+            <p className='d-flex col text-center'>
+              I am a Full Stack web developer with a degree in Computer Engineering from Oklahoma State University 
               and 5+ years experience working as a Product Development Engineer at Intel developing Xeon class 
-              processors and chipsets. I have earned a Web Development certificate from the University Of 
-              California, Irvine to leverage my existing programming skills to include key web development 
-              technologies like HTML, CSS, Javascript, React, and Node.
+              processors and chipsets. 
+              <br></br>
+              &nbsp; <br></br>
+              I have earned a Web Development certificate from the University Of California, Irvine to enable 
+              me to leverage my existing programming skills to be a successful Full Stack developer by utilizing 
+              key web development technologies like HTML, CSS, Javascript, React, and Node.
             </p>
           </div>  
         </div>
@@ -175,9 +178,9 @@ const Portfolio = () => {
                 <li className="mt-3">&#9642; HTML + CSS</li>
                 <li className="mt-3">&#9642; Bootstrap</li>
                 <li className="mt-3">&#9642; React </li>
-                <li className="mt-3">&#9642; Node.js</li>
+                <li className="mt-3">&#9642; Node.js + NPM</li>
                 <li className="mt-3">&#9642; React Native</li>
-                <li className="mt-3">&#9642; SQL</li>
+                <li className="mt-3">&#9642; SQL + MongoDB</li>
               </ul>
             </div>
             <div className="col mx-5 programToolBox">
@@ -192,7 +195,7 @@ const Portfolio = () => {
                 <li className="mt-3">&#9642; BASH/Shell</li>
                 <li className="mt-3">&#9642; Visual Studio Code</li>
                 <li className="mt-3">&#9642; Figma</li>
-                <li className="mt-3">&#9642; MongoDB</li>
+                <li className="mt-3">&#9642; Docker</li>
                 <li className="mt-3">&#9642; AWS</li>
                 <li className="mt-3">&#9642; Agile SCRUM</li>
                 <li className="mt-3">&#9642; FreeCAD</li>
