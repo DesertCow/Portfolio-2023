@@ -234,8 +234,16 @@ contact {
      border-width: 5px;
 }
 
-.portfioloDemoBox {
-     background-color: #898989;
+.portfioloDemoBox1 {
+     background-color: #ef8f46d3;
+     width: 120%;
+     /* height: 450px; */
+     border-style: solid;
+     border-width: 5px;
+}
+
+.portfioloDemoBox2 {
+     background-color: #f9b5acd4;
      width: 120%;
      /* height: 450px; */
      border-style: solid;
@@ -264,8 +272,9 @@ contact {
 }
 
 .demoGIF1{
-     /*margin-top: 25%;
-     */width: 300px;
+     /*margin-top: 25%;*/
+     justify-content: center;
+     width: 300px;
      border-radius: 10px;
      -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
@@ -331,7 +340,7 @@ a { color: inherit; }
 
 .softwareStackList {
      text-align:left;
-     font-size: 17px;
+     font-size: 15px;
 }
 
 .projectDesTitles {
@@ -363,4 +372,8 @@ a { color: inherit; }
      -moz-border-radius: 15px;
      -ms-border-radius: 15px;
      -o-border-radius: 15px;
+}
+
+.featuredProjects {
+     margin-right: 10%;
 }

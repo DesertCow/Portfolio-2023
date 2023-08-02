@@ -35,10 +35,15 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="py-3 container text-center">
+        <div className="py-3 container d-flex">
 
-          <div className="row portfioloDemoBox">
-            <div className="col demoText portfioloSubBoxLeft">
+        <div className="col featuredProjects">
+
+
+
+          <div className="row portfioloDemoBox1">
+
+            <div className="col demoText portfioloSubBoxLeft text-center">
               <h1 className="mt-3 demoTitle">The Board Club</h1>
               <img className="img-fluid mt-3 mb-4 demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
             </div>
@@ -46,7 +51,7 @@ const Portfolio = () => {
             <div className="col d-flex portfioloSubBoxRight">
               
               <div className="col-4 softwareStackBox">
-                <div className="mt-5">Software Stack</div>
+                <div className="mt-3 text-center">Software Stack</div>
                 <div className="mt-5 d-flex justify-content-start">
                   <ul className="softwareStackList text-left">
                     <li className="py-3">&#9642; App Type: Progressive Web App</li>
@@ -57,20 +62,27 @@ const Portfolio = () => {
                     <li className="py-3">&#9642; Database: MongoDB (5.6.0)</li>
                     <li className="py-3">&#9642; Photo Host: AWS S3</li>
                     <li className="pt-3">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li>
-                    <img className="img-fluid mt-4 mb-4 mx-4 railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img>
-                    {/* <li className="pt-2">&ensp; &#9642; https://railway.app/</li> */}
+                    <li className="text-center my-3"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
+                    <li className="text-center mb-3">
+                      <a href="https://github.com/DesertCow/boardClubApp">
+                        <img src={require('../img/Icons/github.png')}
+                          className=""
+                          width="50"
+                          alt="GitHub Icon"/>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
 
               <div className="col">
-                <div className="mt-5 projectDesTitles">Project Overview</div>
-                  <p className="mt-3 px-5 projectDesText ">An application designed to allow members of the board club to view current surf/weather conditions, 
+                <div className="mt-3 projectDesTitles">Project Overview</div>
+                  <p className="mt-3 px-5 projectDesText text-center">An application designed to allow members of the board club to view current surf/weather conditions, 
                   club events, log surf sessions, view surf tips, rental information, and general information 
                   about the club.</p>
                 
                 <div className="mt-5 projectDesTitles">Project Goal</div>
-                <p className="mt-3 px-5 projectDesText">The goal of this application to motivate to go surf by providing them with the all the infomation they need to have a great surf session.</p>
+                <p className="mt-3 px-5 projectDesText text-center">The goal of this application to motivate to go surf by providing them with the all the infomation they need to have a great surf session.</p>
                 <ul className="projectSubDesText projectGoalText px-3 mt-3 text-center">
                   <li className="mt-3">&#9642; The app easily shows the current surf and weather conditons. </li>
                   <li className="mt-3">&#9642; Events are displayed to make it easy for memebers to get the information they need to plan and attend upcoming events.</li>
@@ -85,8 +97,8 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div className="row portfioloDemoBox mt-5">
-            <div className="col demoText portfioloSubBoxLeft">
+          <div className="row portfioloDemoBox2 mt-5">
+            <div className="col demoText portfioloSubBoxLeft text-center">
               <h1 className="mt-3 demoTitle">Chuckwagon</h1>
               <img className="img-fluid mt-3 mb-4 demoGIF1" src={require("../img/DemoGIFs/Chuckwagon_Demo1.gif")} alt="Surf Deck Demo"></img>
             </div>
@@ -94,7 +106,7 @@ const Portfolio = () => {
             <div className="col d-flex portfioloSubBoxRight">
               
               <div className="col-4 softwareStackBox">
-                <div className="mt-5">Software Stack</div>
+                <div className="mt-3 text-center">Software Stack</div>
                 <div className="mt-5 d-flex justify-content-start">
                   <ul className="softwareStackList text-left">
                     <li className="py-3">&#9642; App Type: Progressive Web App</li>
@@ -105,18 +117,25 @@ const Portfolio = () => {
                     <li className="py-3">&#9642; Database: MongoDB (5.6.0)</li>
                     <li className="py-3">&#9642; Database: MySQL (2.3.3)</li>
                     <li className="pt-3">&#9642; App Hosting: <a href="https://saltlicktruck-production.up.railway.app/">Chuckwagon (Live)</a></li>
-                    <img className="img-fluid mt-4 mb-4 mx-4 railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img>
-                    {/* <li className="pt-2">&ensp; &#9642; https://railway.app/</li> */}
+                    <li className="text-center my-3"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
+                    <li className="text-center mb-3">
+                      <a href="https://github.com/DesertCow/SaltLickTruck">
+                        <img src={require('../img/Icons/github.png')}
+                          className=""
+                          width="50"
+                          alt="GitHub Icon"/>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
 
               <div className="col">
-                <div className="mt-5 projectDesTitles">Project Overview</div>
-                  <p className="mt-3 px-5 projectDesText ">Chuckwagon is A comprehensive Food Truck management application with a customer ordering App and a separate "In Kitchen" App (React) for order execution and application administration built using MongoDB, Express, React, and NodeJS (MERN Stack).</p>
+                <div className="mt-3 projectDesTitles">Project Overview</div>
+                  <p className="mt-3 px-5 projectDesText text-center">Chuckwagon is A comprehensive Food Truck management application with a customer ordering App and a separate "In Kitchen" App (React) for order execution and application administration built using MongoDB, Express, React, and NodeJS (MERN Stack).</p>
                 
                 <div className="mt-5 projectDesTitles">Project Goal</div>
-                <p className="mt-3 px-5 projectDesText">Application that could be deploy to the internet or run locally on a food truck and served via WiFi to enable customers to order food without needing an internet connection.</p>
+                <p className="mt-3 px-5 projectDesText text-center">Application that could be deploy to the internet or run locally on a food truck and served via WiFi to enable customers to order food without needing an internet connection.</p>
                 <ul className="projectSubDesText projectGoalText px-3 mt-3 text-center">
                   <li className="mt-3">&#9642; Enable customers to view the menu and add items to the cart for checkout/purchase.</li>
                   <li className="mt-3">&#9642; Customers also create an account that provides an email for marketing purposes thus enabling higher likelyhood of repeat customers</li>
@@ -131,6 +150,7 @@ const Portfolio = () => {
             </div>
           </div>
 
+        </div>
         </div>
 
         <div className="d-flex col mt-5 justify-content-center">
