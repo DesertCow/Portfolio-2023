@@ -122,6 +122,10 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      padding-right: 50px;
 }
 
+.homeLinksBox {
+     width: 50%;
+}
+
 /*? ============= Contact Page ============= */
 
 .contactHeaderText {

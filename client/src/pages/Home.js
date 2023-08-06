@@ -39,6 +39,16 @@ function Home() {
           alt="Clayton Skaggs Snowy Woods"/>  
       </div> */}
 
+      <div className='homeLinksBox col mt-5 d-flex align-items-center justify-content-center'>
+        <div className="text-center py-5 mx-5">
+          <h1 className="portfioloTitle p-3">Project Portfolio</h1> 
+        </div>  
+        <div className="text-center py-5 mx-5">
+          <h1 className="portfioloTitle p-3">About Me</h1> 
+        </div>  
+      </div>
+
+
       <div className="container py-5">
         <div className="col text-center">
 
