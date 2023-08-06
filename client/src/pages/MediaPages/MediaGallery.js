@@ -31,7 +31,11 @@ const MediaGallery = () => {
         <Header />
       </header>
 
-      <div className='HeaderPhotoSpacer' >
+      <div className="col d-flex align-items-center justify-content-center HeaderGallerySpacer">
+        <h1 className="my-4 mb-5 p-3 aboutMeTitle ">Photo Gallery</h1>
+      </div>
+
+      <div className='' >
         <PhotoAlbum layout="rows" photos={photoList} padding="25" targetRowHeight={350} onClick={({ index }) => setIndex(index)}/>
 
         <Lightbox

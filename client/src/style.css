@@ -82,9 +82,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      margin-top: 125px;
 }
 
-.HeaderPhotoSpacer {
-     margin-top: 125px;
-     /* background-color: #75b9be9d; */
+.videoListMargin {
+     margin-right: 1%;
 }
 
 /*? ============= Contact Page ============= */
@@ -99,6 +98,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      width: 700px;
      height: 700px;
      margin-bottom: 100px;
+     /* padding-bottom: 50px; */
      background-color: #9CF6F6;
      border-radius: 60px;
      -webkit-border-radius: 60px;
@@ -107,8 +107,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      -o-border-radius: 60px;
 }
 
-contact {
-     font-family: "SF-Mono";
+.contactFont {
+     
      font-size: 50px;
 }
 
@@ -127,6 +127,20 @@ contact {
      -moz-border-radius: 50px;
      -ms-border-radius: 50px;
      -o-border-radius: 50px;
+}
+
+.contactLocation {
+     font-size: 30px;
+     font-family: "SF-Mono";
+}
+
+.contactEmail {
+     font-size: 30px;
+     font-family: "SF-Mono";
+}
+
+.contactSpacer {
+     padding-top: 150px;
 }
 
 /*? ============= About Me Page ============= */
@@ -161,6 +175,8 @@ contact {
 .aboutMeTitle {
      font-family: "SF-Mono";
      font-size: 50px;
+     border-style: groove;
+     border-width: 10px;
 }
 
 .aboutRightBox {
@@ -169,6 +185,7 @@ contact {
 
 .aboutLeftBox {
      margin-left: 10%;
+     margin-right: 10%;
 }
 
 
@@ -221,8 +238,68 @@ contact {
 .HeaderAboutSpacer {
      margin-top: 125px;
      padding-top: 50px;
+     margin-bottom: 100px;
 }
 
+.aboutMePar1Picture {
+     height: 350px;
+     margin-left: 15%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
+
+.aboutMePar2Picture {
+     height: 350px;
+     margin-left: 30%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
+
+.aboutMePar3Picture {
+     height: 350px;
+     margin-left: 15%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
+
+.aboutMePar4Picture {
+     height: 350px;
+     margin-left: 45%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
+
+.aboutMePar5Picture {
+     height: 200px;
+     margin-left: 10%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
+
+.aboutMePar6Picture {
+     height: 250px;
+     margin-left: 30%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
 
 /*? ============= Dev Portfolio ============= */
 
@@ -376,4 +453,10 @@ a { color: inherit; }
 
 .featuredProjects {
      margin-right: 10%;
+}
+
+.HeaderGallerySpacer {
+     margin-top: 125px;
+     padding-top: 50px;
+     /* margin-bottom: 100px; */
 }
