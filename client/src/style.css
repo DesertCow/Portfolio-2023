@@ -107,8 +107,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      -o-border-radius: 60px;
 }
 
-contact {
-     font-family: "SF-Mono";
+.contactFont {
+     
      font-size: 50px;
 }
 
@@ -131,10 +131,16 @@ contact {
 
 .contactLocation {
      font-size: 30px;
+     font-family: "SF-Mono";
 }
 
 .contactEmail {
      font-size: 30px;
+     font-family: "SF-Mono";
+}
+
+.contactSpacer {
+     padding-top: 150px;
 }
 
 /*? ============= About Me Page ============= */

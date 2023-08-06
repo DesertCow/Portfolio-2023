@@ -17,17 +17,24 @@ const Contact = () => {
         <Header />
       </header>
 
+        <div className="col d-flex align-items-center justify-content-center contactSpacer">
+          <h1 className="my-4 mb-5 p-3 aboutMeTitle ">Contact</h1>
+        </div>
 
-      <div className='d-flex flex-column align-items-center justify-content-center HeaderPhotoSpacer'>
-          <contact className='d-flex flex-column align-items-center mt-5 contactBox'>
+      <div className='d-flex flex-column align-items-center justify-content-center'>
 
-            <div className='d-flex flex-column align-items-center mt-5 contactLocation'>
-              Location: Newport Beach, CA
+          <div className='d-flex flex-column align-items-center justify-content-center mt-5 pt-5 contactBox'>
+
+            <div className='justify-content-start mt-5'>
+              <div className='d-flex flex-column mt-5 contactLocation'>
+                Location: Newport Beach, CA
+              </div>
+
+              <div className='d-flex flex-column mt-5 contactEmail'>
+                Email: clayton.skaggs89@gmail.com
+              </div>
             </div>
 
-            <div className='d-flex flex-column align-items-center mt-5 contactEmail'>
-              Email: clayton.skaggs89@gmail.com
-            </div>
             <div className='d-flex flex-column align-items-center mt-3 emailFont'>
               <a className="mt-1 emailLinkText" href = "mailto: clayton.skaggs89@gmail.com">             
                 <img src={require('../img/Icons/SendEmail.png')}
@@ -35,9 +42,9 @@ const Contact = () => {
                   width="100"
                   alt="Instagram Icon"/>  
               </a>
-              <div className="container">
+              <div className="container mb-5">
                 <div className="row mb-5">
-                  <div className="col">
+                  <div className="col pb-5">
                       <div className="mt-5 flex-row align-items-center justify-content-center">
                         <img src={require('../img/Clayton_Skaggs_4.jpg')}
                         className="mt-3 contactPhoto"
@@ -45,7 +52,7 @@ const Contact = () => {
                         alt="Clayton Skaggs profile picture"/>  
                       </div>
                   </div>
-                  <div className="col mx-5 d-flex container align-items-center justify-content-center">
+                  <div className="col mx-5 pb-4 mt-3 d-flex container align-items-center justify-content-center">
                     <div className="d-flex container flex-column mt-5 align-items-center justify-content-center">
                       <div className="py-3 flex-row align-items-center justify-content-center">
                         <a href="https://github.com/DesertCow">
@@ -89,7 +96,7 @@ const Contact = () => {
 
 
             
-          </contact>
+          </div>
       </div>
 
     </div>
