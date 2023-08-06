@@ -223,6 +223,65 @@ contact {
      padding-top: 50px;
 }
 
+.aboutMePar1Picture {
+     height: 350px;
+     margin-left: 15%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
+
+.aboutMePar2Picture {
+     height: 350px;
+     margin-left: 30%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
+
+.aboutMePar3Picture {
+     height: 350px;
+     margin-left: 15%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
+
+.aboutMePar4Picture {
+     height: 350px;
+     margin-left: 45%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
+
+.aboutMePar5Picture {
+     height: 250px;
+     margin-left: 10%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
+
+.aboutMePar6Picture {
+     height: 250px;
+     margin-left: 30%;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+}
 
 /*? ============= Dev Portfolio ============= */
 
