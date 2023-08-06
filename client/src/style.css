@@ -99,6 +99,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      width: 700px;
      height: 700px;
      margin-bottom: 100px;
+     /* padding-bottom: 50px; */
      background-color: #9CF6F6;
      border-radius: 60px;
      -webkit-border-radius: 60px;
@@ -127,6 +128,14 @@ contact {
      -moz-border-radius: 50px;
      -ms-border-radius: 50px;
      -o-border-radius: 50px;
+}
+
+.contactLocation {
+     font-size: 30px;
+}
+
+.contactEmail {
+     font-size: 30px;
 }
 
 /*? ============= About Me Page ============= */
@@ -169,6 +178,7 @@ contact {
 
 .aboutLeftBox {
      margin-left: 10%;
+     margin-right: 10%;
 }
 
 
@@ -221,6 +231,7 @@ contact {
 .HeaderAboutSpacer {
      margin-top: 125px;
      padding-top: 50px;
+     margin-bottom: 100px;
 }
 
 .aboutMePar1Picture {
@@ -264,7 +275,7 @@ contact {
 }
 
 .aboutMePar5Picture {
-     height: 250px;
+     height: 200px;
      margin-left: 10%;
      border-radius: 25px;
      -webkit-border-radius: 25px;

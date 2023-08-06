@@ -15,6 +15,9 @@ const About = () => {
         <Header />
       </header>
 
+      <div>
+
+      
       <div className='HeaderAboutSpacer'>
         
         <div className="col d-flex align-items-center justify-content-center">
@@ -90,8 +93,10 @@ const About = () => {
               </p>
             </div>
           </div>
+          
       </div>   
 
+      </div>
       <div className="mt-5 container d-flex flex-column align-items-center justify-content-center">
         <div className="row mt-5">
           <div className="col mx-5 programLanguagesBox">
