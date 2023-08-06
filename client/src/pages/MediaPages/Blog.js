@@ -15,8 +15,8 @@ const Blog = () => {
         <Header />
       </header>
 
-      <div className='HeaderSpacer'>
-        <h1>BLOG... Blah Blah Blah</h1>
+      <div className="col d-flex align-items-center justify-content-center HeaderGallerySpacer">
+        <h1 className="my-4 mb-5 p-3 aboutMeTitle ">Blog</h1>
       </div>
 
     </div>
