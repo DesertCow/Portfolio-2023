@@ -20,7 +20,7 @@ const MediaVideo = () => {
         <h1 className="my-4 mb-5 p-3 aboutMeTitle ">Video Gallery</h1>
       </div>
 
-      <div>
+      <div className='videoListMargin'>
         <div class="d-flex row">
           <div className="row mt-5 d-flex justify-content-center">
             <ReactPlayer width="1200px" height="750px" controls="true" url='https://youtu.be/mtXzsgFWdsE' />
