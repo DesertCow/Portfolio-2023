@@ -49,6 +49,18 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 @font-face {
+  font-family: "Inter-Itallic";
+  src: local("Inter-Itallic"),
+    url("./fonts/Inter-3.19/Inter-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: local("Inter-Bold"),
+    url("./fonts/Inter/static/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "SF-Mono";
   src: local("SF-Mono"),
     url("./fonts/SFMono-Regular.otf") format("truetype");
@@ -84,6 +96,58 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .videoListMargin {
      margin-right: 1%;
+}
+
+.homeHeaderSpacer{
+     margin-top: 175px;
+}
+
+.homeLandingZone {
+     margin-left: 10%;
+     width: 80%;
+}
+.homeHelloText {
+     font-size: 25px;
+     font-family: Inter;
+}
+
+.homeNameText {
+     font-size: 80px;
+     font-family: Inter-Bold;
+}
+
+.homeRoleText {
+     font-size: 50px;
+     font-family: Inter-Bold;
+}
+
+.homeDesText {
+     font-size: 25px;
+     font-family: Inter;
+     padding-right: 50px;
+}
+
+.homeLinksBox {
+     width: 50%;
+     margin-top: 150px;
+     text-decoration: none;
+}
+
+
+.homeLinkButtonsText{
+      text-decoration: none;
+}
+
+.homeLinkButtons:hover {
+     background-color: black;
+     /* color: white; */
+     border-color: black;
+}
+
+.homeLinkButtonsText:hover {
+     color: white;
+     border-color: black;
+     border-style: solid;
 }
 
 /*? ============= Contact Page ============= */
