@@ -30,9 +30,11 @@ const Header = () => {
   return (
 
     <header className="Header d-flex justify-content-between ">
-      <img src={require("../../img/ClaytonSkaggsDEV_Logo.png")} onClick={(event) => handleLogoClick(event)} className="Logo my-2 mx-2" alt="logo" />
+      {/* <img src={require("../../img/ClaytonSkaggsDEV_Logo.png")} onClick={(event) => handleLogoClick(event)} className="Logo my-2 mx-2" alt="logo" /> */}
+      <img src={require("../../img/Empty.png")} onClick={(event) => handleLogoClick(event)} className="Logo my-2 mx-2" alt="logo" />
       <Navbar className="d-flex">
         <Container fluid className="mx-5">
+          <Nav.Link className="navBarText mx-5 text-center" href="/Home">Home</Nav.Link>
           <Nav.Link className="navBarText mx-5 text-center" href="/DevPortfolio">Dev Portfolio</Nav.Link>
           <Navbar.Toggle/>
           <Navbar.Collapse className="navBarText mx-5">

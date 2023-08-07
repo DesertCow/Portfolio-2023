@@ -3,10 +3,11 @@ import { useState } from "react";
 
 //* Component Import
 import Header from '../../components/Header';
-import photoList from './PhotoList'
+import Footer from '../../components/Footer';
 
 //* Photo Gallery Package
 import PhotoAlbum from "react-photo-album";
+import photoList from './PhotoList'
 
 //* Import Lightbox
 import Lightbox from "yet-another-react-lightbox";
@@ -47,6 +48,11 @@ const MediaGallery = () => {
           plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
         />
       </div>
+
+      <div className="w-100">
+        <Footer />
+      </div>
+
 
     </div>
   )

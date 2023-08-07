@@ -32,11 +32,15 @@ function Home() {
 
         <div className='container homeLinksBox'>
           <div class="container justify-content-center align-items-center text-center w-75">
-            <div class="row mt-5 homeLinkButtons">
-              <a href="/DevPortfolio" className='homeLinkButtonsText'><h1 className="col portfioloTitle p-3 homeLinkButtonsText">Dev Portfolio</h1></a>
+            <div class="row mt-5">
+              <a href="/DevPortfolio" className='homeLinkButtonsText'>
+                <h1 className="col portfioloTitle p-3 homeLinkButtonsText homeLinkButtons">Dev Portfolio</h1>
+              </a>
             </div>
-            <div class="row mt-5 homeLinkButtons">
-              <a href="/About" className='homeLinkButtonsText'><h1 className="col portfioloTitle p-3 homeLinkButtonsText">About Me</h1></a>
+            <div class="row mt-5">
+              <a href="/About" className='homeLinkButtonsText'>
+                <h1 className="col portfioloTitle p-3  homeLinkButtons homeLinkButtonsText">About Me</h1>
+              </a>
             </div>
           </div>
         </div>

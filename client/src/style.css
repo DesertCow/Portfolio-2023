@@ -66,9 +66,17 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
     url("./fonts/SFMono-Regular.otf") format("truetype");
 }
 
+
+/*? Color Variables */
+
 :root {
-  --main-font: "NextStep-1"
+  --main-font: "NextStep-1";
   /* --text-font: "Arvo-Reg" */
+  --mainBG-color: #181818;
+  --alt-color1: #0ba6d99a;
+  --alt-color2: #d34846bb;
+  --alt-color2b: #ed5735be;
+  --alt-color3: #40807ac0;
 }
 
 
@@ -87,7 +95,10 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .divMain {
-     background-color: #75b9be9d;
+     /* background-color: #75b9be9d; */
+     /* background-color: #181818; */
+     background-color: var(--mainBG-color);
+     color: white;
 }
 
 .HeaderSpacer{
@@ -139,14 +150,16 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .homeLinkButtons:hover {
-     background-color: black;
+     background-color: white;
+     background-image: url("../src/img/Header_Colorful.jpg");
+     background-size: 730px;
      /* color: white; */
      border-color: black;
 }
 
 .homeLinkButtonsText:hover {
-     color: white;
-     border-color: black;
+     color: black;
+     border-color: white;
      border-style: solid;
 }
 
@@ -160,10 +173,12 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .contactBox {
      width: 700px;
-     height: 700px;
-     margin-bottom: 100px;
+     height: 300px;
+     margin-bottom: 50px;
      /* padding-bottom: 50px; */
-     background-color: #9CF6F6;
+     /* background-color: var(--alt-color1); */
+     background-image: url("../src/img/Header_Colorful.jpg");
+     background-size: 2500px;
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
@@ -185,7 +200,14 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      text-decoration: none !important;
 }
 
+.devAboutMeBox {
+     /* margin-left: 15%; */
+     width: 1600px;
+}
+
 .contactPhoto {
+     width: 400px;
+     /* margin-left: 50%; */
      border-radius: 50px;
      -webkit-border-radius: 50px;
      -moz-border-radius: 50px;
@@ -195,6 +217,11 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .contactLocation {
      font-size: 30px;
+     font-family: "SF-Mono";
+}
+
+.timeZoneText {
+     font-size: 20px;
      font-family: "SF-Mono";
 }
 
@@ -209,24 +236,56 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 /*? ============= About Me Page ============= */
 
-.aboutMeBox{
+
+.aboutMeSubBoxes {
      width: 900px;
-     /* height: 1500px; */
-     margin-bottom: 100px;
-     background-color: #9CF6F6;
+     /* margin-bottom: 100px; */
+     /* background-color: #9cf6f6c2; */
+     /* background-color: var(--alt-color1); */
+     /* background-image: url("../src/img/Header_Colorful_Stretched.png"); */
+     /* background-size: 1000px; */
+     border-color: white;
+     border-style: solid;
+     border-width: 10px;
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
      -ms-border-radius: 60px;
      -o-border-radius: 60px;
-     font-family: "Arvo-Reg";
+     font-family: Inter;
+     /* font-family: "SF-Mono"; */
      font-size: 20px;
 }
 
-.aboutMeSubBoxes {
+.aboutText {
+     /* font-family: Inter; */
+}
+
+.aboutMeSubBoxes2 {
      width: 900px;
      /* margin-bottom: 100px; */
-     background-color: #9cf6f6c2;
+     /* background-color: #9cf6f6c2; */
+     /* background-color: var(--alt-color2); */
+     border-color: white;
+     border-style: solid;
+     border-width: 10px;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+     font-family: "Inter";
+     font-size: 20px;
+}
+
+.aboutMeSubBoxes3 {
+     width: 900px;
+     /* margin-bottom: 100px; */
+     /* background-color: #9cf6f6c2; */
+     /* background-color: var(--alt-color3); */
+     border-color: white;
+     border-style: solid;
+     border-width: 10px;
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
@@ -239,7 +298,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 .aboutMeTitle {
      font-family: "SF-Mono";
      font-size: 50px;
-     border-style: groove;
+     border-style: solid;
      border-width: 10px;
 }
 
@@ -257,7 +316,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      width: 320px;
      height: 380px;
      margin-bottom: 100px;
-     background-color: #ef8f46d3;
+     background-color: var(--alt-color1);
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
@@ -269,7 +328,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      width: 320px;
      height: 380px;
      margin-bottom: 100px;
-     background-color: #9CF6F6;
+     background-color: var(--alt-color3);
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
@@ -281,7 +340,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      width: 600px;
      height: 380px;
      margin-bottom: 100px;
-     background-color: #f9b5acd4;
+     background-color: var(--alt-color2);
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
@@ -376,7 +435,9 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .portfioloDemoBox1 {
-     background-color: #ef8f46d3;
+     background-color: var(--alt-color2b);
+     /* background-image: url("../src/img/Header_Colorful.jpg"); */
+     background-size: 730px;
      width: 120%;
      /* height: 450px; */
      border-style: solid;
@@ -384,7 +445,10 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .portfioloDemoBox2 {
-     background-color: #f9b5acd4;
+     background-color: var(--alt-color1);
+     margin-top: 100px;
+     /* background-image: url("../src/img/Header_Colorful.jpg"); */
+     background-size: 730px;
      width: 120%;
      /* height: 450px; */
      border-style: solid;
@@ -408,7 +472,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      /* width: 550px; */
      font-size: 50px;
      font-family: "SF-Mono";
-     border-style: groove;
+     border-style: solid;
      border-width: 10px;
 }
 
@@ -435,8 +499,11 @@ a { color: inherit; }
 }
 
 .portfolioAboutMe {
-     max-width: 800px;
-     background-color: #9CF6F6;
+     /* max-width: 1000px; */
+     /* height: 230px; */
+     /* background-color: var(--alt-color1); */
+     background-image: url("../src/img/Header_Colorful_Wide.png");
+     background-size: 1400px;
      border-radius: 50px;
      -webkit-border-radius: 50px;
      -moz-border-radius: 50px;
@@ -449,7 +516,7 @@ a { color: inherit; }
 .resumeDownloadText {
      font-family: "SF-Mono";
      font-size: 45px;
-     border-style: groove;
+     border-style: solid;
      width: 100%;
      border-width: 10px;
 }
@@ -467,8 +534,9 @@ a { color: inherit; }
 
 .devLinksBox {
      /* width: 100%; */
-     border-style: groove;
+     border-style: solid;
      border-width: 10px;
+     background-image: url("../src/img/Header_Colorful.jpg");
 }
 
 .softwareStackBox {
