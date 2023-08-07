@@ -1,16 +1,5 @@
 
 
-/*? ============= Font Import ============= */
-
-
-
-
-
-
-
-
-
-
 .Header {
   position: fixed;
   top: 0; /* Stick it to the top */
@@ -24,7 +13,9 @@
 
   /* Cosmetics */
   /* background-color: #9663b6; */
-  background-color: #ef8f46ec;
+  /* background-color: #ef8f46ec; */
+  /* background-image: url("../../img/Header_Colorful.jpg"); */
+  background-image: url("../../img/Header_Colorful2.png");
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 

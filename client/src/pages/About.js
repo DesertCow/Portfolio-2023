@@ -43,7 +43,7 @@ const About = () => {
             <div className="col">
               <img className="img-fluid aboutMePar2Picture" src={require("../img/AboutMe/IMGP0606.jpg")} alt="Railway Logo"></img>
             </div>
-            <div className="col aboutMeSubBoxes mt-4 mx-5 pb-5">
+            <div className="col aboutMeSubBoxes2 mt-4 mx-5 pb-5">
               <p className="mt-5 px-5">
                 &ensp; &ensp; This love for problem solving also manifests itself in the outdoors  aswell, where I’m passionate about spending time outside and being active while growing my skills in these unique and challenging environments. During the summers I enjoy surfing, trail running, bouldering, and rock climbing. But winter time is my absolute favourite time of the year, where I enjoy resort snowboarding, splitboarding, ice climbing, high altitude mountaineering, or even multiday expeditions exploring remote regions of the western US. The opportunity to push myself physically while also growing technically in the mountain environment is something I’m passionate about.
               </p>
@@ -51,7 +51,7 @@ const About = () => {
           </div>
 
           <div className="row aboutLeftBox align-items-center justify-content-start my-5">
-            <div className="col aboutMeSubBoxes mt-4 mx-5 pb-5">
+            <div className="col aboutMeSubBoxes3 mt-4 mx-5 pb-5">
               <p className="mt-5 px-5">
                 &ensp; &ensp; More recently my career ambitions have shifted from hardware engineering to software development. At <a href="https://www.intel.com/">Intel</a> I was working on the products that push cloud computing forward and while I have an intricate understanding of the hardware side of the cloud. The depth of my understanding of CPU’s is down to the binary level which is required to write test content to validate cutting edge Gen4 interfaces like PCI-E and USB. As I progressed in my career at <a href="https://www.intel.com/">Intel</a> I became more interested in the software that enables developers to harness the power of the cloud to produce software products that power our everyday life.
               </p>
@@ -73,7 +73,7 @@ const About = () => {
           </div>
 
           <div className="row aboutLeftBox align-items-center justify-content-start my-5">
-            <div className="aboutMeSubBoxes mt-4 mx-5 pb-5">
+            <div className="aboutMeSubBoxes2 mt-4 mx-5 pb-5">
               <p className="mt-5 px-5">
                 &ensp; &ensp; I quickly recognized the power of React and how it was enabling developers to build complex apps with agility and speed. At first I struggled to wrap my head around this language and development environment. Though I have learned over a dozen programming languages in my career, React required me to rethink how I approached programming problems. After attending a coding boot camp at UC Irvine I was finally able to build the foundation necessary to find success and build complex and functional applications utilizing the React framework.
               </p>
@@ -87,7 +87,7 @@ const About = () => {
             <div className="col">
               <img className="img-fluid aboutMePar6Picture mt-5" src={require("../img/AboutMe/1920px-Devops-toolchain.png")} alt="Railway Logo"></img>
             </div>
-            <div className="aboutMeSubBoxes mt-4 mx-5 pb-5">
+            <div className="aboutMeSubBoxes3 mt-4 mx-5 pb-5">
               <p className="mt-5 px-5">
                 &ensp; &ensp; Today I continue to push myself to grow both my depth and breadth as a developer by utilizing the following technologies and tools to produce applications that return business value while using DevOps principles and the Scrum/Agile development process to produce a sustainable and deployable code cycle.
               </p>
