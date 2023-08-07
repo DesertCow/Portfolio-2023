@@ -45,7 +45,7 @@ const About = () => {
             </div>
             <div className="col aboutMeSubBoxes mt-4 mx-5 pb-5">
               <p className="mt-5 px-5">
-                &ensp; &ensp; This love for problem solving also manifests itself in the outdoors  aswell, where I’m passionate about spending time outside and being active while growing my skills in these unique and challenging environments. During the summers I enjoy surfing, trail running, bouldering, and rock climbing. But winter time is my absolute favourite time of the year, where I enjoy resort snowboarding, splitboarding, ice climbing, high altitude mountaineering, or even multiday expedition exploring remote regions of the western US. The opportunity to push myself physically while also growing technically in the mountain environment is something I’m passionate about.
+                &ensp; &ensp; This love for problem solving also manifests itself in the outdoors  aswell, where I’m passionate about spending time outside and being active while growing my skills in these unique and challenging environments. During the summers I enjoy surfing, trail running, bouldering, and rock climbing. But winter time is my absolute favourite time of the year, where I enjoy resort snowboarding, splitboarding, ice climbing, high altitude mountaineering, or even multiday expeditions exploring remote regions of the western US. The opportunity to push myself physically while also growing technically in the mountain environment is something I’m passionate about.
               </p>
             </div>
           </div>
