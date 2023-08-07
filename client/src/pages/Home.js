@@ -19,34 +19,33 @@ function Home() {
           <div className='homeHelloText'>
             Hello my name is
           </div>
-          <div className='mt-5 homeNameText'>
+          <div className='mt-4 homeNameText'>
             Clayton Skaggs
           </div>
           <div className='mt-5 homeRoleText'>
-            I build applications for web and mobile platforms.
+            I build Full Stack applications for web and mobile platforms.
           </div>
           <div className='mt-5 homeDesText'>
             I am a Full Stack web developer with a degree in Computer Engineering from Oklahoma State University and 5+ years experience working as a Product Development Engineer at Intel developing Xeon class processors and chipsets. I am looking to leverage my existing programming skills to be a successful Full Stack developer by utilizing key web development technologies like HTML, CSS, Javascript, React, and Node.
           </div> 
         </div>
 
+        <div className='container homeLinksBox'>
+          <div class="container justify-content-center align-items-center text-center w-75">
+            <div class="row mt-5 homeLinkButtons">
+              <a href="/DevPortfolio" className='homeLinkButtonsText'><h1 className="col portfioloTitle p-3 homeLinkButtonsText">Project Portfolio</h1></a>
+            </div>
+            <div class="row mt-5 homeLinkButtons">
+              <a href="/About" className='homeLinkButtonsText'><h1 className="col portfioloTitle p-3 homeLinkButtonsText">About Me</h1></a>
+            </div>
+          </div>
+        </div>
 
       </div>
 
-      {/* <div className='d-flex flex-column min-vh-100 align-items-center justify-content-center ' >
-        <img src="https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/Woodz_Selfie.jpeg"
-          className="align-items-center justify-content-center homePageMainPhoto"
-          alt="Clayton Skaggs Snowy Woods"/>  
-      </div> */}
 
-      <div className='homeLinksBox col mt-5 d-flex align-items-center justify-content-center'>
-        <div className="text-center py-5 mx-5">
-          <h1 className="portfioloTitle p-3">Project Portfolio</h1> 
-        </div>  
-        <div className="text-center py-5 mx-5">
-          <h1 className="portfioloTitle p-3">About Me</h1> 
-        </div>  
-      </div>
+
+
 
 
       <div className="container py-5">

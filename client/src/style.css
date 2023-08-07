@@ -49,6 +49,12 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 @font-face {
+  font-family: "Inter-Itallic";
+  src: local("Inter-Itallic"),
+    url("./fonts/Inter-3.19/Inter-Italic.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Inter-Bold";
   src: local("Inter-Bold"),
     url("./fonts/Inter/static/Inter-Bold.ttf") format("truetype");
@@ -93,8 +99,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .homeHeaderSpacer{
-     margin-top: 250px;
-     
+     margin-top: 175px;
 }
 
 .homeLandingZone {
@@ -102,7 +107,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      width: 80%;
 }
 .homeHelloText {
-     font-size: 30px;
+     font-size: 25px;
      font-family: Inter;
 }
 
@@ -124,6 +129,25 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .homeLinksBox {
      width: 50%;
+     margin-top: 150px;
+     text-decoration: none;
+}
+
+
+.homeLinkButtonsText{
+      text-decoration: none;
+}
+
+.homeLinkButtons:hover {
+     background-color: black;
+     /* color: white; */
+     border-color: black;
+}
+
+.homeLinkButtonsText:hover {
+     color: white;
+     border-color: black;
+     border-style: solid;
 }
 
 /*? ============= Contact Page ============= */
