@@ -150,6 +150,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .homeLinkButtons:hover {
      background-color: white;
+     background-image: url("../src/img/Header_Colorful.jpg");
+     background-size: 730px;
      /* color: white; */
      border-color: black;
 }
@@ -170,10 +172,12 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .contactBox {
      width: 700px;
-     height: 400px;
+     height: 300px;
      margin-bottom: 50px;
      /* padding-bottom: 50px; */
-     background-color: var(--alt-color1);
+     /* background-color: var(--alt-color1); */
+     background-image: url("../src/img/Header_Colorful.jpg");
+     background-size: 2500px;
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
@@ -205,6 +209,11 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .contactLocation {
      font-size: 30px;
+     font-family: "SF-Mono";
+}
+
+.timeZoneText {
+     font-size: 20px;
      font-family: "SF-Mono";
 }
 
@@ -296,7 +305,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      width: 320px;
      height: 380px;
      margin-bottom: 100px;
-     background-color: var(--alt-color3);
+     background-color: var(--alt-color1);
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
@@ -308,7 +317,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      width: 320px;
      height: 380px;
      margin-bottom: 100px;
-     background-color: var(--alt-color1);
+     background-color: var(--alt-color3);
      border-radius: 60px;
      -webkit-border-radius: 60px;
      -moz-border-radius: 60px;
@@ -415,7 +424,9 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .portfioloDemoBox1 {
-     background-color: var(--alt-color1);
+     /* background-color: var(--alt-color1); */
+     background-image: url("../src/img/Header_Colorful.jpg");
+     background-size: 730px;
      width: 120%;
      /* height: 450px; */
      border-style: solid;
@@ -423,7 +434,9 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .portfioloDemoBox2 {
-     background-color: var(--alt-color3);
+     /* background-color: var(--alt-color3); */
+     background-image: url("../src/img/Header_Colorful.jpg");
+     background-size: 730px;
      width: 120%;
      /* height: 450px; */
      border-style: solid;
@@ -475,7 +488,9 @@ a { color: inherit; }
 
 .portfolioAboutMe {
      max-width: 800px;
-     background-color: var(--alt-color1);
+     /* background-color: var(--alt-color1); */
+     background-image: url("../src/img/Header_Colorful_Wide.png");
+     background-size: 1550px;
      border-radius: 50px;
      -webkit-border-radius: 50px;
      -moz-border-radius: 50px;

@@ -9,6 +9,7 @@ import ResumePDF from '../assets/Clayton_Skaggs_Resume.pdf';
 //* Component Import
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import DevTools from '../components/DevTools'
 
 const Portfolio = () => {
 
@@ -39,9 +40,6 @@ const Portfolio = () => {
         <div className="py-3 container d-flex">
 
         <div className="col featuredProjects">
-
-
-
           <div className="row portfioloDemoBox1">
 
             <div className="col demoText portfioloSubBoxLeft text-center">
@@ -152,96 +150,42 @@ const Portfolio = () => {
           </div>
 
         </div>
-        </div>
+      </div>
 
-        <div className="d-flex col mt-5 justify-content-center">
-          <div className="text-center pt-5">
-            <h1 className="portfioloTitle p-3">About Me</h1> 
-          </div>
+      <div className="d-flex col mt-5 justify-content-center">
+        <div className="text-center pt-5">
+          <h1 className="portfioloTitle p-3">About Me</h1> 
         </div>
+      </div>
 
-        <div className="d-flex col align-items-center justify-content-center">
-          <div className="flex-row mt-3 mb-4 align-items-center justify-content-center">
-            <img src={require('../img/Clayton_Skaggs_4.jpg')}
-            className="mt-3 contactPhoto"
-            width="350"
-            alt="Clayton Skaggs profile picture"/>  
-          </div>
+      <div className="d-flex col align-items-center justify-content-center">
+        <div className="flex-row mt-3 mb-4 align-items-center justify-content-center">
+          <img src={require('../img/Clayton_Skaggs_4.jpg')}
+          className="mt-3 contactPhoto"
+          width="350"
+          alt="Clayton Skaggs profile picture"/>  
         </div>
+      </div>
 
 
-        <div className="d-flex col justify-content-center">
-          <div className="row portfolioAboutMe p-5 d-flex">
-            <p className='d-flex col text-center'>
-              I am a Full Stack web developer with a degree in Computer Engineering from Oklahoma State University 
-              and 5+ years experience working as a Product Development Engineer at Intel developing Xeon class 
-              processors and chipsets. 
-              <br></br>
-              &nbsp; <br></br>
-              I have earned a Web Development certificate from the University Of California, Irvine to enable 
-              me to leverage my existing programming skills to be a successful Full Stack developer by utilizing 
-              key web development technologies like HTML, CSS, Javascript, React, and Node.
-            </p>
-          </div>  
-        </div>
+      <div className="d-flex col justify-content-center">
+        <div className="row portfolioAboutMe p-5 d-flex">
+          <p className='d-flex col text-center'>
+            I am a Full Stack web developer with a degree in Computer Engineering from Oklahoma State University 
+            and 5+ years experience working as a Product Development Engineer at Intel developing Xeon class 
+            processors and chipsets. 
+            <br></br>
+            &nbsp; <br></br>
+            I have earned a Web Development certificate from the University Of California, Irvine to enable 
+            me to leverage my existing programming skills to be a successful Full Stack developer by utilizing 
+            key web development technologies like HTML, CSS, Javascript, React, and Node.
+          </p>
+        </div>  
+      </div>
 
-        <div className="mt-5 container d-flex flex-column align-items-center justify-content-center">
-          <div className="row mt-5">
-            <div className="col mx-5 programLanguagesBox">
-              <div className="mt-4 text-center languagesListTitle">
-                Current
-              </div>
-              <div className="text-center languagesListTitle">
-                Languages & Frameworks
-              </div>
-              <ul className="mt-4 mx-5 px-3 text-left languagesList">
-                <li className="mt-3">&#9642; Javascript</li>
-                <li className="mt-3">&#9642; HTML + CSS</li>
-                <li className="mt-3">&#9642; Bootstrap</li>
-                <li className="mt-3">&#9642; React </li>
-                <li className="mt-3">&#9642; Node.js + NPM</li>
-                <li className="mt-3">&#9642; React Native</li>
-                <li className="mt-3">&#9642; SQL + MongoDB</li>
-              </ul>
-            </div>
-            <div className="col mx-5 programToolBox">
-              <div className="mt-4 text-center languagesListTitle">
-                Current
-              </div>
-              <div className="text-center languagesListTitle">
-                Tools
-              </div>
-              <ul className="mt-4 mx-5 px-3 text-left languagesList">
-                <li className="mt-3">&#9642; GIT</li>
-                <li className="mt-3">&#9642; BASH/Shell</li>
-                <li className="mt-3">&#9642; Visual Studio Code</li>
-                <li className="mt-3">&#9642; Figma</li>
-                <li className="mt-3">&#9642; Docker</li>
-                <li className="mt-3">&#9642; AWS</li>
-                <li className="mt-3">&#9642; Agile SCRUM</li>
-                <li className="mt-3">&#9642; FreeCAD</li>
-                <li className="mt-3">&#9642; Adobe Premiere Pro</li>
-              </ul>
-            </div>
-            <div className="col mx-5 programOldLanguagesBox">
-              <div className="mt-4 text-center languagesListTitle">
-                Previous
-              </div>
-              <div className="text-center languagesListTitle">
-                Languages & Tools
-              </div>
-              <ul className="mt-4 mx-5 text-left languagesList ">
-                <li className="mt-3">&#9642; Verilog/VHDL</li>
-                <li className="mt-3">&#9642; ATL (Advantest Language)</li>
-                <li className="mt-3">&#9642; Java</li>
-                <li className="mt-3">&#9642; C / Embedded C</li>
-                <li className="mt-3">&#9642; Batch Script</li>
-                <li className="mt-3">&#9642; Perl</li>
-                <li className="mt-3">&#9642; Python</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div className="w-100">
+        <DevTools />
+      </div>
 
         <div className="d-flex col justify-content-center">
           <div className="text-center py-5">
