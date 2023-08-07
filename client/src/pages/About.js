@@ -31,7 +31,7 @@ const About = () => {
                 <p className="mt-5 px-4">
                   Hello!
                 </p>
-                <p className="mt-3 px-5">
+                <p className="mt-3 px-5 aboutText">
                   &ensp; &ensp; My name is Clayton and I am passionate about using engineering to solve problems and create awesome products. Whether it’s building physical products like when I was working at <a href="https://www.intel.com/">Intel</a> to design, validate, and shipping world class processors and chipsets. Or designing and printing 3D parts at home to create solutions for everyday problems. I enjoy the creativity and problem solving required to create new and unique products.
                 </p>
               </div>
@@ -46,7 +46,7 @@ const About = () => {
               </div>
               <div className="col aboutMeSubBoxes2 mt-4 mx-5 pb-5">
                 <p className="mt-5 px-5">
-                  &ensp; &ensp; This love for problem solving also manifests itself in the outdoors  aswell, where I’m passionate about spending time outside and being active while growing my skills in these unique and challenging environments. During the summers I enjoy surfing, trail running, bouldering, and rock climbing. But winter time is my absolute favourite time of the year, where I enjoy resort snowboarding, splitboarding, ice climbing, high altitude mountaineering, or even multiday expeditions exploring remote regions of the western US. The opportunity to push myself physically while also growing technically in the mountain environment is something I’m passionate about.
+                  &ensp; &ensp; This love for problem solving also manifests itself in the outdoors  aswell, where I’m passionate about spending time outside and being active while growing my skills in these unique and challenging environments. During the summers I enjoy surfing, trail running, bouldering, and rock climbing. With winter time is my absolute favorite time of the year, where I enjoy resort snowboarding, splitboarding, ice climbing, high altitude mountaineering, or even multiday expeditions exploring remote regions of the western US. The opportunity to push myself physically while also growing technically in the mountain environment is something I’m passionate about.
                 </p>
               </div>
             </div>

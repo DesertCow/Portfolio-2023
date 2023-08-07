@@ -96,7 +96,7 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div className="row portfioloDemoBox2 mt-5">
+          <div className="row portfioloDemoBox2">
             <div className="col demoText portfioloSubBoxLeft text-center">
               <h1 className="mt-3 demoTitle">Chuckwagon</h1>
               <img className="img-fluid mt-3 mb-4 demoGIF1" src={require("../img/DemoGIFs/Chuckwagon_Demo1.gif")} alt="Surf Deck Demo"></img>
@@ -143,8 +143,6 @@ const Portfolio = () => {
                   <li className="mt-3">&#9642; Kitchen page allows employees to track, manage, and complete orders.</li>
                   <li className="mt-3">&#9642; Orders are stored in database thus enabling analytics to be created to return valuble information to business owners and increase profit margin.</li>
                 </ul>
-                {/* <div className="mt-5 projectDesTitles">Project Highlights</div>
-                <div className="mt-5 projectDesTitles">Project Improvements</div> */}
               </div>
             </div>
           </div>
@@ -158,29 +156,28 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <div className="d-flex col align-items-center justify-content-center">
-        <div className="flex-row mt-3 mb-4 align-items-center justify-content-center">
-          <img src={require('../img/Clayton_Skaggs_4.jpg')}
-          className="mt-3 contactPhoto"
-          width="350"
-          alt="Clayton Skaggs profile picture"/>  
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col mt-3 mb-4">
+              <img src={require('../img/Clayton_Skaggs_6.png')}
+              className="mt-3 contactPhoto"
+              // width="350"
+              alt="Clayton Skaggs profile picture"/>  
+          </div>
+
+          <div className="col px-5 portfolioAboutMe">
+            <p className='text-center mt-4 pb-4'>
+              I am a Full Stack web developer with a degree in Computer Engineering from Oklahoma State University 
+              and 5+ years experience working as a Product Development Engineer at Intel developing Xeon class 
+              processors and chipsets. 
+              <br></br>
+              &nbsp; <br></br>
+              I have earned a Web Development certificate from the University Of California, Irvine to enable 
+              me to leverage my existing programming skills to be a successful Full Stack developer by utilizing 
+              key web development technologies like HTML, CSS, Javascript, React, and Node.
+            </p>
+          </div> 
         </div>
-      </div>
-
-
-      <div className="d-flex col justify-content-center">
-        <div className="row portfolioAboutMe p-5 d-flex">
-          <p className='d-flex col text-center'>
-            I am a Full Stack web developer with a degree in Computer Engineering from Oklahoma State University 
-            and 5+ years experience working as a Product Development Engineer at Intel developing Xeon class 
-            processors and chipsets. 
-            <br></br>
-            &nbsp; <br></br>
-            I have earned a Web Development certificate from the University Of California, Irvine to enable 
-            me to leverage my existing programming skills to be a successful Full Stack developer by utilizing 
-            key web development technologies like HTML, CSS, Javascript, React, and Node.
-          </p>
-        </div>  
       </div>
 
       <div className="w-100">

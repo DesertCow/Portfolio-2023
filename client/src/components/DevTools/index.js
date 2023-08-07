@@ -10,10 +10,10 @@ const DevTools = () => {
           <div className="row mt-5">
             <div className="col mx-5 programLanguagesBox">
               <div className="mt-4 text-center languagesListTitle">
-                Current
+                Languages &
               </div>
-              <div className="text-center languagesListTitle">
-                Languages & Frameworks
+              <div className="mt-1 text-center languagesListTitle">
+                Frameworks
               </div>
               <ul className="mt-4 mx-5 px-3 text-left languagesList">
                 <li className="mt-3">&#9642; Javascript</li>
@@ -26,10 +26,10 @@ const DevTools = () => {
               </ul>
             </div>
             <div className="col mx-5 programToolBox">
-              <div className="mt-4 text-center languagesListTitle">
+              {/* <div className="mt-4 text-center languagesListTitle">
                 Current
-              </div>
-              <div className="text-center languagesListTitle">
+              </div> */}
+              <div className="mt-4 text-center languagesListTitle">
                 Tools
               </div>
               <ul className="mt-4 mx-5 px-3 text-left languagesList">
