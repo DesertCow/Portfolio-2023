@@ -3,6 +3,7 @@
 
 //* Component Import
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 import { Camera } from '@mui/icons-material'
 import SendIcon from '@mui/icons-material/Send';
@@ -42,7 +43,7 @@ const Contact = () => {
                   width="100"
                   alt="Instagram Icon"/>  
               </a>
-              <div className="container mb-5">
+              {/* <div className="container mb-5">
                 <div className="row mb-5">
                   <div className="col pb-5">
                       <div className="mt-5 flex-row align-items-center justify-content-center">
@@ -90,13 +91,17 @@ const Contact = () => {
                   </div>
                   <div className="w-100"></div>
                 </div>
-              </div>
+              </div> */}
 
             </div>
 
 
             
           </div>
+      </div>
+
+      <div className="w-100">
+        <Footer />
       </div>
 
     </div>

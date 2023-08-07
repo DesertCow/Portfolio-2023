@@ -170,8 +170,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .contactBox {
      width: 700px;
-     height: 700px;
-     margin-bottom: 150px;
+     height: 400px;
+     margin-bottom: 50px;
      /* padding-bottom: 50px; */
      background-color: var(--alt-color1);
      border-radius: 60px;

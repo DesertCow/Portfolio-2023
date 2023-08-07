@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player'
 
 //* Component Import
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 import React, { useState } from 'react';
 
@@ -66,6 +67,12 @@ const MediaVideo = () => {
         <div className="HeaderSpacer d-flex justify-content-center">
         </div>
       </div>
+
+
+      <div className="w-100">
+        <Footer />
+      </div>
+
     </div>
 
   )
