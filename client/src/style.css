@@ -244,6 +244,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      /* background-color: var(--alt-color1); */
      /* background-image: url("../src/img/Header_Colorful_Stretched.png"); */
      /* background-size: 1000px; */
+     background-image: url("../src/img/Header_Colorful_Stretched.png");
+     background-size: 900px;
      border-color: white;
      border-style: solid;
      border-width: 10px;
@@ -266,6 +268,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      /* margin-bottom: 100px; */
      /* background-color: #9cf6f6c2; */
      /* background-color: var(--alt-color2); */
+     background-image: url("../src/img/Header_Colorful_Stretched.png");
+     background-size: 900px;
      border-color: white;
      border-style: solid;
      border-width: 10px;
@@ -283,6 +287,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      /* margin-bottom: 100px; */
      /* background-color: #9cf6f6c2; */
      /* background-color: var(--alt-color3); */
+     background-image: url("../src/img/Header_Colorful_Stretched.png");
+     background-size: 900px;
      border-color: white;
      border-style: solid;
      border-width: 10px;
