@@ -85,7 +85,7 @@ const Portfolio = () => {
                 <ul className="projectSubDesText projectGoalText px-3 mt-3 text-center">
                   <li className="mt-3">&#9642; The app easily shows the current surf and weather conditons. </li>
                   <li className="mt-3">&#9642; Events are displayed to make it easy for memebers to get the information they need to plan and attend upcoming events.</li>
-                  <li className="mt-3">&#9642; The Surf Log allows memebers to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence when selecting a surfboard or surf spot for future surf sessions.</li>
+                  <li className="mt-3">&#9642; The Surf Log allows memebers to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence decision making when selecting a surfboard or surf spot for the next surf session.</li>
                   <li className="mt-3">&#9642; Surf hacks are listed to help new members with common surf problems. </li>
                   <li className="mt-3">&#9642; The Newport Surf map helps members easily pick the best spot to go surfing while visiting the club house based on a variety of factors and conditions.</li>
                   <li className="mt-3">&#9642; The comminity forum helps memebers find other memebrs to surf with, sell items to other memebers, and also to interact with memebers to build a sense of community.</li>
@@ -156,25 +156,22 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <div class="container">
+      <div class="container mt-5">
         <div class="row justify-content-center align-items-center">
           <div class="col mt-3 mb-4">
               <img src={require('../img/Clayton_Skaggs_6.png')}
               className="mt-3 contactPhoto"
-              // width="350"
               alt="Clayton Skaggs profile picture"/>  
           </div>
 
           <div className="col px-5 portfolioAboutMe">
-            <p className='text-center mt-4 pb-4'>
-              I am a Full Stack web developer with a degree in Computer Engineering from Oklahoma State University 
-              and 5+ years experience working as a Product Development Engineer at Intel developing Xeon class 
-              processors and chipsets. 
+            <p className='mt-4 pb-4'>
+              Hello my name is Clayton,<br></br>
+              &nbsp; <br></br>
+              I'm an enthusiastic engineer who is driven to develop innovative solutions. With experience in producing world class processors at Intel, I am adept at managing complex projects and ensuring they meet strict quality standards. My passion for engineering and commitment to quality make me an asset on any team striving to develop leading-edge products.
               <br></br>
               &nbsp; <br></br>
-              I have earned a Web Development certificate from the University Of California, Irvine to enable 
-              me to leverage my existing programming skills to be a successful Full Stack developer by utilizing 
-              key web development technologies like HTML, CSS, Javascript, React, and Node.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As a programmer, I excel at creating responsive and functional applications that address the needs of clients and drive business value through technical solutions. With a passion for problem-solving, I'm adept at developing software products from conception to release, delivering unique solutions that meet client requirements and exceed expectations. My skills in programming, testing and design enable me to produce products that are reliable, effective and tailored to specific business goals. With an overarching focus on delivering the best possible results for clients.
             </p>
           </div> 
         </div>
