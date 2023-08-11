@@ -1,6 +1,6 @@
 {
   "name": "portfolio2023",
-  "version": "0.0.1",
+  "version": "0.9.0",
   "description": "<div align=\"center\"> <h1>Clayton Skaggs</h1> <h2>Protfolio 2023</h2>  <p align=\"center\">   <img src=\"./dev_docs/Woodz_Selfie.jpeg\" height=\"450\" alt=\"Clayton Skaggs Woods Selfie\") </p> <h4>The goal of this project is to make a protfolio site to display my skills as a developer while also carving out a place on the internet to assemble all my content and media I have produced.</h4> </div>",
   "main": "index.js",
   "scripts": {
