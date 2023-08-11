@@ -10,7 +10,7 @@
 <br>
 
 <p align="center">
-  <a href="https://portfolio2023-production.up.railway.app/">https://portfolio2023-production.up.railway.app/</a>
+  <a href="https://www.claytonskaggs.dev/">https://www.claytonskaggs.dev/</a>
 <p/>
 
 <br>
@@ -41,10 +41,16 @@
 
 * <h3> Software Stack </h3>
 
-<br>
-
   * **Client** (React 18.2.0)
     * Packages
+      * @mikecousins/react-pdf (6.1.1)
+      * react (18.2.0)
+      * react-bootstrap (2.8.0)
+      * react-photo-album (2.2.2)
+      * react-player (2.12.0)
+      * react-router-dom (6.14.2)
+      * react-scripts (5.0.1)
+      * yet-another-react-lightbox (3.12.0)
 
 
 <br>
@@ -52,7 +58,7 @@
 * <h3> Hardware/Deploy </h3>
 
   * Railway (Host)
-    * Client:
+    * Client: https://www.claytonskaggs.dev/
     <br>
   * GitHub (Verison Control)
     * https://github.com/DesertCow/portfolio2023

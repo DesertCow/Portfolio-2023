@@ -1,0 +1,22 @@
+
+
+.mediaPageTitle {
+     font-family: "SF-Mono";
+     font-size: 50px;
+     border-style: solid;
+     border-width: 10px;
+}
+
+.HeaderGallerySpacer {
+     margin-top: 125px;
+     padding-top: 50px;
+     /* margin-bottom: 100px; */
+}
+
+.videoListMargin {
+     margin-right: 1%;
+}
+
+.blogFooterSpacer {
+     margin-top: 25%;
+}

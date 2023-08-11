@@ -1,5 +1,3 @@
-
-
 /* 
 ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___        
  _____/\\\////////____/\\\/////////\\\___/\\\/////////\\\_       
@@ -67,11 +65,10 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 
-/*? Color Variables */
+/*? Color/Font Variables */
 
 :root {
   --main-font: "NextStep-1";
-  /* --text-font: "Arvo-Reg" */
   --mainBG-color: #181818;
   --alt-color1: #0ba6d99a;
   --alt-color2: #d34846bb;
@@ -80,33 +77,15 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 
-
 /*? ============= Home Page ============= */
 
-.homePageMainPhoto {
-     margin-top: 100px;
-     width: 70%;
-     margin-bottom: 50px;
-     border-radius: 150px;
-     -webkit-border-radius: 150px;
-     -moz-border-radius: 150px;
-     -ms-border-radius: 150px;
-     -o-border-radius: 150px;
-}
-
 .divMain {
-     /* background-color: #75b9be9d; */
-     /* background-color: #181818; */
      background-color: var(--mainBG-color);
      color: white;
 }
 
 .HeaderSpacer{
      margin-top: 125px;
-}
-
-.videoListMargin {
-     margin-right: 1%;
 }
 
 .homeHeaderSpacer{
@@ -151,7 +130,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .homeLinkButtons:hover {
      background-color: white;
-     background-image: url("../src/img/Header_Colorful.jpg");
+     background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
      background-size: 730px;
      /* color: white; */
      border-color: black;
@@ -163,88 +142,165 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      border-style: solid;
 }
 
-/*? ============= Contact Page ============= */
+/*? ============= Dev Portfolio ============= */
 
-.contactHeaderText {
-     font-family: var(--main-font);
-     font-size: 60px;
-     color: black;
+.portfolioMainBox {
+     /* background-color: #ef8f46d3; */
+     width: 80%;
+     height: 510px;
+     border-style: solid;
+     border-width: 5px;
 }
 
-.contactBox {
-     width: 700px;
-     height: 300px;
-     margin-bottom: 50px;
-     /* padding-bottom: 50px; */
-     /* background-color: var(--alt-color1); */
-     background-image: url("../src/img/Header_Colorful.jpg");
-     background-size: 2500px;
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
+.portfioloDemoBox1 {
+     background-color: var(--alt-color2b);
+     background-size: 730px;
+     width: 120%;
+     border-style: solid;
+     border-width: 5px;
 }
 
-.contactFont {
-     
+.portfioloDemoBox2 {
+     background-color: var(--alt-color1);
+     background-size: 730px;
+     width: 120%;
+     border-style: solid;
+     border-width: 5px;
+}
+
+.portfioloSubBoxLeft {
+     border-width: 0px 5px 0px 0px;
+     border-style: solid;
+     max-width: 400px;
+}
+
+.portfioloTitle {
      font-size: 50px;
+     font-family: "SF-Mono";
+     border-style: solid;
+     border-width: 10px;
 }
 
-.emailFont{
-     font-size: 35px;
+.portfioloAppTitle1 {
+     margin-top: 20px;
+     font-size: 40px;
+     font-family: "SF-Mono";
+     border-style: dashed;
+     border-width: 10px;
 }
 
-.emailLinkText{
+.portfioloAppTitle2 {
+     margin-left: 120px;
+     font-size: 40px;
+     font-family: "SF-Mono";
+     border-style: dashed;
+     border-width: 10px;
+}
+
+.demoGIF1{
+     justify-content: center;
+     width: 300px;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+}
+
+a { color: inherit; } 
+
+.demoTitle {
+     font-size: 30px;
+}
+
+.demoText {
+     font-family: "SF-Mono";
      font-size: 25px;
-     text-decoration: none !important;
 }
 
-.devAboutMeBox {
-     /* margin-left: 15%; */
-     width: 1600px;
-}
-
-.contactPhoto {
-     width: 450px;
-     /* margin-left: 50%; */
+.portfolioAboutMe {
+     max-width: 1400px;
+     width: 1200px;
+     background-image: url("../src/img/headerBackground/Header_Colorful_Wide.png");
+     background-size: 1400px;
      border-radius: 50px;
      -webkit-border-radius: 50px;
      -moz-border-radius: 50px;
      -ms-border-radius: 50px;
      -o-border-radius: 50px;
+     font-family: "Arvo-Reg";
+     font-size: 19px;
 }
 
-.contactLocation {
-     font-size: 30px;
+.resumeDownloadText {
      font-family: "SF-Mono";
+     font-size: 45px;
+     border-style: solid;
+     width: 100%;
+     border-width: 10px;
 }
 
-.timeZoneText {
-     font-size: 20px;
+.PDFViewer {
+     width: 900px;
+}
+
+.resumeDownloadBox {
+     padding-top: 100px;
+     padding-bottom: 50px;
+}
+
+.softwareStackBox {
      font-family: "SF-Mono";
+     font-size: 28px;
+     border-width: 0px 5px 0px 0px;
+     border-style: solid;
 }
 
-.contactEmail {
-     font-size: 30px;
+.softwareStackList {
+     text-align:left;
+     font-size: 15px;
+}
+
+.projectDesTitles {
+     text-align:center;
      font-family: "SF-Mono";
+     font-size: 28px;
 }
 
-.contactSpacer {
-     padding-top: 150px;
+.projectDesText {
+     font-family: "Arvo-Bold";
+     font-size: 15px;
+}
+
+.projectSubDesText {
+     font-family: "Arvo-Reg";
+     font-size: 14px;
+}
+
+.projectGoalText{
+     margin-left: 10%;
+     font-size: 13px;
+     width: 80%;
+}
+
+.railwayLogo {
+     height: 50px;
+     border-radius: 15px;
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     -ms-border-radius: 15px;
+     -o-border-radius: 15px;
+}
+
+.featuredProjects {
+     margin-right: 10%;
 }
 
 /*? ============= About Me Page ============= */
 
-
 .aboutMeSubBoxes {
      width: 900px;
-     /* margin-bottom: 100px; */
-     /* background-color: #9cf6f6c2; */
-     /* background-color: var(--alt-color1); */
-     /* background-image: url("../src/img/Header_Colorful_Stretched.png"); */
-     /* background-size: 1000px; */
-     background-image: url("../src/img/Header_Colorful_Stretched.png");
+     background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
      background-size: 900px;
      border-color: white;
      border-style: solid;
@@ -259,16 +315,9 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      font-size: 20px;
 }
 
-.aboutText {
-     /* font-family: Inter; */
-}
-
 .aboutMeSubBoxes2 {
      width: 900px;
-     /* margin-bottom: 100px; */
-     /* background-color: #9cf6f6c2; */
-     /* background-color: var(--alt-color2); */
-     background-image: url("../src/img/Header_Colorful_Stretched.png");
+     background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
      background-size: 900px;
      border-color: white;
      border-style: solid;
@@ -284,10 +333,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .aboutMeSubBoxes3 {
      width: 900px;
-     /* margin-bottom: 100px; */
-     /* background-color: #9cf6f6c2; */
-     /* background-color: var(--alt-color3); */
-     background-image: url("../src/img/Header_Colorful_Stretched.png");
+     background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
      background-size: 900px;
      border-color: white;
      border-style: solid;
@@ -308,6 +354,13 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      border-width: 10px;
 }
 
+.mediaPageTitle {
+     font-family: "SF-Mono";
+     font-size: 50px;
+     border-style: solid;
+     border-width: 10px;
+}
+
 .aboutRightBox {
      margin-right: 10%;
 }
@@ -315,53 +368,6 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 .aboutLeftBox {
      margin-left: 10%;
      margin-right: 10%;
-}
-
-
-.programLanguagesBox {
-     width: 320px;
-     height: 380px;
-     margin-bottom: 100px;
-     background-color: var(--alt-color1);
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
-}
-
-.programToolBox {
-     width: 320px;
-     height: 380px;
-     margin-bottom: 100px;
-     background-color: var(--alt-color3);
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
-}
-
-.programOldLanguagesBox {
-     width: 600px;
-     height: 380px;
-     margin-bottom: 100px;
-     background-color: var(--alt-color2);
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
-}
-
-.languagesList{
-     font-size: 14px;
-     font-family: "SF-Mono";
-}
-
-.languagesListTitle{
-     font-size: 23px;
-     font-family: "SF-Mono";
 }
 
 .HeaderAboutSpacer {
@@ -430,188 +436,74 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      -o-border-radius: 25px;
 }
 
-/*? ============= Dev Portfolio ============= */
 
-.portfolioMainBox {
-     /* background-color: #ef8f46d3; */
-     width: 80%;
-     height: 510px;
-     border-style: solid;
-     border-width: 5px;
+/*? ============= Contact Page ============= */
+
+.contactHeaderText {
+     font-family: var(--main-font);
+     font-size: 60px;
+     color: black;
 }
 
-.portfioloDemoBox1 {
-     background-color: var(--alt-color2b);
-     /* background-image: url("../src/img/Header_Colorful.jpg"); */
-     background-size: 730px;
-     width: 120%;
-     /* height: 450px; */
-     border-style: solid;
-     border-width: 5px;
-}
-
-.portfioloDemoBox2 {
-     background-color: var(--alt-color1);
-     /* margin-top: 10px; */
-     /* background-image: url("../src/img/Header_Colorful.jpg"); */
-     background-size: 730px;
-     width: 120%;
-     /* height: 450px; */
-     border-style: solid;
-     border-width: 5px;
-}
-
-.portfioloSubBoxLeft {
-     border-width: 0px 5px 0px 0px;
-     border-style: solid;
-     max-width: 400px;
-     /* border-width: 5px; */
-}
-
-.portfioloSubBoxRight {
-     /* border-right: 5px; */
-     /* border-style: solid; */
-     /* border-width: 5px; */
-}
-
-.portfioloTitle {
-     /* width: 550px; */
-     font-size: 50px;
-     font-family: "SF-Mono";
-     border-style: solid;
-     border-width: 10px;
-}
-
-.portfioloAppTitle1 {
-     margin-top: 20px;
-     font-size: 40px;
-     font-family: "SF-Mono";
-     border-style: dashed;
-     border-width: 10px;
-}
-
-.portfioloAppTitle2 {
-     margin-left: 120px;
-     font-size: 40px;
-     font-family: "SF-Mono";
-     border-style: dashed;
-     border-width: 10px;
-}
-
-.demoGIF1{
-     /*margin-top: 25%;*/
-     justify-content: center;
-     width: 300px;
-     border-radius: 10px;
-     -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-     -ms-border-radius: 10px;
-     -o-border-radius: 10px;
-}
-
-a { color: inherit; } 
-
-.demoTitle {
-     font-size: 30px;
-}
-
-.demoText {
-     font-family: "SF-Mono";
-     font-size: 25px;
-}
-
-.portfolioAboutMe {
-     max-width: 1400px;
-     width: 1200px;
-     /* height: 230px; */
+.contactBox {
+     width: 700px;
+     height: 300px;
+     margin-bottom: 50px;
+     /* padding-bottom: 50px; */
      /* background-color: var(--alt-color1); */
-     background-image: url("../src/img/Header_Colorful_Wide.png");
-     background-size: 1400px;
+     background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
+     background-size: 2500px;
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+}
+
+.contactFont {
+     
+     font-size: 50px;
+}
+
+.emailFont{
+     font-size: 35px;
+}
+
+.emailLinkText{
+     font-size: 25px;
+     text-decoration: none !important;
+}
+
+.devAboutMeBox {
+     /* margin-left: 15%; */
+     width: 1600px;
+}
+
+.contactPhoto {
+     width: 450px;
+     /* margin-left: 50%; */
      border-radius: 50px;
      -webkit-border-radius: 50px;
      -moz-border-radius: 50px;
      -ms-border-radius: 50px;
      -o-border-radius: 50px;
-     font-family: "Arvo-Reg";
-     font-size: 19px;
 }
 
-.resumeDownloadText {
+.contactLocation {
+     font-size: 30px;
      font-family: "SF-Mono";
-     font-size: 45px;
-     border-style: solid;
-     width: 100%;
-     border-width: 10px;
 }
 
-.PDFViewer {
-     width: 900px;
-     
-     /* height: 1200px; */
-}
-
-.resumeDownloadBox {
-     padding-top: 100px;
-     padding-bottom: 50px;
-}
-
-.devLinksBox {
-     /* width: 100%; */
-     border-style: solid;
-     border-width: 10px;
-     background-image: url("../src/img/Header_Colorful.jpg");
-}
-
-.softwareStackBox {
+.timeZoneText {
+     font-size: 20px;
      font-family: "SF-Mono";
-     font-size: 28px;
-     border-width: 0px 5px 0px 0px;
-     border-style: solid;
-     /* border-width: 10px; */
 }
 
-.softwareStackList {
-     text-align:left;
-     font-size: 15px;
-}
-
-.projectDesTitles {
-     text-align:center;
+.contactEmail {
+     font-size: 30px;
      font-family: "SF-Mono";
-     font-size: 28px;
 }
 
-.projectDesText {
-     font-family: "Arvo-Bold";
-     font-size: 15px;
-}
-
-.projectSubDesText {
-     font-family: "Arvo-Reg";
-     font-size: 14px;
-}
-
-.projectGoalText{
-     margin-left: 10%;
-     font-size: 13px;
-     width: 80%;
-}
-
-.railwayLogo {
-     height: 50px;
-     border-radius: 15px;
-     -webkit-border-radius: 15px;
-     -moz-border-radius: 15px;
-     -ms-border-radius: 15px;
-     -o-border-radius: 15px;
-}
-
-.featuredProjects {
-     margin-right: 10%;
-}
-
-.HeaderGallerySpacer {
-     margin-top: 125px;
-     padding-top: 50px;
-     /* margin-bottom: 100px; */
+.contactSpacer {
+     padding-top: 150px;
 }

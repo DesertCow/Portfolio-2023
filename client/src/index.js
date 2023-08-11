@@ -1,8 +1,5 @@
+
 import App from './App';
-// import 'bootstrap';
-// import "./style.css";
-// import "./reset.css";
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import { createRoot } from 'react-dom/client';
 
 
@@ -15,3 +12,5 @@ root.render(
       <App />
   </div>
 );
+
+//!========================= EOF =========================

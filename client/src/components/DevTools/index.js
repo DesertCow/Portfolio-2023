@@ -1,5 +1,5 @@
 
-
+import "./DevTools.css";
 
 
 const DevTools = () => {
@@ -26,9 +26,6 @@ const DevTools = () => {
               </ul>
             </div>
             <div className="col mx-5 programToolBox">
-              {/* <div className="mt-4 text-center languagesListTitle">
-                Current
-              </div> */}
               <div className="mt-4 text-center languagesListTitle">
                 Tools
               </div>
