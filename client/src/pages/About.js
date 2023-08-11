@@ -32,7 +32,7 @@ const About = () => {
                   Hello!
                 </p>
                 <p className="mt-3 px-5 aboutText">
-                  &ensp; &ensp; My name is Clayton and I am passionate about using engineering to solve problems and create awesome products. Whether it’s building physical products like when I was working at <a href="https://www.intel.com/">Intel</a> to design, validate, and shipping world class processors and chipsets. Or designing and printing 3D parts at home to create solutions for everyday problems. I enjoy the creativity and problem solving required to create new and unique products.
+                  &ensp; &ensp; My name is Clayton and I am a computer engineer with a passion for solving problems and creating amazing products. My experience working at <a href="https://www.intel.com/">Intel</a> to design and ship world class processors and has given me the skills to produce creative solutions with a focus on exceptional quaility. Transitioning these skills into the full stack development space allows me to design, build, and deploy high quaility applications that create real business values for my clients.
                 </p>
               </div>
               <div className="col">
@@ -46,7 +46,7 @@ const About = () => {
               </div>
               <div className="col aboutMeSubBoxes2 mt-4 mx-5 pb-5">
                 <p className="mt-5 px-5">
-                  &ensp; &ensp; This love for problem solving also manifests itself in the outdoors  aswell, where I’m passionate about spending time outside and being active while growing my skills in these unique and challenging environments. During the summers I enjoy surfing, trail running, bouldering, and rock climbing. With winter time is my absolute favorite time of the year, where I enjoy resort snowboarding, splitboarding, ice climbing, high altitude mountaineering, or even multiday expeditions exploring remote regions of the western US. The opportunity to push myself physically while also growing technically in the mountain environment is something I’m passionate about.
+                  &ensp; &ensp; I am passionate about problem solving both in my professional and personal life. This passion extends to the outdoors where I enjoy being active and testing my skills in challenging environments. During the summer months I enjoy surfing, trail running, bouldering, and rock climbing. While during the winter I enjoy splitboarding, ice climbing, resort snowboarding, and winter climbing/skiing expedtions. Spending time in the wilderness and pushing myself out of my comfort zone not only provides a physical challenge but also helps me further hone my problem-solving skills.
                 </p>
               </div>
             </div>
@@ -54,7 +54,7 @@ const About = () => {
             <div className="row aboutLeftBox align-items-center justify-content-start my-5">
               <div className="col aboutMeSubBoxes3 mt-4 mx-5 pb-5">
                 <p className="mt-5 px-5">
-                  &ensp; &ensp; More recently my career ambitions have shifted from hardware engineering to software development. At <a href="https://www.intel.com/">Intel</a> I was working on the products that push cloud computing forward and while I have an intricate understanding of the hardware side of the cloud. The depth of my understanding of CPU’s is down to the binary level which is required to write test content to validate cutting edge Gen4 interfaces like PCI-E and USB. As I progressed in my career at <a href="https://www.intel.com/">Intel</a> I became more interested in the software that enables developers to harness the power of the cloud to produce software products that power our everyday life.
+                  &ensp; &ensp; Though I gained valuable experience as a hardware engineer at <a href="https://www.intel.com/">Intel</a>, my career ambitions have shifted towards software development, specifically in the cloud computing industry. Although I possess a deep understanding of the hardware side of the cloud, I now recognize the importance and potential of software development. This shift in focus has led me to pursue opportunities in software development and broaden my skillset as a full stack developer.
                 </p>
               </div>
               <div className="col">
@@ -68,7 +68,7 @@ const About = () => {
               </div>
               <div className="aboutMeSubBoxes mt-4 mx-5 pb-5">
                 <p className="mt-5 px-5">
-                  &ensp; &ensp; My first foray into this field was while getting my <a href="https://aws.amazon.com/certification/certified-developer-associate/">AWS Certified Developer</a> and <a href="https://aws.amazon.com/certification/certified-cloud-practitioner/">AWS Certified Cloud Practitioner</a> certifications from Amazon. These truly opened my eyes to the power of the cloud and the fast paced evolution of technologies in this space. Armed with a high level understanding of AWS and the ability to deploy apps and websites to the internet my focus turned to how to create applications and websites.
+                  &ensp; &ensp; Acquiring my <a href="https://aws.amazon.com/certification/certified-developer-associate/">AWS Certified Developer</a> and <a href="https://aws.amazon.com/certification/certified-cloud-practitioner/">AWS Certified Cloud Practitioner</a> certifications from Amazon served as my entry point into this industry, granting me a newfound understanding for the agility and potential of cloud technology. These certifications granted me an overview of AWS, enabling a deeper understanding of the rapidly-evolving landscape of cloud technology.
                 </p>
               </div>
             </div>
@@ -76,7 +76,7 @@ const About = () => {
             <div className="row aboutLeftBox align-items-center justify-content-start my-5">
               <div className="aboutMeSubBoxes2 mt-4 mx-5 pb-5">
                 <p className="mt-5 px-5">
-                  &ensp; &ensp; I quickly recognized the power of React and how it was enabling developers to build complex apps with agility and speed. At first I struggled to wrap my head around this language and development environment. Though I have learned over a dozen programming languages in my career, React required me to rethink how I approached programming problems. After attending a coding boot camp at UC Irvine I was finally able to build the foundation necessary to find success and build complex and functional applications utilizing the React framework.
+                  &ensp; &ensp; Upon realizing the potential of React in facilitating the creation of complex apps, I initially found it challenging to comprehend its programming language and environment. Despite having proficiency in over twelve programming languages, React posed a unique learning curve that demanded my full attention and effort. After attending a coding boot camp at UC Irvine I was able to overcome this technical deficient and build the foundation necessary to find success and build complex and functional applications utilizing the React framework.
                 </p>
               </div>
               <div className="col">
@@ -90,7 +90,7 @@ const About = () => {
               </div>
               <div className="aboutMeSubBoxes3 mt-4 mx-5 pb-5">
                 <p className="mt-5 px-5">
-                  &ensp; &ensp; Today I continue to push myself to grow both my depth and breadth as a developer by utilizing the following technologies and tools to produce applications that return business value while using DevOps principles and the Scrum/Agile development process to produce a sustainable and deployable code cycle.
+                  &ensp; &ensp; As a developer, I strive to constantly improve and expand my skill set. I achieve this by utilizing new technologies and tools to create applications that provide tangible benefits to clients. To ensure that my code is both maintainable and deployable, I adhere to DevOps principles. Through this approach, I am able to produce high-quality code that delivers real value while constantly pushing myself to learn and grow as a developer.
                 </p>
               </div>
             </div>

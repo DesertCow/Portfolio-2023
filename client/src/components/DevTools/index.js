@@ -21,8 +21,8 @@ const DevTools = () => {
                 <li className="mt-3">&#9642; Bootstrap</li>
                 <li className="mt-3">&#9642; React </li>
                 <li className="mt-3">&#9642; Node.js + NPM</li>
-                <li className="mt-3">&#9642; React Native</li>
-                <li className="mt-3">&#9642; SQL + MongoDB</li>
+                <li className="mt-3">&#9642; React Native + Expo</li>
+                <li className="mt-3">&#9642; SQL & MongoDB</li>
               </ul>
             </div>
             <div className="col mx-5 programToolBox">

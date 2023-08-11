@@ -206,7 +206,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .contactPhoto {
-     width: 400px;
+     width: 450px;
      /* margin-left: 50%; */
      border-radius: 50px;
      -webkit-border-radius: 50px;
@@ -244,6 +244,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      /* background-color: var(--alt-color1); */
      /* background-image: url("../src/img/Header_Colorful_Stretched.png"); */
      /* background-size: 1000px; */
+     background-image: url("../src/img/Header_Colorful_Stretched.png");
+     background-size: 900px;
      border-color: white;
      border-style: solid;
      border-width: 10px;
@@ -266,6 +268,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      /* margin-bottom: 100px; */
      /* background-color: #9cf6f6c2; */
      /* background-color: var(--alt-color2); */
+     background-image: url("../src/img/Header_Colorful_Stretched.png");
+     background-size: 900px;
      border-color: white;
      border-style: solid;
      border-width: 10px;
@@ -283,6 +287,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      /* margin-bottom: 100px; */
      /* background-color: #9cf6f6c2; */
      /* background-color: var(--alt-color3); */
+     background-image: url("../src/img/Header_Colorful_Stretched.png");
+     background-size: 900px;
      border-color: white;
      border-style: solid;
      border-width: 10px;
@@ -446,7 +452,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .portfioloDemoBox2 {
      background-color: var(--alt-color1);
-     margin-top: 100px;
+     /* margin-top: 10px; */
      /* background-image: url("../src/img/Header_Colorful.jpg"); */
      background-size: 730px;
      width: 120%;
@@ -476,6 +482,22 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      border-width: 10px;
 }
 
+.portfioloAppTitle1 {
+     margin-top: 20px;
+     font-size: 40px;
+     font-family: "SF-Mono";
+     border-style: dashed;
+     border-width: 10px;
+}
+
+.portfioloAppTitle2 {
+     margin-left: 120px;
+     font-size: 40px;
+     font-family: "SF-Mono";
+     border-style: dashed;
+     border-width: 10px;
+}
+
 .demoGIF1{
      /*margin-top: 25%;*/
      justify-content: center;
@@ -499,7 +521,8 @@ a { color: inherit; }
 }
 
 .portfolioAboutMe {
-     /* max-width: 1000px; */
+     max-width: 1400px;
+     width: 1200px;
      /* height: 230px; */
      /* background-color: var(--alt-color1); */
      background-image: url("../src/img/Header_Colorful_Wide.png");
@@ -510,7 +533,7 @@ a { color: inherit; }
      -ms-border-radius: 50px;
      -o-border-radius: 50px;
      font-family: "Arvo-Reg";
-     font-size: 18px;
+     font-size: 19px;
 }
 
 .resumeDownloadText {
