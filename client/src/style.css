@@ -452,7 +452,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .portfioloDemoBox2 {
      background-color: var(--alt-color1);
-     margin-top: 100px;
+     /* margin-top: 10px; */
      /* background-image: url("../src/img/Header_Colorful.jpg"); */
      background-size: 730px;
      width: 120%;
@@ -479,6 +479,22 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      font-size: 50px;
      font-family: "SF-Mono";
      border-style: solid;
+     border-width: 10px;
+}
+
+.portfioloAppTitle1 {
+     margin-top: 20px;
+     font-size: 40px;
+     font-family: "SF-Mono";
+     border-style: dashed;
+     border-width: 10px;
+}
+
+.portfioloAppTitle2 {
+     margin-left: 120px;
+     font-size: 40px;
+     font-family: "SF-Mono";
+     border-style: dashed;
      border-width: 10px;
 }
 
