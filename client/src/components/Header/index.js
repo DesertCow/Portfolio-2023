@@ -3,7 +3,6 @@
 import { useNavigate } from "react-router-dom";
 
 //* Bootstrap Import
-import bootstrap from 'bootstrap'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';

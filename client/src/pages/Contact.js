@@ -3,9 +3,8 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-//* Icon Import
-import { Camera } from '@mui/icons-material'
-import SendIcon from '@mui/icons-material/Send';
+
+
 
 const Contact = () => {
 
@@ -55,7 +54,7 @@ const Contact = () => {
       </div>
 
     </div>
-    
+
   )
 }
 
