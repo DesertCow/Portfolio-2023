@@ -1,0 +1,47 @@
+
+
+.languagesListTitle{
+     font-size: 23px;
+     font-family: "SF-Mono";
+}
+
+.languagesList{
+     font-size: 14px;
+     font-family: "SF-Mono";
+}
+
+.programLanguagesBox {
+     width: 320px;
+     height: 380px;
+     margin-bottom: 100px;
+     background-color: var(--alt-color1);
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+}
+
+.programToolBox {
+     width: 320px;
+     height: 380px;
+     margin-bottom: 100px;
+     background-color: var(--alt-color3);
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+}
+
+.programOldLanguagesBox {
+     width: 600px;
+     height: 380px;
+     margin-bottom: 100px;
+     background-color: var(--alt-color2);
+     border-radius: 60px;
+     -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+     -ms-border-radius: 60px;
+     -o-border-radius: 60px;
+}

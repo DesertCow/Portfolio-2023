@@ -1,8 +1,12 @@
 
+//* CSS Import
+import "./_MediaPages.css";
 
 //* Component Import
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+
+
 
 
 const Blog = () => {
@@ -16,11 +20,11 @@ const Blog = () => {
       </header>
 
       <div className="col d-flex align-items-center justify-content-center HeaderGallerySpacer">
-        <h1 className="my-4 mb-5 p-3 aboutMeTitle ">Blog</h1>
+        <h1 className="my-4 mb-5 p-3 mediaPageTitle">Blog</h1>
       </div>
 
 
-      <div className="w-100">
+      <div className="w-100 blogFooterSpacer">
         <Footer />
       </div>
 
