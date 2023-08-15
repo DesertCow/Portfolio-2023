@@ -33,3 +33,14 @@
   font-size: 60px;
   color: white;
 }
+
+.Logo {
+  margin-top: 12px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
