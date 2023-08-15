@@ -20,14 +20,13 @@ const Header = () => {
   const handleLogoClick = async (event) => {
     event.preventDefault();
 
-    console.log("Logo Clicked");
     navigate("/home");
   };
 
   return (
 
     <header className="Header d-flex justify-content-between ">
-      <img src={require("../../img/Empty.png")} onClick={(event) => handleLogoClick(event)} className="Logo my-2 mx-2" alt="logo" />
+      <img src={require("../../img/Chip_Icon_2023.png")} onClick={(event) => handleLogoClick(event)} className="Logo mx-3" alt="Computer Chip Logo" />
       <Navbar className="d-flex">
         <Container fluid className="mx-5">
 
