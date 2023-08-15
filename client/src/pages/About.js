@@ -42,7 +42,7 @@ const About = () => {
             </div>
             <div className="col aboutMeSubBoxes2 mt-4 mx-5 pb-5">
               <p className="mt-5 px-5">
-                &ensp; &ensp; I am passionate about problem solving both in my professional and personal life. This passion extends to the outdoors where I enjoy being active and testing my skills in challenging environments. During the summer months I enjoy surfing, trail running, bouldering, and rock climbing. While during the winter I enjoy splitboarding, ice climbing, resort snowboarding, and winter climbing/skiing expedtions. Spending time in the wilderness and pushing myself out of my comfort zone not only provides a physical challenge but also helps me further hone my problem-solving skills.
+                &ensp; &ensp; I am passionate about problem solving both in my professional and personal life. This passion extends to the outdoors where I enjoy being active and testing my skills in challenging environments. During the summer months I enjoy surfing, trail running, bouldering, and rock climbing. During the winter I enjoy splitboarding, ice climbing, resort snowboarding and winter climbing/skiing expeditions. Spending time in the wilderness and pushing myself out of my comfort zone not only provides a physical challenge but also helps me further hone my problem-solving skills.
               </p>
             </div>
           </div>
@@ -64,7 +64,7 @@ const About = () => {
             </div>
             <div className="aboutMeSubBoxes mt-4 mx-5 pb-5">
               <p className="mt-5 px-5">
-                &ensp; &ensp; Acquiring my <a href="https://aws.amazon.com/certification/certified-developer-associate/">AWS Certified Developer</a> and <a href="https://aws.amazon.com/certification/certified-cloud-practitioner/">AWS Certified Cloud Practitioner</a> certifications from Amazon served as my entry point into this industry, granting me a newfound understanding for the agility and potential of cloud technology. These certifications granted me an overview of AWS, enabling a deeper understanding of the rapidly-evolving landscape of cloud technology.
+                &ensp; &ensp; Acquiring my <a href="https://aws.amazon.com/certification/certified-developer-associate/">AWS Certified Developer</a> and <a href="https://aws.amazon.com/certification/certified-cloud-practitioner/">AWS Certified Cloud Practitioner</a> certifications from Amazon served as my entry point into this industry, granted me a newfound understanding for the agility and potential of cloud technology. These certifications granted me an overview of AWS, enabling a deeper understanding of the rapidly-evolving landscape of cloud technology.
               </p>
             </div>
           </div>

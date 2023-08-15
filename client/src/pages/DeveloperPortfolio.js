@@ -106,14 +106,14 @@ const Portfolio = () => {
                     about the club.</p>
                   
                   <div className="mt-5 projectDesTitles">Project Goal</div>
-                  <p className="mt-3 px-5 projectDesText text-center">The goal of this application to motivate to go surf by providing them with the all the infomation they need to have a great surf session.</p>
+                  <p className="mt-3 px-5 projectDesText text-center">The goal of this application to motivate users to go surf by providing them with the all the infomation they need to have a great surf session.</p>
                   <ul className="projectSubDesText projectGoalText px-3 mt-3 text-center">
                     <li className="mt-3">&#9642; The app shows the current surf and weather conditons. </li>
-                    <li className="mt-3">&#9642; Events are displayed to make it easy for memebers to get the information they need to plan and attend upcoming events.</li>
-                    <li className="mt-3">&#9642; The Surf Log allows memebers to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence decision making when selecting a surfboard or surf spot for the next surf session.</li>
+                    <li className="mt-3">&#9642; Events are displayed to make it easy for members to get the information they need to plan and attend upcoming events.</li>
+                    <li className="mt-3">&#9642; The Surf Log allows members to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence decision making when selecting a surfboard or surf spot for the next surf session.</li>
                     <li className="mt-3">&#9642; Surf hacks are listed to help new members with common surf problems. </li>
                     <li className="mt-3">&#9642; The Newport Surf map helps members easily pick the best spot to go surfing while visiting the club house.</li>
-                    <li className="mt-3">&#9642; The comminity forum helps memebers find other memebrs to surf with, sell items to other memebers, and also to interact with memebers to build a sense of community.</li>
+                    <li className="mt-3">&#9642; The community forum helps members find others to surf with, sell items and also to interact with one another to build a sense of community.</li>
                   </ul>
                 </div>
               </div>
@@ -162,17 +162,17 @@ const Portfolio = () => {
 
                 <div className="col">
                   <div className="mt-3 projectDesTitles">Project Overview</div>
-                    <p className="mt-3 px-5 projectDesText text-center">Chuckwagon is A comprehensive Food Truck management application with a customer ordering App and a separate "In Kitchen" App (React) for order execution and application administration built using MongoDB, Express, React, and NodeJS (MERN Stack).</p>
+                    <p className="mt-3 px-5 projectDesText text-center">Chuckwagon is a comprehensive Food Truck management application with a customer ordering App and a separate "In Kitchen" App (React) for order execution and application administration built using MongoDB, Express, React, and NodeJS (MERN Stack).</p>
                   
                   <div className="mt-5 projectDesTitles">Project Goal</div>
                   <p className="mt-3 px-5 projectDesText text-center">Application that could be deploy to the internet or run locally on a food truck and served via WiFi to enable customers to order food without needing an internet connection.</p>
                   <ul className="projectSubDesText projectGoalText px-3 mt-3 text-center">
                     <li className="mt-3">&#9642; Enable customers to view the menu and add items to the cart for checkout/purchase.</li>
-                    <li className="mt-3">&#9642; Customers also create an account that provides an email for marketing purposes thus enabling higher likelyhood of repeat customers</li>
-                    <li className="mt-3">&#9642; Menu is dynamically served from SQL database enabling realtime item availabity to adjusted as items availabity is exhausted.</li>
+                    <li className="mt-3">&#9642; Customers also create an account that provides an email for marketing purposes thus enabling higher likelihood of repeat customers</li>
+                    <li className="mt-3">&#9642; Menu is dynamically served from SQL database enabling realtime item availabity to adjust as items availabity is exhausted.</li>
                     <li className="mt-3">&#9642; Customers can also track the status of their order via the app. <br></br>(Submitted/WIP/Ready/Picked Up)</li>
                     <li className="mt-3">&#9642; Kitchen page allows employees to track, manage, and complete orders.</li>
-                    <li className="mt-3">&#9642; Orders are stored in database thus enabling analytics to be created to return valuble information to business owners and increase profit margin.</li>
+                    <li className="mt-3">&#9642; Orders are stored in database, thus enabling analytics to be created to return valuable information to business owners and increase profit margin.</li>
                   </ul>
                 </div>
 
@@ -201,10 +201,10 @@ const Portfolio = () => {
               <p className='mt-4 pb-4'>
                 Hello my name is Clayton,<br></br>
                 &nbsp; <br></br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm an enthusiastic computer engineer who has extensive experience developing innovative solutions. With experience in producing world class processors at Intel, I am adept at managing complex projects and ensuring they meet strict quality standards. My passion for engineering and a commitment to quality make me an asset on any team striving to develop software solutions that add real business value for customers.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm an enthusiastic computer engineer who has extensive experience developing innovative solutions. With experience in producing world class processors at Intel, I am adept at managing complex projects and ensuring they meet strict quality standards. My passion for engineering and commitment to quality make me an asset on any team striving to develop software solutions that add real business value for customers.
                 <br></br>
                 &nbsp; <br></br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As a programmer, I excel at creating responsive and functional applications that address the needs of clients and drive business value through technical solutions. With a passion for problem-solving, I'm adept at developing software products from design to release, delivering unique solutions that meet client requirements and exceed expectations. My skills in programming, testing, and application design enable me to produce products that are reliable, effective, and tailored to specific business goals. With an overarching focus on delivering the best possible results for clients.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As a programmer, I excel at creating responsive and functional applications that address the needs of clients and drive business value through technical solutions. With a passion for problem-solving, I'm skilled at developing software products from design to release, delivering unique solutions that meet client requirements and exceed expectations. My skills in programming, testing, and application design enable me to produce products that are reliable, effective, and tailored to specific business goals. With an overarching focus on delivering the best possible results for clients.
               </p>
             </div> 
           </div>
