@@ -107,6 +107,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      width: 50%;
      margin-top: 150px;
      text-decoration: none;
+     max-width: 1050px;
 }
 
 
@@ -285,9 +286,13 @@ a { color: inherit; }
 /*? ============= About Me Page ============= */
 
 .aboutMeSubBoxes {
-     width: 900px;
+     /* width: 1100px; */
+     /* max-width: 900px; */
      background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
-     background-size: 900px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* background-size: auto; */
+     /* background-size: 900px; */
      border-color: white;
      border-style: solid;
      border-width: 10px;
@@ -301,37 +306,19 @@ a { color: inherit; }
      font-size: 20px;
 }
 
-.aboutMeSubBoxes2 {
-     width: 900px;
-     background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
-     background-size: 900px;
-     border-color: white;
-     border-style: solid;
-     border-width: 10px;
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
-     font-family: "Inter";
-     font-size: 20px;
+@media screen and (min-width: 2000px) {
+  .HeaderAboutSpacer {
+    max-width: 2200px;
+
+  }
+
+  .aboutMeSubBoxes {
+     max-width: 1100px;
+     /* width: 3000px; */
+  }
+
 }
 
-.aboutMeSubBoxes3 {
-     width: 900px;
-     background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
-     background-size: 900px;
-     border-color: white;
-     border-style: solid;
-     border-width: 10px;
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
-     font-family: "Inter";
-     font-size: 20px;
-}
 
 .aboutMeTitle {
      font-family: "SF-Mono";
@@ -403,7 +390,7 @@ a { color: inherit; }
 }
 
 .aboutMePar5Picture {
-     height: 200px;
+     height: 250px;
      margin-left: 10%;
      border-radius: 25px;
      -webkit-border-radius: 25px;
