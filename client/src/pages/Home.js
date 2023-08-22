@@ -13,7 +13,7 @@ function Home() {
       <header className="">
         <Header />
       </header>
-
+      
       <div className='homeHeaderSpacer d-flex align-items-center justify-content-center'>
 
         <div className='row d-flex align-items-center justify-content-center homeLandingZone'>

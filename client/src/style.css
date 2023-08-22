@@ -361,6 +361,7 @@ a { color: inherit; }
 
 .aboutMePar2Picture {
      height: 350px;
+     /* margin-top: 25px; */
      margin-left: 30%;
      border-radius: 25px;
      -webkit-border-radius: 25px;
@@ -392,6 +393,7 @@ a { color: inherit; }
 .aboutMePar5Picture {
      height: 250px;
      margin-left: 10%;
+     margin-bottom: 25px;
      border-radius: 25px;
      -webkit-border-radius: 25px;
      -moz-border-radius: 25px;
