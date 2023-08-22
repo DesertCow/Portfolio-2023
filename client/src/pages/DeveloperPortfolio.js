@@ -188,10 +188,10 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div class="container mt-5">
+        <div className="container mt-5">
 
-          <div class="row justify-content-center align-items-center">
-            <div class="col mt-3 mb-4">
+          <div className="row justify-content-center align-items-center">
+            <div className="col mt-3 mb-4">
                 <img src={require('../img/Clayton_Skaggs_6.png')}
                 className="mt-3 contactPhoto"
                 alt="Clayton Skaggs profile picture"/>  
