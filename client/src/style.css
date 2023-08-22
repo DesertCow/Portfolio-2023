@@ -9,14 +9,6 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
        ____\////\\\\\\\\\_\///\\\\\\\\\\\/___\///\\\\\\\\\\\/___ 
         _______\/////////____\///////////_______\///////////____
 
-   _____ _             _                 _____ _                         
-  / ____| |           | |               / ____| |                        
- | |    | | __ _ _   _| |_ ___  _ __   | (___ | | ____ _  __ _  __ _ ___ 
- | |    | |/ _` | | | | __/ _ \| '_ \   \___ \| |/ / _` |/ _` |/ _` / __|
- | |____| | (_| | |_| | || (_) | | | |  ____) |   < (_| | (_| | (_| \__ \
-  \_____|_|\__,_|\__, |\__\___/|_| |_| |_____/|_|\_\__,_|\__, |\__, |___/
-                  __/ |                                   __/ | __/ |    
-                 |___/                                   |___/ |___/  
 */
 
 
@@ -44,12 +36,6 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
   font-family: "Inter";
   src: local("Inter"),
     url("./fonts/Inter/static/Inter-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Inter-Itallic";
-  src: local("Inter-Itallic"),
-    url("./fonts/Inter-3.19/Inter-Italic.ttf") format("truetype");
 }
 
 @font-face {
@@ -121,6 +107,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      width: 50%;
      margin-top: 150px;
      text-decoration: none;
+     max-width: 1050px;
 }
 
 
@@ -299,9 +286,13 @@ a { color: inherit; }
 /*? ============= About Me Page ============= */
 
 .aboutMeSubBoxes {
-     width: 900px;
+     /* width: 1100px; */
+     /* max-width: 900px; */
      background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
-     background-size: 900px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* background-size: auto; */
+     /* background-size: 900px; */
      border-color: white;
      border-style: solid;
      border-width: 10px;
@@ -315,37 +306,19 @@ a { color: inherit; }
      font-size: 20px;
 }
 
-.aboutMeSubBoxes2 {
-     width: 900px;
-     background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
-     background-size: 900px;
-     border-color: white;
-     border-style: solid;
-     border-width: 10px;
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
-     font-family: "Inter";
-     font-size: 20px;
+@media screen and (min-width: 2000px) {
+  .HeaderAboutSpacer {
+    max-width: 2200px;
+
+  }
+
+  .aboutMeSubBoxes {
+     max-width: 1100px;
+     /* width: 3000px; */
+  }
+
 }
 
-.aboutMeSubBoxes3 {
-     width: 900px;
-     background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
-     background-size: 900px;
-     border-color: white;
-     border-style: solid;
-     border-width: 10px;
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
-     font-family: "Inter";
-     font-size: 20px;
-}
 
 .aboutMeTitle {
      font-family: "SF-Mono";
@@ -388,6 +361,7 @@ a { color: inherit; }
 
 .aboutMePar2Picture {
      height: 350px;
+     /* margin-top: 25px; */
      margin-left: 30%;
      border-radius: 25px;
      -webkit-border-radius: 25px;
@@ -417,8 +391,9 @@ a { color: inherit; }
 }
 
 .aboutMePar5Picture {
-     height: 200px;
+     height: 250px;
      margin-left: 10%;
+     margin-bottom: 25px;
      border-radius: 25px;
      -webkit-border-radius: 25px;
      -moz-border-radius: 25px;

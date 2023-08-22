@@ -35,6 +35,7 @@ const Header = () => {
           <Navbar.Toggle/>
 
           <Navbar.Collapse className="navBarText mx-5">
+          <Nav.Link className="navBarText mx-5" href="/About">About Me</Nav.Link>
             <Nav>
               <NavDropdown
                 title="Media"
@@ -48,7 +49,6 @@ const Header = () => {
                   <NavDropdown.Item className="DropMenu p-3" href="/Media/Blog">Blog</NavDropdown.Item>
               </NavDropdown>
             </Nav>
-          <Nav.Link className="navBarText mx-5" href="/About">About Me</Nav.Link>
           <Nav.Link className="navBarText mx-5" href="/Contact">Contact</Nav.Link>
           </Navbar.Collapse>
 

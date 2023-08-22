@@ -12,6 +12,14 @@
   grid-template-areas: "logo nav";
   background-image: url("../../img/headerBackground/Header_Colorful2.png");
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* max-width: 2920px; */
+}
+
+@media screen and (min-width: 2000px) {
+  .Header {
+    background-image: url("../../img/headerBackground/Header_Colorful_4k_Wide.png");
+  }
+
 }
 
 
