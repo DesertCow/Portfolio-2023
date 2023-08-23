@@ -50,37 +50,36 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="py-3 container d-flex">
+        <div className="container d-flex">
 
           <div className="col featuredProjects">
             <div className="row portfioloDemoBox1">
 
               <div className="col demoText portfioloSubBoxLeft text-center">
-                <h1 className="mt-3 demoTitle">Demo</h1>
-                <img className="img-fluid mt-3 mb-4 demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
+                <h1 className="demoTitle">Demo</h1>
+                <img className="img-fluid demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
               </div>
 
               <div className="col d-flex portfioloSubBoxRight">
                 
                 <div className="col-4 softwareStackBox">
-                  <div className="mt-3 text-center">Software Stack</div>
-                  <div className="mt-5 d-flex justify-content-start">
-                    <ul className="softwareStackList text-left">
-                      <li className="py-3">&#9642; App Type: Progressive Web App</li>
-                      <li className="py-3">&#9642; Frontend: React (18.2.0)</li>
-                      <li className="py-3">&#9642; Framework: Bootstrap (2.5.0)</li>
-                      <li className="py-3">&#9642; API: GraphQL (16.6.0)</li>
-                      <li className="py-3">&#9642; Backend: NodeJS (16.15.1)</li>
-                      <li className="py-3">&#9642; Database: MongoDB (5.6.0)</li>
-                      <li className="py-3">&#9642; Photo Host: AWS S3</li>
-                      <li className="pt-3">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li>
-                      <li className="text-center my-3"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
-                      <li className="text-center mb-3 d-flex justify-content-around col">
+                  <div className="stackText">Software Stack</div>
+                  <div className="d-flex">
+                    <ul className="softwareStackList">
+                      <li className="softwareStackListItem">&#9642; App Type: Progressive Web App</li>
+                      <li className="softwareStackListItem">&#9642; Frontend: React (18.2.0)</li>
+                      <li className="softwareStackListItem">&#9642; Framework: Bootstrap (2.5.0)</li>
+                      <li className="softwareStackListItem">&#9642; API: GraphQL (16.6.0)</li>
+                      <li className="softwareStackListItem">&#9642; Backend: NodeJS (16.15.1)</li>
+                      <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
+                      <li className="softwareStackListItem">&#9642; Photo Host: AWS S3</li>
+                      <li className="softwareStackListItem">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li>
+                      <li className="text-center logoOffset"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
+                      <li className="text-center logoOffset d-flex justify-content-around col">
                         <div>
                           <a href="https://github.com/DesertCow/NewportBoardClubApp_PWA">
                             <img src={require('../img/Icons/github.png')}
-                              className=""
-                              width="50"
+                              className="GitHub"
                               alt="GitHub Icon"/>
                           </a>
                           <h1>Client</h1> 
@@ -88,8 +87,7 @@ const Portfolio = () => {
                         <div>
                           <a href="https://github.com/DesertCow/NewportBoardClubApp_Server">
                             <img src={require('../img/Icons/github.png')}
-                              className=""
-                              width="50"
+                              className="GitHub"
                               alt="GitHub Icon"/>
                           </a>
                           <h1>Server</h1> 
@@ -100,20 +98,20 @@ const Portfolio = () => {
                 </div>
 
                 <div className="col">
-                  <div className="mt-3 projectDesTitles">Project Overview</div>
-                    <p className="mt-3 px-5 projectDesText text-center">An application designed to allow members of the board club to view current surf/weather conditions, 
+                  <div className="projectDesTitles">Project Overview</div>
+                    <p className="projectDesText text-center">An application designed to allow members of the board club to view current surf/weather conditions, 
                     club events, log surf sessions, view surf tips, rental information, and general information 
                     about the club.</p>
                   
-                  <div className="mt-5 projectDesTitles">Project Goal</div>
-                  <p className="mt-3 px-5 projectDesText text-center">The goal of this application to motivate users to go surf by providing them with the all the infomation they need to have a great surf session.</p>
-                  <ul className="projectSubDesText projectGoalText px-3 mt-3 text-center">
-                    <li className="mt-3">&#9642; The app shows the current surf and weather conditons. </li>
-                    <li className="mt-3">&#9642; Events are displayed to make it easy for members to get the information they need to plan and attend upcoming events.</li>
-                    <li className="mt-3">&#9642; The Surf Log allows members to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence decision making when selecting a surfboard or surf spot for the next surf session.</li>
-                    <li className="mt-3">&#9642; Surf hacks are listed to help new members with common surf problems. </li>
-                    <li className="mt-3">&#9642; The Newport Surf map helps members easily pick the best spot to go surfing while visiting the club house.</li>
-                    <li className="mt-3">&#9642; The community forum helps members find others to surf with, sell items and also to interact with one another to build a sense of community.</li>
+                  <div className="projectDesTitles">Project Goal</div>
+                  <p className="projectDesText">The goal of this application to motivate users to go surf by providing them with the all the infomation they need to have a great surf session.</p>
+                  <ul className="projectSubDesText projectGoalText">
+                    <li className="projectSubDesTextItem">&#9642; The app shows the current surf and weather conditons. </li>
+                    <li className="projectSubDesTextItem">&#9642; Events are displayed to make it easy for members to get the information they need to plan and attend upcoming events.</li>
+                    <li className="projectSubDesTextItem">&#9642; The Surf Log allows members to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence decision making when selecting a surfboard or surf spot for the next surf session.</li>
+                    <li className="projectSubDesTextItem">&#9642; Surf hacks are listed to help new members with common surf problems. </li>
+                    <li className="projectSubDesTextItem">&#9642; The Newport Surf map helps members easily pick the best spot to go surfing while visiting the club house.</li>
+                    <li className="projectSubDesTextItem">&#9642; The community forum helps members find others to surf with, sell items and also to interact with one another to build a sense of community.</li>
                   </ul>
                 </div>
               </div>

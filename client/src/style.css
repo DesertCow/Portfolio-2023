@@ -242,157 +242,393 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 /*? ============= Dev Portfolio ============= */
 
-.portfolioMainBox {
-     /* background-color: #ef8f46d3; */
-     width: 80%;
-     height: 510px;
-     border-style: solid;
-     border-width: 5px;
+@media screen and (min-width: 600px) {
+
+     .portfolioMainBox {
+          /* background-color: #ef8f46d3; */
+          width: 80%;
+          height: 510px;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox1 {
+          background-color: var(--alt-color2b);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox2 {
+          background-color: var(--alt-color1);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloSubBoxLeft {
+          border-width: 0px 5px 0px 0px;
+          border-style: solid;
+          max-width: 400px;
+     }
+
+     .portfioloTitle {
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+     }
+
+     .portfioloAppTitle1 {
+          margin-top: 20px;
+          font-size: 40px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+     }
+
+     .portfioloAppTitle2 {
+          margin-left: 120px;
+          font-size: 40px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+     }
+
+     .demoGIF1{
+          justify-content: center;
+          width: 300px;
+          margin-bottom: 50px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+     }
+
+     a { color: inherit; } 
+
+     .demoTitle {
+          font-size: 30px;
+          margin-top: 30px;
+          margin-bottom: 40px;
+     }
+
+     .demoText {
+          font-family: "SF-Mono";
+          font-size: 25px;
+     }
+
+     .portfolioAboutMe {
+          max-width: 1400px;
+          width: 1200px;
+          background-image: url("../src/img/headerBackground/Header_Colorful_Wide.png");
+          background-size: 1400px;
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+          font-family: "Arvo-Reg";
+          font-size: 19px;
+     }
+
+     .resumeDownloadText {
+          font-family: "SF-Mono";
+          font-size: 45px;
+          border-style: solid;
+          width: 100%;
+          border-width: 10px;
+     }
+
+     .PDFViewer {
+          width: 900px;
+     }
+
+     .resumeDownloadBox {
+          padding-top: 100px;
+          padding-bottom: 50px;
+     }
+
+     .softwareStackBox {
+          font-family: "SF-Mono";
+          font-size: 28px;
+          border-width: 0px 5px 0px 0px;
+          border-style: solid;
+     }
+
+     .softwareStackList {
+          text-align:left;
+          font-size: 15px;
+          margin-top: 30px;
+     }
+
+     .projectDesTitles {
+          text-align:center;
+          font-family: "SF-Mono";
+          font-size: 28px;
+          margin-top: 50px;
+     }
+
+     .projectDesText {
+          font-family: "Arvo-Bold";
+          font-size: 15px;
+          margin-top: 30px;
+          padding: 0px 50px 0px 50px;
+     }
+
+     .projectSubDesText {
+          font-family: "Arvo-Reg";
+          font-size: 14px;
+          margin-top: 10px;
+          padding: 0px 5px 0px 5px;
+          margin-bottom: 50px;
+     }
+
+     .projectSubDesTextItem {
+          margin-top: 20px;
+     }
+
+     .projectGoalText{
+          margin-left: 10%;
+          text-align: left;
+          font-size: 13px;
+          width: 80%;
+     }
+
+     .railwayLogo {
+          height: 50px;
+          margin-top: 50px;
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          -ms-border-radius: 15px;
+          -o-border-radius: 15px;
+     }
+
+     .featuredProjects {
+          margin-right: 10%;
+     }
+
+     
+     .GitHub {
+          margin-top: 30px;
+          width: 50px;
+     }
+
+     .stackText {
+          margin-top: 30px;
+     }
+
+     .softwareStackListItem {
+          padding: 15px 0px 0px 0px;
+     }
+
 }
 
-.portfioloDemoBox1 {
-     background-color: var(--alt-color2b);
-     background-size: 730px;
-     width: 120%;
-     border-style: solid;
-     border-width: 5px;
+
+@media screen and (max-width: 600px) {
+
+     .portfolioMainBox {
+          /* background-color: #ef8f46d3; */
+          width: 80%;
+          height: 510px;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox1 {
+          background-color: var(--alt-color2b);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox2 {
+          background-color: var(--alt-color1);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloSubBoxLeft {
+          border-width: 0px 5px 0px 0px;
+          border-style: solid;
+          max-width: 150px;
+     }
+
+     .portfioloTitle {
+          font-size: 30px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+     }
+
+     .portfioloAppTitle1 {
+          /* margin-top: 10px; */
+          font-size: 25px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+     }
+
+     .portfioloAppTitle2 {
+          /* margin-left: 120px; */
+          font-size: 25px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+     }
+
+     .demoGIF1{
+          justify-content: center;
+          width: 150px;
+          margin-top: 100px;
+          /* margin-bottom: 50px; */
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+     }
+
+     a { color: inherit; } 
+
+     .demoTitle {
+          font-size: 18px;
+          margin-top: 30px;
+          margin-bottom: 40px;
+     }
+
+     .demoText {
+          font-family: "SF-Mono";
+          font-size: 12px;
+     }
+
+     .portfolioAboutMe {
+          max-width: 500px;
+          width: 500px;
+          background-image: url("../src/img/headerBackground/Header_Colorful_Wide.png");
+          background-size: 500px;
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+          font-family: "Arvo-Reg";
+          font-size: 19px;
+     }
+
+     .resumeDownloadText {
+          font-family: "SF-Mono";
+          font-size: 45px;
+          border-style: solid;
+          width: 100%;
+          border-width: 10px;
+     }
+
+     .PDFViewer {
+          width: 250px;
+     }
+
+     .resumeDownloadBox {
+          padding-top: 100px;
+          padding-bottom: 50px;
+     }
+
+     .softwareStackBox {
+          font-family: "SF-Mono";
+          font-size: 15px;
+          border-width: 0px 5px 0px 0px;
+          border-style: solid;
+          /* text-align: center; */
+     }
+
+     .softwareStackList {
+          text-align: left;
+          /* align-items: center; */
+          font-size: 7px;
+          padding: 0px 0px 0px 0px;
+          margin-top: 15px;
+     }
+
+     .softwareStackListItem {
+          padding: 10px 0px 0px 0px;
+     }
+
+     .projectDesTitles {
+          text-align:center;
+          font-family: "SF-Mono";
+          font-size: 12px;
+          margin-top: 20px;
+     }
+
+     .projectDesText {
+          font-family: "Arvo-Bold";
+          font-size: 9px;
+          margin-top: 10px;
+          padding: 0px 5px 0px 5px;
+     }
+
+     .projectSubDesText {
+          font-family: "Arvo-Reg";
+          font-size: 9px;
+          margin-top: 10px;
+          padding: 0px 0px 0px 5px;
+          margin-bottom: 30px;
+     }
+
+     .projectGoalText{
+          margin-left: 10px;
+          text-align: left;
+          font-size: 9px;
+          width: 80%;
+     }
+
+     .railwayLogo {
+          height: 25px;
+          margin-top: 30px;
+          /* margin-right: 50px; */
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+     }
+
+     .logoOffset {
+          margin-right: 10px;
+     }
+
+     .featuredProjects {
+          max-width: 380px;
+          padding: 0px 8px 0px 15px
+     }
+
+     .GitHub {
+          margin-top: 10px;
+          width: 25px;
+     }
+     
+     .stackText {
+          margin-top: 10px;
+          margin-right: 10px;
+     }
+
+     .projectSubDesTextItem {
+          margin-top: 10px;
+     }
+
+     .portfioloSubBoxRight {
+          padding-right: 0px;
+     }
+
 }
 
-.portfioloDemoBox2 {
-     background-color: var(--alt-color1);
-     background-size: 730px;
-     width: 120%;
-     border-style: solid;
-     border-width: 5px;
-}
-
-.portfioloSubBoxLeft {
-     border-width: 0px 5px 0px 0px;
-     border-style: solid;
-     max-width: 400px;
-}
-
-.portfioloTitle {
-     font-size: 50px;
-     font-family: "SF-Mono";
-     border-style: solid;
-     border-width: 10px;
-}
-
-.portfioloAppTitle1 {
-     margin-top: 20px;
-     font-size: 40px;
-     font-family: "SF-Mono";
-     border-style: dashed;
-     border-width: 10px;
-}
-
-.portfioloAppTitle2 {
-     margin-left: 120px;
-     font-size: 40px;
-     font-family: "SF-Mono";
-     border-style: dashed;
-     border-width: 10px;
-}
-
-.demoGIF1{
-     justify-content: center;
-     width: 300px;
-     border-radius: 10px;
-     -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-     -ms-border-radius: 10px;
-     -o-border-radius: 10px;
-}
-
-a { color: inherit; } 
-
-.demoTitle {
-     font-size: 30px;
-}
-
-.demoText {
-     font-family: "SF-Mono";
-     font-size: 25px;
-}
-
-.portfolioAboutMe {
-     max-width: 1400px;
-     width: 1200px;
-     background-image: url("../src/img/headerBackground/Header_Colorful_Wide.png");
-     background-size: 1400px;
-     border-radius: 50px;
-     -webkit-border-radius: 50px;
-     -moz-border-radius: 50px;
-     -ms-border-radius: 50px;
-     -o-border-radius: 50px;
-     font-family: "Arvo-Reg";
-     font-size: 19px;
-}
-
-.resumeDownloadText {
-     font-family: "SF-Mono";
-     font-size: 45px;
-     border-style: solid;
-     width: 100%;
-     border-width: 10px;
-}
-
-.PDFViewer {
-     width: 900px;
-}
-
-.resumeDownloadBox {
-     padding-top: 100px;
-     padding-bottom: 50px;
-}
-
-.softwareStackBox {
-     font-family: "SF-Mono";
-     font-size: 28px;
-     border-width: 0px 5px 0px 0px;
-     border-style: solid;
-}
-
-.softwareStackList {
-     text-align:left;
-     font-size: 15px;
-}
-
-.projectDesTitles {
-     text-align:center;
-     font-family: "SF-Mono";
-     font-size: 28px;
-}
-
-.projectDesText {
-     font-family: "Arvo-Bold";
-     font-size: 15px;
-}
-
-.projectSubDesText {
-     font-family: "Arvo-Reg";
-     font-size: 14px;
-}
-
-.projectGoalText{
-     margin-left: 10%;
-     font-size: 13px;
-     width: 80%;
-}
-
-.railwayLogo {
-     height: 50px;
-     border-radius: 15px;
-     -webkit-border-radius: 15px;
-     -moz-border-radius: 15px;
-     -ms-border-radius: 15px;
-     -o-border-radius: 15px;
-}
-
-.featuredProjects {
-     margin-right: 10%;
-}
 
 /*? ============= About Me Page ============= */
 
