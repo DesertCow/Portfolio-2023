@@ -70,65 +70,176 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      color: white;
 }
 
-.HeaderSpacer{
-     margin-top: 125px;
-}
-
-.homeHeaderSpacer{
-     margin-top: 175px;
-}
-
-.homeLandingZone {
-     margin-left: 10%;
-     width: 80%;
-}
-.homeHelloText {
-     font-size: 25px;
-     font-family: Inter;
-}
-
-.homeNameText {
-     font-size: 80px;
-     font-family: Inter-Bold;
-}
-
-.homeRoleText {
-     font-size: 50px;
-     font-family: Inter-Bold;
-}
-
-.homeDesText {
-     font-size: 25px;
-     font-family: Inter;
-     padding-right: 50px;
-}
-
-.homeLinksBox {
-     width: 50%;
-     margin-top: 150px;
+.homeButtonsBox {
      text-decoration: none;
-     max-width: 1050px;
 }
 
+@media screen and (min-width: 600px) {
 
-.homeLinkButtonsText{
-      text-decoration: none;
+     .HeaderSpacer{
+          margin-top: 125px;
+     }
+
+     .homeHeaderSpacer{
+          margin-top: 175px;
+          flex-direction: row;
+     }
+
+     .homeHelloText {
+          font-size: 25px;
+          font-family: Inter;
+     }
+
+     .homeNameText {
+          margin-top: 30px;
+          font-size: 80px;
+          font-family: Inter-Bold;
+     }
+
+     .homeRoleText {
+          margin-top: 40px;
+          font-size: 50px;
+          font-family: Inter-Bold;
+     }
+
+     .homeDesText {
+          margin-top: 40px;
+          font-size: 25px;
+          font-family: Inter;
+          padding-right: 50px;
+     }
+
+     .homeLinksBox {
+          width: 50%;
+          margin-top: 50px;
+          text-decoration: none;
+          max-width: 1050px;
+     }
+
+     .homeLandingZone {
+          margin-left: 10%;
+          width: 80%;
+     }
+
+
+     .homeLinksBox2 {
+          margin-top: 100px;
+          margin-left: 40px;
+          flex-direction: column;
+     }
+
+
+     .homeLinkButtonsText{
+          text-decoration: none;
+          margin-top: 50px;
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+          padding: 20px 10px 20px 20px;
+          max-height: 150px;
+          width: 550px;
+     }
+
+     .homeLinkButtons:hover {
+          background-color: white;
+          background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
+          background-size: 730px;
+          /* color: white; */
+          border-color: black;
+     }
+
+     .homeLinkButtonsText:hover {
+          color: black;
+          border-color: white;
+          border-style: solid;
+     }
 }
 
-.homeLinkButtons:hover {
-     background-color: white;
-     background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
-     background-size: 730px;
-     /* color: white; */
-     border-color: black;
-}
+@media screen and (max-width: 600px) {
+     .HeaderSpacer{
+          margin-top: 50px;
+     }
 
-.homeLinkButtonsText:hover {
-     color: black;
-     border-color: white;
-     border-style: solid;
-}
+     .homeHeaderSpacer{
+          margin-top: 45px;
+          flex-direction: column;
+     }
 
+     .homeHelloText {
+          margin-top: 60px;
+          font-size: 15px;
+          font-family: Inter;
+          margin-right: 40px;
+     }
+
+     .homeNameText {
+          margin-top: 10px;
+          font-size: 30px;
+          font-family: Inter-Bold;
+          margin-right: 40px;
+     }
+
+     .homeRoleText {
+          margin-top: 20px;
+          font-size: 15px;
+          font-family: Inter-Bold;
+          margin-right: 40px;
+     }
+
+     .homeDesText {
+          margin-top: 20px;
+          font-size: 12px;
+          font-family: Inter;
+          margin-right: 40px;
+     }
+     
+     .homeLinksBox {
+          /* width: 20%; */
+          /* margin-top: 25px; */
+          text-decoration: none;
+          margin-left: 25px;
+     }
+
+     .homeLinksBox2 {
+          margin-top: 20px;
+          margin-left: 40px;
+          flex-direction: column;
+     }
+
+     .homeLandingZone {
+          margin-left: 10%;
+          width: 90%;
+     }
+
+
+     .homeLinkButtonsText{
+          text-decoration: none;
+          font-size: 25px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 5px;
+          width: 250px;
+          background-image: url("../src/img/headerBackground/Header_Colorful_Wide_Mobile.png");
+          padding: 20px 10px 20px 10px;
+          margin: 25px 25px 10px 0px;
+
+     }
+
+     .homeLinkButtons:hover {
+          background-color: white;
+          background-image: url("../src/img/headerBackground/Header_Colorful_Wide_Mobile.png");
+          background-size: 730px;
+          /* color: white; */
+          border-color: black;
+     }
+
+     .homeLinkButtonsText:hover {
+          color: black;
+          border-color: white;
+          border-style: solid;
+     }
+}
 /*? ============= Dev Portfolio ============= */
 
 .portfolioMainBox {
