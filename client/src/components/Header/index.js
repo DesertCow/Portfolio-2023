@@ -25,31 +25,31 @@ const Header = () => {
 
   return (
 
-    <header className="Header d-flex justify-content-between ">
-      <img src={require("../../img/Chip_Icon_2023.png")} onClick={(event) => handleLogoClick(event)} className="Logo mx-3" alt="Computer Chip Logo" />
+    <header className="Header d-flex">
+      <img src={require("../../img/Chip_Icon_2023.png")} onClick={(event) => handleLogoClick(event)} className="Logo" alt="Computer Chip Logo" />
       <Navbar className="d-flex">
-        <Container fluid className="mx-5">
+        <Container fluid className="">
 
-          <Nav.Link className="navBarText mx-5 text-center" href="/Home">Home</Nav.Link>
-          <Nav.Link className="navBarText mx-5 text-center" href="/DevPortfolio">Dev Portfolio</Nav.Link>
+          <Nav.Link className="navBarText text-center" href="/Home">Home</Nav.Link>
+          <Nav.Link className="navBarText text-center" href="/DevPortfolio">Dev Portfolio</Nav.Link>
           <Navbar.Toggle/>
 
-          <Navbar.Collapse className="navBarText mx-5">
-          <Nav.Link className="navBarText mx-5" href="/About">About Me</Nav.Link>
+          <Navbar.Collapse className="navBarText">
+          <Nav.Link className="navBarText" href="/About">About Me</Nav.Link>
             <Nav>
               <NavDropdown
                 title="Media"
                 menuVariant="dark"
-                className="DropMenu navBarText mx-5"
+                className="DropMenu navBarText"
                 >
-                  <NavDropdown.Item className="DropMenu p-3" href="/Media/Photo">Photo Gallery</NavDropdown.Item>
+                  <NavDropdown.Item className="DropMenu" href="/Media/Photo">Photo Gallery</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item className="DropMenu p-3" href="/Media/Video">Video Gallery</NavDropdown.Item>
+                  <NavDropdown.Item className="DropMenu" href="/Media/Video">Video Gallery</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item className="DropMenu p-3" href="/Media/Blog">Blog</NavDropdown.Item>
+                  <NavDropdown.Item className="DropMenu" href="/Media/Blog">Blog</NavDropdown.Item>
               </NavDropdown>
             </Nav>
-          <Nav.Link className="navBarText mx-5" href="/Contact">Contact</Nav.Link>
+          <Nav.Link className="navBarText" href="/Contact">Contact</Nav.Link>
           </Navbar.Collapse>
 
         </Container>

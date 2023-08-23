@@ -1,54 +1,120 @@
 
-
-.Header {
-  position: fixed;
-  top: 0; /* Stick it to the top */
-  height: 125px;
-  width: 100vw;
-  font-family: NextStep-1;
-  font-weight: 900;
-  color: white;
-  display: grid;
-  grid-template-areas: "logo nav";
-  background-image: url("../../img/headerBackground/Header_Colorful2.png");
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* max-width: 2920px; */
-}
-
 @media screen and (min-width: 2000px) {
   .Header {
     background-image: url("../../img/headerBackground/Header_Colorful_4k_Wide.png");
+    position: fixed;
+    top: 0; /* Stick it to the top */
+    height: 125px;
+    width: 100vw;
+    font-family: NextStep-1;
+    font-weight: 900;
+    color: white;
+    display: grid;
+    grid-template-areas: "logo nav";
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
 }
 
+@media screen and (max-width: 600px) {
+  .Header {
+    position: fixed;
+    top: 0; /* Stick it to the top */
+    height: 50px;
+    width: 100vw;
+    font-family: NextStep-1;
+    font-weight: 900;
+    color: white;
+    display: grid;
+    grid-template-areas: "logo nav";
+    background-image: url("../../img/headerBackground/Header_Colorful2.png");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    justify-content: start;
+  }
 
-.MediaButton {
-  font-size: 50px;
+  .navBarText {
+    font-size: 10px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .navBarText:hover {
+    font-size: 15px;
+    color: white;
+  }
+
+  .DropMenu{
+    /* background-color: #ef8f46dc; */
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* max-width: 50px; */
+  }
+
+  .MediaButton {
+    font-size: 15px;
+  }
+
+  .Logo {
+    /* margin-top: 4px; */
+    width: 0px;
+    height: 0px;
 }
 
-.DropMenu{
-  /* background-color: #ef8f46dc; */
-  font-size: 30px;
 }
 
-.navBarText {
-  font-size: 30px;
-  color: black;
-}
 
-.navBarText:hover {
-  font-size: 60px;
-  color: white;
-}
 
-.Logo {
-  margin-top: 12px;
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+@media screen and (min-width: 600px) {
+
+  .Header {
+    position: fixed;
+    top: 0; /* Stick it to the top */
+    height: 125px;
+    width: 100vw;
+    font-family: NextStep-1;
+    font-weight: 900;
+    color: white;
+    display: grid;
+    grid-template-areas: "logo nav";
+    background-image: url("../../img/headerBackground/Header_Colorful2.png");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+  }
+
+  .MediaButton {
+    font-size: 50px;
+  }
+
+  .DropMenu{
+    /* background-color: #ef8f46dc; */
+    font-size: 30px;
+    padding: 20px;
+
+  }
+
+  .navBarText {
+    font-size: 30px;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .navBarText:hover {
+    font-size: 60px;
+    color: white;
+  }
+
+  .Logo {
+    margin-top: 12px;
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
 }
