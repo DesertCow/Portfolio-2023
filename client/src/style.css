@@ -486,7 +486,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
           border-style: solid;
           border-width: 10px;
      }
-     
+
      .aboutMeTitle {
           font-size: 50px;
           font-family: "SF-Mono";
@@ -708,13 +708,6 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 
 .aboutMeTitle {
-     font-family: "SF-Mono";
-     font-size: 50px;
-     border-style: solid;
-     border-width: 10px;
-}
-
-.mediaPageTitle {
      font-family: "SF-Mono";
      font-size: 50px;
      border-style: solid;
