@@ -1,47 +1,115 @@
 
 
-.languagesListTitle{
-     font-size: 23px;
-     font-family: "SF-Mono";
+@media screen and (min-width: 600px) {
+
+     .languagesListTitle{
+          font-size: 23px;
+          font-family: "SF-Mono";
+     }
+
+     .languagesList{
+          font-size: 14px;
+          font-family: "SF-Mono";
+     }
+
+     .programLanguagesBox {
+          width: 320px;
+          height: 380px;
+          margin-bottom: 100px;
+          background-color: var(--alt-color1);
+          border-radius: 60px;
+          -webkit-border-radius: 60px;
+          -moz-border-radius: 60px;
+          -ms-border-radius: 60px;
+          -o-border-radius: 60px;
+     }
+
+     .programToolBox {
+          width: 320px;
+          height: 380px;
+          margin-bottom: 100px;
+          background-color: var(--alt-color3);
+          border-radius: 60px;
+          -webkit-border-radius: 60px;
+          -moz-border-radius: 60px;
+          -ms-border-radius: 60px;
+          -o-border-radius: 60px;
+     }
+
+     .programOldLanguagesBox {
+          width: 600px;
+          height: 380px;
+          margin-bottom: 100px;
+          background-color: var(--alt-color2);
+          border-radius: 60px;
+          -webkit-border-radius: 60px;
+          -moz-border-radius: 60px;
+          -ms-border-radius: 60px;
+          -o-border-radius: 60px;
+     }
+
+     .devToolsTopBox {
+          flex-direction: row;
+          margin-top: 25px;
+          display: flex;
+          flex-wrap: wrap;
+     }
+
 }
 
-.languagesList{
-     font-size: 14px;
-     font-family: "SF-Mono";
-}
+@media screen and (max-width: 600px) {
 
-.programLanguagesBox {
-     width: 320px;
-     height: 380px;
-     margin-bottom: 100px;
-     background-color: var(--alt-color1);
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
-}
+     .languagesListTitle{
+          font-size: 23px;
+          font-family: "SF-Mono";
+     }
 
-.programToolBox {
-     width: 320px;
-     height: 380px;
-     margin-bottom: 100px;
-     background-color: var(--alt-color3);
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
-}
+     .languagesList{
+          font-size: 14px;
+          font-family: "SF-Mono";
+          margin-bottom: 50px;
+     }
 
-.programOldLanguagesBox {
-     width: 600px;
-     height: 380px;
-     margin-bottom: 100px;
-     background-color: var(--alt-color2);
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
+     .programLanguagesBox {
+          width: 320px;
+          height: 380px;
+          margin-bottom: 50px;
+          background-color: var(--alt-color1);
+          border-radius: 60px;
+          -webkit-border-radius: 60px;
+          -moz-border-radius: 60px;
+          -ms-border-radius: 60px;
+          -o-border-radius: 60px;
+     }
+
+     .programToolBox {
+          width: 320px;
+          height: 380px;
+          margin-bottom: 50px;
+          background-color: var(--alt-color3);
+          border-radius: 60px;
+          -webkit-border-radius: 60px;
+          -moz-border-radius: 60px;
+          -ms-border-radius: 60px;
+          -o-border-radius: 60px;
+     }
+
+     .programOldLanguagesBox {
+          width: 320px;
+          height: 380px;
+          margin-bottom: 25px;
+          background-color: var(--alt-color2);
+          border-radius: 60px;
+          -webkit-border-radius: 60px;
+          -moz-border-radius: 60px;
+          -ms-border-radius: 60px;
+          -o-border-radius: 60px;
+     }
+
+     .devToolsTopBox {
+          flex-direction: column;
+          display: flex;
+          flex-wrap: wrap;
+     }
+
 }
