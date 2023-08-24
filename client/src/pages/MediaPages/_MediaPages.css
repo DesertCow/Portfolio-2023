@@ -23,6 +23,11 @@
           margin-top: 25%;
      }
 
+     .videoMain {
+          width: 1200px;
+          height: 750px;
+     }
+
 }
 
 @media screen and (max-width: 600px) {

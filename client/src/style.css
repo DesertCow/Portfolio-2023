@@ -794,71 +794,180 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 /*? ============= Contact Page ============= */
 
-.contactHeaderText {
-     font-family: var(--main-font);
-     font-size: 60px;
-     color: black;
+@media screen and (min-width: 600px) {
+
+     .contactHeaderText {
+          font-family: var(--main-font);
+          font-size: 60px;
+          color: black;
+     }
+
+     .contactBox {
+          width: 700px;
+          height: 300px;
+          margin-bottom: 50px;
+          /* padding-bottom: 50px; */
+          /* background-color: var(--alt-color1); */
+          background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
+          background-size: 2500px;
+          border-radius: 60px;
+          -webkit-border-radius: 60px;
+          -moz-border-radius: 60px;
+          -ms-border-radius: 60px;
+          -o-border-radius: 60px;
+     }
+
+     .contactFont {
+          
+          font-size: 50px;
+     }
+
+     .contactTitle {
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+     }
+
+     .emailFont{
+          font-size: 35px;
+          margin-top: 40px;
+          margin-right: 20px;
+     }
+
+     .emailLinkText{
+          font-size: 25px;
+          text-decoration: none !important;
+     }
+
+     .devAboutMeBox {
+          /* margin-left: 15%; */
+          width: 1600px;
+     }
+
+     .contactPhoto {
+          width: 450px;
+          /* margin-left: 50%; */
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+     }
+
+     .contactLocation {
+          font-size: 30px;
+          font-family: "SF-Mono";
+          margin-top: 15px;
+     }
+
+     .timeZoneText {
+          font-size: 20px;
+          font-family: "SF-Mono";
+          margin-top: 10px;
+     }
+
+     .contactEmail {
+          font-size: 30px;
+          font-family: "SF-Mono";
+          margin-top: 15px;
+     }
+
+     .contactSpacer {
+          padding-top: 200px;
+     }
+
+    .emailIcon {
+          width: 100px;
+     }
+
 }
 
-.contactBox {
-     width: 700px;
-     height: 300px;
-     margin-bottom: 50px;
-     /* padding-bottom: 50px; */
-     /* background-color: var(--alt-color1); */
-     background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
-     background-size: 2500px;
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
+@media screen and (max-width: 600px) {
+
+     .contactHeaderText {
+          font-family: var(--main-font);
+          font-size: 60px;
+          color: black;
+     }
+
+     .contactBox {
+          width: 350px;
+          height: 200px;
+          margin-bottom: 50px;
+          /*padding-bottom: 50px;
+          *//*background-color: var(--alt-color1);
+          */background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
+          background-size: 2500px;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px;
 }
 
-.contactFont {
-     
-     font-size: 50px;
-}
+     .contactFont {
+          
+          font-size: 40px;
+     }
 
-.emailFont{
-     font-size: 35px;
-}
+     .contactTitle {
+          font-size: 40px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+     }
 
-.emailLinkText{
-     font-size: 25px;
-     text-decoration: none !important;
-}
+     .emailFont{
+          font-size: 35px;
+          margin-top: 10px;
+          margin-right: 20px;
+     }
 
-.devAboutMeBox {
-     /* margin-left: 15%; */
-     width: 1600px;
-}
+     .emailLinkText{
+          font-size: 25px;
+          text-decoration: none !important;
+     }
 
-.contactPhoto {
-     width: 450px;
-     /* margin-left: 50%; */
-     border-radius: 50px;
-     -webkit-border-radius: 50px;
-     -moz-border-radius: 50px;
-     -ms-border-radius: 50px;
-     -o-border-radius: 50px;
-}
+     .devAboutMeBox {
+          /* margin-left: 15%; */
+          width: 1600px;
+     }
 
-.contactLocation {
-     font-size: 30px;
-     font-family: "SF-Mono";
-}
+     .emailIcon {
+          width: 100px;
+     }
 
-.timeZoneText {
-     font-size: 20px;
-     font-family: "SF-Mono";
-}
+     .contactPhoto {
+          width: 450px;
+          /* margin-left: 50%; */
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+     }
 
-.contactEmail {
-     font-size: 30px;
-     font-family: "SF-Mono";
-}
+     .contactLocation {
+          font-size: 16px;
+          font-family: "SF-Mono";
+          margin-top: 0px;
+     }
 
-.contactSpacer {
-     padding-top: 150px;
+     .timeZoneText {
+          font-size: 12px;
+          font-family: "SF-Mono";
+          margin-top: 5px;
+     }
+
+     .contactEmail {
+          font-size: 16px;
+          font-family: "SF-Mono";
+          margin-top: 20px;
+     }
+
+     .contactSpacer {
+          padding-top: 100px;
+     }
+
 }

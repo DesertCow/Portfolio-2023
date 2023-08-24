@@ -27,7 +27,7 @@ const MediaVideo = () => {
       <div className='videoListMargin'>
         <div className="d-flex row">
           <div className="row mt-5 d-flex justify-content-center">
-            <ReactPlayer width="1200px" height="750px" controls="true" url='https://youtu.be/mtXzsgFWdsE' />
+            <ReactPlayer className="videoMain" width="1200px" height="750px" controls="true" url='https://youtu.be/mtXzsgFWdsE' />
           </div>
         </div>
         <div className="row mt-5 d-flex justify-content-center">
