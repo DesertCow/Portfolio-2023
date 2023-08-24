@@ -21,13 +21,13 @@ const MediaVideo = () => {
       </header>
 
       <div className="col d-flex align-items-center justify-content-center HeaderGallerySpacer">
-        <h1 className="my-4 mb-5 p-3 aboutMeTitle ">Video Gallery</h1>
+        <h1 className="my-4 mb-5 p-3 mediaPageTitle">Video Gallery</h1>
       </div>
 
       <div className='videoListMargin'>
         <div className="d-flex row">
           <div className="row mt-5 d-flex justify-content-center">
-            <ReactPlayer width="1200px" height="750px" controls="true" url='https://youtu.be/mtXzsgFWdsE' />
+            <ReactPlayer className="videoMain" width="1200px" height="750px" controls="true" url='https://youtu.be/mtXzsgFWdsE' />
           </div>
         </div>
         <div className="row mt-5 d-flex justify-content-center">

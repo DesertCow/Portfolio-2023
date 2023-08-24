@@ -22,15 +22,15 @@ function Home() {
             Hello my name is
           </div>
 
-          <div className='mt-4 homeNameText'>
+          <div className='homeNameText'>
             Clayton Skaggs
           </div>
 
-          <div className='mt-5 homeRoleText'>
+          <div className='homeRoleText'>
             I build Full Stack applications for web and mobile platforms.
           </div>
 
-          <div className='mt-5 homeDesText'>
+          <div className='homeDesText'>
             &ensp; &ensp;&ensp; &ensp; I am a Computer Engineering graduate from Oklahoma State University and a former Product Development Engineer at Intel, who possess a strong technical foundation and over five years of professional experience working on complex silicon engineering projects with the expectation of delivering exceptional results. 
             <br></br>
             <br></br>
@@ -39,16 +39,16 @@ function Home() {
 
         </div>
 
-        <div className='container homeLinksBox'>      
-          <div className="container justify-content-center align-items-center text-center w-75">
-            <div className="row mt-5">
-              <a href="/DevPortfolio" className='homeLinkButtonsText'>
-                <h1 className="col portfioloTitle p-3 homeLinkButtonsText homeLinkButtons">Dev Portfolio</h1>
+        <div className='homeLinksBox'>      
+          <div className="d-flex homeLinksBox2 justify-content-center align-items-center text-center w-75">
+            <div className="row">
+              <a href="/DevPortfolio" className='homeButtonsBox'>
+                <h1 className="col homeLinkButtonsText homeLinkButtons">Dev Portfolio</h1>
               </a>
             </div>
-            <div className="row mt-5">
-              <a href="/About" className='homeLinkButtonsText'>
-                <h1 className="col portfioloTitle p-3  homeLinkButtons homeLinkButtonsText">About Me</h1>
+            <div className="row">
+              <a href="/About" className='homeButtonsBox'>
+                <h1 className="col homeLinkButtonsText homeLinkButtons">About Me</h1>
               </a>
             </div>
           </div>

@@ -6,8 +6,8 @@ const DevTools = () => {
 
   return (
 
-        <div className="mt-5 container d-flex flex-column align-items-center justify-content-center">
-          <div className="row mt-5">
+        <div className="mt-5 container d-flex flex-column align-items-center justify-content-center devToolsTopBox">
+          <div className="devToolsTopBox">
             <div className="col mx-5 programLanguagesBox">
               <div className="mt-4 text-center languagesListTitle">
                 Languages &
@@ -48,7 +48,7 @@ const DevTools = () => {
               <div className="text-center languagesListTitle">
                 Languages & Tools
               </div>
-              <ul className="mt-4 mx-5 text-left languagesList ">
+              <ul className="mt-4 mx-5 text-left languagesList">
                 <li className="mt-3">&#9642; Verilog/VHDL</li>
                 <li className="mt-3">&#9642; ATL (Advantest Language)</li>
                 <li className="mt-3">&#9642; Java</li>

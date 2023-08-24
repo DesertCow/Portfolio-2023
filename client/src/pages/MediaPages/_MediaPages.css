@@ -1,22 +1,58 @@
 
 
-.mediaPageTitle {
-     font-family: "SF-Mono";
-     font-size: 50px;
-     border-style: solid;
-     border-width: 10px;
+@media screen and (min-width: 600px) {
+
+     .mediaPageTitle {
+          font-family: "SF-Mono";
+          font-size: 50px;
+          border-style: solid;
+          border-width: 10px;
+     }
+
+     .HeaderGallerySpacer {
+          margin-top: 125px;
+          padding-top: 50px;
+          /* margin-bottom: 100px; */
+     }
+
+     .videoListMargin {
+          margin-right: 1%;
+     }
+
+     .blogFooterSpacer {
+          margin-top: 25%;
+     }
+
+     .videoMain {
+          width: 1200px;
+          height: 750px;
+     }
+
 }
 
-.HeaderGallerySpacer {
-     margin-top: 125px;
-     padding-top: 50px;
-     /* margin-bottom: 100px; */
-}
+@media screen and (max-width: 600px) {
 
-.videoListMargin {
-     margin-right: 1%;
-}
+     .mediaPageTitle {
+          font-family: "SF-Mono";
+          font-size: 30px;
+          text-align: center;
+          width: 350px;
+          border-style: solid;
+          border-width: 10px;
+     }
 
-.blogFooterSpacer {
-     margin-top: 25%;
+     .HeaderGallerySpacer {
+          margin-top: 50px;
+          padding-top: 50px;
+          /* margin-bottom: 100px; */
+     }
+
+     .videoListMargin {
+          margin-right: 1%;
+     }
+
+     .blogFooterSpacer {
+          margin-top: 25%;
+     }
+
 }

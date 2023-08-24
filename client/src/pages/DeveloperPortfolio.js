@@ -42,7 +42,7 @@ const Portfolio = () => {
         </div>
 
         <div className="d-flex col justify-content-center">
-          <div className="text-center py-5">
+          <div className="text-center pt-5 pb-4">
             <div className="portfioloAppTitle1 p-3">
               <h1>Newport Board</h1> 
               <h1 className="mt-3"> Club App</h1> 
@@ -50,93 +50,91 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="py-3 container d-flex">
+        <div className="container d-flex">
 
           <div className="col featuredProjects">
+
             <div className="row portfioloDemoBox1">
 
               <div className="col demoText portfioloSubBoxLeft text-center">
-                <h1 className="mt-3 demoTitle">Demo</h1>
-                <img className="img-fluid mt-3 mb-4 demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
+                <h1 className="demoTitle">Demo</h1>
+                <img className="img-fluid demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
               </div>
 
               <div className="col d-flex portfioloSubBoxRight">
                 
                 <div className="col-4 softwareStackBox">
-                  <div className="mt-3 text-center">Software Stack</div>
-                  <div className="mt-5 d-flex justify-content-start">
-                    <ul className="softwareStackList text-left">
-                      <li className="py-3">&#9642; App Type: Progressive Web App</li>
-                      <li className="py-3">&#9642; Frontend: React (18.2.0)</li>
-                      <li className="py-3">&#9642; Framework: Bootstrap (2.5.0)</li>
-                      <li className="py-3">&#9642; API: GraphQL (16.6.0)</li>
-                      <li className="py-3">&#9642; Backend: NodeJS (16.15.1)</li>
-                      <li className="py-3">&#9642; Database: MongoDB (5.6.0)</li>
-                      <li className="py-3">&#9642; Photo Host: AWS S3</li>
-                      <li className="pt-3">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li>
-                      <li className="text-center my-3"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
-                      <li className="text-center mb-3 d-flex justify-content-around col">
-                        <div>
-                          <a href="https://github.com/DesertCow/NewportBoardClubApp_PWA">
-                            <img src={require('../img/Icons/github.png')}
-                              className=""
-                              width="50"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1>Client</h1> 
-                        </div>
-                        <div>
-                          <a href="https://github.com/DesertCow/NewportBoardClubApp_Server">
-                            <img src={require('../img/Icons/github.png')}
-                              className=""
-                              width="50"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1>Server</h1> 
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                  <div className="stackText">Software Stack</div>
+                  <ul className="softwareStackList">
+                    <li className="softwareStackListItem">&#9642; App Type: Progressive Web App</li>
+                    <li className="softwareStackListItem">&#9642; Frontend: React (18.2.0)</li>
+                    <li className="softwareStackListItem">&#9642; Framework: Bootstrap (2.5.0)</li>
+                    <li className="softwareStackListItem">&#9642; API: GraphQL (16.6.0)</li>
+                    <li className="softwareStackListItem">&#9642; Backend: NodeJS (16.15.1)</li>
+                    <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
+                    <li className="softwareStackListItem">&#9642; Photo Host: AWS S3</li>
+                    <li className="softwareStackListItem">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li>
+                    <li className="text-center logoOffset"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
+                    <li className="text-center logoOffset d-flex justify-content-around col">
+                      <div>
+                        <a href="https://github.com/DesertCow/NewportBoardClubApp_PWA">
+                          <img src={require('../img/Icons/github.png')}
+                            className="GitHub"
+                            alt="GitHub Icon"/>
+                        </a>
+                        <h1>Client</h1> 
+                      </div>
+                      <div>
+                        <a href="https://github.com/DesertCow/NewportBoardClubApp_Server">
+                          <img src={require('../img/Icons/github.png')}
+                            className="GitHub"
+                            alt="GitHub Icon"/>
+                        </a>
+                        <h1>Server</h1> 
+                      </div>
+                    </li>
+                  </ul>
                 </div>
 
                 <div className="col">
-                  <div className="mt-3 projectDesTitles">Project Overview</div>
-                    <p className="mt-3 px-5 projectDesText text-center">An application designed to allow members of the board club to view current surf/weather conditions, 
+                  <div className="projectDesTitles">Project Overview</div>
+                    <p className="projectDesText text-center">An application designed to allow members of the board club to view current surf/weather conditions, 
                     club events, log surf sessions, view surf tips, rental information, and general information 
                     about the club.</p>
                   
-                  <div className="mt-5 projectDesTitles">Project Goal</div>
-                  <p className="mt-3 px-5 projectDesText text-center">The goal of this application to motivate users to go surf by providing them with the all the infomation they need to have a great surf session.</p>
-                  <ul className="projectSubDesText projectGoalText px-3 mt-3 text-center">
-                    <li className="mt-3">&#9642; The app shows the current surf and weather conditons. </li>
-                    <li className="mt-3">&#9642; Events are displayed to make it easy for members to get the information they need to plan and attend upcoming events.</li>
-                    <li className="mt-3">&#9642; The Surf Log allows members to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence decision making when selecting a surfboard or surf spot for the next surf session.</li>
-                    <li className="mt-3">&#9642; Surf hacks are listed to help new members with common surf problems. </li>
-                    <li className="mt-3">&#9642; The Newport Surf map helps members easily pick the best spot to go surfing while visiting the club house.</li>
-                    <li className="mt-3">&#9642; The community forum helps members find others to surf with, sell items and also to interact with one another to build a sense of community.</li>
+                  <div className="projectDesTitles">Project Goal</div>
+                  <p className="projectDesText">The goal of this application to motivate users to go surf by providing them with the all the infomation they need to have a great surf session.</p>
+                  <ul className="projectSubDesText projectGoalText">
+                    <li className="projectSubDesTextItem">&#9642; The app shows the current surf and weather conditons. </li>
+                    <li className="projectSubDesTextItem">&#9642; Events are displayed to make it easy for members to get the information they need to plan and attend upcoming events.</li>
+                    <li className="projectSubDesTextItem">&#9642; The Surf Log allows members to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence decision making when selecting a surfboard or surf spot for the next surf session.</li>
+                    <li className="projectSubDesTextItem">&#9642; Surf hacks are listed to help new members with common surf problems. </li>
+                    <li className="projectSubDesTextItem">&#9642; The Newport Surf map helps members easily pick the best spot to go surfing while visiting the club house.</li>
+                    <li className="projectSubDesTextItem">&#9642; The community forum helps members find others to surf with, sell items and also to interact with one another to build a sense of community.</li>
                   </ul>
                 </div>
+
               </div>
             </div>
 
             
-            <div className="d-flex mt-5 col justify-content-center">
-              <div className="text-center mt-5 py-5">
+            <div className="d-flex col justify-content-center text-center">
+              <div className="text-center pt-5 pb-4">
                 <h1 className="portfioloAppTitle2 p-3">Chuckwagon</h1> 
               </div>
             </div>
 
             <div className="row portfioloDemoBox2">
               <div className="col demoText portfioloSubBoxLeft text-center">
-                <h1 className="mt-3 demoTitle">Demo</h1>
-                <img className="img-fluid mt-3 mb-4 demoGIF1" src={require("../img/DemoGIFs/Chuckwagon_Demo1.gif")} alt="Surf Deck Demo"></img>
+                <h1 className="demoTitle">Demo</h1>
+                <img className="img-fluid demoGIF1" src={require("../img/DemoGIFs/Chuckwagon_Demo1.gif")} alt="Surf Deck Demo"></img>
               </div>
 
               <div className="col d-flex portfioloSubBoxRight">
                 
                 <div className="col-4 softwareStackBox">
-                  <div className="mt-3 text-center">Software Stack</div>
-                  <div className="mt-5 d-flex justify-content-start">
+                  <div className="text-center">Software Stack</div>
+                  <div className="d-flex justify-content-start">
                     <ul className="softwareStackList text-left">
                       <li className="py-3">&#9642; App Type: Progressive Web App</li>
                       <li className="py-3">&#9642; Frontend: React (18.2.0)</li>
@@ -146,12 +144,11 @@ const Portfolio = () => {
                       <li className="py-3">&#9642; Database: MongoDB (5.6.0)</li>
                       <li className="py-3">&#9642; Database: MySQL (2.3.3)</li>
                       <li className="pt-3">&#9642; App Hosting: <a href="https://saltlicktruck-production.up.railway.app/">Chuckwagon (Live)</a></li>
-                      <li className="text-center my-3"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
-                      <li className="text-center mb-3">
+                      <li className="text-center logoOffset"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
+                      <li className="text-center logoOffset">
                         <a href="https://github.com/DesertCow/SaltLickTruck">
                           <img src={require('../img/Icons/github.png')}
-                            className=""
-                            width="50"
+                            className="GitHub"
                             alt="GitHub Icon"/>
                         </a>
                         <h1>Client + Server</h1>
@@ -161,18 +158,18 @@ const Portfolio = () => {
                 </div>
 
                 <div className="col">
-                  <div className="mt-3 projectDesTitles">Project Overview</div>
-                    <p className="mt-3 px-5 projectDesText text-center">Chuckwagon is a comprehensive Food Truck management application with a customer ordering App and a separate "In Kitchen" App (React) for order execution and application administration built using MongoDB, Express, React, and NodeJS (MERN Stack).</p>
+                  <div className="projectDesTitles">Project Overview</div>
+                    <p className="projectDesText text-center">Chuckwagon is a comprehensive Food Truck management application with a customer ordering App and a separate "In Kitchen" App (React) for order execution and application administration built using MongoDB, Express, React, and NodeJS (MERN Stack).</p>
                   
-                  <div className="mt-5 projectDesTitles">Project Goal</div>
-                  <p className="mt-3 px-5 projectDesText text-center">Application that could be deploy to the internet or run locally on a food truck and served via WiFi to enable customers to order food without needing an internet connection.</p>
-                  <ul className="projectSubDesText projectGoalText px-3 mt-3 text-center">
-                    <li className="mt-3">&#9642; Enable customers to view the menu and add items to the cart for checkout/purchase.</li>
-                    <li className="mt-3">&#9642; Customers also create an account that provides an email for marketing purposes thus enabling higher likelihood of repeat customers</li>
-                    <li className="mt-3">&#9642; Menu is dynamically served from SQL database enabling realtime item availabity to adjust as items availabity is exhausted.</li>
-                    <li className="mt-3">&#9642; Customers can also track the status of their order via the app. <br></br>(Submitted/WIP/Ready/Picked Up)</li>
-                    <li className="mt-3">&#9642; Kitchen page allows employees to track, manage, and complete orders.</li>
-                    <li className="mt-3">&#9642; Orders are stored in database, thus enabling analytics to be created to return valuable information to business owners and increase profit margin.</li>
+                  <div className="projectDesTitles">Project Goal</div>
+                  <p className="projectDesText text-center">Application that could be deploy to the internet or run locally on a food truck and served via WiFi to enable customers to order food without needing an internet connection.</p>
+                  <ul className="projectSubDesText projectGoalText">
+                    <li className="projectSubDesTextItem">&#9642; Enable customers to view the menu and add items to the cart for checkout/purchase.</li>
+                    <li className="projectSubDesTextItem">&#9642; Customers also create an account that provides an email for marketing purposes thus enabling higher likelihood of repeat customers</li>
+                    <li className="projectSubDesTextItem">&#9642; Menu is dynamically served from SQL database enabling realtime item availabity to adjust as items availabity is exhausted.</li>
+                    <li className="projectSubDesTextItem">&#9642; Customers can also track the status of their order via the app. <br></br>(Submitted/WIP/Ready/Picked Up)</li>
+                    <li className="projectSubDesTextItem">&#9642; Kitchen page allows employees to track, manage, and complete orders.</li>
+                    <li className="projectSubDesTextItem">&#9642; Orders are stored in database, thus enabling analytics to be created to return valuable information to business owners and increase profit margin.</li>
                   </ul>
                 </div>
 
@@ -182,9 +179,9 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="d-flex col mt-5 justify-content-center">
+        <div className="d-flex col justify-content-center">
           <div className="text-center pt-5">
-            <h1 className="portfioloTitle p-3">About Me</h1> 
+            <h1 className="aboutMeTitle p-3">About Me</h1> 
           </div>
         </div>
 
@@ -193,7 +190,7 @@ const Portfolio = () => {
           <div className="row justify-content-center align-items-center">
             <div className="col mt-3 mb-4">
                 <img src={require('../img/Clayton_Skaggs_6.png')}
-                className="mt-3 contactPhoto"
+                className="mt-3 contactPhotoPortfolio"
                 alt="Clayton Skaggs profile picture"/>  
             </div>
 
@@ -210,6 +207,12 @@ const Portfolio = () => {
           </div>
         </div>
 
+        <div className="d-flex col mt-5 pt-5 justify-content-center">
+          <div className="text-center">
+            <h1 className="portfioloTitle p-3">Development Skills</h1> 
+          </div>
+        </div>
+
         <div className="w-100">
           <DevTools />
         </div>
@@ -220,11 +223,11 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="d-flex col justify-content-center">
-          <div className="PDFViewer">
+          <div className="">
             {/* <PdfViewerComponent document={"Clayton_Skaggs_Resume.pdf"}/> */}
             <div className="d-flex col justify-content-center">
               {!pdfDocument && <span>Loading...</span>}
-              <canvas ref={canvasRef} />
+              <canvas ref={canvasRef} className='PDFViewer'/>
               {Boolean(pdfDocument)}
             </div>
           </div>

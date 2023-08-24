@@ -45,10 +45,10 @@
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20170222_152159_245.jpg", width: 697, height: 927 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20180331_112950.jpg", width: 1236, height: 927 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20180331_145959.jpg", width: 697, height: 927 },
-    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20180405_125218_729.jpg", width: 927, height: 927 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20191019_053348-01.jpeg", width: 1236, height: 927 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PXL_20211127_142807035-01.jpeg", width: 697, height: 927 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PXL_20220118_153625058-01.jpeg", width: 1236, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20180405_125218_729.jpg", width: 927, height: 927 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/Pallisade Ice.jpg", width: 1389, height: 927 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PANO_20180113_103234.jpg", width: 7680, height: 1792 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/Woodz_Selfie.jpeg", width: 1236, height: 927 }

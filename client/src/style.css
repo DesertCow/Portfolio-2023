@@ -70,241 +70,607 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      color: white;
 }
 
-.HeaderSpacer{
-     margin-top: 125px;
-}
-
-.homeHeaderSpacer{
-     margin-top: 175px;
-}
-
-.homeLandingZone {
-     margin-left: 10%;
-     width: 80%;
-}
-.homeHelloText {
-     font-size: 25px;
-     font-family: Inter;
-}
-
-.homeNameText {
-     font-size: 80px;
-     font-family: Inter-Bold;
-}
-
-.homeRoleText {
-     font-size: 50px;
-     font-family: Inter-Bold;
-}
-
-.homeDesText {
-     font-size: 25px;
-     font-family: Inter;
-     padding-right: 50px;
-}
-
-.homeLinksBox {
-     width: 50%;
-     margin-top: 150px;
+.homeButtonsBox {
      text-decoration: none;
-     max-width: 1050px;
 }
 
+@media screen and (min-width: 600px) {
 
-.homeLinkButtonsText{
-      text-decoration: none;
+     .HeaderSpacer{
+          margin-top: 125px;
+     }
+
+     .homeHeaderSpacer{
+          margin-top: 175px;
+          flex-direction: row;
+     }
+
+     .homeHelloText {
+          font-size: 25px;
+          font-family: Inter;
+     }
+
+     .homeNameText {
+          margin-top: 30px;
+          font-size: 80px;
+          font-family: Inter-Bold;
+     }
+
+     .homeRoleText {
+          margin-top: 40px;
+          font-size: 50px;
+          font-family: Inter-Bold;
+     }
+
+     .homeDesText {
+          margin-top: 40px;
+          font-size: 25px;
+          font-family: Inter;
+          padding-right: 50px;
+     }
+
+     .homeLinksBox {
+          width: 50%;
+          margin-top: 50px;
+          text-decoration: none;
+          max-width: 1050px;
+     }
+
+     .homeLandingZone {
+          margin-left: 10%;
+          width: 80%;
+     }
+
+
+     .homeLinksBox2 {
+          margin-top: 100px;
+          margin-left: 40px;
+          flex-direction: column;
+     }
+
+
+     .homeLinkButtonsText{
+          text-decoration: none;
+          margin-top: 50px;
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+          padding: 20px 10px 20px 20px;
+          max-height: 150px;
+          width: 550px;
+     }
+
+     .homeLinkButtons:hover {
+          background-color: white;
+          background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
+          background-size: 730px;
+          /* color: white; */
+          border-color: black;
+     }
+
+     .homeLinkButtonsText:hover {
+          color: black;
+          border-color: white;
+          border-style: solid;
+     }
 }
 
-.homeLinkButtons:hover {
-     background-color: white;
-     background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
-     background-size: 730px;
-     /* color: white; */
-     border-color: black;
-}
+@media screen and (max-width: 600px) {
+     .HeaderSpacer{
+          margin-top: 50px;
+     }
 
-.homeLinkButtonsText:hover {
-     color: black;
-     border-color: white;
-     border-style: solid;
-}
+     .homeHeaderSpacer{
+          margin-top: 45px;
+          flex-direction: column;
+     }
 
+     .homeHelloText {
+          margin-top: 60px;
+          font-size: 15px;
+          font-family: Inter;
+          margin-right: 40px;
+     }
+
+     .homeNameText {
+          margin-top: 10px;
+          font-size: 30px;
+          font-family: Inter-Bold;
+          margin-right: 40px;
+     }
+
+     .homeRoleText {
+          margin-top: 20px;
+          font-size: 15px;
+          font-family: Inter-Bold;
+          margin-right: 40px;
+     }
+
+     .homeDesText {
+          margin-top: 20px;
+          font-size: 12px;
+          font-family: Inter;
+          margin-right: 40px;
+     }
+     
+     .homeLinksBox {
+          /* width: 20%; */
+          /* margin-top: 25px; */
+          text-decoration: none;
+          margin-left: 25px;
+     }
+
+     .homeLinksBox2 {
+          margin-top: 20px;
+          margin-left: 40px;
+          flex-direction: column;
+     }
+
+     .homeLandingZone {
+          margin-left: 10%;
+          width: 90%;
+     }
+
+
+     .homeLinkButtonsText{
+          text-decoration: none;
+          font-size: 25px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 5px;
+          width: 250px;
+          background-image: url("../src/img/headerBackground/Header_Colorful_Wide_Mobile.png");
+          padding: 20px 10px 20px 10px;
+          margin: 25px 25px 10px 0px;
+
+     }
+
+     .homeLinkButtons:hover {
+          background-color: white;
+          background-image: url("../src/img/headerBackground/Header_Colorful_Wide_Mobile.png");
+          background-size: 730px;
+          /* color: white; */
+          border-color: black;
+     }
+
+     .homeLinkButtonsText:hover {
+          color: black;
+          border-color: white;
+          border-style: solid;
+     }
+}
 /*? ============= Dev Portfolio ============= */
 
-.portfolioMainBox {
-     /* background-color: #ef8f46d3; */
-     width: 80%;
-     height: 510px;
-     border-style: solid;
-     border-width: 5px;
+@media screen and (min-width: 600px) {
+
+     .portfolioMainBox {
+          /* background-color: #ef8f46d3; */
+          width: 80%;
+          height: 510px;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox1 {
+          background-color: var(--alt-color2b);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox2 {
+          background-color: var(--alt-color1);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloSubBoxLeft {
+          border-width: 0px 5px 0px 0px;
+          border-style: solid;
+          max-width: 400px;
+     }
+
+     .portfioloTitle {
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+     }
+
+     .aboutMeTitle {
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+          margin-top: 80px;
+     }
+
+     .portfioloAppTitle1 {
+          margin-top: 20px;
+          font-size: 40px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+     }
+
+     .portfioloAppTitle2 {
+          margin-left: 120px;
+          font-size: 40px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+          margin-top: 80px;
+     }
+
+     .demoGIF1{
+          justify-content: center;
+          width: 300px;
+          margin-bottom: 50px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+     }
+
+     a { color: inherit; } 
+
+     .demoTitle {
+          font-size: 30px;
+          margin-top: 30px;
+          margin-bottom: 40px;
+     }
+
+     .demoText {
+          font-family: "SF-Mono";
+          font-size: 25px;
+     }
+
+     .portfolioAboutMe {
+          max-width: 1400px;
+          width: 1200px;
+          background-image: url("../src/img/headerBackground/Header_Colorful_Wide.png");
+          background-size: 1400px;
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+          font-family: "Arvo-Reg";
+          font-size: 19px;
+     }
+
+     .resumeDownloadText {
+          font-family: "SF-Mono";
+          font-size: 45px;
+          border-style: solid;
+          width: 100%;
+          border-width: 10px;
+     }
+
+     .PDFViewer {
+          width: 900px;
+     }
+
+     .resumeDownloadBox {
+          padding-top: 100px;
+          padding-bottom: 50px;
+     }
+
+     .softwareStackBox {
+          font-family: "SF-Mono";
+          font-size: 28px;
+          border-width: 0px 5px 0px 0px;
+          border-style: solid;
+     }
+
+     .softwareStackList {
+          text-align:left;
+          font-size: 15px;
+          margin-top: 30px;
+     }
+
+     .projectDesTitles {
+          text-align:center;
+          font-family: "SF-Mono";
+          font-size: 28px;
+          margin-top: 50px;
+     }
+
+     .projectDesText {
+          font-family: "Arvo-Bold";
+          font-size: 15px;
+          margin-top: 30px;
+          padding: 0px 50px 0px 50px;
+     }
+
+     .projectSubDesText {
+          font-family: "Arvo-Reg";
+          font-size: 14px;
+          margin-top: 10px;
+          padding: 0px 5px 0px 5px;
+          margin-bottom: 50px;
+     }
+
+     .projectSubDesTextItem {
+          margin-top: 20px;
+     }
+
+     .projectGoalText{
+          margin-left: 10%;
+          text-align: left;
+          font-size: 13px;
+          width: 80%;
+     }
+
+     .railwayLogo {
+          height: 50px;
+          margin-top: 50px;
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          -ms-border-radius: 15px;
+          -o-border-radius: 15px;
+     }
+
+     .featuredProjects {
+          margin-right: 10%;
+     }
+
+     
+     .GitHub {
+          margin-top: 30px;
+          width: 50px;
+     }
+
+     .stackText {
+          margin-top: 30px;
+     }
+
+     .softwareStackListItem {
+          padding: 15px 0px 0px 0px;
+     }
+
+     .contactPhotoPortfolio {
+          width: 450px;
+          /* margin-left: 50%; */
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+     }
+
 }
 
-.portfioloDemoBox1 {
-     background-color: var(--alt-color2b);
-     background-size: 730px;
-     width: 120%;
-     border-style: solid;
-     border-width: 5px;
+
+@media screen and (max-width: 600px) {
+
+     .portfolioMainBox {
+          /* background-color: #ef8f46d3; */
+          width: 80%;
+          height: 510px;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox1 {
+          background-color: var(--alt-color2b);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox2 {
+          background-color: var(--alt-color1);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloSubBoxLeft {
+          border-width: 0px 5px 0px 0px;
+          border-style: solid;
+          max-width: 150px;
+     }
+
+     .portfioloTitle {
+          font-size: 30px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+     }
+
+     .aboutMeTitle {
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+          margin-top: 80px;
+     }
+
+     .portfioloAppTitle1 {
+          /* margin-top: 10px; */
+          font-size: 25px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+     }
+
+     .portfioloAppTitle2 {
+          margin-left: 55px;
+          font-size: 25px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+     }
+
+     .demoGIF1{
+          justify-content: center;
+          width: 150px;
+          margin-top: 100px;
+          /* margin-bottom: 50px; */
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+     }
+
+     a { color: inherit; } 
+
+     .demoTitle {
+          font-size: 18px;
+          margin-top: 30px;
+          margin-bottom: 40px;
+     }
+
+     .demoText {
+          font-family: "SF-Mono";
+          font-size: 12px;
+     }
+
+     .portfolioAboutMe {
+          max-width: 400px;
+          width: 400px;
+          background-image: url("../src/img/headerBackground/Header_Colorful_Wide.png");
+          background-size: 500px;
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+          font-family: "Arvo-Reg";
+          font-size: 14px;
+     }
+
+     .resumeDownloadText {
+          font-family: "SF-Mono";
+          font-size: 25px;
+          border-style: solid;
+          width: 100%;
+          border-width: 10px;
+     }
+
+     .PDFViewer {
+          max-width: 435px;
+          max-height: 600px;
+     }
+
+     .resumeDownloadBox {
+          padding-top: 30px;
+          /* padding-bottom: 50px; */
+          width: 250px;
+          
+     }
+
+     .softwareStackBox {
+          font-family: "SF-Mono";
+          font-size: 15px;
+          border-width: 0px 5px 0px 0px;
+          border-style: solid;
+          /* text-align: center; */
+     }
+
+     .softwareStackList {
+          text-align: left;
+          /* align-items: center; */
+          font-size: 7px;
+          padding: 0px 0px 0px 0px;
+          margin-top: 15px;
+     }
+
+     .softwareStackListItem {
+          padding: 10px 0px 0px 0px;
+     }
+
+     .projectDesTitles {
+          text-align:center;
+          font-family: "SF-Mono";
+          font-size: 12px;
+          margin-top: 20px;
+     }
+
+     .projectDesText {
+          font-family: "Arvo-Bold";
+          font-size: 9px;
+          margin-top: 10px;
+          padding: 0px 5px 0px 5px;
+     }
+
+     .projectSubDesText {
+          font-family: "Arvo-Reg";
+          font-size: 9px;
+          margin-top: 10px;
+          padding: 0px 0px 0px 5px;
+          margin-bottom: 30px;
+     }
+
+     .projectGoalText{
+          margin-left: 10px;
+          text-align: left;
+          font-size: 9px;
+          width: 80%;
+     }
+
+     .railwayLogo {
+          height: 20px;
+          margin-top: 30px;
+          /* margin-right: 50px; */
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+     }
+
+     .logoOffset {
+          margin-right: 10px;
+     }
+
+     .featuredProjects {
+          max-width: 380px;
+          padding: 0px 8px 0px 15px
+     }
+
+     .GitHub {
+          margin-top: 10px;
+          width: 25px;
+     }
+     
+     .stackText {
+          margin-top: 10px;
+          margin-right: 10px;
+     }
+
+     .projectSubDesTextItem {
+          margin-top: 10px;
+     }
+
+     .portfioloSubBoxRight {
+          padding-right: 0px;
+     }
+
+     .contactPhotoPortfolio {
+          width: 350px;
+          margin-bottom: 50px;
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+     }     
+
 }
 
-.portfioloDemoBox2 {
-     background-color: var(--alt-color1);
-     background-size: 730px;
-     width: 120%;
-     border-style: solid;
-     border-width: 5px;
-}
-
-.portfioloSubBoxLeft {
-     border-width: 0px 5px 0px 0px;
-     border-style: solid;
-     max-width: 400px;
-}
-
-.portfioloTitle {
-     font-size: 50px;
-     font-family: "SF-Mono";
-     border-style: solid;
-     border-width: 10px;
-}
-
-.portfioloAppTitle1 {
-     margin-top: 20px;
-     font-size: 40px;
-     font-family: "SF-Mono";
-     border-style: dashed;
-     border-width: 10px;
-}
-
-.portfioloAppTitle2 {
-     margin-left: 120px;
-     font-size: 40px;
-     font-family: "SF-Mono";
-     border-style: dashed;
-     border-width: 10px;
-}
-
-.demoGIF1{
-     justify-content: center;
-     width: 300px;
-     border-radius: 10px;
-     -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-     -ms-border-radius: 10px;
-     -o-border-radius: 10px;
-}
-
-a { color: inherit; } 
-
-.demoTitle {
-     font-size: 30px;
-}
-
-.demoText {
-     font-family: "SF-Mono";
-     font-size: 25px;
-}
-
-.portfolioAboutMe {
-     max-width: 1400px;
-     width: 1200px;
-     background-image: url("../src/img/headerBackground/Header_Colorful_Wide.png");
-     background-size: 1400px;
-     border-radius: 50px;
-     -webkit-border-radius: 50px;
-     -moz-border-radius: 50px;
-     -ms-border-radius: 50px;
-     -o-border-radius: 50px;
-     font-family: "Arvo-Reg";
-     font-size: 19px;
-}
-
-.resumeDownloadText {
-     font-family: "SF-Mono";
-     font-size: 45px;
-     border-style: solid;
-     width: 100%;
-     border-width: 10px;
-}
-
-.PDFViewer {
-     width: 900px;
-}
-
-.resumeDownloadBox {
-     padding-top: 100px;
-     padding-bottom: 50px;
-}
-
-.softwareStackBox {
-     font-family: "SF-Mono";
-     font-size: 28px;
-     border-width: 0px 5px 0px 0px;
-     border-style: solid;
-}
-
-.softwareStackList {
-     text-align:left;
-     font-size: 15px;
-}
-
-.projectDesTitles {
-     text-align:center;
-     font-family: "SF-Mono";
-     font-size: 28px;
-}
-
-.projectDesText {
-     font-family: "Arvo-Bold";
-     font-size: 15px;
-}
-
-.projectSubDesText {
-     font-family: "Arvo-Reg";
-     font-size: 14px;
-}
-
-.projectGoalText{
-     margin-left: 10%;
-     font-size: 13px;
-     width: 80%;
-}
-
-.railwayLogo {
-     height: 50px;
-     border-radius: 15px;
-     -webkit-border-radius: 15px;
-     -moz-border-radius: 15px;
-     -ms-border-radius: 15px;
-     -o-border-radius: 15px;
-}
-
-.featuredProjects {
-     margin-right: 10%;
-}
 
 /*? ============= About Me Page ============= */
-
-.aboutMeSubBoxes {
-     /* width: 1100px; */
-     /* max-width: 900px; */
-     background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
-     background-repeat: no-repeat;
-     background-size: cover;
-     /* background-size: auto; */
-     /* background-size: 900px; */
-     border-color: white;
-     border-style: solid;
-     border-width: 10px;
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
-     font-family: Inter;
-     /* font-family: "SF-Mono"; */
-     font-size: 20px;
-}
 
 @media screen and (min-width: 2000px) {
   .HeaderAboutSpacer {
@@ -319,166 +685,438 @@ a { color: inherit; }
 
 }
 
+@media screen and (min-width: 600px) {
 
-.aboutMeTitle {
-     font-family: "SF-Mono";
-     font-size: 50px;
-     border-style: solid;
-     border-width: 10px;
+     .aboutMeSubBoxes {
+          /* width: 1100px; */
+          /* max-width: 900px; */
+          background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          /* background-size: auto; */
+          /* background-size: 900px; */
+          border-color: white;
+          border-style: solid;
+          border-width: 10px;
+          border-radius: 60px;
+          -webkit-border-radius: 60px;
+          -moz-border-radius: 60px;
+          -ms-border-radius: 60px;
+          -o-border-radius: 60px;
+          font-family: Inter;
+          /* font-family: "SF-Mono"; */
+          font-size: 20px;
+          padding: 5px 10px 30px 10px;
+     }
+
+     .aboutMeTitle {
+          font-family: "SF-Mono";
+          font-size: 50px;
+          border-style: solid;
+          border-width: 10px;
+          padding: 30px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+     }
+
+     .aboutText {
+          padding: 30px 10px 0px 20px;
+     }
+
+     .aboutRightBox {
+          margin-right: 10%;
+          justify-content: end;
+     }
+
+     .aboutLeftBox {
+          margin-left: 10%;
+          margin-right: 10%;
+          justify-content: start;
+     }
+
+     .HeaderAboutSpacer {
+          margin-top: 125px;
+          padding-top: 50px;
+          margin-bottom: 100px;
+     }
+
+     .aboutMePar1Picture {
+          height: 350px;
+          margin-left: 15%;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
+
+     .aboutMePar2Picture {
+          height: 350px;
+          /* margin-top: 25px; */
+          margin-left: 30%;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
+
+     .aboutMePar3Picture {
+          height: 350px;
+          margin-left: 15%;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
+
+     .aboutMePar4Picture {
+          height: 350px;
+          margin-left: 45%;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
+
+     .aboutMePar5Picture {
+          height: 250px;
+          margin-left: 10%;
+          margin-bottom: 25px;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
+
+     .aboutMePar6Picture {
+          height: 250px;
+          margin-left: 30%;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
+
+     .aboutTextPadding {
+          padding: 35px 20px 0px 20px;
+     }
+
 }
 
-.mediaPageTitle {
-     font-family: "SF-Mono";
-     font-size: 50px;
-     border-style: solid;
-     border-width: 10px;
-}
 
-.aboutRightBox {
-     margin-right: 10%;
-}
 
-.aboutLeftBox {
-     margin-left: 10%;
-     margin-right: 10%;
-}
+@media screen and (max-width: 600px) {
 
-.HeaderAboutSpacer {
-     margin-top: 125px;
-     padding-top: 50px;
-     margin-bottom: 100px;
-}
+     .aboutMeSubBoxes {
+          min-width: 350px;
+          max-width: 350px;
+          background-image: url("../src/img/headerBackground/Header_Colorful_Stretched.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          /* background-size: auto; */
+          /* background-size: 900px; */
+          border-color: white;
+          border-style: solid;
+          border-width: 10px;
+          border-radius: 60px;
+          -webkit-border-radius: 60px;
+          -moz-border-radius: 60px;
+          -ms-border-radius: 60px;
+          -o-border-radius: 60px;
+          font-family: Inter;
+          /* font-family: "SF-Mono"; */
+          font-size: 15px;
+          justify-content: center;
+     }
 
-.aboutMePar1Picture {
-     height: 350px;
-     margin-left: 15%;
-     border-radius: 25px;
-     -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-     -ms-border-radius: 25px;
-     -o-border-radius: 25px;
-}
+     .aboutMeTitle {
+          font-family: "SF-Mono";
+          font-size: 40px;
+          border-style: solid;
+          border-width: 10px;
+          padding: 20px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+     }
 
-.aboutMePar2Picture {
-     height: 350px;
-     /* margin-top: 25px; */
-     margin-left: 30%;
-     border-radius: 25px;
-     -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-     -ms-border-radius: 25px;
-     -o-border-radius: 25px;
-}
+     .aboutTextPadding {
+          padding: 20px 30px 20px 20px;
+     }
 
-.aboutMePar3Picture {
-     height: 350px;
-     margin-left: 15%;
-     border-radius: 25px;
-     -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-     -ms-border-radius: 25px;
-     -o-border-radius: 25px;
-}
+     .aboutRightBox {
+          /* margin-right: 0px; */
+          justify-content: center;
+     }
 
-.aboutMePar4Picture {
-     height: 350px;
-     margin-left: 45%;
-     border-radius: 25px;
-     -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-     -ms-border-radius: 25px;
-     -o-border-radius: 25px;
-}
+     .aboutText {
+          margin-top: 30px;
+          padding: 10px 0px 25px 0px;
+          justify-content: center;
+     }
 
-.aboutMePar5Picture {
-     height: 250px;
-     margin-left: 10%;
-     margin-bottom: 25px;
-     border-radius: 25px;
-     -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-     -ms-border-radius: 25px;
-     -o-border-radius: 25px;
-}
+     .aboutLeftBox {
+          margin-left: 10%;
+          margin-right: 10%;
+          justify-content: center;
+     }
 
-.aboutMePar6Picture {
-     height: 250px;
-     margin-left: 30%;
-     border-radius: 25px;
-     -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-     -ms-border-radius: 25px;
-     -o-border-radius: 25px;
-}
+     .HeaderAboutSpacer {
+          margin-top: 20px;
+          padding-top: 50px;
+          margin-bottom: 25px;
+     }
 
+     .aboutMePar1Picture {
+          height: 300px;
+          margin-left: 15px;
+          margin-top: 40px;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
+
+     .aboutMePar2Picture {
+          width: 400px;
+          min-width: 400px;
+          /* margin-top: 25px; */
+          margin-left: 30px;
+          margin-bottom: 40px;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
+
+     .aboutMePar3Picture {
+          height: 300px;
+          /* margin-left: 15%; */
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
+
+     .aboutMePar4Picture {
+          height: 350px;
+          min-width: 200px;
+          margin-left: 55px;
+          margin-bottom: 50px;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
+
+     .aboutMePar5Picture {
+          height: 150px;
+          /* margin-left: 10%; */
+          margin-bottom: 25px;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
+
+     .aboutMePar6Picture {
+          height: 200px;
+          min-width: 100px;
+          margin-left: 50px;
+          margin-bottom: 50px;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+}
+}
 
 /*? ============= Contact Page ============= */
 
-.contactHeaderText {
-     font-family: var(--main-font);
-     font-size: 60px;
-     color: black;
+@media screen and (min-width: 600px) {
+
+     .contactHeaderText {
+          font-family: var(--main-font);
+          font-size: 60px;
+          color: black;
+     }
+
+     .contactBox {
+          width: 700px;
+          height: 300px;
+          margin-bottom: 50px;
+          /* padding-bottom: 50px; */
+          /* background-color: var(--alt-color1); */
+          background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
+          background-size: 2500px;
+          border-radius: 60px;
+          -webkit-border-radius: 60px;
+          -moz-border-radius: 60px;
+          -ms-border-radius: 60px;
+          -o-border-radius: 60px;
+     }
+
+     .contactFont {
+          
+          font-size: 50px;
+     }
+
+     .contactTitle {
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+     }
+
+     .emailFont{
+          font-size: 35px;
+          margin-top: 40px;
+          margin-right: 20px;
+     }
+
+     .emailLinkText{
+          font-size: 25px;
+          text-decoration: none !important;
+     }
+
+     .devAboutMeBox {
+          /* margin-left: 15%; */
+          width: 1600px;
+     }
+
+     .contactPhoto {
+          width: 450px;
+          /* margin-left: 50%; */
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+     }
+
+     .contactLocation {
+          font-size: 30px;
+          font-family: "SF-Mono";
+          margin-top: 15px;
+     }
+
+     .timeZoneText {
+          font-size: 20px;
+          font-family: "SF-Mono";
+          margin-top: 10px;
+     }
+
+     .contactEmail {
+          font-size: 30px;
+          font-family: "SF-Mono";
+          margin-top: 15px;
+     }
+
+     .contactSpacer {
+          padding-top: 200px;
+     }
+
+    .emailIcon {
+          width: 100px;
+     }
+
 }
 
-.contactBox {
-     width: 700px;
-     height: 300px;
-     margin-bottom: 50px;
-     /* padding-bottom: 50px; */
-     /* background-color: var(--alt-color1); */
-     background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
-     background-size: 2500px;
-     border-radius: 60px;
-     -webkit-border-radius: 60px;
-     -moz-border-radius: 60px;
-     -ms-border-radius: 60px;
-     -o-border-radius: 60px;
+@media screen and (max-width: 600px) {
+
+     .contactHeaderText {
+          font-family: var(--main-font);
+          font-size: 60px;
+          color: black;
+     }
+
+     .contactBox {
+          width: 350px;
+          height: 200px;
+          margin-bottom: 50px;
+          /*padding-bottom: 50px;
+          *//*background-color: var(--alt-color1);
+          */background-image: url("../src/img/headerBackground/Header_Colorful.jpg");
+          background-size: 2500px;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px;
 }
 
-.contactFont {
-     
-     font-size: 50px;
-}
+     .contactFont {
+          
+          font-size: 40px;
+     }
 
-.emailFont{
-     font-size: 35px;
-}
+     .contactTitle {
+          font-size: 40px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+     }
 
-.emailLinkText{
-     font-size: 25px;
-     text-decoration: none !important;
-}
+     .emailFont{
+          font-size: 35px;
+          margin-top: 10px;
+          margin-right: 20px;
+     }
 
-.devAboutMeBox {
-     /* margin-left: 15%; */
-     width: 1600px;
-}
+     .emailLinkText{
+          font-size: 25px;
+          text-decoration: none !important;
+     }
 
-.contactPhoto {
-     width: 450px;
-     /* margin-left: 50%; */
-     border-radius: 50px;
-     -webkit-border-radius: 50px;
-     -moz-border-radius: 50px;
-     -ms-border-radius: 50px;
-     -o-border-radius: 50px;
-}
+     .devAboutMeBox {
+          /* margin-left: 15%; */
+          width: 1600px;
+     }
 
-.contactLocation {
-     font-size: 30px;
-     font-family: "SF-Mono";
-}
+     .emailIcon {
+          width: 100px;
+     }
 
-.timeZoneText {
-     font-size: 20px;
-     font-family: "SF-Mono";
-}
+     .contactPhoto {
+          width: 450px;
+          /* margin-left: 50%; */
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+     }
 
-.contactEmail {
-     font-size: 30px;
-     font-family: "SF-Mono";
-}
+     .contactLocation {
+          font-size: 16px;
+          font-family: "SF-Mono";
+          margin-top: 0px;
+     }
 
-.contactSpacer {
-     padding-top: 150px;
+     .timeZoneText {
+          font-size: 12px;
+          font-family: "SF-Mono";
+          margin-top: 5px;
+     }
+
+     .contactEmail {
+          font-size: 16px;
+          font-family: "SF-Mono";
+          margin-top: 20px;
+     }
+
+     .contactSpacer {
+          padding-top: 100px;
+     }
+
 }
