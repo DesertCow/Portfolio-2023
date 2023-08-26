@@ -59,6 +59,16 @@ const Portfolio = () => {
               <div className="col demoText portfioloSubBoxLeft text-center">
                 <h1 className="demoTitle">Demo</h1>
                 <img className="img-fluid demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
+                <a className='demoLinkText' href="https://boardclubapp-production.up.railway.app/">Live Demo Link</a>
+                <div className='demoTargetInfoBox'>
+                  <h1 className='demoScreenText'>* App Designed for Mobile Experience *</h1>
+                  <h1 className='demoScreenText'>Screen Width: 390px - 420px  </h1>
+                </div>
+                <div className='demoLoginInfoBox'>
+                  <h1 className='demoLoginTitleText'>Demo Login</h1>
+                  <h1 className='demoLoginText'>Email: demo@gmail.com</h1>
+                  <h1 className='demoLoginText'>Password: demo </h1>
+                </div>
               </div>
 
               <div className="col d-flex portfioloSubBoxRight">
@@ -73,7 +83,10 @@ const Portfolio = () => {
                     <li className="softwareStackListItem">&#9642; Backend: NodeJS (16.15.1)</li>
                     <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
                     <li className="softwareStackListItem">&#9642; Photo Host: AWS S3</li>
-                    <li className="softwareStackListItem">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li>
+                    {/* <li className="softwareStackListItem">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li> */}
+                    <li className="softwareStackListItem">&#9642; App Hosting:</li>
+                    <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Client/Server: Railway</li>
+                    <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Database: Self Host (Docker)</li>
                     <li className="text-center logoOffset"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
                     <li className="text-center logoOffset d-flex justify-content-around col">
                       <div>
@@ -102,7 +115,7 @@ const Portfolio = () => {
                     club events, log surf sessions, view surf tips, rental information, and general information 
                     about the club.</p>
                   
-                  <div className="projectDesTitles">Project Goal</div>
+                  <div className="projectDesTitles2">Project Goal</div>
                   <p className="projectDesText">The goal of this application to motivate users to go surf by providing them with the all the infomation they need to have a great surf session.</p>
                   <ul className="projectSubDesText projectGoalText">
                     <li className="projectSubDesTextItem">&#9642; The app shows the current surf and weather conditons. </li>
