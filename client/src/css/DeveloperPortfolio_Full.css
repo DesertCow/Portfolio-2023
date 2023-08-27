@@ -1,0 +1,279 @@
+/*! ============= Desktop CSS ============= */
+
+@media screen and (min-width: 600px) {
+
+     .portfolioMainBox {
+          /* background-color: #ef8f46d3; */
+          width: 80%;
+          height: 510px;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox1 {
+          background-color: var(--alt-color2b);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox2 {
+          background-color: var(--alt-color1);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox3 {
+          background-color: var(--alt-color3);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloSubBoxLeft {
+          border-width: 0px 5px 0px 0px;
+          border-style: solid;
+          max-width: 400px;
+     }
+
+     .portfioloTitle {
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+     }
+
+     .aboutMeTitle {
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+          margin-top: 80px;
+     }
+
+     .portfioloAppTitle1 {
+          margin-top: 20px;
+          font-size: 40px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+     }
+
+     .portfioloAppTitle2 {
+          margin-left: 120px;
+          font-size: 40px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+          margin-top: 80px;
+     }
+
+     .portfioloAppTitle3 {
+          margin-left: 120px;
+          font-size: 40px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+          width: 600px;
+          margin-top: 80px;
+     }
+
+     .demoGIF1{
+          justify-content: center;
+          width: 300px;
+          margin-bottom: 30px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+     }
+
+     a { color: inherit; } 
+
+     .demoTitle {
+          font-size: 30px;
+          margin-top: 30px;
+          margin-bottom: 40px;
+     }
+
+     .demoText {
+          font-family: "SF-Mono";
+          font-size: 25px;
+     }
+
+     .portfolioAboutMe {
+          max-width: 1400px;
+          width: 1200px;
+          background-image: url("../../src/img/headerBackground/Header_Colorful_Wide.png");
+          background-size: 1400px;
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+          font-family: "Arvo-Reg";
+          font-size: 19px;
+     }
+
+     .resumeDownloadText {
+          font-family: "SF-Mono";
+          font-size: 45px;
+          border-style: solid;
+          width: 100%;
+          border-width: 10px;
+     }
+
+     .PDFViewer {
+          width: 900px;
+     }
+
+     .resumeDownloadBox {
+          padding-top: 100px;
+          padding-bottom: 50px;
+     }
+
+     .softwareStackBox {
+          font-family: "SF-Mono";
+          font-size: 28px;
+          border-width: 0px 5px 0px 0px;
+          border-style: solid;
+     }
+
+     .softwareStackList {
+          text-align:left;
+          font-size: 15px;
+          margin-top: 30px;
+     }
+
+     .projectDesTitles {
+          text-align:center;
+          font-family: "SF-Mono";
+          font-size: 28px;
+          margin-top: 80px;
+     }
+
+     .projectDesTitles2 {
+          text-align:center;
+          font-family: "SF-Mono";
+          font-size: 28px;
+          margin-top: 150px;
+     }
+
+     .projectDesText {
+          font-family: "Arvo-Bold";
+          font-size: 15px;
+          margin-top: 30px;
+          padding: 0px 50px 0px 50px;
+     }
+
+     .projectSubDesText {
+          font-family: "Arvo-Reg";
+          font-size: 14px;
+          margin-top: 10px;
+          padding: 0px 5px 0px 5px;
+          margin-bottom: 50px;
+     }
+
+     .projectSubDesTextItem {
+          margin-top: 20px;
+     }
+
+     .projectGoalText{
+          margin-left: 10%;
+          text-align: left;
+          font-size: 13px;
+          width: 80%;
+     }
+
+     .railwayLogo {
+          height: 50px;
+          margin-top: 50px;
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          -ms-border-radius: 15px;
+          -o-border-radius: 15px;
+     }
+
+     .featuredProjects {
+          margin-right: 10%;
+     }
+
+     
+     .GitHub {
+          margin-top: 30px;
+          width: 50px;
+     }
+
+     .GitHubText{
+          margin-bottom: 20px;
+     }
+
+     .stackText {
+          margin-top: 30px;
+     }
+
+     .softwareStackListItem {
+          padding: 15px 0px 0px 0px;
+     }
+
+     .contactPhotoPortfolio {
+          width: 450px;
+          /* margin-left: 50%; */
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+     }
+
+     .demoLoginInfoBox {
+          border-style: dashed;
+          border-width: 5px;
+          padding: 10px;
+          max-width: 70%;
+          margin: 20px 0px 20px 50px;
+     }
+
+     .demoTargetInfoBox {
+          border-style: dashed;
+          border-width: 5px;
+          padding: 10px;
+          max-width: 90%;
+          margin: 20px 0px 20px 20px;
+     }
+
+     .demoLoginText {
+          font-size: 15px;
+          text-align: left;
+     }
+
+     .demoLoginTitleText {
+          font-size: 15
+          px;
+          text-align: center;
+          text-decoration: underline;
+          margin-bottom: 5px;
+     }
+
+     .demoScreenText {
+          font-size: 12px;
+          text-align: center;
+     }
+
+     .demoLinkText {
+          font-size: 25px;
+          overflow: hidden;
+          white-space: nowrap;
+     }
+
+     .appHost {
+          margin-top: 50px;
+     }
+
+}

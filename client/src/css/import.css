@@ -1,0 +1,52 @@
+
+/* Master CSS Import File */
+
+/*? ============= Font Import ============= */
+
+@font-face {
+  font-family: "NextStep-1";
+  src: local("NextStep-1"),
+    url("../fonts/NextStep_FONT/NEXTSTEP.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arvo-Reg";
+  src: local("Arvo-Reg"),
+    url("../fonts/Arvo/Arvo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arvo-Bold";
+  src: local("Arvo-Bold"),
+    url("../fonts/Arvo/Arvo-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+    url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: local("Inter-Bold"),
+    url("../fonts/Inter/static/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF-Mono";
+  src: local("SF-Mono"),
+    url("../fonts/SFMono-Regular.otf") format("truetype");
+}
+
+
+/*? Color/Font Variables */
+
+:root {
+  --main-font: "NextStep-1";
+  --mainBG-color: #181818;
+  --alt-color1: #0ba6d99a;
+  --alt-color2: #d34846bb;
+  --alt-color2b: #ed5735be;
+  --alt-color3: #40807ac0;
+}

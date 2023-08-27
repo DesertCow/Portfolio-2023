@@ -1,6 +1,6 @@
 
 //* CSS Import
-import "./_MediaPages.css";
+import "../../css/MediaPages.css";
 
 //* Component Import
 import Header from '../../components/Header';
