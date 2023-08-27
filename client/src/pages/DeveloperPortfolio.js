@@ -60,7 +60,7 @@ const Portfolio = () => {
                 <h1 className="demoTitle">Demo</h1>
                 <img className="img-fluid demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
                 <a className='demoLinkText' href="https://boardclubapp-production.up.railway.app/">Live Demo Link</a>
-                <div className='demoTargetInfoBox'>
+                <div className='demoTargetInfoBox text-center'>
                   <h1 className='demoScreenText'>* App Designed for Mobile Experience *</h1>
                   <h1 className='demoScreenText'>Screen Width: 390px - 420px  </h1>
                 </div>
@@ -124,6 +124,7 @@ const Portfolio = () => {
                     <li className="projectSubDesTextItem">&#9642; Surf hacks are listed to help new members with common surf problems. </li>
                     <li className="projectSubDesTextItem">&#9642; The Newport Surf map helps members easily pick the best spot to go surfing while visiting the club house.</li>
                     <li className="projectSubDesTextItem">&#9642; The community forum helps members find others to surf with, sell items and also to interact with one another to build a sense of community.</li>
+                    <li className="projectSubDesTextItem">&#9642; Includes admin console with seperate login to enable adding/removing/editing Surf Hacks, Events, and shaper list.</li>
                   </ul>
                 </div>
 
@@ -141,12 +142,22 @@ const Portfolio = () => {
               <div className="col demoText portfioloSubBoxLeft text-center">
                 <h1 className="demoTitle">Demo</h1>
                 <img className="img-fluid demoGIF1" src={require("../img/DemoGIFs/Chuckwagon_Demo1.gif")} alt="Surf Deck Demo"></img>
+                <a className='demoLinkText' href="https://saltlicktruck-production.up.railway.app/">Live Demo Link</a>
+                <div className='demoTargetInfoBox text-center'>
+                  <h1 className='demoScreenText'>* App Designed for Mobile Experience *</h1>
+                  <h1 className='demoScreenText'>Screen Width: 390px - 420px  </h1>
+                </div>
+                <div className='demoLoginInfoBox'>
+                  <h1 className='demoLoginTitleText'>Demo Login</h1>
+                  <h1 className='demoLoginText'>Email: demo@gmail.com</h1>
+                  <h1 className='demoLoginText'>Password: demo </h1>
+                </div>
               </div>
 
               <div className="col d-flex portfioloSubBoxRight">
                 
                 <div className="col-4 softwareStackBox">
-                  <div className="text-center">Software Stack</div>
+                  <div className="stackText">Software Stack</div>
                   <div className="d-flex justify-content-start">
                     <ul className="softwareStackList text-left">
                       <li className="py-3">&#9642; App Type: Progressive Web App</li>
@@ -156,7 +167,10 @@ const Portfolio = () => {
                       <li className="py-3">&#9642; Backend: NodeJS (16.15.1)</li>
                       <li className="py-3">&#9642; Database: MongoDB (5.6.0)</li>
                       <li className="py-3">&#9642; Database: MySQL (2.3.3)</li>
-                      <li className="pt-3">&#9642; App Hosting: <a href="https://saltlicktruck-production.up.railway.app/">Chuckwagon (Live)</a></li>
+                      <li className="softwareStackListItem">&#9642; App Hosting:</li>
+                      <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Client/Server: Railway</li>
+                      <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Database: Self Host (Docker)</li>
+                      {/* <li className="pt-3">&#9642; App Hosting: <a href="https://saltlicktruck-production.up.railway.app/">Chuckwagon (Live)</a></li> */}
                       <li className="text-center logoOffset"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
                       <li className="text-center logoOffset">
                         <a href="https://github.com/DesertCow/SaltLickTruck">
@@ -164,7 +178,7 @@ const Portfolio = () => {
                             className="GitHub"
                             alt="GitHub Icon"/>
                         </a>
-                        <h1>Client + Server</h1>
+                        <h1 className='GitHubText'>Client + Server</h1>
                       </li>
                     </ul>
                   </div>

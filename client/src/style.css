@@ -378,7 +378,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
           text-align:center;
           font-family: "SF-Mono";
           font-size: 28px;
-          margin-top: 50px;
+          margin-top: 80px;
      }
 
      .projectDesTitles2 {
@@ -434,6 +434,10 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
           width: 50px;
      }
 
+     .GitHubText{
+          margin-bottom: 20px;
+     }
+
      .stackText {
           margin-top: 30px;
      }
@@ -474,7 +478,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      }
 
      .demoLoginTitleText {
-          font-size: 15px;
+          font-size: 15
+          px;
           text-align: center;
           text-decoration: underline;
           margin-bottom: 5px;
@@ -560,7 +565,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      .demoGIF1{
           justify-content: center;
           width: 150px;
-          margin-top: 100px;
+          margin: 0px 0px 20px 0px;
           /* margin-bottom: 50px; */
           border-radius: 10px;
           -webkit-border-radius: 10px;
@@ -574,7 +579,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
      .demoTitle {
           font-size: 18px;
           margin-top: 30px;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
      }
 
      .demoText {
@@ -643,6 +648,14 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
           margin-top: 20px;
      }
 
+     .projectDesTitles2 {
+          text-align:center;
+          font-family: "SF-Mono";
+          font-size: 12px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+     }
+
      .projectDesText {
           font-family: "Arvo-Bold";
           font-size: 9px;
@@ -689,6 +702,10 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
           margin-top: 10px;
           width: 25px;
      }
+
+     .GitHubText{
+          margin-bottom: 10px;
+     }
      
      .stackText {
           margin-top: 10px;
@@ -711,7 +728,47 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
           -moz-border-radius: 50px;
           -ms-border-radius: 50px;
           -o-border-radius: 50px;
-     }     
+     }
+
+     .demoLoginInfoBox {
+          border-style: dashed;
+          border-width: 3px;
+          padding: 3px;
+          max-width: 100%;
+          margin: 20px 0px 20px 0px;
+     }
+
+     .demoTargetInfoBox {
+          border-style: dashed;
+          border-width: 3px;
+          padding: 3px;
+          width: 100%;
+          margin: 10px 0px 10px 0px;
+     }
+
+     .demoLoginText {
+          font-size: 7px;
+          text-align: left;
+          margin-bottom: 5px;
+     }
+
+     .demoLoginTitleText {
+          font-size: 10px;
+          text-align: center;
+          text-decoration: underline;
+          margin-bottom: 10px;
+     }
+
+     .demoScreenText {
+          font-size: 6px;
+          text-align: center;
+     }
+
+     .demoLinkText {
+          font-size: 13px;
+          overflow: hidden;
+          white-space: nowrap;
+     }
 
 }
 
