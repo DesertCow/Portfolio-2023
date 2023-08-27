@@ -1,5 +1,5 @@
 //* CSS Import
-import "../css/MediaPages.css";
+import "../../css/MediaPages.css";
 
 import ReactPlayer from 'react-player'
 import React from 'react';

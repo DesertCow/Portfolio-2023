@@ -1,6 +1,7 @@
-/*! ============= Desktop CSS ============= */
 
-@media screen and (min-width: 600px) {
+/*? ============= Mobile CSS ============= */
+
+@media screen and (max-width: 600px) {
 
      .portfolioMainBox {
           /* background-color: #ef8f46d3; */
@@ -37,11 +38,11 @@
      .portfioloSubBoxLeft {
           border-width: 0px 5px 0px 0px;
           border-style: solid;
-          max-width: 400px;
+          max-width: 150px;
      }
 
      .portfioloTitle {
-          font-size: 50px;
+          font-size: 30px;
           font-family: "SF-Mono";
           border-style: solid;
           border-width: 10px;
@@ -56,36 +57,36 @@
      }
 
      .portfioloAppTitle1 {
-          margin-top: 20px;
-          font-size: 40px;
+          /* margin-top: 10px; */
+          font-size: 25px;
           font-family: "SF-Mono";
           border-style: dashed;
           border-width: 10px;
      }
 
      .portfioloAppTitle2 {
-          margin-left: 120px;
-          font-size: 40px;
+          margin-left: 55px;
+          font-size: 25px;
           font-family: "SF-Mono";
           border-style: dashed;
           border-width: 10px;
-          margin-top: 80px;
      }
 
      .portfioloAppTitle3 {
-          margin-left: 120px;
-          font-size: 40px;
+          margin-left: 45px;
+          font-size: 25px;
           font-family: "SF-Mono";
           border-style: dashed;
           border-width: 10px;
-          width: 600px;
+          width: 350px;
           margin-top: 80px;
      }
 
      .demoGIF1{
           justify-content: center;
-          width: 300px;
-          margin-bottom: 30px;
+          width: 150px;
+          margin: 0px 0px 20px 0px;
+          /* margin-bottom: 50px; */
           border-radius: 10px;
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
@@ -96,135 +97,152 @@
      a { color: inherit; } 
 
      .demoTitle {
-          font-size: 30px;
+          font-size: 18px;
           margin-top: 30px;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
      }
 
      .demoText {
           font-family: "SF-Mono";
-          font-size: 25px;
+          font-size: 12px;
      }
 
      .portfolioAboutMe {
-          max-width: 1400px;
-          width: 1200px;
-          background-image: url("../../../src/img/headerBackground/Header_Colorful_Wide.png");
-          background-size: 1400px;
+          max-width: 400px;
+          width: 400px;
+          background-image: url("../../src/img/headerBackground/Header_Colorful_Wide.png");
+          background-size: 500px;
           border-radius: 50px;
           -webkit-border-radius: 50px;
           -moz-border-radius: 50px;
           -ms-border-radius: 50px;
           -o-border-radius: 50px;
           font-family: "Arvo-Reg";
-          font-size: 19px;
+          font-size: 14px;
      }
 
      .resumeDownloadText {
           font-family: "SF-Mono";
-          font-size: 45px;
+          font-size: 25px;
           border-style: solid;
           width: 100%;
           border-width: 10px;
      }
 
      .PDFViewer {
-          width: 900px;
+          max-width: 435px;
+          max-height: 600px;
      }
 
      .resumeDownloadBox {
-          padding-top: 100px;
-          padding-bottom: 50px;
+          padding-top: 30px;
+          /* padding-bottom: 50px; */
+          width: 250px;
+          
      }
 
      .softwareStackBox {
           font-family: "SF-Mono";
-          font-size: 28px;
+          font-size: 15px;
           border-width: 0px 5px 0px 0px;
           border-style: solid;
+          /* text-align: center; */
      }
 
      .softwareStackList {
-          text-align:left;
-          font-size: 15px;
-          margin-top: 30px;
+          text-align: left;
+          /* align-items: center; */
+          font-size: 7px;
+          padding: 0px 0px 0px 0px;
+          margin-top: 15px;
+     }
+
+     .softwareStackListItem {
+          padding: 10px 0px 0px 0px;
      }
 
      .projectDesTitles {
           text-align:center;
           font-family: "SF-Mono";
-          font-size: 28px;
-          margin-top: 80px;
+          font-size: 12px;
+          margin-top: 20px;
      }
 
      .projectDesTitles2 {
           text-align:center;
           font-family: "SF-Mono";
-          font-size: 28px;
-          margin-top: 150px;
+          font-size: 12px;
+          margin-top: 20px;
+          margin-bottom: 10px;
      }
 
      .projectDesText {
           font-family: "Arvo-Bold";
-          font-size: 15px;
-          margin-top: 30px;
-          padding: 0px 50px 0px 50px;
+          font-size: 9px;
+          margin-top: 10px;
+          padding: 0px 5px 0px 5px;
      }
 
      .projectSubDesText {
           font-family: "Arvo-Reg";
-          font-size: 14px;
+          font-size: 9px;
           margin-top: 10px;
-          padding: 0px 5px 0px 5px;
-          margin-bottom: 50px;
-     }
-
-     .projectSubDesTextItem {
-          margin-top: 20px;
+          padding: 0px 0px 0px 5px;
+          margin-bottom: 30px;
      }
 
      .projectGoalText{
-          margin-left: 10%;
+          margin-left: 10px;
           text-align: left;
-          font-size: 13px;
+          font-size: 9px;
           width: 80%;
      }
 
      .railwayLogo {
-          height: 50px;
-          margin-top: 50px;
-          border-radius: 15px;
-          -webkit-border-radius: 15px;
-          -moz-border-radius: 15px;
-          -ms-border-radius: 15px;
-          -o-border-radius: 15px;
+          height: 20px;
+          margin-top: 30px;
+          /* margin-right: 50px; */
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+     }
+
+     .logoOffset {
+          margin-right: 10px;
      }
 
      .featuredProjects {
-          margin-right: 10%;
+          max-width: 380px;
+          padding: 0px 8px 0px 15px
      }
 
-     
      .GitHub {
-          margin-top: 30px;
-          width: 50px;
+          margin-top: 10px;
+          width: 25px;
      }
 
      .GitHubText{
-          margin-bottom: 20px;
+          margin-bottom: 10px;
      }
-
+     
      .stackText {
-          margin-top: 30px;
+          margin-top: 10px;
+          margin-right: 10px;
      }
 
-     .softwareStackListItem {
-          padding: 15px 0px 0px 0px;
+     .projectSubDesTextItem {
+          margin-top: 10px;
+     }
+
+     .portfioloSubBoxRight {
+          padding-right: 0px;
      }
 
      .contactPhotoPortfolio {
-          width: 450px;
-          /* margin-left: 50%; */
+          width: 350px;
+          margin-bottom: 50px;
           border-radius: 50px;
           -webkit-border-radius: 50px;
           -moz-border-radius: 50px;
@@ -234,46 +252,46 @@
 
      .demoLoginInfoBox {
           border-style: dashed;
-          border-width: 5px;
-          padding: 10px;
-          max-width: 70%;
-          margin: 20px 0px 20px 50px;
+          border-width: 3px;
+          padding: 3px;
+          max-width: 100%;
+          margin: 20px 0px 20px 0px;
      }
 
      .demoTargetInfoBox {
           border-style: dashed;
-          border-width: 5px;
-          padding: 10px;
-          max-width: 90%;
-          margin: 20px 0px 20px 20px;
+          border-width: 3px;
+          padding: 3px;
+          width: 100%;
+          margin: 10px 0px 10px 0px;
      }
 
      .demoLoginText {
-          font-size: 15px;
+          font-size: 7px;
           text-align: left;
-     }
-
-     .demoLoginTitleText {
-          font-size: 15
-          px;
-          text-align: center;
-          text-decoration: underline;
           margin-bottom: 5px;
      }
 
+     .demoLoginTitleText {
+          font-size: 10px;
+          text-align: center;
+          text-decoration: underline;
+          margin-bottom: 10px;
+     }
+
      .demoScreenText {
-          font-size: 12px;
+          font-size: 6px;
           text-align: center;
      }
 
      .demoLinkText {
-          font-size: 25px;
+          font-size: 13px;
           overflow: hidden;
           white-space: nowrap;
      }
 
      .appHost {
-          margin-top: 50px;
+          margin-top: 20px;
      }
 
 }

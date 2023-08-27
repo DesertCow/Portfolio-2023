@@ -16,9 +16,9 @@ import Blog from './pages/MediaPages/Blog';
 
 export default function App() {
 
-  require('./pages/css/style.css')
-  require('./pages/css/reset.css')
-  require('./pages/css/import.css')
+  require('./css/style.css')
+  require('./css/reset.css')
+  require('./css/import.css')
 
   return (
 

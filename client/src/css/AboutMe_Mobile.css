@@ -1,12 +1,12 @@
 
 
-/*! ============= Desktop CSS ============= */
-@media screen and (min-width: 600px) {
+/*? ============= Mobile CSS ============= */
+@media screen and (max-width: 600px) {
 
      .aboutMeSubBoxes {
-          /* width: 1100px; */
-          /* max-width: 900px; */
-          background-image: url("../../../src/img/headerBackground/Header_Colorful_Stretched.png");
+          min-width: 350px;
+          max-width: 350px;
+          background-image: url("../../src/img/headerBackground/Header_Colorful_Stretched.png");
           background-repeat: no-repeat;
           background-size: cover;
           /* background-size: auto; */
@@ -21,44 +21,51 @@
           -o-border-radius: 60px;
           font-family: Inter;
           /* font-family: "SF-Mono"; */
-          font-size: 20px;
-          padding: 5px 10px 30px 10px;
+          font-size: 15px;
+          justify-content: center;
      }
 
      .aboutMeTitle {
           font-family: "SF-Mono";
-          font-size: 50px;
+          font-size: 40px;
           border-style: solid;
           border-width: 10px;
-          padding: 30px;
+          padding: 20px;
           margin-top: 30px;
           margin-bottom: 30px;
      }
 
-     .aboutText {
-          padding: 30px 10px 0px 20px;
+     .aboutTextPadding {
+          padding: 20px 30px 20px 20px;
      }
 
      .aboutRightBox {
-          margin-right: 10%;
-          justify-content: end;
+          /* margin-right: 0px; */
+          justify-content: center;
+     }
+
+     .aboutText {
+          margin-top: 30px;
+          padding: 10px 0px 25px 0px;
+          justify-content: center;
      }
 
      .aboutLeftBox {
           margin-left: 10%;
           margin-right: 10%;
-          justify-content: start;
+          justify-content: center;
      }
 
      .HeaderAboutSpacer {
-          margin-top: 125px;
+          margin-top: 20px;
           padding-top: 50px;
-          margin-bottom: 100px;
+          margin-bottom: 25px;
      }
 
      .aboutMePar1Picture {
-          height: 350px;
-          margin-left: 15%;
+          height: 300px;
+          margin-left: 15px;
+          margin-top: 40px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -67,9 +74,11 @@
      }
 
      .aboutMePar2Picture {
-          height: 350px;
+          width: 400px;
+          min-width: 400px;
           /* margin-top: 25px; */
-          margin-left: 30%;
+          margin-left: 30px;
+          margin-bottom: 40px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -78,8 +87,8 @@
      }
 
      .aboutMePar3Picture {
-          height: 350px;
-          margin-left: 15%;
+          height: 300px;
+          /* margin-left: 15%; */
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -89,7 +98,9 @@
 
      .aboutMePar4Picture {
           height: 350px;
-          margin-left: 45%;
+          min-width: 200px;
+          margin-left: 55px;
+          margin-bottom: 50px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -98,8 +109,8 @@
      }
 
      .aboutMePar5Picture {
-          height: 250px;
-          margin-left: 10%;
+          height: 150px;
+          /* margin-left: 10%; */
           margin-bottom: 25px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
@@ -109,17 +120,14 @@
      }
 
      .aboutMePar6Picture {
-          height: 250px;
-          margin-left: 30%;
+          height: 200px;
+          min-width: 100px;
+          margin-left: 50px;
+          margin-bottom: 50px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
           -ms-border-radius: 25px;
           -o-border-radius: 25px;
      }
-
-     .aboutTextPadding {
-          padding: 35px 20px 0px 20px;
-     }
-
 }
