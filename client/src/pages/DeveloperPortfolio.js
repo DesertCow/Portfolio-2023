@@ -84,7 +84,7 @@ const Portfolio = () => {
                     <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
                     <li className="softwareStackListItem">&#9642; Photo Host: AWS S3</li>
                     {/* <li className="softwareStackListItem">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li> */}
-                    <li className="softwareStackListItem mt-5">&#9642; App Hosting:</li>
+                    <li className="softwareStackListItem appHost">&#9642; App Hosting:</li>
                     <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Client/Server: Railway</li>
                     <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Database: Self Host (Docker)</li>
                     <li className="text-center logoOffset"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
@@ -169,7 +169,7 @@ const Portfolio = () => {
                     <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
                     <li className="softwareStackListItem">&#9642; Photo Host: AWS S3</li>
                     {/* <li className="softwareStackListItem">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li> */}
-                    <li className="softwareStackListItem mt-5">&#9642; App Stores:</li>
+                    <li className="softwareStackListItem appHost">&#9642; App Stores:</li>
                     <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; GooglePlay: </li>
                     <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; AppleStore: </li>
                     <li className="text-center logoOffset d-flex justify-content-around col">
@@ -195,10 +195,10 @@ const Portfolio = () => {
 
                 <div className="col">
                   <div className="projectDesTitles">Project Overview</div>
-                    <p className="projectDesText text-center">A ground up rebuild of the orginal Newport Board Club app but with react native and designed to be deployed to Android and iOS platforms from the same code base via Expo. Shares the same backend API/Server as web App.</p>
+                    <p className="projectDesText text-center">A ground up rebuild of the orginal Newport Board Club app but with react native and designed to be deployed to Android and iOS platforms from the same code base via Expo. This app utilizes the same backend API/Server as the previously developed web App.</p>
                   
                   <div className="projectDesTitles2">Project Goal</div>
-                  <p className="projectDesText">The goal of this application is to enable all features from orginal app while also added Push Notifications and SVG based surf map.</p>
+                  <p className="projectDesText">The goal of this application is to enable all features from orginal app while also adding Push Notifications and an SVG interactive surf map.</p>
                   <ul className="projectSubDesText projectGoalText">
                     <li className="projectSubDesTextItem">&#9642; The app shows the current surf and weather conditons. </li>
                     <li className="projectSubDesTextItem">&#9642; Events are displayed to make it easy for members to get the information they need to plan and attend upcoming events.</li>
@@ -242,14 +242,14 @@ const Portfolio = () => {
                   <div className="stackText">Software Stack</div>
                   <div className="d-flex justify-content-start">
                     <ul className="softwareStackList text-left">
-                      <li className="py-3">&#9642; App Type: Progressive Web App</li>
-                      <li className="py-3">&#9642; Frontend: React (18.2.0)</li>
-                      <li className="py-3">&#9642; Framework: Bootstrap (5.2.1)</li>
-                      <li className="py-3">&#9642; API: GraphQL (15.3.0)</li>
-                      <li className="py-3">&#9642; Backend: NodeJS (16.15.1)</li>
-                      <li className="py-3">&#9642; Database: MongoDB (5.6.0)</li>
-                      <li className="py-3">&#9642; Database: MySQL (2.3.3)</li>
-                      <li className="softwareStackListItem mt-5">&#9642; App Hosting:</li>
+                      <li className="softwareStackListItem">&#9642; App Type: Progressive Web App</li>
+                      <li className="softwareStackListItem">&#9642; Frontend: React (18.2.0)</li>
+                      <li className="softwareStackListItem">&#9642; Framework: Bootstrap (5.2.1)</li>
+                      <li className="softwareStackListItem">&#9642; API: GraphQL (15.3.0)</li>
+                      <li className="softwareStackListItem">&#9642; Backend: NodeJS (16.15.1)</li>
+                      <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
+                      <li className="softwareStackListItem">&#9642; Database: MySQL (2.3.3)</li>
+                      <li className="softwareStackListItem appHost">&#9642; App Hosting:</li>
                       <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Client/Server: Railway</li>
                       <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Database: Self Host (Docker)</li>
                       {/* <li className="pt-3">&#9642; App Hosting: <a href="https://saltlicktruck-production.up.railway.app/">Chuckwagon (Live)</a></li> */}

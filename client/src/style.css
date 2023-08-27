@@ -514,6 +514,10 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
           white-space: nowrap;
      }
 
+     .appHost {
+          margin-top: 50px;
+     }
+
 }
 
 
@@ -537,6 +541,14 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
      .portfioloDemoBox2 {
           background-color: var(--alt-color1);
+          background-size: 730px;
+          width: 120%;
+          border-style: solid;
+          border-width: 5px;
+     }
+
+     .portfioloDemoBox3 {
+          background-color: var(--alt-color3);
           background-size: 730px;
           width: 120%;
           border-style: solid;
@@ -578,6 +590,16 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
           font-family: "SF-Mono";
           border-style: dashed;
           border-width: 10px;
+     }
+
+     .portfioloAppTitle3 {
+          margin-left: 45px;
+          font-size: 25px;
+          font-family: "SF-Mono";
+          border-style: dashed;
+          border-width: 10px;
+          width: 350px;
+          margin-top: 80px;
      }
 
      .demoGIF1{
@@ -786,6 +808,10 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
           font-size: 13px;
           overflow: hidden;
           white-space: nowrap;
+     }
+
+     .appHost {
+          margin-top: 20px;
      }
 
 }
