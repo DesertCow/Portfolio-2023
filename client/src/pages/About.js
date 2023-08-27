@@ -1,4 +1,8 @@
 
+//* CSS Import
+import "../pages/css/AboutMe_Full.css";
+import "../pages/css/AboutMe_Mobile.css";
+
 //* Component Import
 import Header from '../components/Header';
 import Footer from '../components/Footer';

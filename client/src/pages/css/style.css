@@ -1,0 +1,397 @@
+/* 
+________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___        
+ _____/\\\////////____/\\\/////////\\\___/\\\/////////\\\_       
+  ___/\\\/____________\//\\\______\///___\//\\\______\///__      
+   __/\\\_______________\////\\\___________\////\\\_________     
+    _\/\\\__________________\////\\\___________\////\\\______    
+     _\//\\\____________________\////\\\___________\////\\\___   
+      __\///\\\___________/\\\______\//\\\___/\\\______\//\\\__  
+       ____\////\\\\\\\\\_\///\\\\\\\\\\\/___\///\\\\\\\\\\\/___ 
+        _______\/////////____\///////////_______\///////////____
+
+*/
+
+
+/** ============= Home Page ============= */
+
+.divMain {
+     background-color: var(--mainBG-color);
+     color: white;
+}
+
+.homeButtonsBox {
+     text-decoration: none;
+}
+
+/*! ============= Desktop CSS ============= */
+@media screen and (min-width: 600px) {
+
+     .HeaderSpacer{
+          margin-top: 125px;
+     }
+
+     .homeHeaderSpacer{
+          margin-top: 175px;
+          flex-direction: row;
+     }
+
+     .homeHelloText {
+          font-size: 25px;
+          font-family: Inter;
+     }
+
+     .homeNameText {
+          margin-top: 30px;
+          font-size: 80px;
+          font-family: Inter-Bold;
+     }
+
+     .homeRoleText {
+          margin-top: 40px;
+          font-size: 50px;
+          font-family: Inter-Bold;
+     }
+
+     .homeDesText {
+          margin-top: 40px;
+          font-size: 25px;
+          font-family: Inter;
+          padding-right: 50px;
+     }
+
+     .homeLinksBox {
+          width: 50%;
+          margin-top: 50px;
+          text-decoration: none;
+          max-width: 1050px;
+     }
+
+     .homeLandingZone {
+          margin-left: 10%;
+          width: 80%;
+     }
+
+
+     .homeLinksBox2 {
+          margin-top: 100px;
+          margin-left: 40px;
+          flex-direction: column;
+     }
+
+
+     .homeLinkButtonsText{
+          text-decoration: none;
+          margin-top: 50px;
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+          padding: 20px 10px 20px 20px;
+          max-height: 150px;
+          width: 550px;
+     }
+
+     .homeLinkButtons:hover {
+          background-color: white;
+          background-image: url("../../../src/img/headerBackground/Header_Colorful.jpg");
+          background-size: 730px;
+          /* color: white; */
+          border-color: black;
+     }
+
+     .homeLinkButtonsText:hover {
+          color: black;
+          border-color: white;
+          border-style: solid;
+     }
+}
+
+/*? ============= Mobile CSS ============= */
+@media screen and (max-width: 600px) {
+     .HeaderSpacer{
+          margin-top: 50px;
+     }
+
+     .homeHeaderSpacer{
+          margin-top: 45px;
+          flex-direction: column;
+     }
+
+     .homeHelloText {
+          margin-top: 60px;
+          font-size: 15px;
+          font-family: Inter;
+          margin-right: 40px;
+     }
+
+     .homeNameText {
+          margin-top: 10px;
+          font-size: 30px;
+          font-family: Inter-Bold;
+          margin-right: 40px;
+     }
+
+     .homeRoleText {
+          margin-top: 20px;
+          font-size: 15px;
+          font-family: Inter-Bold;
+          margin-right: 40px;
+     }
+
+     .homeDesText {
+          margin-top: 20px;
+          font-size: 12px;
+          font-family: Inter;
+          margin-right: 40px;
+     }
+     
+     .homeLinksBox {
+          /* width: 20%; */
+          /* margin-top: 25px; */
+          text-decoration: none;
+          margin-left: 25px;
+     }
+
+     .homeLinksBox2 {
+          margin-top: 20px;
+          margin-left: 40px;
+          flex-direction: column;
+     }
+
+     .homeLandingZone {
+          margin-left: 10%;
+          width: 90%;
+     }
+
+
+     .homeLinkButtonsText{
+          text-decoration: none;
+          font-size: 25px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 5px;
+          width: 250px;
+          background-image: url("../../../src/img/headerBackground/Header_Colorful_Wide_Mobile.png");
+          padding: 20px 10px 20px 10px;
+          margin: 25px 25px 10px 0px;
+
+     }
+
+     .homeLinkButtons:hover {
+          background-color: white;
+          background-image: url("../../../src/img/headerBackground/Header_Colorful_Wide_Mobile.png");
+          background-size: 730px;
+          /* color: white; */
+          border-color: black;
+     }
+
+     .homeLinkButtonsText:hover {
+          color: black;
+          border-color: white;
+          border-style: solid;
+     }
+}
+/** ============= Dev Portfolio ============= */
+
+/* Moved to  DeveloperPortfolio_Full.css and DeveloperPortfolio_Mobile.css */
+
+
+/** ============= About Me Page ============= */
+
+/* Moved to  AboutMe_Full.css and AboutMe_Mobile.css */
+
+/*++ ============= 4k CSS ============= */
+@media screen and (min-width: 2000px) {
+  .HeaderAboutSpacer {
+    max-width: 2200px;
+
+  }
+
+  .aboutMeSubBoxes {
+     max-width: 1100px;
+     /* width: 3000px; */
+  }
+
+}
+
+/** ============= Contact Page ============= */
+
+/*! ============= Desktop CSS ============= */
+@media screen and (min-width: 600px) {
+
+     .contactHeaderText {
+          font-family: var(--main-font);
+          font-size: 60px;
+          color: black;
+     }
+
+     .contactBox {
+          width: 700px;
+          height: 300px;
+          margin-bottom: 50px;
+          /* padding-bottom: 50px; */
+          /* background-color: var(--alt-color1); */
+          background-image: url("../../../src/img/headerBackground/Header_Colorful.jpg");
+          background-size: 2500px;
+          border-radius: 60px;
+          -webkit-border-radius: 60px;
+          -moz-border-radius: 60px;
+          -ms-border-radius: 60px;
+          -o-border-radius: 60px;
+     }
+
+     .contactFont {
+          
+          font-size: 50px;
+     }
+
+     .contactTitle {
+          font-size: 50px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+     }
+
+     .emailFont{
+          font-size: 35px;
+          margin-top: 40px;
+          margin-right: 20px;
+     }
+
+     .emailLinkText{
+          font-size: 25px;
+          text-decoration: none !important;
+     }
+
+     .devAboutMeBox {
+          /* margin-left: 15%; */
+          width: 1600px;
+     }
+
+     .contactPhoto {
+          width: 450px;
+          /* margin-left: 50%; */
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+     }
+
+     .contactLocation {
+          font-size: 30px;
+          font-family: "SF-Mono";
+          margin-top: 15px;
+     }
+
+     .timeZoneText {
+          font-size: 20px;
+          font-family: "SF-Mono";
+          margin-top: 10px;
+     }
+
+     .contactEmail {
+          font-size: 30px;
+          font-family: "SF-Mono";
+          margin-top: 15px;
+     }
+
+     .contactSpacer {
+          padding-top: 200px;
+     }
+
+    .emailIcon {
+          width: 100px;
+     }
+
+}
+
+/*? ============= Mobile CSS ============= */
+@media screen and (max-width: 600px) {
+
+     .contactHeaderText {
+          font-family: var(--main-font);
+          font-size: 60px;
+          color: black;
+     }
+
+     .contactBox {
+          width: 350px;
+          height: 200px;
+          margin-bottom: 50px;
+          /*padding-bottom: 50px;
+          *//*background-color: var(--alt-color1);
+          */background-image: url("../../../src/img/headerBackground/Header_Colorful.jpg");
+          background-size: 2500px;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px;
+}
+
+     .contactFont {
+          
+          font-size: 40px;
+     }
+
+     .contactTitle {
+          font-size: 40px;
+          font-family: "SF-Mono";
+          border-style: solid;
+          border-width: 10px;
+     }
+
+     .emailFont{
+          font-size: 35px;
+          margin-top: 10px;
+          margin-right: 20px;
+     }
+
+     .emailLinkText{
+          font-size: 25px;
+          text-decoration: none !important;
+     }
+
+     .devAboutMeBox {
+          /* margin-left: 15%; */
+          width: 1600px;
+     }
+
+     .emailIcon {
+          width: 100px;
+     }
+
+     .contactPhoto {
+          width: 450px;
+          /* margin-left: 50%; */
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+     }
+
+     .contactLocation {
+          font-size: 16px;
+          font-family: "SF-Mono";
+          margin-top: 0px;
+     }
+
+     .timeZoneText {
+          font-size: 12px;
+          font-family: "SF-Mono";
+          margin-top: 5px;
+     }
+
+     .contactEmail {
+          font-size: 16px;
+          font-family: "SF-Mono";
+          margin-top: 20px;
+     }
+
+     .contactSpacer {
+          padding-top: 100px;
+     }
+
+}

@@ -1,4 +1,8 @@
 
+//* CSS Import
+import "../pages/css/DeveloperPortfolio_Full.css";
+import "../pages/css/DeveloperPortfolio_Mobile.css";
+
 //* React Import
 import { useState, useRef } from 'react';
 
