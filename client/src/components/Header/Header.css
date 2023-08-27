@@ -2,6 +2,8 @@
 @media screen and (min-width: 2000px) {
   .Header {
     background-image: url("../../img/headerBackground/Header_Colorful_4k_Wide.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: fixed;
     top: 0; /* Stick it to the top */
     height: 125px;
