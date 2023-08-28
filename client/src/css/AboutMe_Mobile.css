@@ -4,8 +4,8 @@
 @media screen and (max-width: 600px) {
 
      .aboutMeSubBoxes {
-          min-width: 350px;
-          max-width: 350px;
+          min-width: 420px;
+          max-width: 420px;
           background-image: url("../../src/img/headerBackground/Header_Colorful_Stretched.png");
           background-repeat: no-repeat;
           background-size: cover;
@@ -21,7 +21,7 @@
           -o-border-radius: 60px;
           font-family: Inter;
           /* font-family: "SF-Mono"; */
-          font-size: 15px;
+          font-size: 14px;
           justify-content: center;
      }
 
@@ -37,6 +37,7 @@
 
      .aboutTextPadding {
           padding: 20px 30px 20px 20px;
+          font-size: 14px;
      }
 
      .aboutRightBox {
@@ -45,7 +46,7 @@
      }
 
      .aboutText {
-          margin-top: 30px;
+          margin-top: 10px;
           padding: 10px 0px 25px 0px;
           justify-content: center;
      }
@@ -65,7 +66,7 @@
      .aboutMePar1Picture {
           height: 300px;
           margin-left: 15px;
-          margin-top: 40px;
+          margin-top: 50px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -78,7 +79,7 @@
           min-width: 400px;
           /* margin-top: 25px; */
           margin-left: 30px;
-          margin-bottom: 40px;
+          margin-top: 50px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -87,9 +88,10 @@
      }
 
      .aboutMePar3Picture {
-          height: 300px;
+          height: 280px;
           /* margin-left: 15%; */
           border-radius: 25px;
+          margin-top: 50px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
           -ms-border-radius: 25px;
@@ -100,7 +102,7 @@
           height: 350px;
           min-width: 200px;
           margin-left: 55px;
-          margin-bottom: 50px;
+          margin-top: 50px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -111,7 +113,7 @@
      .aboutMePar5Picture {
           height: 150px;
           /* margin-left: 10%; */
-          margin-bottom: 25px;
+          margin-top: 50px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -123,7 +125,7 @@
           height: 200px;
           min-width: 100px;
           margin-left: 50px;
-          margin-bottom: 50px;
+          margin-top: 50px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
