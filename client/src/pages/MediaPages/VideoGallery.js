@@ -28,7 +28,7 @@ const MediaVideo = () => {
     mobileUser = false
   }
 
-  console.log(mobileUser)
+  // console.log(mobileUser)
 
   if(mobileUser) {
 
