@@ -294,4 +294,46 @@
           margin-top: 20px;
      }
 
+     .developmentStatus {
+          margin-top: 25px;
+     }
+
+     .developmentStatusTitleText{
+          font-size: 10px;
+          text-align: center;
+          text-decoration: underline;
+          margin-bottom: 5px;
+     }
+
+     .developmentStatusText {
+          color: #83B82E;
+          font-size: 10px;
+          font-weight: 700;
+          text-align: center;
+     }
+
+     .developmentStatusBox{
+          border-style: dashed;
+          border-width: 3px;
+          border-color: #83B82E;
+          padding: 5px;
+          max-width: 80%;
+          margin: 15px 0px 0px 5px;
+     }
+
+     .developmentInactiveStatusText {
+          color: #B8302E;
+          font-size: 10px;
+          font-weight: 700;
+     }
+
+     .developmentInactiveStatusBox{
+          border-style: dashed;
+          border-width: 3px;
+          border-color: #B8302E;
+          padding: 5px;
+          max-width: 80%;
+          margin: 15px 0px 0px 5px;
+     }
+
 }

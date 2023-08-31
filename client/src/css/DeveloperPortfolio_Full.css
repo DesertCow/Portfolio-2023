@@ -254,8 +254,7 @@
      }
 
      .demoLoginTitleText {
-          font-size: 15
-          px;
+          font-size: 15px;
           text-align: center;
           text-decoration: underline;
           margin-bottom: 5px;
@@ -276,4 +275,44 @@
           margin-top: 50px;
      }
 
+     .developmentStatus {
+          margin-top: 50px;
+     }
+
+     .developmentStatusTitleText{
+          font-size: 20px;
+          text-align: center;
+          text-decoration: underline;
+          margin-bottom: 5px;
+     }
+
+     .developmentStatusText {
+          color: #83B82E;
+          font-size: 30px;
+          font-weight: 700;
+     }
+
+     .developmentStatusBox{
+          border-style: dashed;
+          border-width: 5px;
+          border-color: #83B82E;
+          padding: 10px;
+          max-width: 70%;
+          margin: 20px 0px 20px 45px;
+     }
+
+     .developmentInactiveStatusText {
+          color: #B8302E;
+          font-size: 30px;
+          font-weight: 700;
+     }
+
+     .developmentInactiveStatusBox{
+          border-style: dashed;
+          border-width: 5px;
+          border-color: #B8302E;
+          padding: 10px;
+          max-width: 70%;
+          margin: 20px 0px 20px 45px;
+     }
 }
