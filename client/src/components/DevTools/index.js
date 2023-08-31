@@ -22,6 +22,7 @@ const DevTools = () => {
                 <li className="mt-3">&#9642; Node.js + NPM</li>
                 <li className="mt-3">&#9642; React Native + Expo</li>
                 <li className="mt-3">&#9642; MongoDB + MySQL</li>
+                <li className="mt-3">&#9642; GraphQL + REST</li>
               </ul>
             </div>
             <div className="col mx-5 programToolBox">
@@ -29,7 +30,7 @@ const DevTools = () => {
                 Tools
               </div>
               <ul className="mt-4 mx-5 px-3 text-left languagesList">
-                <li className="mt-3">&#9642; GIT</li>
+                <li className="mt-3">&#9642; GIT + GitHub</li>
                 <li className="mt-3">&#9642; BASH + Ubuntu</li>
                 <li className="mt-3">&#9642; Visual Studio Code</li>
                 <li className="mt-3">&#9642; Figma</li>
