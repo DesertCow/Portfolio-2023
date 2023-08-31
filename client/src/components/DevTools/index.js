@@ -17,12 +17,12 @@ const DevTools = () => {
               </div>
               <ul className="mt-4 mx-5 px-3 text-left languagesList">
                 <li className="mt-3">&#9642; Javascript</li>
-                <li className="mt-3">&#9642; HTML + CSS</li>
+                <li className="mt-3">&#9642; HTML & CSS</li>
                 <li className="mt-3">&#9642; React + Bootstrap </li>
                 <li className="mt-3">&#9642; Node.js + NPM</li>
                 <li className="mt-3">&#9642; React Native + Expo</li>
-                <li className="mt-3">&#9642; MongoDB + MySQL</li>
-                <li className="mt-3">&#9642; GraphQL + REST</li>
+                <li className="mt-3">&#9642; MongoDB & MySQL</li>
+                <li className="mt-3">&#9642; GraphQL & REST</li>
               </ul>
             </div>
             <div className="col mx-5 programToolBox">
