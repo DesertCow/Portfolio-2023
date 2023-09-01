@@ -1,4 +1,3 @@
-
 //* CSS Import
 import "../css/AboutMe_Full.css";
 import "../css/AboutMe_Mobile.css";
@@ -9,6 +8,7 @@ import Footer from '../components/Footer';
 import DevTools from '../components/DevTools';
 
 
+//+++++++++++++++++++ Main Export +++++++++++++++++++
 const About = () => {
 
   let mobileUser = false

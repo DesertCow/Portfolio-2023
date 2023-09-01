@@ -1,10 +1,9 @@
+//* React Import
+import { useState, useRef } from 'react';
 
 //* CSS Import
 import "../css/DeveloperPortfolio_Full.css";
 import "../css/DeveloperPortfolio_Mobile.css";
-
-//* React Import
-import { useState, useRef } from 'react';
 
 //* Resume Import
 import ResumePDF from '../assets/Clayton_Skaggs_Resume.pdf';
@@ -16,7 +15,7 @@ import Footer from '../components/Footer';
 import DevTools from '../components/DevTools'
 
 
-
+//+++++++++++++++++++ Main Export +++++++++++++++++++
 const Portfolio = () => {
 
   //* Resume Display Config

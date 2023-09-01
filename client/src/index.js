@@ -1,9 +1,10 @@
-
-import App from './App';
 import { createRoot } from 'react-dom/client';
 
+//* Import App Routing
+import App from './App';
 
-//* Create Root
+
+//* Create App Root
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
