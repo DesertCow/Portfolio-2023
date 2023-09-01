@@ -155,7 +155,7 @@ const Portfolio = () => {
 
               <div className="col demoText portfioloSubBoxLeft text-center">
                 <h1 className="demoTitle">Demo</h1>
-                <img className="img-fluid demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
+                <img className="img-fluid demoGIF1" src={"https://claytonskaggs-s3-portfolio.s3.us-west-1.amazonaws.com/NBC_React_Native_Demo1.gif"} alt="Surf Deck Demo"></img>
                 {/* <div className='demoTargetInfoBox text-center'>
                   <h1 className='demoScreenText'>Android: <a className='storeLinkText' href="https://play.google.com/">GooglePlay Store</a></h1>
                   <h1 className='demoScreenText'>iOS: <a className='storeLinkText' href="https://www.apple.com/app-store/">Apple Store</a></h1>
