@@ -131,4 +131,26 @@
           -ms-border-radius: 25px;
           -o-border-radius: 25px;
      }
+
+     .portVerisonText {
+          font-family: "SF-Mono";
+          font-size: 15px;
+          /* margin-left: 42%; */
+          margin-top: 10px;
+          /* text-align: start; */
+     }
+
+     .portVersion{
+          font-family: "SF-Mono";
+          font-size: 15px;
+          /* margin-left: 42%; */
+          margin-top: 20px;
+     }
+
+     .portVersionBox {
+          align-self: center;
+          text-align: center;
+          align-items: center;
+          align-content: start;
+     }
 }
