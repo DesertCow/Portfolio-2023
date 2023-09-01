@@ -1,10 +1,9 @@
-
 //* Component Import
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 
-
+//+++++++++++++++++++ Main Export +++++++++++++++++++
 function Home() {
 
   return(

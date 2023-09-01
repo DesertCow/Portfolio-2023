@@ -1,7 +1,8 @@
-
+//* Component CSS Import
 import "./DevTools.css";
 
 
+//+++++++++++++++++++ Component Export +++++++++++++++++++
 const DevTools = () => {
 
   return (

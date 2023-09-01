@@ -1,21 +1,16 @@
 //* CSS Import
 import "../../css/MediaPages.css";
 
+//* Youtube Video Inbed Tool
 import ReactPlayer from 'react-player'
-import React from 'react';
 
 //* Component Import
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 
-
-
+//+++++++++++++++++++ Main Export +++++++++++++++++++
 const MediaVideo = () => {
-
-  // const [mobileUser, setMobileUser] = React.useState({
-  // // matches: window.innerWidth < 600 ? true : false,
-  // });
 
   let mobileUser = false
 
@@ -27,8 +22,6 @@ const MediaVideo = () => {
   else {
     mobileUser = false
   }
-
-  // console.log(mobileUser)
 
   if(mobileUser) {
 

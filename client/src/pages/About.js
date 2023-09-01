@@ -1,4 +1,3 @@
-
 //* CSS Import
 import "../css/AboutMe_Full.css";
 import "../css/AboutMe_Mobile.css";
@@ -9,6 +8,7 @@ import Footer from '../components/Footer';
 import DevTools from '../components/DevTools';
 
 
+//+++++++++++++++++++ Main Export +++++++++++++++++++
 const About = () => {
 
   let mobileUser = false
@@ -128,6 +128,27 @@ const About = () => {
         <div className="w-100">
           <DevTools />
         </div>
+
+        <div className="d-flex col mt-5 pt-5 justify-content-center">
+          <div className="text-center">
+            <h1 className="portfioloTitle p-3">Portfolio Development</h1>
+          </div>
+        </div>
+
+        <div className="d-flex col mt-3 justify-content-center align-items-center mx-5">
+          <div className="d-flex row portVersionBox">
+            <div className="text-start">
+              <h1  className="portVerisonText">&#9642; V0</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: GitHub Pages (<a href="https://desertcow.github.io/Portfolio/">Link</a>)</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio">GitHub Repo</a> </h1>    
+            </div>
+            <div className="text-start">
+              <h1  className="portVersion">&#9642; V1</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: Railway (<a href="https://www.claytonskaggs.dev">Link</a>)</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio-2023">GitHub Repo</a> </h1>
+            </div>
+          </div>
+        </div>
           
         <div className="w-100">
           <Footer />
@@ -244,6 +265,27 @@ const About = () => {
 
         <div className="w-100">
           <DevTools />
+        </div>
+
+        <div className="d-flex col mt-5 pt-5 justify-content-center">
+          <div className="text-center">
+            <h1 className="portfioloTitle p-3">Portfolio Development</h1>
+          </div>
+        </div>
+
+        <div className="d-flex col mt-3 justify-content-center align-items-center mx-5">
+          <div className="d-flex row portVersionBox">
+            <div className="text-start">
+              <h1  className="portVerisonText">&#9642; V0</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: GitHub Pages (<a href="https://desertcow.github.io/Portfolio/">Link</a>)</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio">GitHub Repo</a> </h1>    
+            </div>
+            <div className="text-start">
+              <h1  className="portVersion">&#9642; V1</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: Railway (<a href="https://www.claytonskaggs.dev">Link</a>)</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio-2023">GitHub Repo</a> </h1>
+            </div>
+          </div>
         </div>
           
         <div className="w-100">

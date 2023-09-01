@@ -1,4 +1,3 @@
-
 //* CSS Import
 import "../../css/MediaPages.css";
 
@@ -7,8 +6,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 
-
-
+//+++++++++++++++++++ Main Export +++++++++++++++++++
 const Blog = () => {
 
   return (

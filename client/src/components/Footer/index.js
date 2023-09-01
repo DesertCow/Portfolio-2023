@@ -1,6 +1,8 @@
+//* Component CSS Import
 import "./Footer.css";
 
 
+//+++++++++++++++++++ Component Export +++++++++++++++++++
 const Footer = () => {
 
   return (

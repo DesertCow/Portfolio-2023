@@ -12,12 +12,12 @@ import VideoGallery from './pages/MediaPages/VideoGallery';
 import Blog from './pages/MediaPages/Blog';
 
 
-//* Main App / Routing
-
+//+++++++++++++++++++ Main App Routing +++++++++++++++++++
 export default function App() {
 
-  require('./css/style.css')
+  //* Main App CSS Import
   require('./css/reset.css')
+  require('./css/style.css')
   require('./css/import.css')
 
   return (

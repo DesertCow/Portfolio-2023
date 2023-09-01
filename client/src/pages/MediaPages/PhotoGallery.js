@@ -1,9 +1,8 @@
+//* React Import
+import { useState } from "react";
 
 //* CSS Import
 import "../../css/MediaPages.css";
-
-//* React Import
-import { useState } from "react";
 
 //* Component Import
 import Header from '../../components/Header';
@@ -25,8 +24,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 
-
-
+//+++++++++++++++++++ Main Export +++++++++++++++++++
 const MediaGallery = () => {
 
   const [index, setIndex] = useState(-1);
