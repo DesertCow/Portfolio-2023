@@ -294,7 +294,7 @@ const Portfolio = () => {
                   <div className="projectDesTitles">Project Overview</div>
                     <p className="projectDesText text-center">Chuckwagon is a comprehensive Food Truck management application with a customer ordering App and a separate "In Kitchen" App (React) for order execution and application administration built using MongoDB, Express, React, and NodeJS (MERN Stack).</p>
                   
-                  <div className="projectDesTitles">Project Goal</div>
+                  <div className="projectDesTitles2">Project Goal</div>
                   <p className="projectDesText text-center">Application that could be deploy to the internet or run locally on a food truck and served via WiFi to enable customers to order food without needing an internet connection.</p>
                   <ul className="projectSubDesText projectGoalText">
                     <li className="projectSubDesTextItem">&#9642; Enable customers to view the menu and add items to the cart for checkout/purchase.</li>
