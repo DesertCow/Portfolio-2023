@@ -51,7 +51,26 @@
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20180405_125218_729.jpg", width: 927, height: 927 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/Pallisade Ice.jpg", width: 1389, height: 927 },
     { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/PANO_20180113_103234.jpg", width: 7680, height: 1792 },
-    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/Woodz_Selfie.jpeg", width: 1236, height: 927 }
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/Woodz_Selfie.jpeg", width: 1236, height: 927 },
+    //
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20190219_112308-01.jpeg", width: 1390, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20190322_181550_976.jpg", width: 1390, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_0603.jpg", width: 1390, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20190104_093828_210.jpg", width: 1080, height: 1080 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20190102_142928-01.jpeg", width: 1390, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20181228_084324-01.jpeg", width: 1390, height: 927 },
+    //
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20181208_074001_147.jpg", width: 697, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20190120_100652-02.jpeg", width: 697, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20181130_112309-02-01.jpeg", width: 1390, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20181130_102205-01.jpeg", width: 697, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20181129_153344_690.jpg", width: 697, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20181123_061444-01.jpeg", width: 1390, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20180510_141047_435.jpg", width: 1080, height: 1080 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20180606_110155_420.jpg", width: 1080, height: 1080 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/_1390773.jpg", width: 1390, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20180226_084703_382.jpg", width: 697, height: 927 },
+    { src: "https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20200820_161809_523.jpg", width: 1390, height: 927 },
   ];
 
 export default photoList;
