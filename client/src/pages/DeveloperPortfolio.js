@@ -363,7 +363,7 @@ const Portfolio = () => {
 
         <div className="d-flex col mt-5 pt-5 justify-content-center">
           <div className="text-center">
-            <h1 className="portfioloTitle p-3">Development Skills</h1> 
+            <h1 className="portfioloTitle p-3">Developer Skills</h1> 
           </div>
         </div>
 
