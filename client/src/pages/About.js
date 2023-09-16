@@ -119,7 +119,7 @@ const About = () => {
           </div>   
         </div>
 
-        <div className="d-flex col mt-5 pt-5 justify-content-center">
+        <div className="d-flex col mt-3 pt-5 justify-content-center">
           <div className="text-center">
             <h1 className="portfioloTitle p-3">Development Skills</h1> 
           </div>
@@ -129,7 +129,7 @@ const About = () => {
           <DevTools />
         </div>
 
-        <div className="d-flex col mt-5 pt-5 justify-content-center">
+        {/* <div className="d-flex col mt-5 pt-5 justify-content-center">
           <div className="text-center">
             <h1 className="portfioloTitle p-3">Portfolio Development</h1>
           </div>
@@ -148,7 +148,7 @@ const About = () => {
               <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio-2023">GitHub Repo</a> </h1>
             </div>
           </div>
-        </div>
+        </div> */}
           
         <div className="w-100">
           <Footer />
@@ -160,6 +160,7 @@ const About = () => {
     
   }
   else {
+    
     //* Desktop/Full Screen Layout
     return (
 
@@ -257,7 +258,7 @@ const About = () => {
           </div>   
         </div>
 
-        <div className="d-flex col mt-5 pt-5 justify-content-center">
+        <div className="d-flex col mt-3 pt-3 justify-content-center">
           <div className="text-center">
             <h1 className="portfioloTitle p-3">Development Skills</h1> 
           </div>
@@ -267,7 +268,7 @@ const About = () => {
           <DevTools />
         </div>
 
-        <div className="d-flex col mt-5 pt-5 justify-content-center">
+        {/* <div className="d-flex col mt-5 pt-5 justify-content-center">
           <div className="text-center">
             <h1 className="portfioloTitle p-3">Portfolio Development</h1>
           </div>
@@ -286,7 +287,7 @@ const About = () => {
               <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio-2023">GitHub Repo</a> </h1>
             </div>
           </div>
-        </div>
+        </div> */}
           
         <div className="w-100">
           <Footer />
