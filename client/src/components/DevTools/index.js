@@ -16,7 +16,7 @@ const DevTools = () => {
               <div className="mt-1 text-center languagesListTitle">
                 Frameworks
               </div>
-              <ul className="mt-4 mx-5 px-3 text-left languagesList">
+              <ul className="mt-4 pt-3 mx-5 px-3 text-left languagesList">
                 <li className="mt-3">&#9642; Javascript</li>
                 <li className="mt-3">&#9642; HTML & CSS</li>
                 <li className="mt-3">&#9642; React + Bootstrap </li>
@@ -36,7 +36,8 @@ const DevTools = () => {
                 <li className="mt-3">&#9642; Visual Studio Code</li>
                 <li className="mt-3">&#9642; Figma</li>
                 <li className="mt-3">&#9642; Docker</li>
-                <li className="mt-3">&#9642; AWS</li>
+                <li className="mt-3">&#9642; AWS / Railway</li>
+                <li className="mt-3">&#9642; Stable Diffusion &nbsp;&nbsp;(Locally Hosted)</li>
                 <li className="mt-3">&#9642; Agile SCRUM</li>
                 <li className="mt-3">&#9642; FreeCAD</li>
                 <li className="mt-3">&#9642; Adobe Premiere Pro</li>
@@ -49,7 +50,7 @@ const DevTools = () => {
               <div className="text-center languagesListTitle">
                 Languages & Tools
               </div>
-              <ul className="mt-4 mx-5 text-left languagesList">
+              <ul className="mt-4 pt-4 mx-5 text-left languagesList">
                 <li className="mt-3">&#9642; Verilog/VHDL</li>
                 <li className="mt-3">&#9642; ATL (Advantest Language)</li>
                 <li className="mt-3">&#9642; Java</li>

@@ -314,55 +314,6 @@ const Portfolio = () => {
 
         <div className="d-flex col mt-5 pt-5 justify-content-center">
           <div className="text-center">
-            <h1 className="portfioloTitle p-3">Portfolio Development</h1>
-          </div>
-        </div>
-
-        <div className="d-flex col mt-3 justify-content-center align-items-center mx-5">
-          <div className="d-flex row portVersionBox">
-            <div className="text-start">
-              <h1  className="portVerisonText">&#9642; V0</h1>
-              <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: GitHub Pages (<a href="https://desertcow.github.io/Portfolio/">Link</a>)</h1>
-              <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio">GitHub Repo</a> </h1>    
-            </div>
-            <div className="text-start">
-              <h1  className="portVersion">&#9642; V1</h1>
-              <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: Railway (<a href="https://www.claytonskaggs.dev">Link</a>)</h1>
-              <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio-2023">GitHub Repo</a> </h1>
-            </div>
-          </div>
-        </div>
-
-        <div className="d-flex col justify-content-center">
-          <div className="text-center pt-5">
-            <h1 className="aboutMeTitle p-3">About Me</h1> 
-          </div>
-        </div>
-
-        <div className="container mt-5">
-
-          <div className="row justify-content-center align-items-center">
-            <div className="col mt-3 mb-4">
-                <img src={require('../img/Clayton_Skaggs_6.png')}
-                className="mt-3 contactPhotoPortfolio"
-                alt="Clayton Skaggs profile picture"/>  
-            </div>
-
-            <div className="col px-5 portfolioAboutMe">
-              <p className='mt-4 pb-4'>
-                Hello my name is Clayton,<br></br>
-                &nbsp; <br></br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm an enthusiastic computer engineer who has extensive experience working on large projects with teams of engineers to develop solutions, meet commitments, and deliver high quality products to production. With experience in producing world class processors at <a href="https://www.intel.com/">Intel Corp</a>, I am adept at managing complex projects and ensuring they meet strict quality standards. My passion for engineering and commitment to quality make me an asset on any team striving to develop software solutions that add real business value for customers.
-                <br></br>
-                &nbsp; <br></br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As a programmer, I excel at creating responsive and functional applications that address the needs of clients and drive business value through technical solutions. With a passion for problem-solving, I'm skilled at developing software products from design to release. While delivering products on schedule while simultaneously meeting the customers requirements and exceed their expectations. My skills in programming, testing, and application design enable me to produce products that are reliable, effective, and tailored to specific business goals. With an overarching focus on delivering the best possible results for customers.
-              </p>
-            </div> 
-          </div>
-        </div>
-
-        <div className="d-flex col mt-5 pt-5 justify-content-center">
-          <div className="text-center">
             <h1 className="portfioloTitle p-3">Developer Skills</h1> 
           </div>
         </div>
@@ -404,6 +355,54 @@ const Portfolio = () => {
 
       </div>
 
+        <div className="d-flex col justify-content-center">
+          <div className="text-center pt-5">
+            <h1 className="aboutMeTitle p-3">About Me</h1> 
+          </div>
+        </div>
+
+        <div className="container mt-5">
+
+          <div className="row justify-content-center align-items-center">
+            <div className="col mt-3 mb-4">
+                <img src={require('../img/Clayton_Skaggs_6.png')}
+                className="mt-3 contactPhotoPortfolio"
+                alt="Clayton Skaggs profile picture"/>  
+            </div>
+
+            <div className="col px-5 portfolioAboutMe">
+              <p className='mt-4 pb-4'>
+                Hello my name is Clayton,<br></br>
+                &nbsp; <br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm an enthusiastic computer engineer who has extensive experience working on large projects with teams of engineers to develop solutions, meet commitments, and deliver high quality products to production. With experience in producing world class processors at <a href="https://www.intel.com/">Intel Corp</a>, I am adept at managing complex projects and ensuring they meet strict quality standards. My passion for engineering and commitment to quality make me an asset on any team striving to develop software solutions that add real business value for customers.
+                <br></br>
+                &nbsp; <br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As a programmer, I excel at creating responsive and functional applications that address the needs of clients and drive business value through technical solutions. With a passion for problem-solving, I'm skilled at developing software products from design to release. While delivering products on schedule while simultaneously meeting the customers requirements and exceed their expectations. My skills in programming, testing, and application design enable me to produce products that are reliable, effective, and tailored to specific business goals. With an overarching focus on delivering the best possible results for customers.
+              </p>
+            </div> 
+          </div>
+        </div>
+        
+        <div className="d-flex col mt-5 pt-5 justify-content-center">
+          <div className="text-center">
+            <h1 className="portfioloTitle p-3">Portfolio Development</h1>
+          </div>
+        </div>
+
+        <div className="d-flex col mt-3 justify-content-center align-items-center mx-5">
+          <div className="d-flex row portVersionBox">
+            <div className="text-start">
+              <h1  className="portVerisonText">&#9642; V0</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: GitHub Pages (<a href="https://desertcow.github.io/Portfolio/">Link</a>)</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio">GitHub Repo</a> </h1>    
+            </div>
+            <div className="text-start">
+              <h1  className="portVersion">&#9642; V1</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: Railway (<a href="https://www.claytonskaggs.dev">Link</a>)</h1>
+              <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio-2023">GitHub Repo</a> </h1>
+            </div>
+          </div>
+        </div>
       <div className="w-100">
         <Footer />
       </div>
