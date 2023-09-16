@@ -65,7 +65,7 @@ const Portfolio = () => {
                 <a className='demoLinkText' href="https://boardclubapp-production.up.railway.app/">Live Demo Link</a>
                 <div className='demoTargetInfoBox text-center'>
                   <h1 className='demoScreenText'>* App Designed for Mobile Experience *</h1>
-                  <h1 className='demoScreenText'>Screen Width: 390px - 420px  </h1>
+                  <h1 className='demoScreenText'>Screen Width: 470px - 520px  </h1>
                 </div>
                 <div className='demoLoginInfoBox'>
                   <h1 className='demoLoginTitleText'>Demo Login</h1>
