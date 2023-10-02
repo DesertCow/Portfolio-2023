@@ -57,7 +57,7 @@
 
      .aboutMePar1Picture {
           height: 350px;
-          margin-left: 15%;
+          margin-left: 22%;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -68,7 +68,7 @@
      .aboutMePar2Picture {
           height: 350px;
           /* margin-top: 25px; */
-          margin-left: 30%;
+          margin-left: 25%;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -87,8 +87,8 @@
      }
 
      .aboutMePar4Picture {
-          height: 350px;
-          margin-left: 45%;
+          height: 450px;
+          margin-left: 30%;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -109,7 +109,7 @@
 
      .aboutMePar6Picture {
           height: 250px;
-          margin-left: 30%;
+          margin-left: 35%;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
