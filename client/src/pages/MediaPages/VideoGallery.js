@@ -40,8 +40,13 @@ const MediaVideo = () => {
         <div className='videoListMargin'>
           <div className="row d-flex justify-content-center">
             <div className="col d-flex justify-content-center">
-              <div className="col mt-3 d-flex justify-content-center">
+              <div className="col mt-5 d-flex justify-content-center">
                 <ReactPlayer width="400px" height="260px" controls={true} url='https://youtu.be/mtXzsgFWdsE' />
+              </div>
+            </div>
+            <div className="col d-flex justify-content-center">
+              <div className="col mt-5 d-flex justify-content-center">
+                <ReactPlayer width="400px" height="260px" controls={true} url='https://youtu.be/KK8BiK9BD-U' />
               </div>
             </div>
             <div className="col">
@@ -54,8 +59,6 @@ const MediaVideo = () => {
                 <ReactPlayer width="400px" height="260px" controls={true} url='https://youtu.be/jCTwBadtoBM' />
               </div>
             </div>
-          </div>
-          <div className="row mt-5">
             <div className="col">
               <div className="col mt-5 d-flex justify-content-center">
                 <ReactPlayer width="400px" height="260px" controls={true} url='https://youtu.be/TZir6XfKPLQ' />
@@ -66,8 +69,6 @@ const MediaVideo = () => {
                 <ReactPlayer width="400px" height="260px" controls={true} url='https://youtu.be/BBMliNZTb18' />
               </div>
             </div>
-          </div>
-          <div className="row mt-5">
             <div className="col">
               <div className="col mt-5 d-flex justify-content-center">
                 <ReactPlayer width="400px" height="260px" controls={true} url='https://youtu.be/si2YF9yVmos' />
@@ -111,6 +112,11 @@ const MediaVideo = () => {
           <div className="d-flex row">
             <div className="row mt-5 d-flex justify-content-center">
               <ReactPlayer className="videoMain" width="1200px" height="750px" controls={true} url='https://youtu.be/mtXzsgFWdsE' />
+            </div>
+          </div>
+          <div className="d-flex row">
+            <div className="row mt-5 d-flex justify-content-center">
+              <ReactPlayer className="videoMain" width="800px" height="540px" controls={true} url='https://youtu.be/KK8BiK9BD-U' />
             </div>
           </div>
           <div className="row mt-5 d-flex justify-content-center">
