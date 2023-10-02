@@ -53,9 +53,9 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="container d-flex">
+        <div className="container d-flex justify-content-center">
 
-          <div className="col featuredProjects">
+          <div className="row d-flex featuredProjects justify-content-center">
 
             <div className="row portfioloDemoBox1">
 
@@ -328,13 +328,10 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="d-flex col justify-content-center">
-          <div className="">
-            {/* <PdfViewerComponent document={"Clayton_Skaggs_Resume.pdf"}/> */}
-            <div className="d-flex col justify-content-center">
-              {!pdfDocument && <span>Loading...</span>}
-              <canvas ref={canvasRef} className='PDFViewer'/>
-              {Boolean(pdfDocument)}
-            </div>
+          <div className="d-flex col justify-content-center">
+            {!pdfDocument && <span>Loading...</span>}
+            <canvas ref={canvasRef} className='PDFViewer'/>
+            {Boolean(pdfDocument)}
           </div>
         </div>
 
@@ -363,10 +360,10 @@ const Portfolio = () => {
 
         <div className="container mt-5">
 
-          <div className="row justify-content-center align-items-center">
-            <div className="col mt-3 mb-4">
+          <div className="d-flex row justify-content-center align-items-center">
+            <div className="d-flex col mt-3 mb-4 justify-content-center align-items-center">
                 <img src={require('../img/Clayton_Skaggs_6.png')}
-                className="mt-3 contactPhotoPortfolio"
+                className="d-flex mt-3 contactPhotoPortfolio"
                 alt="Clayton Skaggs profile picture"/>  
             </div>
 

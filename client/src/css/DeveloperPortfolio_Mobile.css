@@ -65,7 +65,7 @@
      }
 
      .portfioloAppTitle2 {
-          margin-left: 55px;
+          /* margin-left: 55px; */
           font-size: 25px;
           font-family: "SF-Mono";
           border-style: dashed;
@@ -73,7 +73,7 @@
      }
 
      .portfioloAppTitle3 {
-          margin-left: 45px;
+          /* margin-left: 45px; */
           font-size: 25px;
           font-family: "SF-Mono";
           border-style: dashed;
