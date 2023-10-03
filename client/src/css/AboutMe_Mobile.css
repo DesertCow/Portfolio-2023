@@ -44,6 +44,11 @@
           justify-content: center;
      }
 
+     .aboutCenterBox {
+          /* margin-right: 0px; */
+          justify-content: center;
+     }
+
      .aboutText {
           margin-top: 10px;
           padding: 10px 0px 25px 0px;
@@ -63,9 +68,7 @@
      }
 
      .aboutMePar1Picture {
-          height: 300px;
-          margin-left: 15px;
-          margin-top: 50px;
+          width: 300px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -75,10 +78,6 @@
 
      .aboutMePar2Picture {
           width: 400px;
-          min-width: 400px;
-          /* margin-top: 25px; */
-          margin-left: 30px;
-          margin-top: 50px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -87,10 +86,8 @@
      }
 
      .aboutMePar3Picture {
-          height: 280px;
-          /* margin-left: 15%; */
+          width: 450px;
           border-radius: 25px;
-          margin-top: 50px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
           -ms-border-radius: 25px;
@@ -98,10 +95,7 @@
      }
 
      .aboutMePar4Picture {
-          height: 350px;
-          min-width: 200px;
-          margin-left: 55px;
-          margin-top: 50px;
+          width: 450px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -110,9 +104,7 @@
      }
 
      .aboutMePar5Picture {
-          height: 150px;
-          /* margin-left: 10%; */
-          margin-top: 50px;
+          height: 175px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
@@ -122,9 +114,6 @@
 
      .aboutMePar6Picture {
           height: 200px;
-          min-width: 100px;
-          margin-left: 50px;
-          margin-top: 50px;
           border-radius: 25px;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
