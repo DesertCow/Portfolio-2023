@@ -1,0 +1,21 @@
+
+
+
+
+@media screen and (min-width: 600px) {
+
+  .codyMap {
+    /*max-width: 80%;
+    */max-height: 600px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+  }
+
+  .codyDescriptionText{
+    font-size: 25px;
+  }
+
+}

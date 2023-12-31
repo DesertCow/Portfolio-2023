@@ -7,7 +7,7 @@ import Footer from '../../components/Footer';
 
 
 //+++++++++++++++++++ Main Export +++++++++++++++++++
-const Blog = () => {
+const HyaliteCanyon = () => {
 
   return (
 
@@ -18,7 +18,7 @@ const Blog = () => {
       </header>
 
       <div className="col d-flex align-items-center justify-content-center HeaderGallerySpacer">
-        <h1 className="my-4 mb-5 p-3 mediaPageTitle">Hyalite Canyon</h1>
+        <h1 className="my-4 mb-5 p-3 mediaPageTitle">Hyalite Canyon, MT</h1>
       </div>
 
 
@@ -32,7 +32,7 @@ const Blog = () => {
 
 }
 
-export default Blog;
+export default HyaliteCanyon;
 
 
 //!========================= EOF =========================
