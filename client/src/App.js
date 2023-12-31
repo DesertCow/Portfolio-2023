@@ -9,6 +9,8 @@ import Contact from './pages/Contact'
 import Portfolio from './pages/DeveloperPortfolio'
 import PhotoGallery from './pages/MediaPages/PhotoGallery';
 import VideoGallery from './pages/MediaPages/VideoGallery';
+import HylaiteCanyon from './pages/IceMaps/HyaliteCanyon';
+// import VideoGallery from './pages/MediaPages/VideoGallery';
 import Blog from './pages/MediaPages/Blog';
 
 
@@ -31,6 +33,8 @@ export default function App() {
         <Route path="/DevPortfolio" element={<Portfolio />} />
         <Route path="/Media/Photo" element={<PhotoGallery />} />
         <Route path="/Media/Video" element={<VideoGallery />} />
+        <Route path="/IceMaps/Hylaite" element={<HylaiteCanyon />} />
+        <Route path="/IceMaps/Cody" element={<HylaiteCanyon />} />
         <Route path="/Media/Blog" element={<Blog />} />
       </Routes>
     </Router>
