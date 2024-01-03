@@ -32,7 +32,7 @@ const CodyIce = () => {
           <div className="col my-5 aboutAreaBox">
             {/* <p className="col px-5 codyDescriptionText"> */}
             <p className="m-3 p-3">
-            &emsp; The South Fork of the Shoshone River which is 35 miles southwest of Cody Wyoming is home to the highest concentration of frozen
+            &emsp; The South Fork of the Shoshone River which is 35 miles southwest of Cody, Wyoming is home to the highest concentration of frozen
             waterfalls in the continental United States. 
             <br></br>
             <br></br>
