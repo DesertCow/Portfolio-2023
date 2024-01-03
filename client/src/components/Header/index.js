@@ -35,7 +35,7 @@ const Header = () => {
           <Navbar.Toggle/>
 
           <Navbar.Collapse className="navBarText">
-          <Nav.Link className="navBarText" href="/About">About Me</Nav.Link>
+          
             <Nav>
               <NavDropdown
                 title="Media"
@@ -49,6 +49,18 @@ const Header = () => {
                   <NavDropdown.Item className="DropMenu" href="/Media/Blog">Blog</NavDropdown.Item>
               </NavDropdown>
             </Nav>
+            <Nav>
+              <NavDropdown
+                title="Ice Climbing Maps"
+                menuVariant="dark"
+                className="DropMenu navBarText"
+                >
+                  <NavDropdown.Item className="DropMenu" href="/IceMaps/Hylaite">Hyalite Canyon, MT</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item className="DropMenu" href="/IceMaps/Cody">Cody, WY</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          <Nav.Link className="navBarText" href="/About">About Me</Nav.Link>
           <Nav.Link className="navBarText" href="/Contact">Contact</Nav.Link>
           </Navbar.Collapse>
 
