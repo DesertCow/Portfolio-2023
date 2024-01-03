@@ -23,7 +23,7 @@ const CodyIce = () => {
         <h1 className="my-4 mb-5 p-3 mediaPageTitle">South Fork Shoshone River</h1>
       </div>
 
-      <div className="col d-flex align-items-center justify-content-center mt-5">
+      <div className="col d-flex align-items-center justify-content-center">
         <a href={CodyMapOverview} target="_blank" rel="noopener noreferrer">
           <img className="col img-fluid codyMap px-5" src={CodyMapOverview} alt="Cody Ice Climbing Overview"></img>
         </a>
@@ -41,26 +41,23 @@ const CodyIce = () => {
             <br></br>
             <br></br>
             &emsp; South Fork offers world class multiptich ice climbing with generally low snow accumulations making travel relatively easy 
-            compared to other ice climbing venues. 
+            compared to other north american ice climbing venues. 
             <br></br>
             <br></br>
             &emsp; With the high
-            density of climbs and relativly long drive to Cody from large population centers the South Fork is rarely "busy" and offers an intimate
-            climbing experience.
+            density of climbs and relativly long drive to Cody from large population centers the South Fork is rarely "busy" and offers an intimate 
+            and remote climbing experience.
         </p>
           </div>
         </div>
 
       </div>
       
-      <div>
-      <div className="col d-flex align-items-center justify-content-center mt-5">
+      <div className="col d-flex align-items-center justify-content-center">
         <a className="googleEarthDownloadLink" href="https://cskaggs-google-earth-bucket-2017.s3.us-west-1.amazonaws.com/GE_Network_Link/Cody_V0p5.kmz">
           <h1 className="my-4 mb-5 p-3 googleEarthDownloadBox">Google Earth Download</h1>
         </a>
-      </div>
-        
-      </div>
+      </div> 
 
       <div className="w-100">
         <Footer />

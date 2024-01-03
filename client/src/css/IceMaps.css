@@ -5,8 +5,8 @@
 @media screen and (min-width: 600px) {
 
   .codyMap {
-    /*max-width: 80%;
-    */max-height: 600px;
+    /* max-width: 850px; */
+    max-height: 600px;
     border-radius: 80px;
     -webkit-border-radius: 80px;
     -moz-border-radius: 80px;
@@ -19,8 +19,7 @@
   }
 
   .aboutAreaBox {
-      /* width: 1100px; */
-      width: 900px;
+      width: 600px;
       background-image: url("../../src/img/headerBackground/Header_Colorful_Stretched.png");
       background-repeat: no-repeat;
       background-size: cover;
