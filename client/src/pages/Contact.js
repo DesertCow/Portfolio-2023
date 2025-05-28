@@ -35,11 +35,11 @@ const Contact = () => {
             </div>
 
             <div className='d-flex flex-column contactLocation'>
-              Newport Beach, CA
+              Denver, CO
             </div>
 
             <div className='d-flex flex-column text-center timeZoneText'>
-              (Pacific Time Zone)
+              (Mountain Time Zone)
             </div>
 
           </div>
