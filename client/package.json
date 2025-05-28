@@ -1,10 +1,10 @@
 {
   "name": "portfolio-client",
-  "version": "0.9.",
+  "version": "1.0",
   "private": true,
   "dependencies": {
-    "@mikecousins/react-pdf": "^6.1.1",
-    "react": "^18.2.0",
+    "@mikecousins/react-pdf": "^8.0.1",
+    "react": "^19.1.0",
     "react-bootstrap": "^2.8.0",
     "react-photo-album": "^2.2.2",
     "react-player": "^2.12.0",
