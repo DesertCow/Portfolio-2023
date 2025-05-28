@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/DesertCow/portfolio2023#readme",
   "dependencies": {
-    "serve": "^14.2.0"
+    "serve": "^14.2.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
