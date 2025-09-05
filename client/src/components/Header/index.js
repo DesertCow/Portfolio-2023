@@ -26,7 +26,7 @@ const Header = () => {
   return (
 
     <header className="Header d-flex">
-      <img src={require("../../img/Chip_Icon_2023.png")} onClick={(event) => handleLogoClick(event)} className="Logo" alt="Computer Chip Logo" />
+      {/* <img src={require("../../img/Chip_Icon_2023.png")} onClick={(event) => handleLogoClick(event)} className="Logo" alt="Computer Chip Logo" /> */}
       <Navbar className="d-flex">
         <Container fluid className="">
 
