@@ -23,7 +23,7 @@ const Portfolio = () => {
   const canvasRef = useRef(null);
 
   const { pdfDocument, pdfPage } = usePdf({
-    file: 'Clayton_Skaggs_Resume.pdf',
+    file: ResumePDF,
     page,
     canvasRef,
   });
