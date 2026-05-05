@@ -1,61 +1,53 @@
-//* Component Import
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import '../css/Contact.css';
 
+const AltitudeMarker = ({ label }) => (
+  <div className="contact-altitude-marker">
+    <span className="contact-altitude-line" />
+    <span className="contact-altitude-label">{label}</span>
+  </div>
+);
 
-//+++++++++++++++++++ Main Export +++++++++++++++++++
-const Contact = () => {
+const Contact = () => (
+  <div className="page-contact">
+    <Header />
 
-  return (
+    <section className="contact-section">
+      <AltitudeMarker label="CONTACT" />
+      <h1 className="contact-page-title">Get in touch.</h1>
 
-    <div className="min-vh-100 divMain">
-
-      <header className="w-100">
-        <Header />
-      </header>
-
-        <div className="col d-flex align-items-center justify-content-center contactSpacer">
-          <h1 className="mb-5 p-3 contactTitle ">Contact</h1>
+      <div className="contact-cards">
+        <div className="contact-card">
+          <div className="contact-card-label">Email</div>
+          <a
+            href="mailto:clayton.skaggs89@gmail.com"
+            className="contact-card-value"
+          >
+            clayton.skaggs89@gmail.com
+          </a>
         </div>
 
-      <div className='d-flex flex-column align-items-center justify-content-center'>
-        <div className='d-flex flex-column align-items-center justify-content-center contactBox'>
-          <div className='justify-content-start text-center'>
+        <div className="contact-card">
+          <div className="contact-card-label">Location</div>
+          <span className="contact-card-value">Denver, CO</span>
+          <span className="contact-card-sub">Mountain Time Zone</span>
+        </div>
 
-            <div className='d-flex flex-column contactEmail'>
-              clayton.skaggs89@gmail.com
-            </div>
-
-            <div className='d-flex flex-column align-items-center emailFont'>
-              <a className="emailLinkText" href = "mailto: clayton.skaggs89@gmail.com">             
-                <img src={require('../img/Icons/SendEmail.png')}
-                  className="emailIcon"
-                  alt="Instagram Icon"/>  
-              </a>
-            </div>
-
-            <div className='d-flex flex-column contactLocation'>
-              Denver, CO
-            </div>
-
-            <div className='d-flex flex-column text-center timeZoneText'>
-              (Mountain Time Zone)
-            </div>
-
-          </div>
+        <div className="contact-card">
+          <div className="contact-card-label">GitHub</div>
+          <a
+            href="https://github.com/DesertCow"
+            className="contact-card-value"
+          >
+            @DesertCow
+          </a>
         </div>
       </div>
+    </section>
 
-      <div className="w-100">
-        <Footer />
-      </div>
-
-    </div>
-
-  )
-}
+    <Footer />
+  </div>
+);
 
 export default Contact;
-
-
-//!========================= EOF =========================

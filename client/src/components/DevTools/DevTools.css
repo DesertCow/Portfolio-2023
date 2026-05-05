@@ -1,115 +1,72 @@
-
-
-@media screen and (min-width: 600px) {
-
-     .languagesListTitle{
-          font-size: 23px;
-          font-family: "SF-Mono";
-     }
-
-     .languagesList{
-          font-size: 14px;
-          font-family: "SF-Mono";
-     }
-
-     .programLanguagesBox {
-          width: 320px;
-          height: 400px;
-          margin-bottom: 100px;
-          background-color: var(--alt-color1);
-          border-radius: 60px;
-          -webkit-border-radius: 60px;
-          -moz-border-radius: 60px;
-          -ms-border-radius: 60px;
-          -o-border-radius: 60px;
-     }
-
-     .programToolBox {
-          width: 320px;
-          height: 400px;
-          margin-bottom: 100px;
-          background-color: var(--alt-color3);
-          border-radius: 60px;
-          -webkit-border-radius: 60px;
-          -moz-border-radius: 60px;
-          -ms-border-radius: 60px;
-          -o-border-radius: 60px;
-     }
-
-     .programOldLanguagesBox {
-          width: 600px;
-          height: 400px;
-          margin-bottom: 100px;
-          background-color: var(--alt-color2);
-          border-radius: 60px;
-          -webkit-border-radius: 60px;
-          -moz-border-radius: 60px;
-          -ms-border-radius: 60px;
-          -o-border-radius: 60px;
-     }
-
-     .devToolsTopBox {
-          flex-direction: row;
-          margin-top: 25px;
-          display: flex;
-          flex-wrap: wrap;
-     }
-
+.devtools-section {
+  padding: 80px 60px;
+  background-color: var(--color-dark);
 }
 
-@media screen and (max-width: 600px) {
+.devtools-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
-     .languagesListTitle{
-          font-size: 23px;
-          font-family: "SF-Mono";
-     }
+.devtools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
 
-     .languagesList{
-          font-size: 14px;
-          font-family: "SF-Mono";
-          margin-bottom: 50px;
-     }
+.devtools-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(196, 168, 130, 0.15);
+  border-radius: 10px;
+  padding: 28px 24px;
+}
 
-     .programLanguagesBox {
-          width: 320px;
-          height: 400px;
-          margin-bottom: 50px;
-          background-color: var(--alt-color1);
-          border-radius: 60px;
-          -webkit-border-radius: 60px;
-          -moz-border-radius: 60px;
-          -ms-border-radius: 60px;
-          -o-border-radius: 60px;
-     }
+.devtools-card-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-sand);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(196, 168, 130, 0.15);
+}
 
-     .programToolBox {
-          width: 320px;
-          height: 400px;
-          margin-bottom: 50px;
-          background-color: var(--alt-color3);
-          border-radius: 60px;
-          -webkit-border-radius: 60px;
-          -moz-border-radius: 60px;
-          -ms-border-radius: 60px;
-          -o-border-radius: 60px;
-     }
+.devtools-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-     .programOldLanguagesBox {
-          width: 320px;
-          height: 400px;
-          margin-bottom: 25px;
-          background-color: var(--alt-color2);
-          border-radius: 60px;
-          -webkit-border-radius: 60px;
-          -moz-border-radius: 60px;
-          -ms-border-radius: 60px;
-          -o-border-radius: 60px;
-     }
+.devtools-list li {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-warm);
+  opacity: 0.8;
+}
 
-     .devToolsTopBox {
-          flex-direction: column;
-          display: flex;
-          flex-wrap: wrap;
-     }
+.devtools-list li::before {
+  content: '▸ ';
+  color: var(--color-sand);
+  opacity: 0.6;
+}
 
+@media (max-width: 900px) {
+  .devtools-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .devtools-section {
+    padding: 60px 24px;
+  }
+  .devtools-grid {
+    grid-template-columns: 1fr;
+  }
 }

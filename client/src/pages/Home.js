@@ -1,68 +1,279 @@
-//* Component Import
+import { useEffect, useRef } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import '../css/Home.css';
 
+const AltitudeMarker = ({ label }) => (
+  <div className="altitude-marker">
+    <span className="altitude-line" />
+    <span className="altitude-label">{label}</span>
+  </div>
+);
 
-//+++++++++++++++++++ Main Export +++++++++++++++++++
-function Home() {
+const RouteConnector = ({ variant }) => (
+  <div className={`route-connector-wrap ${variant}`}>
+    <svg width="2" height="60" aria-hidden="true" className="route-connector">
+      <line x1="1" y1="0" x2="1" y2="60"
+        stroke="var(--color-sand)"
+        strokeWidth="2"
+        strokeDasharray="6 4"
+        strokeOpacity="0.6"
+      />
+    </svg>
+  </div>
+);
 
-  return(
-    <div className="d-flex flex-column min-vh-100 divMain">
+const Home = () => {
+  const layerBackRef  = useRef(null);
+  const layerMidRef   = useRef(null);
+  const layerFrontRef = useRef(null);
+  const starsRef      = useRef(null);
+  const heroRef       = useRef(null);
 
-      <header className="">
-        <Header />
-      </header>
-      
-      <div className='homeHeaderSpacer d-flex align-items-center justify-content-center'>
+  useEffect(() => {
+    const onScroll = () => {
+      const y = window.scrollY;
+      const heroH = heroRef.current ? heroRef.current.offsetHeight : window.innerHeight;
+      if (y < heroH) {
+        if (layerBackRef.current)  layerBackRef.current.style.transform  = `translateY(${y * 0.08}px)`;
+        if (layerMidRef.current)   layerMidRef.current.style.transform   = `translateY(${y * 0.16}px)`;
+        if (layerFrontRef.current) layerFrontRef.current.style.transform = `translateY(${y * 0.26}px)`;
+        if (starsRef.current)      starsRef.current.style.opacity        = String(Math.max(0, 1 - y / 480));
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
-        <div className='row d-flex align-items-center justify-content-center homeLandingZone'>
-          
-          <div className='homeHelloText'>
-            Hello my name is
-          </div>
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
 
-          <div className='homeNameText'>
-            Clayton Skaggs
-          </div>
+  return (
+    <div className="page-home">
+      <Header />
 
-          <div className='homeRoleText'>
-            I build Full Stack applications for web and mobile platforms.
-          </div>
+      {/* ===== HERO ===== */}
+      <section className="hero-section" ref={heroRef}>
+        <div className="mountain-bg" aria-hidden="true">
 
-          <div className='homeDesText'>
-            &ensp; &ensp;&ensp; &ensp; As a Computer Engineering graduate from Oklahoma State University and former Product Development Engineer at <a href="https://www.intel.com/">Intel Corp</a>, I have a solid technical foundation and more than five years of experience developing software solutions while working on complex silicon engineering projects with a focus on exceptional quality and meeting market driven deadlines.
-            <br></br>
-            <br></br>
-            &ensp; &ensp;&ensp; &ensp; I am seeking to apply my engineering problem solving skills to excel as a Full Stack developer. With a keen eye for detail and a drive to contiuously grow my skills while also learning new and emerging technologies. I am confident in my ability to solve problems, meet commitments, and deliver exceptional results that exceed a clients or employers expectations.
-          </div> 
+          {/* Stars */}
+          <svg ref={starsRef} className="stars-svg" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice">
+            <circle cx="52"   cy="28"  r="1.2" fill="rgba(255,255,255,0.9)"/>
+            <circle cx="148"  cy="62"  r="0.8" fill="rgba(255,255,255,0.7)"/>
+            <circle cx="280"  cy="18"  r="1.5" fill="rgba(255,255,255,0.95)"/>
+            <circle cx="378"  cy="76"  r="1.0" fill="rgba(255,255,255,0.8)"/>
+            <circle cx="490"  cy="22"  r="0.7" fill="rgba(255,255,255,0.6)"/>
+            <circle cx="600"  cy="48"  r="1.3" fill="rgba(255,255,255,0.9)"/>
+            <circle cx="718"  cy="14"  r="1.0" fill="rgba(255,255,255,0.8)"/>
+            <circle cx="846"  cy="44"  r="0.8" fill="rgba(255,255,255,0.7)"/>
+            <circle cx="952"  cy="28"  r="1.5" fill="rgba(255,255,255,0.95)"/>
+            <circle cx="1078" cy="58"  r="1.0" fill="rgba(255,255,255,0.8)"/>
+            <circle cx="1198" cy="22"  r="0.7" fill="rgba(255,255,255,0.6)"/>
+            <circle cx="1350" cy="42"  r="1.2" fill="rgba(255,255,255,0.9)"/>
+            <circle cx="1420" cy="80"  r="0.8" fill="rgba(255,255,255,0.7)"/>
+            <circle cx="102"  cy="102" r="0.8" fill="rgba(255,255,255,0.6)"/>
+            <circle cx="248"  cy="138" r="1.0" fill="rgba(255,255,255,0.8)"/>
+            <circle cx="416"  cy="88"  r="0.7" fill="rgba(255,255,255,0.5)"/>
+            <circle cx="578"  cy="128" r="1.3" fill="rgba(255,255,255,0.85)"/>
+            <circle cx="738"  cy="98"  r="0.8" fill="rgba(255,255,255,0.7)"/>
+            <circle cx="878"  cy="148" r="1.0" fill="rgba(255,255,255,0.75)"/>
+            <circle cx="1018" cy="108" r="0.7" fill="rgba(255,255,255,0.6)"/>
+            <circle cx="1158" cy="138" r="1.2" fill="rgba(255,255,255,0.85)"/>
+            <circle cx="1298" cy="102" r="0.8" fill="rgba(255,255,255,0.7)"/>
+            <circle cx="32"   cy="168" r="0.9" fill="rgba(255,255,255,0.65)"/>
+            <circle cx="204"  cy="198" r="0.7" fill="rgba(255,255,255,0.5)"/>
+            <circle cx="362"  cy="158" r="1.1" fill="rgba(255,255,255,0.75)"/>
+            <circle cx="518"  cy="188" r="0.8" fill="rgba(255,255,255,0.6)"/>
+            <circle cx="678"  cy="168" r="1.3" fill="rgba(255,255,255,0.85)"/>
+            <circle cx="838"  cy="198" r="0.7" fill="rgba(255,255,255,0.5)"/>
+            <circle cx="998"  cy="178" r="1.0" fill="rgba(255,255,255,0.75)"/>
+            <circle cx="1138" cy="198" r="0.8" fill="rgba(255,255,255,0.6)"/>
+            <circle cx="1278" cy="168" r="1.2" fill="rgba(255,255,255,0.8)"/>
+            <circle cx="460"  cy="238" r="0.9" fill="rgba(255,255,255,0.55)"/>
+            <circle cx="780"  cy="228" r="0.7" fill="rgba(255,255,255,0.5)"/>
+            <circle cx="1098" cy="238" r="1.1" fill="rgba(255,255,255,0.65)"/>
+            <circle cx="1388" cy="152" r="0.9" fill="rgba(255,255,255,0.7)"/>
+          </svg>
 
+          {/* Back mountain layer — highest, most distant */}
+          <svg
+            ref={layerBackRef}
+            className="mountain-layer"
+            viewBox="0 0 1440 500"
+            preserveAspectRatio="xMidYMax slice"
+          >
+            <polygon
+              points="0,500 0,320 120,256 240,300 340,118 440,198 580,78 700,158 818,178 920,98 1020,168 1150,128 1280,188 1380,198 1440,218 1440,500"
+              fill="#232939"
+            />
+            <polygon points="554,124 580,78 606,124"  fill="rgba(232,223,213,0.42)"/>
+            <polygon points="898,138 920,98  942,138"  fill="rgba(232,223,213,0.32)"/>
+            <polygon points="1128,165 1150,128 1172,165" fill="rgba(232,223,213,0.22)"/>
+          </svg>
+
+          {/* Mid mountain layer */}
+          <svg
+            ref={layerMidRef}
+            className="mountain-layer"
+            viewBox="0 0 1440 500"
+            preserveAspectRatio="xMidYMax slice"
+          >
+            <polygon
+              points="0,500 0,358 200,258 360,308 450,198 580,258 700,228 820,268 1000,208 1150,258 1300,248 1440,288 1440,500"
+              fill="#1f2430"
+            />
+            <polygon points="428,238 450,198 472,238" fill="rgba(232,223,213,0.28)"/>
+            <polygon points="978,244 1000,208 1022,244" fill="rgba(232,223,213,0.2)"/>
+          </svg>
+
+          {/* Front mountain layer — closest */}
+          <svg
+            ref={layerFrontRef}
+            className="mountain-layer"
+            viewBox="0 0 1440 500"
+            preserveAspectRatio="xMidYMax slice"
+          >
+            <polygon
+              points="0,500 0,428 148,368 298,408 378,318 498,378 618,338 738,388 858,358 978,408 1098,328 1218,388 1328,368 1440,418 1440,500"
+              fill="#1a1e25"
+            />
+          </svg>
         </div>
 
-        <div className='homeLinksBox'>      
-          <div className="d-flex homeLinksBox2 justify-content-center align-items-center text-center w-75">
-            <div className="row">
-              <a href="/DevPortfolio" className='homeButtonsBox'>
-                <h1 className="col homeLinkButtonsText homeLinkButtons">Dev Portfolio</h1>
-              </a>
+        <div className="hero-content">
+          <div className="altitude-pin">
+            <span className="altitude-pin-line" />
+            <span className="altitude-pin-label">14,000 ft</span>
+          </div>
+          <h1 className="hero-name">Clayton Skaggs</h1>
+          <div className="hero-roles-wrap">
+            <span className="hero-role role-1">Founder &amp; CEO, Pico Edge</span>
+            <span className="hero-role role-2">Former Intel Silicon Engineer</span>
+            <span className="hero-role role-3">5 industries. 1 discipline.</span>
+          </div>
+          <p className="hero-bio">
+            From Intel silicon labs to frozen waterfalls to founding Pico Edge — I solve hard problems in unforgiving environments.
+          </p>
+          <div className="hero-ctas">
+            <a href="/DevPortfolio" className="cta-primary">Dev Portfolio →</a>
+            <a href="/About" className="cta-ghost">About Me</a>
+          </div>
+        </div>
+      </section>
+
+      <RouteConnector variant="dark-to-cream" />
+
+      {/* ===== BASE CAMP ===== */}
+      <section className="base-camp-section fade-in">
+        <div className="section-inner">
+          <AltitudeMarker label="BASE CAMP — WHAT I'M BUILDING" />
+          <h2 className="section-title">Software that builds itself.</h2>
+          <p className="section-body">
+            Pico Edge is an autonomous coding pipeline with a 14-stage DAG that takes the LLM out of the verification position. A ticket plus a failing test goes in; verified, documented, production-ready code comes out. Deterministic test execution is the only acceptable proof of completion.
+          </p>
+          <div className="base-camp-grid">
+            <div className="terminal-card">
+              <div className="terminal-header">
+                <div className="terminal-dots">
+                  <span className="dot dot-red" />
+                  <span className="dot dot-yellow" />
+                  <span className="dot dot-green" />
+                </div>
+                <span className="terminal-title-bar">pico-edge</span>
+              </div>
+              <div className="terminal-body">
+                <p className="t-line t-line-1"><span className="t-prompt">$</span> pico resolve TICKET-4821</p>
+                <p className="t-line t-line-2 t-dim">→ analyzing ticket context...</p>
+                <p className="t-line t-line-3 t-dim">→ generating TDD suite...</p>
+                <p className="t-line t-line-4 t-success">✓ tests 14/14 passing</p>
+                <p className="t-line t-line-5 t-success">✓ council 6/6 GO</p>
+                <p className="t-line t-line-6 t-accent">→ PR opened: feat/TICKET-4821</p>
+              </div>
             </div>
-            <div className="row">
-              <a href="/About" className='homeButtonsBox'>
-                <h1 className="col homeLinkButtonsText homeLinkButtons">About Me</h1>
-              </a>
+            <div className="pipeline-pills">
+              <span className="pill">Ticket Analysis</span>
+              <span className="pill">TDD Generation</span>
+              <span className="pill">Dual Dev Passes</span>
+              <span className="pill">6-Judge Council</span>
+              <span className="pill">Verified PR</span>
             </div>
           </div>
         </div>
+      </section>
 
-      </div>
+      <RouteConnector variant="cream-to-dark" />
 
-      <div className="w-100">
-        <Footer />
-      </div>
+      {/* ===== THE CRUX ===== */}
+      <section className="crux-section fade-in">
+        <div className="section-inner">
+          <AltitudeMarker label="THE CRUX — WHY MOUNTAINS MATTER" />
+          <h2 className="section-title section-title-light">
+            The mountain doesn't care about your plan.
+          </h2>
+          <div className="crux-grid">
+            <div className="crux-card">
+              <h3 className="crux-card-title">On the mountain</h3>
+              <p>
+                Route-finding in whiteout conditions. Ice screws that won't seat. A pitch that looked climbable from below but isn't. You adapt or you retreat.
+              </p>
+            </div>
+            <div className="crux-card">
+              <h3 className="crux-card-title">At the keyboard</h3>
+              <p>
+                A pipeline stage that silently swallows errors. A model that hallucinates test cases. An architecture that doesn't scale. Same discipline: assess, adapt, execute — or fail.
+              </p>
+            </div>
+          </div>
+          <blockquote className="crux-quote">
+            "Success and failure in the mountains prepare you to be comfortable with the only certainty in startups: that nothing goes as planned."
+          </blockquote>
+        </div>
+      </section>
 
+      <RouteConnector variant="dark-to-cream-2" />
+
+      {/* ===== SUMMIT LOG ===== */}
+      <section className="summit-log-section fade-in">
+        <div className="section-inner">
+          <AltitudeMarker label="SUMMIT LOG" />
+          <div className="stats-grid">
+            <div className="stat-item">
+              <span className="stat-num">14</span>
+              <span className="stat-label">Pipeline Stages</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-num">Intel</span>
+              <span className="stat-label">Hardware Roots</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-num">AWS</span>
+              <span className="stat-label">Cloud Native</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-num">Denver</span>
+              <span className="stat-label">Home Base</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-num">5+</span>
+              <span className="stat-label">Years Engineering</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-num">152</span>
+              <span className="stat-label">Routes Logged</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default Home;
-
-//!========================= EOF =========================

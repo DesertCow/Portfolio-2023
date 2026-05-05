@@ -1,811 +1,350 @@
-//* React Import
 import { useState, useRef } from 'react';
-
-//* CSS Import
-import "../css/DeveloperPortfolio_Full.css";
-import "../css/DeveloperPortfolio_Mobile.css";
-
-//* Resume Import
-import ResumePDF from '../assets/Clayton_Skaggs_Resume.pdf';
 import { usePdf } from '@mikecousins/react-pdf';
+import * as pdfjs from 'pdfjs-dist';
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
-//* Component Import
+import ResumePDF from '../assets/Clayton_Skaggs_Resume.pdf';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import DevTools from '../components/DevTools'
+import DevTools from '../components/DevTools';
+import '../css/Portfolio.css';
 
+const AltitudeMarker = ({ label }) => (
+  <div className="portfolio-altitude-marker">
+    <span className="portfolio-altitude-line" />
+    <span className="portfolio-altitude-label">{label}</span>
+  </div>
+);
 
-//+++++++++++++++++++ Main Export +++++++++++++++++++
-const Portfolio = () => {
-
-  //* Resume Display Config
-  const [page, setPage] = useState(1);
+const DeveloperPortfolio = () => {
+  const [page] = useState(1);
   const canvasRef = useRef(null);
+  const { pdfDocument } = usePdf({ file: ResumePDF, page, canvasRef });
 
-  const { pdfDocument, pdfPage } = usePdf({
-    file: ResumePDF,
-    page,
-    canvasRef,
-  });
+  return (
+    <div className="page-portfolio">
+      <Header />
 
-  let mobileUser = false
-
-  //* Determind Full or mobile layout
-  if(window.innerWidth < 600)
-  {
-    mobileUser = true
-  }
-  else {
-    mobileUser = false
-  }
-
-  if(mobileUser) {
-    
-    return (
-
-      <div className="min-vh-100 divMain">
-
-        <header className="w-100">
-          <Header />
-        </header>
-
-        <div className='HeaderSpacer text-center'>
-
-          <div className="d-flex col justify-content-center">
-            <div className="text-center py-5">
-              <h1 className="portfioloTitle p-3">Featured Projects</h1> 
-            </div>
-          </div>
-
-          <div className="d-flex col justify-content-center">
-            <div className="text-center pt-5 pb-4">
-              <div className="portfioloAppTitle1 p-3">
-                <h1>Newport Board Club</h1> 
-                <h1 className="mt-3"> (Web App)</h1> 
-              </div> 
-            </div>
-          </div>
-
-          <div className="container d-flex justify-content-center">
-
-            <div className="row d-flex featuredProjects justify-content-center">
-
-              <div className="row d-flex justify-content-center align-items-center portfioloDemoBox1">
-
-                <div className="row d-flex demoText portfioloSubBoxLeft text-center justify-content-center align-items-center">
-                  <h1 className="row demoTitle justify-content-center text-center align-items-center">Demo</h1>
-                  <img className="row d-flex img-fluid demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
-                  
-                  <div className='row d-flex justify-content-center text-center align-items-center'>
-                    <a className='row d-flex demoLinkText justify-content-center text-center align-items-center' href="https://boardclubapp-production.up.railway.app/">Live Demo Link</a>
-                    <div className='row demoTargetInfoBox text-center'>
-                      <h1 className='demoScreenText'>* App Designed for Mobile Experience *</h1>
-                      <h1 className='demoScreenText'>Screen Width: 470px - 520px  </h1>
-                    </div>
-                    <div className='row demoLoginInfoBox'>
-                      <h1 className='demoLoginTitleText'>Demo Login</h1>
-                      <h1 className='demoLoginText'>Email: demo@gmail.com</h1>
-                      <h1 className='demoLoginText'>Password: demo </h1>
-                    </div> 
-                  </div>
-
-                </div>
-
-                <div className="row d-flex justify-content-center portfioloSubBoxRight">
-                  
-                  <div className="row softwareStackBox">
-                    <div className="stackText">Software Stack</div>
-                    <ul className="softwareStackList text-center">
-                      <li className="softwareStackListItem">&#9642; App Type: Progressive Web App</li>
-                      <li className="softwareStackListItem">&#9642; Frontend: React (18.2.0)</li>
-                      <li className="softwareStackListItem">&#9642; Framework: Bootstrap (2.5.0)</li>
-                      <li className="softwareStackListItem">&#9642; API: GraphQL (16.6.0)</li>
-                      <li className="softwareStackListItem">&#9642; Backend: NodeJS (16.15.1)</li>
-                      <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
-                      <li className="softwareStackListItem">&#9642; Photo Host: AWS S3</li>
-                      <li className="softwareStackListItem appHost">&#9642; App Hosting:</li>
-                      <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Client/Server: Railway</li>
-                      <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Database: Self Host (Docker)</li>
-                      <li className="text-center"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
-                      <li className="text-center d-flex justify-content-center col">
-                        <div>
-                          <a href="https://github.com/DesertCow/NewportBoardClubApp_PWA">
-                            <img src={require('../img/Icons/github.png')}
-                              className="GitHub mx-3"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1>Client</h1> 
-                        </div>
-                        <div>
-                          <a href="https://github.com/DesertCow/NewportBoardClubApp_Server">
-                            <img src={require('../img/Icons/github.png')}
-                              className="GitHub mx-3"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1>Server</h1> 
-                        </div>
-                      </li>
-                      <li className="text-center row developmentStatus d-flex justify-content-center align-items-center">
-                          <h1 className='row justify-content-center align-items-center developmentStatusTitleText'>Development Status</h1>
-                          {/* <h1 className='demoLoginTitleText'>Status</h1> */}
-                          <div className='row d-flex justify-content-center align-items-center developmentStatusBox text-center mb-3'>
-                            <h1 className='developmentStatusText text-center'>Active</h1>
-                          </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="row d-flex justify-content-center align-items-center">
-                    <div className="projectDesTitles">Project Overview</div>
-                      <p className="projectDesText text-center">An application designed to allow members of the board club to view current surf/weather conditions, 
-                      club events, log surf sessions, view surf tips, rental information, and general information 
-                      about the club.</p>
-                    
-                    <div className="projectDesTitles2">Project Goal</div>
-                    <p className="projectDesText">The goal of this application to motivate users to go surf by providing them with the all the infomation they need to have a great surf session.</p>
-                    <ul className="projectSubDesText projectGoalText">
-                      <li className="projectSubDesTextItem">&#9642; The app shows the current surf and weather conditons. With a popup / modal showing more detailed weather information.</li>
-                      <li className="projectSubDesTextItem">&#9642; Events are displayed to make it easy for members to get the information they need to plan and attend upcoming events.</li>
-                      <li className="projectSubDesTextItem">&#9642; The Surf Log allows members to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence decision making when selecting a surfboard or surf spot for the next surf session.</li>
-                      <li className="projectSubDesTextItem">&#9642; Surf hacks are listed to help new members with common surf problems. </li>
-                      <li className="projectSubDesTextItem">&#9642; The Newport Surf map helps members easily pick the best spot to go surfing while visiting the club house.</li>
-                      <li className="projectSubDesTextItem">&#9642; The community forum helps members find others to surf with, sell items and also to interact with one another to build a sense of community.</li>
-                      <li className="projectSubDesTextItem">&#9642; Includes admin console with seperate login to enable (add/remove/edit) of Surf Hacks, Events, and shaper list.</li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-
-              <div className="d-flex col justify-content-center">
-                <div className="text-center pt-5 pb-4">
-                  <div className="portfioloAppTitle3 p-3">
-                    <h1>Newport Board Club</h1> 
-                    <h1 className="mt-3"> (React Native)</h1> 
-                  </div> 
-                </div>
-              </div>
-
-              <div className="row portfioloDemoBox3  d-flex justify-content-center">
-
-                <div className="row d-flex demoText portfioloSubBoxLeft text-center justify-content-center align-items-center">
-                  <h1 className="row demoTitle justify-content-center text-center align-items-center">Demo</h1>
-                  <img className="row d-flex img-fluid demoGIF1" src={"https://claytonskaggs-s3-portfolio.s3.us-west-1.amazonaws.com/NBC_React_Native_Demo1.gif"} alt="Surf Deck Demo"></img>
-                 <div className='row d-flex justify-content-center text-center align-items-center'>
-                  <div className='row demoLoginInfoBox'>
-                    <h1 className='demoLoginTitleText'>Demo Login</h1>
-                    <h1 className='demoLoginText'>Email: demo@gmail.com</h1>
-                    <h1 className='demoLoginText'>Password: demo </h1>
-                  </div>
-                 </div>
-                </div>
-
-                <div className="row d-flex justify-content-center portfioloSubBoxRight">
-                  
-                  <div className="row softwareStackBox">
-                    <div className="stackText">Software Stack</div>
-                    <ul className="softwareStackList text-center">
-                      <li className="softwareStackListItem">&#9642; App Type: React Native</li>
-                      <li className="softwareStackListItem">&#9642; Frontend: React Native (0.72.3)</li>
-                      <li className="softwareStackListItem">&#9642; Build Tool: Expo (49.0.6)</li>
-                      <li className="softwareStackListItem">&#9642; API: GraphQL (16.6.0)</li>
-                      <li className="softwareStackListItem">&#9642; Backend: NodeJS (16.15.1)</li>
-                      <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
-                      <li className="softwareStackListItem">&#9642; Photo Host: AWS S3</li>
-                      {/* <li className="softwareStackListItem">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li> */}
-                      <li className="softwareStackListItem appHost">&#9642; App Stores Submission:</li>
-                      <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; GooglePlay: Unsubmitted (WIP)</li>
-                      <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; AppleStore: Unsubmitted (WIP)</li>
-                      <li className="text-center d-flex justify-content-center col">
-                        <div>
-                          <a href="https://github.com/DesertCow/NewportBoardClubApp_Native">
-                            <img src={require('../img/Icons/github.png')}
-                              className="GitHub mx-3"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1>Client</h1> 
-                        </div>
-                        <div>
-                          <a href="https://github.com/DesertCow/NewportBoardClubApp_Server">
-                            <img src={require('../img/Icons/github.png')}
-                              className="GitHub mx-3"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1>Server</h1> 
-                        </div>
-                      </li>
-                      <li className="text-center row developmentStatus d-flex justify-content-center align-items-center">
-                          <h1 className='row justify-content-center align-items-center developmentStatusTitleText'>Development Status</h1>
-                          {/* <h1 className='demoLoginTitleText'>Status</h1> */}
-                          <div className='d-flex justify-content-center align-items-center developmentStatusBox text-center mb-3'>
-                            <h1 className='developmentStatusText text-center'>Active</h1>
-                          </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="row d-flex justify-content-center align-items-center">
-                    <div className="projectDesTitles">Project Overview</div>
-                      <p className="projectDesText text-center">A ground up rebuild of the orginal Newport Board Club app but with react native and designed to be deployed to Android and iOS platforms from the same code base via Expo. This app utilizes the same backend API/Server as the previously developed web App.</p>
-                    
-                    <div className="projectDesTitles2">Project Goal</div>
-                    <p className="projectDesText">The goal of this application is to enable all features from orginal app while also adding Push Notifications and an SVG interactive surf map.</p>
-                    <ul className="projectSubDesText projectGoalText">
-                      <li className="projectSubDesTextItem">&#9642; The app shows the current surf and weather conditons. With a popup / modal showing more detailed weather information. </li>
-                      <li className="projectSubDesTextItem">&#9642; Events are displayed to make it easy for members to get the information they need to plan and attend upcoming events.</li>
-                      <li className="projectSubDesTextItem">&#9642; The Surf Log allows members to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence decision making when selecting a surfboard or surf spot for the next surf session.</li>
-                      <li className="projectSubDesTextItem">&#9642; Surf hacks are listed to help new members with common surf problems. </li>
-                      <li className="projectSubDesTextItem">&#9642; The Newport Surf map helps members easily pick the best spot to go surfing while visiting the club house.</li>
-                      <li className="projectSubDesTextItem">&#9642; The community forum helps members find others to surf with, sell items and also to interact with one another to build a sense of community.</li>
-                      <li className="projectSubDesTextItem">&#9642; Includes admin console with seperate login to enable adding/removing/editing Surf Hacks, Events, and shaper list.</li>
-                      <li className="projectSubDesTextItem">&#9642; Push Notifications allow memebers to stay up to date on current surf conditions, club events, and new surfboard additions to the club.</li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-              
-              <div className="d-flex col justify-content-center text-center">
-                <div className="text-center pt-5 pb-4">
-                  <h1 className="portfioloAppTitle2 p-3">Chuckwagon (Web App)</h1> 
-                </div>
-              </div>
-
-              <div className="row d-flex justify-content-center align-items-center portfioloDemoBox2">
-                <div className="row d-flex demoText portfioloSubBoxLeft text-center justify-content-center align-items-center">
-                  <h1 className="row demoTitle justify-content-center text-center align-items-center">Demo</h1>
-                  <img className="row d-flex img-fluid demoGIF1" src={require("../img/DemoGIFs/Chuckwagon_Demo1.gif")} alt="Surf Deck Demo"></img>
-                  
-                  <div className='row d-flex justify-content-center text-center align-items-center'>
-                    <a className='row d-flex demoLinkText justify-content-center text-center align-items-center' href="https://saltlicktruck-production.up.railway.app/">Live Demo Link</a>
-                    <div className='row demoTargetInfoBox text-center'>
-                      <h1 className='demoScreenText'>* App Designed for Mobile Experience *</h1>
-                      <h1 className='demoScreenText'>Screen Width: 390px - 420px  </h1>
-                    </div>
-                    <div className='row demoLoginInfoBox'>
-                      <h1 className='demoLoginTitleText'>Demo Login</h1>
-                      <h1 className='demoLoginText'>Email: demo@gmail.com</h1>
-                      <h1 className='demoLoginText'>Password: demo </h1>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div className="row d-flex justify-content-center portfioloSubBoxRight">
-                  
-                  <div className="row softwareStackBox">
-                    <div className="stackText">Software Stack</div>
-                      <ul className="softwareStackList text-center">
-                        <li className="softwareStackListItem">&#9642; App Type: Progressive Web App</li>
-                        <li className="softwareStackListItem">&#9642; Frontend: React (18.2.0)</li>
-                        <li className="softwareStackListItem">&#9642; Framework: Bootstrap (5.2.1)</li>
-                        <li className="softwareStackListItem">&#9642; API: GraphQL (15.3.0)</li>
-                        <li className="softwareStackListItem">&#9642; Backend: NodeJS (16.15.1)</li>
-                        <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
-                        <li className="softwareStackListItem">&#9642; Database: MySQL (2.3.3)</li>
-                        <li className="softwareStackListItem appHost">&#9642; App Hosting:</li>
-                        <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Client/Server: Railway</li>
-                        <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Database: Self Host (Docker)</li>
-                        <li className="text-center"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
-                        <li className="text-center">
-                          <a href="https://github.com/DesertCow/SaltLickTruck">
-                            <img src={require('../img/Icons/github.png')}
-                              className="GitHub"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1 className='GitHubText'>Client + Server</h1>
-                        </li>
-                      <li className="text-center row developmentStatus d-flex justify-content-center align-items-center">
-                          <h1 className='row justify-content-center align-items-center developmentStatusTitleText'>Development Status</h1>
-                          {/* <h1 className='demoLoginTitleText'>Status</h1> */}
-                          <div className='row d-flex justify-content-center align-items-center developmentInactiveStatusBox text-center'>
-                            <h1 className='developmentInactiveStatusText text-center'>Inactive</h1>
-                          </div>
-                      </li>
-                      </ul>
-                  </div>
-
-                  <div className="row d-flex justify-content-center align-items-center">
-                    <div className="projectDesTitles">Project Overview</div>
-                      <p className="projectDesText text-center">Chuckwagon is a comprehensive Food Truck management application with a customer ordering App and a separate "In Kitchen" App (React) for order execution and application administration built using MongoDB, Express, React, and NodeJS (MERN Stack).</p>
-                    
-                    <div className="projectDesTitles2">Project Goal</div>
-                    <p className="projectDesText text-center">Application that could be deploy to the internet or run locally on a food truck and served via WiFi to enable customers to order food without needing an internet connection.</p>
-                    <ul className="projectSubDesText projectGoalText">
-                      <li className="projectSubDesTextItem">&#9642; Enable customers to view the menu and add items to the cart for checkout/purchase.</li>
-                      <li className="projectSubDesTextItem">&#9642; Customers also create an account that provides an email for marketing purposes thus enabling higher likelihood of repeat customers</li>
-                      <li className="projectSubDesTextItem">&#9642; Menu is dynamically served from SQL database enabling realtime item availabity to adjust as items availabity is exhausted.</li>
-                      <li className="projectSubDesTextItem">&#9642; Customers can also track the status of their order via the app. <br></br>(Submitted/WIP/Ready/Picked Up)</li>
-                      <li className="projectSubDesTextItem">&#9642; Kitchen page allows employees to track, manage, and complete orders.</li>
-                      <li className="projectSubDesTextItem">&#9642; Orders are stored in database, thus enabling analytics to be created to return valuable information to business owners and increase profit margin.</li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div className="d-flex col mt-5 pt-5 justify-content-center">
-            <div className="text-center">
-              <h1 className="portfioloTitle p-3">Developer Skills</h1> 
-            </div>
-          </div>
-
-          <div className="w-100">
-            <DevTools />
-          </div>
-
-          <div className="d-flex col justify-content-center">
-            <div className="text-center py-5">
-              <h1 className="portfioloTitle p-3">Resume</h1> 
-            </div>
-          </div>
-          <div className="d-flex col justify-content-center">
-            <div className="d-flex col justify-content-center">
-              {!pdfDocument && <span>Loading...</span>}
-              <canvas ref={canvasRef} className='PDFViewer'/>
-              {Boolean(pdfDocument)}
-            </div>
-          </div>
-
-
-          <div className="d-flex col justify-content-center">
-            <div className="text-center resumeDownloadBox">
-              <a
-                href={ResumePDF}
-                download="Clayton_Skaggs_Resume.pdf"
-                target="_blank"
-                rel="noreferrer">
-              <h1 className="mt-0 p-3 resumeDownloadText">
-                Download Resume
-              </h1>
-              </a>
-            </div>
-          </div>
-
+      {/* ===== PAGE HEADER ===== */}
+      <div className="portfolio-page-header">
+        <div className="portfolio-page-header-inner">
+          <AltitudeMarker label="DEV PORTFOLIO" />
+          <h1 className="portfolio-page-title">Featured Projects</h1>
         </div>
-
-          <div className="d-flex col justify-content-center">
-            <div className="text-center pt-5">
-              <h1 className="aboutMeTitle p-3">About Me</h1> 
-            </div>
-          </div>
-
-          <div className="container mt-5">
-
-            <div className="d-flex row justify-content-center align-items-center">
-              <div className="d-flex col mt-3 mb-4 justify-content-center align-items-center">
-                  <img src={require('../img/Clayton_Skaggs_6.png')}
-                  className="d-flex mt-3 contactPhotoPortfolio"
-                  alt="Clayton Skaggs profile picture"/>  
-              </div>
-
-              <div className="col px-5 portfolioAboutMe">
-                <p className='mt-4 pb-4'>
-                  Hello my name is Clayton,<br></br>
-                  &nbsp; <br></br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm an enthusiastic computer engineer who has extensive experience working on large projects with teams of engineers to develop solutions, meet commitments, and deliver high quality products to production. With experience in producing world class processors at <a href="https://www.intel.com/">Intel Corp</a>, I am adept at managing complex projects and ensuring they meet strict quality standards. My passion for engineering and commitment to quality make me an asset on any team striving to develop software solutions that add real business value for customers.
-                  <br></br>
-                  &nbsp; <br></br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As a programmer, I excel at creating responsive and functional applications that address the needs of clients and drive business value through technical solutions. With a passion for problem-solving, I'm skilled at developing software products from design to release. While delivering products on schedule while simultaneously meeting the customers requirements and exceed their expectations. My skills in programming, testing, and application design enable me to produce products that are reliable, effective, and tailored to specific business goals. With an overarching focus on delivering the best possible results for customers.
-                </p>
-              </div> 
-            </div>
-          </div>
-          
-          <div className="d-flex col mt-5 pt-5 justify-content-center">
-            <div className="text-center">
-              <h1 className="portfioloTitle p-3">Portfolio Development</h1>
-            </div>
-          </div>
-
-          <div className="d-flex col mt-3 justify-content-center align-items-center mx-5">
-            <div className="d-flex row portVersionBox">
-              <div className="text-start">
-                <h1  className="portVerisonText">&#9642; V0</h1>
-                <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: GitHub Pages (<a href="https://desertcow.github.io/Portfolio/">Link</a>)</h1>
-                <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio">GitHub Repo</a> </h1>    
-              </div>
-              <div className="text-start">
-                <h1  className="portVersion">&#9642; V1</h1>
-                <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: Railway (<a href="https://www.claytonskaggs.dev">Link</a>)</h1>
-                <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio-2023">GitHub Repo</a> </h1>
-              </div>
-            </div>
-          </div>
-        <div className="w-100">
-          <Footer />
-        </div>
-
-      </div>
-    )
-  }
-  else {
-    return (
-
-      <div className="min-vh-100 divMain">
-
-        <header className="w-100">
-          <Header />
-        </header>
-
-        <div className='HeaderSpacer text-center'>
-
-          <div className="d-flex col justify-content-center">
-            <div className="text-center py-5">
-              <h1 className="portfioloTitle p-3">Featured Projects</h1> 
-            </div>
-          </div>
-
-          <div className="d-flex col justify-content-center">
-            <div className="text-center pt-5 pb-4">
-              <div className="portfioloAppTitle1 p-3">
-                <h1>Newport Board Club</h1> 
-                <h1 className="mt-3"> (Web App)</h1> 
-              </div> 
-            </div>
-          </div>
-
-          <div className="container d-flex justify-content-center">
-
-            <div className="row d-flex featuredProjects justify-content-center">
-
-              <div className="row portfioloDemoBox1">
-
-                <div className="col demoText portfioloSubBoxLeft text-center">
-                  <h1 className="demoTitle">Demo</h1>
-                  <img className="img-fluid demoGIF1" src={require("../img/DemoGIFs/The_Board_Club_App_Demo1.gif")} alt="Surf Deck Demo"></img>
-                  <a className='demoLinkText' href="https://boardclubapp-production.up.railway.app/">Live Demo Link</a>
-                  <div className='demoTargetInfoBox text-center'>
-                    <h1 className='demoScreenText'>* App Designed for Mobile Experience *</h1>
-                    <h1 className='demoScreenText'>Screen Width: 470px - 520px  </h1>
-                  </div>
-                  <div className='demoLoginInfoBox'>
-                    <h1 className='demoLoginTitleText'>Demo Login</h1>
-                    <h1 className='demoLoginText'>Email: demo@gmail.com</h1>
-                    <h1 className='demoLoginText'>Password: demo </h1>
-                  </div>
-                </div>
-
-                <div className="col d-flex portfioloSubBoxRight">
-                  
-                  <div className="col-4 softwareStackBox">
-                    <div className="stackText">Software Stack</div>
-                    <ul className="softwareStackList">
-                      <li className="softwareStackListItem">&#9642; App Type: Progressive Web App</li>
-                      <li className="softwareStackListItem">&#9642; Frontend: React (18.2.0)</li>
-                      <li className="softwareStackListItem">&#9642; Framework: Bootstrap (2.5.0)</li>
-                      <li className="softwareStackListItem">&#9642; API: GraphQL (16.6.0)</li>
-                      <li className="softwareStackListItem">&#9642; Backend: NodeJS (16.15.1)</li>
-                      <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
-                      <li className="softwareStackListItem">&#9642; Photo Host: AWS S3</li>
-                      {/* <li className="softwareStackListItem">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li> */}
-                      <li className="softwareStackListItem appHost">&#9642; App Hosting:</li>
-                      <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Client/Server: Railway</li>
-                      <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Database: Self Host (Docker)</li>
-                      <li className="text-center logoOffset"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
-                      <li className="text-center logoOffset d-flex justify-content-around col">
-                        <div>
-                          <a href="https://github.com/DesertCow/NewportBoardClubApp_PWA">
-                            <img src={require('../img/Icons/github.png')}
-                              className="GitHub"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1>Client</h1> 
-                        </div>
-                        <div>
-                          <a href="https://github.com/DesertCow/NewportBoardClubApp_Server">
-                            <img src={require('../img/Icons/github.png')}
-                              className="GitHub"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1>Server</h1> 
-                        </div>
-                      </li>
-                      <li className="text-center logoOffset developmentStatus">
-                          <h1 className='developmentStatusTitleText'>Development Status</h1>
-                          {/* <h1 className='demoLoginTitleText'>Status</h1> */}
-                          <div className='developmentStatusBox'>
-                            <h1 className='developmentStatusText text-center'>Active</h1>
-                          </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="col">
-                    <div className="projectDesTitles">Project Overview</div>
-                      <p className="projectDesText text-center">An application designed to allow members of the board club to view current surf/weather conditions, 
-                      club events, log surf sessions, view surf tips, rental information, and general information 
-                      about the club.</p>
-                    
-                    <div className="projectDesTitles2">Project Goal</div>
-                    <p className="projectDesText">The goal of this application to motivate users to go surf by providing them with the all the infomation they need to have a great surf session.</p>
-                    <ul className="projectSubDesText projectGoalText">
-                      <li className="projectSubDesTextItem">&#9642; The app shows the current surf and weather conditons. With a popup / modal showing more detailed weather information.</li>
-                      <li className="projectSubDesTextItem">&#9642; Events are displayed to make it easy for members to get the information they need to plan and attend upcoming events.</li>
-                      <li className="projectSubDesTextItem">&#9642; The Surf Log allows members to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence decision making when selecting a surfboard or surf spot for the next surf session.</li>
-                      <li className="projectSubDesTextItem">&#9642; Surf hacks are listed to help new members with common surf problems. </li>
-                      <li className="projectSubDesTextItem">&#9642; The Newport Surf map helps members easily pick the best spot to go surfing while visiting the club house.</li>
-                      <li className="projectSubDesTextItem">&#9642; The community forum helps members find others to surf with, sell items and also to interact with one another to build a sense of community.</li>
-                      <li className="projectSubDesTextItem">&#9642; Includes admin console with seperate login to enable (add/remove/edit) of Surf Hacks, Events, and shaper list.</li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-
-              <div className="d-flex col justify-content-center">
-                <div className="text-center pt-5 pb-4">
-                  <div className="portfioloAppTitle3 p-3">
-                    <h1>Newport Board Club</h1> 
-                    <h1 className="mt-3"> (React Native)</h1> 
-                  </div> 
-                </div>
-              </div>
-
-              <div className="row portfioloDemoBox3">
-
-                <div className="col demoText portfioloSubBoxLeft text-center">
-                  <h1 className="demoTitle">Demo</h1>
-                  <img className="img-fluid demoGIF1" src={"https://claytonskaggs-s3-portfolio.s3.us-west-1.amazonaws.com/NBC_React_Native_Demo1.gif"} alt="Surf Deck Demo"></img>
-                  {/* <div className='demoTargetInfoBox text-center'>
-                    <h1 className='demoScreenText'>Android: <a className='storeLinkText' href="https://play.google.com/">GooglePlay Store</a></h1>
-                    <h1 className='demoScreenText'>iOS: <a className='storeLinkText' href="https://www.apple.com/app-store/">Apple Store</a></h1>
-                  </div> */}
-                  <div className='demoLoginInfoBox'>
-                    <h1 className='demoLoginTitleText'>Demo Login</h1>
-                    <h1 className='demoLoginText'>Email: demo@gmail.com</h1>
-                    <h1 className='demoLoginText'>Password: demo </h1>
-                  </div>
-                </div>
-
-                <div className="col d-flex portfioloSubBoxRight">
-                  
-                  <div className="col-4 softwareStackBox">
-                    <div className="stackText">Software Stack</div>
-                    <ul className="softwareStackList">
-                      <li className="softwareStackListItem">&#9642; App Type: React Native</li>
-                      <li className="softwareStackListItem">&#9642; Frontend: React Native (0.72.3)</li>
-                      <li className="softwareStackListItem">&#9642; Build Tool: Expo (49.0.6)</li>
-                      <li className="softwareStackListItem">&#9642; API: GraphQL (16.6.0)</li>
-                      <li className="softwareStackListItem">&#9642; Backend: NodeJS (16.15.1)</li>
-                      <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
-                      <li className="softwareStackListItem">&#9642; Photo Host: AWS S3</li>
-                      {/* <li className="softwareStackListItem">&#9642; App Hosting: <a href="https://boardclubapp-production.up.railway.app/">Board Club (Live)</a></li> */}
-                      <li className="softwareStackListItem appHost">&#9642; App Stores Submission:</li>
-                      <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; GooglePlay: Unsubmitted (WIP)</li>
-                      <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; AppleStore: Unsubmitted (WIP)</li>
-                      <li className="text-center logoOffset d-flex justify-content-around col">
-                        <div>
-                          <a href="https://github.com/DesertCow/NewportBoardClubApp_Native">
-                            <img src={require('../img/Icons/github.png')}
-                              className="GitHub"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1>Client</h1> 
-                        </div>
-                        <div>
-                          <a href="https://github.com/DesertCow/NewportBoardClubApp_Server">
-                            <img src={require('../img/Icons/github.png')}
-                              className="GitHub"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1>Server</h1> 
-                        </div>
-                      </li>
-                      <li className="text-center developmentStatus">
-                          <h1 className='developmentStatusTitleText'>Development Status</h1>
-                          {/* <h1 className='demoLoginTitleText'>Status</h1> */}
-                          <div className='developmentStatusBox'>
-                            <h1 className='developmentStatusText text-center'>Active</h1>
-                          </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="col">
-                    <div className="projectDesTitles">Project Overview</div>
-                      <p className="projectDesText text-center">A ground up rebuild of the orginal Newport Board Club app but with react native and designed to be deployed to Android and iOS platforms from the same code base via Expo. This app utilizes the same backend API/Server as the previously developed web App.</p>
-                    
-                    <div className="projectDesTitles2">Project Goal</div>
-                    <p className="projectDesText">The goal of this application is to enable all features from orginal app while also adding Push Notifications and an SVG interactive surf map.</p>
-                    <ul className="projectSubDesText projectGoalText">
-                      <li className="projectSubDesTextItem">&#9642; The app shows the current surf and weather conditons. With a popup / modal showing more detailed weather information. </li>
-                      <li className="projectSubDesTextItem">&#9642; Events are displayed to make it easy for members to get the information they need to plan and attend upcoming events.</li>
-                      <li className="projectSubDesTextItem">&#9642; The Surf Log allows members to keep a log of all their surf sessions to track their progression and review previous sessions conditions to use data to influence decision making when selecting a surfboard or surf spot for the next surf session.</li>
-                      <li className="projectSubDesTextItem">&#9642; Surf hacks are listed to help new members with common surf problems. </li>
-                      <li className="projectSubDesTextItem">&#9642; The Newport Surf map helps members easily pick the best spot to go surfing while visiting the club house.</li>
-                      <li className="projectSubDesTextItem">&#9642; The community forum helps members find others to surf with, sell items and also to interact with one another to build a sense of community.</li>
-                      <li className="projectSubDesTextItem">&#9642; Includes admin console with seperate login to enable adding/removing/editing Surf Hacks, Events, and shaper list.</li>
-                      <li className="projectSubDesTextItem">&#9642; Push Notifications allow memebers to stay up to date on current surf conditions, club events, and new surfboard additions to the club.</li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-              
-              <div className="d-flex col justify-content-center text-center">
-                <div className="text-center pt-5 pb-4">
-                  <h1 className="portfioloAppTitle2 p-3">Chuckwagon (Web App)</h1> 
-                </div>
-              </div>
-
-              <div className="row portfioloDemoBox2">
-                <div className="col demoText portfioloSubBoxLeft text-center">
-                  <h1 className="demoTitle">Demo</h1>
-                  <img className="img-fluid demoGIF1" src={require("../img/DemoGIFs/Chuckwagon_Demo1.gif")} alt="Surf Deck Demo"></img>
-                  <a className='demoLinkText' href="https://saltlicktruck-production.up.railway.app/">Live Demo Link</a>
-                  <div className='demoTargetInfoBox text-center'>
-                    <h1 className='demoScreenText'>* App Designed for Mobile Experience *</h1>
-                    <h1 className='demoScreenText'>Screen Width: 390px - 420px  </h1>
-                  </div>
-                  <div className='demoLoginInfoBox'>
-                    <h1 className='demoLoginTitleText'>Demo Login</h1>
-                    <h1 className='demoLoginText'>Email: demo@gmail.com</h1>
-                    <h1 className='demoLoginText'>Password: demo </h1>
-                  </div>
-                </div>
-
-                <div className="col d-flex portfioloSubBoxRight">
-                  
-                  <div className="col-4 softwareStackBox">
-                    <div className="stackText">Software Stack</div>
-                    <div className="d-flex justify-content-start">
-                      <ul className="softwareStackList text-left">
-                        <li className="softwareStackListItem">&#9642; App Type: Progressive Web App</li>
-                        <li className="softwareStackListItem">&#9642; Frontend: React (18.2.0)</li>
-                        <li className="softwareStackListItem">&#9642; Framework: Bootstrap (5.2.1)</li>
-                        <li className="softwareStackListItem">&#9642; API: GraphQL (15.3.0)</li>
-                        <li className="softwareStackListItem">&#9642; Backend: NodeJS (16.15.1)</li>
-                        <li className="softwareStackListItem">&#9642; Database: MongoDB (5.6.0)</li>
-                        <li className="softwareStackListItem">&#9642; Database: MySQL (2.3.3)</li>
-                        <li className="softwareStackListItem appHost">&#9642; App Hosting:</li>
-                        <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Client/Server: Railway</li>
-                        <li className="softwareStackListItem">&nbsp;&nbsp;&nbsp;&#9642; Database: Self Host (Docker)</li>
-                        {/* <li className="pt-3">&#9642; App Hosting: <a href="https://saltlicktruck-production.up.railway.app/">Chuckwagon (Live)</a></li> */}
-                        <li className="text-center logoOffset"><img className="img-fluid railwayLogo" src={require("../img/Icons/railway_logo.png")} alt="Railway Logo"></img></li>
-                        <li className="text-center logoOffset">
-                          <a href="https://github.com/DesertCow/SaltLickTruck">
-                            <img src={require('../img/Icons/github.png')}
-                              className="GitHub"
-                              alt="GitHub Icon"/>
-                          </a>
-                          <h1 className='GitHubText'>Client + Server</h1>
-                        </li>
-                      <li className="text-center developmentStatus">
-                          <h1 className='developmentStatusTitleText'>Development Status</h1>
-                          {/* <h1 className='demoLoginTitleText'>Status</h1> */}
-                          <div className='developmentInactiveStatusBox'>
-                            <h1 className='developmentInactiveStatusText text-center'>Inactive</h1>
-                          </div>
-                      </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="col">
-                    <div className="projectDesTitles">Project Overview</div>
-                      <p className="projectDesText text-center">Chuckwagon is a comprehensive Food Truck management application with a customer ordering App and a separate "In Kitchen" App (React) for order execution and application administration built using MongoDB, Express, React, and NodeJS (MERN Stack).</p>
-                    
-                    <div className="projectDesTitles2">Project Goal</div>
-                    <p className="projectDesText text-center">Application that could be deploy to the internet or run locally on a food truck and served via WiFi to enable customers to order food without needing an internet connection.</p>
-                    <ul className="projectSubDesText projectGoalText">
-                      <li className="projectSubDesTextItem">&#9642; Enable customers to view the menu and add items to the cart for checkout/purchase.</li>
-                      <li className="projectSubDesTextItem">&#9642; Customers also create an account that provides an email for marketing purposes thus enabling higher likelihood of repeat customers</li>
-                      <li className="projectSubDesTextItem">&#9642; Menu is dynamically served from SQL database enabling realtime item availabity to adjust as items availabity is exhausted.</li>
-                      <li className="projectSubDesTextItem">&#9642; Customers can also track the status of their order via the app. <br></br>(Submitted/WIP/Ready/Picked Up)</li>
-                      <li className="projectSubDesTextItem">&#9642; Kitchen page allows employees to track, manage, and complete orders.</li>
-                      <li className="projectSubDesTextItem">&#9642; Orders are stored in database, thus enabling analytics to be created to return valuable information to business owners and increase profit margin.</li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div className="d-flex col mt-5 pt-5 justify-content-center">
-            <div className="text-center">
-              <h1 className="portfioloTitle p-3">Developer Skills</h1> 
-            </div>
-          </div>
-
-          <div className="w-100">
-            <DevTools />
-          </div>
-
-          <div className="d-flex col justify-content-center">
-            <div className="text-center py-5">
-              <h1 className="portfioloTitle p-3">Resume</h1> 
-            </div>
-          </div>
-          <div className="d-flex col justify-content-center">
-            <div className="d-flex col justify-content-center">
-              {!pdfDocument && <span>Loading...</span>}
-              <canvas ref={canvasRef} className='PDFViewer'/>
-              {Boolean(pdfDocument)}
-            </div>
-          </div>
-
-
-          <div className="d-flex col justify-content-center">
-            <div className="text-center resumeDownloadBox">
-              <a
-                href={ResumePDF}
-                download="Clayton_Skaggs_Resume.pdf"
-                target="_blank"
-                rel="noreferrer">
-              <h1 className="mt-0 p-3 resumeDownloadText">
-                Download Resume
-              </h1>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-          <div className="d-flex col justify-content-center">
-            <div className="text-center pt-5">
-              <h1 className="aboutMeTitle p-3">About Me</h1> 
-            </div>
-          </div>
-
-          <div className="container mt-5">
-
-            <div className="d-flex row justify-content-center align-items-center">
-              <div className="d-flex col mt-3 mb-4 justify-content-center align-items-center">
-                  <img src={require('../img/Clayton_Skaggs_6.png')}
-                  className="d-flex mt-3 contactPhotoPortfolio"
-                  alt="Clayton Skaggs profile picture"/>  
-              </div>
-
-              <div className="col px-5 portfolioAboutMe">
-                <p className='mt-4 pb-4'>
-                  Hello my name is Clayton,<br></br>
-                  &nbsp; <br></br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm an enthusiastic computer engineer who has extensive experience working on large projects with teams of engineers to develop solutions, meet commitments, and deliver high quality products to production. With experience in producing world class processors at <a href="https://www.intel.com/">Intel Corp</a>, I am adept at managing complex projects and ensuring they meet strict quality standards. My passion for engineering and commitment to quality make me an asset on any team striving to develop software solutions that add real business value for customers.
-                  <br></br>
-                  &nbsp; <br></br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As a programmer, I excel at creating responsive and functional applications that address the needs of clients and drive business value through technical solutions. With a passion for problem-solving, I'm skilled at developing software products from design to release. While delivering products on schedule while simultaneously meeting the customers requirements and exceed their expectations. My skills in programming, testing, and application design enable me to produce products that are reliable, effective, and tailored to specific business goals. With an overarching focus on delivering the best possible results for customers.
-                </p>
-              </div> 
-            </div>
-          </div>
-          
-          <div className="d-flex col mt-5 pt-5 justify-content-center">
-            <div className="text-center">
-              <h1 className="portfioloTitle p-3">Portfolio Development</h1>
-            </div>
-          </div>
-
-          <div className="d-flex col mt-3 justify-content-center align-items-center mx-5">
-            <div className="d-flex row portVersionBox">
-              <div className="text-start">
-                <h1  className="portVerisonText">&#9642; V0</h1>
-                <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: GitHub Pages (<a href="https://desertcow.github.io/Portfolio/">Link</a>)</h1>
-                <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio">GitHub Repo</a> </h1>    
-              </div>
-              <div className="text-start">
-                <h1  className="portVersion">&#9642; V1</h1>
-                <h1  className="portVerisonText">&ensp; &ensp; &#9642; Host: Railway (<a href="https://www.claytonskaggs.dev">Link</a>)</h1>
-                <h1  className="portVerisonText">&ensp; &ensp; &#9642; <a href="https://github.com/DesertCow/Portfolio-2023">GitHub Repo</a> </h1>
-              </div>
-            </div>
-          </div>
-        <div className="w-100">
-          <Footer />
-        </div>
-
       </div>
 
-    )
-  }
-}
+      {/* ===== PICO EDGE ===== */}
+      <section className="project-section">
+        <div className="project-section-inner">
+          <div className="project-section-header">
+            <span className="project-tag tag-current">CURRENT</span>
+            <div>
+              <h2 className="project-title">Pico Edge</h2>
+              <span className="project-subtitle">Autonomous Coding Agent Platform</span>
+            </div>
+          </div>
+          <div className="project-body">
+            <div className="project-demo">
+              <div className="demo-label">Overview</div>
+              <div className="pico-demo-card">
+                <p className="pico-demo-text">
+                  A <strong>14-stage DAG</strong> that takes the LLM out of the verification position. A ticket plus a failing test goes in; verified, documented, production-ready code comes out.<br /><br />
+                  Deterministic test execution is the only acceptable proof of completion — no council vote, no LLM self-assessment.<br /><br />
+                  Stack: Python, AWS (Lambda, ECS Fargate, DynamoDB, S3, Cognito), React. Models: DeepSeek R1, Claude Sonnet. Test runners: pytest, Jest. Delaware C-Corp, founded 2026.
+                </p>
+                <a
+                  href="https://picoedge.dev"
+                  className="pico-live-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  picoedge.dev →
+                </a>
+              </div>
+            </div>
+            <div className="project-info">
+              <div className="stack-box">
+                <div className="stack-box-title">Software Stack</div>
+                <ul className="stack-list">
+                  <li>Platform: Autonomous Coding Pipeline</li>
+                  <li>Frontend: React</li>
+                  <li>Backend: Python + AWS Lambda + ECS Fargate</li>
+                  <li>Database: DynamoDB + S3</li>
+                  <li>Auth: AWS Cognito</li>
+                  <li>Models: DeepSeek R1, Claude Sonnet</li>
+                  <li>Test Runners: pytest, Jest</li>
+                  <li>Entity: Delaware C-Corp (est. 2026)</li>
+                </ul>
+              </div>
+              <div>
+                <div className="project-desc-title">Project Overview</div>
+                <p className="project-desc-text">
+                  Pico Edge is a 14-stage autonomous coding pipeline that takes the LLM out of the verification position. The system uses deterministic test execution — not model self-assessment — as the only acceptable proof that the work is complete. A ticket plus a failing test goes in; verified, documented, production-ready code comes out.
+                </p>
+                <div className="project-desc-title sub">Development Status</div>
+                <span className="project-tag tag-active project-status-tag">
+                  Active — Preparing Starter Tier Launch
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-export default Portfolio;
+      {/* ===== NEWPORT BOARD CLUB — WEB APP ===== */}
+      <section className="project-section alt-bg">
+        <div className="project-section-inner">
+          <div className="project-section-header">
+            <span className="project-tag tag-inactive">Inactive</span>
+            <div>
+              <h2 className="project-title">Newport Board Club</h2>
+              <span className="project-subtitle">Progressive Web App</span>
+            </div>
+          </div>
+          <div className="project-body">
+            <div className="project-demo">
+              <div className="demo-label">Demo</div>
+              <img
+                className="demo-gif"
+                src={require('../img/DemoGIFs/The_Board_Club_App_Demo1.gif')}
+                alt="Newport Board Club App Demo"
+              />
+              <a
+                className="demo-link"
+                href="https://boardclubapp-production.up.railway.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Demo →
+              </a>
+              <div className="demo-info">
+                <p>App designed for mobile experience</p>
+                <p>Screen width: 470px – 520px</p>
+              </div>
+              <div className="demo-credentials">
+                <div className="demo-cred-title">Demo Login</div>
+                <p className="demo-cred-line">Email: demo@gmail.com</p>
+                <p className="demo-cred-line">Password: demo</p>
+              </div>
+            </div>
+            <div className="project-info">
+              <div className="stack-box">
+                <div className="stack-box-title">Software Stack</div>
+                <ul className="stack-list">
+                  <li>App Type: Progressive Web App</li>
+                  <li>Frontend: React (18.2.0)</li>
+                  <li>Framework: Bootstrap (2.5.0)</li>
+                  <li>API: GraphQL (16.6.0)</li>
+                  <li>Backend: Node.js (16.15.1)</li>
+                  <li>Database: MongoDB (5.6.0)</li>
+                  <li>Photo Host: AWS S3</li>
+                  <li>Hosting: Railway (client/server)</li>
+                  <li>Database: Self-hosted (Docker)</li>
+                </ul>
+              </div>
+              <div>
+                <div className="project-desc-title">Project Overview</div>
+                <p className="project-desc-text">
+                  An application designed to allow members of the board club to view current surf and weather conditions, club events, log surf sessions, view surf tips, rental information, and general club information.
+                </p>
+                <div className="project-desc-title sub">Project Goal</div>
+                <ul className="project-goal-list">
+                  <li>Current surf and weather conditions with detailed weather modal</li>
+                  <li>Events calendar so members can plan and attend club events</li>
+                  <li>Surf log tracking sessions, conditions, and board choices over time</li>
+                  <li>Surf hacks for new members and common problems</li>
+                  <li>Newport surf map for picking the best spot</li>
+                  <li>Community forum for connecting with other members</li>
+                  <li>Admin console for managing surf hacks, events, and shaper list</li>
+                </ul>
+                <div className="github-links">
+                  <a href="https://github.com/DesertCow/NewportBoardClubApp_PWA" className="github-link" target="_blank" rel="noreferrer">
+                    <img src={require('../img/Icons/github.png')} alt="" />
+                    Client
+                  </a>
+                  <a href="https://github.com/DesertCow/NewportBoardClubApp_Server" className="github-link" target="_blank" rel="noreferrer">
+                    <img src={require('../img/Icons/github.png')} alt="" />
+                    Server
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* ===== NEWPORT BOARD CLUB — REACT NATIVE ===== */}
+      <section className="project-section">
+        <div className="project-section-inner">
+          <div className="project-section-header">
+            <span className="project-tag tag-inactive">Inactive</span>
+            <div>
+              <h2 className="project-title">Newport Board Club</h2>
+              <span className="project-subtitle">React Native (iOS &amp; Android)</span>
+            </div>
+          </div>
+          <div className="project-body">
+            <div className="project-demo">
+              <div className="demo-label">Demo</div>
+              <img
+                className="demo-gif"
+                src="https://claytonskaggs-s3-portfolio.s3.us-west-1.amazonaws.com/NBC_React_Native_Demo1.gif"
+                alt="Newport Board Club React Native Demo"
+              />
+              <div className="demo-credentials">
+                <div className="demo-cred-title">Demo Login</div>
+                <p className="demo-cred-line">Email: demo@gmail.com</p>
+                <p className="demo-cred-line">Password: demo</p>
+              </div>
+            </div>
+            <div className="project-info">
+              <div className="stack-box">
+                <div className="stack-box-title">Software Stack</div>
+                <ul className="stack-list">
+                  <li>App Type: React Native</li>
+                  <li>Frontend: React Native (0.72.3)</li>
+                  <li>Build Tool: Expo (49.0.6)</li>
+                  <li>API: GraphQL (16.6.0)</li>
+                  <li>Backend: Node.js (16.15.1)</li>
+                  <li>Database: MongoDB (5.6.0)</li>
+                  <li>Photo Host: AWS S3</li>
+                  <li>App Stores: GooglePlay / Apple (WIP)</li>
+                </ul>
+              </div>
+              <div>
+                <div className="project-desc-title">Project Overview</div>
+                <p className="project-desc-text">
+                  A ground-up rebuild of the original Newport Board Club app using React Native and Expo — deployed to both Android and iOS from a single codebase. Uses the same backend API and server as the PWA.
+                </p>
+                <div className="project-desc-title sub">Project Goal</div>
+                <ul className="project-goal-list">
+                  <li>All features from the original web app, native-first UX</li>
+                  <li>Push notifications for surf conditions, events, and new boards</li>
+                  <li>SVG interactive surf map</li>
+                  <li>Admin console for managing content</li>
+                  <li>Community forum and surf log</li>
+                </ul>
+                <div className="github-links">
+                  <a href="https://github.com/DesertCow/NewportBoardClubApp_Native" className="github-link" target="_blank" rel="noreferrer">
+                    <img src={require('../img/Icons/github.png')} alt="" />
+                    Client
+                  </a>
+                  <a href="https://github.com/DesertCow/NewportBoardClubApp_Server" className="github-link" target="_blank" rel="noreferrer">
+                    <img src={require('../img/Icons/github.png')} alt="" />
+                    Server
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-//!========================= EOF =========================
+      {/* ===== CHUCKWAGON ===== */}
+      <section className="project-section alt-bg">
+        <div className="project-section-inner">
+          <div className="project-section-header">
+            <span className="project-tag tag-inactive">Inactive</span>
+            <div>
+              <h2 className="project-title">Chuckwagon</h2>
+              <span className="project-subtitle">Food Truck Management — Progressive Web App</span>
+            </div>
+          </div>
+          <div className="project-body">
+            <div className="project-demo">
+              <div className="demo-label">Demo</div>
+              <img
+                className="demo-gif"
+                src={require('../img/DemoGIFs/Chuckwagon_Demo1.gif')}
+                alt="Chuckwagon App Demo"
+              />
+              <a
+                className="demo-link"
+                href="https://saltlicktruck-production.up.railway.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Demo →
+              </a>
+              <div className="demo-info">
+                <p>App designed for mobile experience</p>
+                <p>Screen width: 390px – 420px</p>
+              </div>
+              <div className="demo-credentials">
+                <div className="demo-cred-title">Demo Login</div>
+                <p className="demo-cred-line">Email: demo@gmail.com</p>
+                <p className="demo-cred-line">Password: demo</p>
+              </div>
+            </div>
+            <div className="project-info">
+              <div className="stack-box">
+                <div className="stack-box-title">Software Stack</div>
+                <ul className="stack-list">
+                  <li>App Type: Progressive Web App</li>
+                  <li>Frontend: React (18.2.0)</li>
+                  <li>Framework: Bootstrap (5.2.1)</li>
+                  <li>API: GraphQL (15.3.0)</li>
+                  <li>Backend: Node.js (16.15.1)</li>
+                  <li>Database: MongoDB (5.6.0) + MySQL (2.3.3)</li>
+                  <li>Hosting: Railway (client/server)</li>
+                  <li>Database: Self-hosted (Docker)</li>
+                </ul>
+              </div>
+              <div>
+                <div className="project-desc-title">Project Overview</div>
+                <p className="project-desc-text">
+                  Chuckwagon is a comprehensive food truck management application — a customer ordering app plus a separate in-kitchen app for order execution and administration. Built on the MERN stack. Designed to run locally on a food truck and serve customers over WiFi without internet.
+                </p>
+                <div className="project-desc-title sub">Project Goal</div>
+                <ul className="project-goal-list">
+                  <li>Customers view the menu and add items to cart for checkout</li>
+                  <li>Customer accounts for email marketing and repeat business</li>
+                  <li>Dynamic menu from SQL database — real-time item availability</li>
+                  <li>Order status tracking: Submitted → WIP → Ready → Picked Up</li>
+                  <li>Kitchen page for employees to track and complete orders</li>
+                  <li>Order analytics for business owners to increase margins</li>
+                </ul>
+                <div className="github-links">
+                  <a href="https://github.com/DesertCow/SaltLickTruck" className="github-link" target="_blank" rel="noreferrer">
+                    <img src={require('../img/Icons/github.png')} alt="" />
+                    Client + Server
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== DEVELOPER SKILLS ===== */}
+      <div className="skills-heading">
+        <AltitudeMarker label="DEVELOPER SKILLS" />
+        <h2 className="skills-section-title">Tools &amp; Technologies</h2>
+      </div>
+      <DevTools />
+
+      {/* ===== RESUME ===== */}
+      <section className="resume-section">
+        <div className="resume-section-inner">
+          <AltitudeMarker label="RESUME" />
+          <h2 className="resume-section-title">Clayton Skaggs</h2>
+          {!pdfDocument && <span style={{ fontFamily: 'var(--font-mono)', fontSize: '13px', color: 'var(--color-text-light)' }}>Loading...</span>}
+          <canvas ref={canvasRef} className="pdf-canvas" />
+          <a
+            href={ResumePDF}
+            download="Clayton_Skaggs_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="resume-download-btn"
+          >
+            Download Resume
+          </a>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default DeveloperPortfolio;

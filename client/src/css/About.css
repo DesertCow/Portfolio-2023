@@ -1,0 +1,291 @@
+.page-about {
+  background-color: var(--color-dark);
+}
+
+/* ===== ABOUT HERO ===== */
+.about-hero {
+  background: linear-gradient(to bottom, #0a0d14 0%, #1a1e26 100%);
+  padding: 120px 64px 80px;
+  border-bottom: 1px solid rgba(196, 168, 130, 0.1);
+}
+
+.about-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 64px;
+  align-items: center;
+}
+
+.about-hero-text h1 {
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-size: clamp(30px, 5vw, 56px);
+  color: var(--color-warm);
+  letter-spacing: -0.02em;
+  margin: 0 0 24px;
+  line-height: 1.05;
+}
+
+.about-hero-bio {
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.6vw, 17px);
+  font-weight: 300;
+  color: var(--color-warm);
+  opacity: 0.8;
+  line-height: 1.78;
+  max-width: 580px;
+}
+
+.about-hero-photo {
+  width: 240px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(196, 168, 130, 0.2);
+  flex-shrink: 0;
+}
+
+/* ===== SECTION SHELL ===== */
+.about-section {
+  padding: 80px 64px;
+}
+
+.about-section.cream {
+  background-color: var(--color-cream);
+}
+
+.about-section.dark {
+  background-color: var(--color-dark);
+}
+
+.about-section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* altitude marker re-used from Home.css — define here too for safety */
+.about-altitude-marker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.about-altitude-line {
+  flex-shrink: 0;
+  width: 32px;
+  height: 1px;
+  background-color: var(--color-sand);
+}
+
+.about-altitude-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-sand);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.about-section-title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(26px, 3.5vw, 40px);
+  letter-spacing: -0.02em;
+  margin: 0 0 48px;
+  line-height: 1.1;
+}
+
+.about-section.cream .about-section-title {
+  color: var(--color-mid);
+}
+
+.about-section.dark .about-section-title {
+  color: var(--color-warm);
+}
+
+/* ===== DUAL TIMELINE ===== */
+.dual-timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 60px;
+}
+
+.timeline-col-header {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-sand);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(196, 168, 130, 0.2);
+}
+
+.timeline-col {
+  position: relative;
+  padding-left: 28px;
+}
+
+.timeline-col::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 40px;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--color-sand) 0%, rgba(196, 168, 130, 0.1) 100%);
+}
+
+.timeline-entry {
+  position: relative;
+  padding-bottom: 36px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -33px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-sand);
+  border: 2px solid var(--color-dark);
+  box-shadow: 0 0 0 2px var(--color-sand);
+}
+
+.about-section.cream .timeline-dot {
+  border-color: var(--color-cream);
+}
+
+.timeline-year {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-sand);
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.timeline-org {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.about-section.cream .timeline-org {
+  color: var(--color-mid);
+}
+
+.about-section.dark .timeline-org {
+  color: var(--color-warm);
+}
+
+.timeline-role {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-alpine);
+  margin-bottom: 6px;
+}
+
+.timeline-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.68;
+}
+
+.about-section.cream .timeline-desc {
+  color: var(--color-text);
+  opacity: 0.88;
+}
+
+.about-section.dark .timeline-desc {
+  color: var(--color-warm);
+  opacity: 0.72;
+}
+
+/* highlight for major achievements */
+.timeline-entry.highlight .timeline-org {
+  color: var(--color-sand);
+}
+
+.timeline-entry.highlight .timeline-dot {
+  background-color: var(--color-warm);
+  box-shadow: 0 0 0 3px var(--color-sand);
+  width: 12px;
+  height: 12px;
+  left: -34px;
+  top: 5px;
+}
+
+/* inline image in timeline */
+.timeline-img {
+  margin-top: 14px;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 8px;
+  border: 1px solid rgba(196, 168, 130, 0.15);
+  display: block;
+}
+
+.about-hero-bio-2 {
+  margin-top: 16px;
+}
+
+/* ===== CLIMBING INTRO SUBTITLE ===== */
+.climbing-subtitle {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--color-warm);
+  opacity: 0.72;
+  line-height: 1.7;
+  max-width: 640px;
+  margin-bottom: 48px;
+  font-style: italic;
+}
+
+.climbing-subtitle-bottom {
+  margin-top: 48px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+  .about-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-hero-photo {
+    width: 180px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-hero {
+    padding: 100px 28px 60px;
+  }
+  .about-section {
+    padding: 60px 28px;
+  }
+  .dual-timeline {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .dual-timeline .timeline-col:last-child {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero-photo {
+    width: 140px;
+    height: 165px;
+  }
+}

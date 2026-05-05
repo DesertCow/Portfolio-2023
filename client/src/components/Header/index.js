@@ -1,78 +1,72 @@
+import { useState, useEffect } from 'react';
+import './Header.css';
 
-//* React Import
-import { useNavigate } from "react-router-dom";
-
-//* Bootstrap Import
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
-//* Component CSS Import
-import "./Header.css";
-
-
-//+++++++++++++++++++ Component Export +++++++++++++++++++
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [mediaOpen, setMediaOpen] = useState(false);
+  const [iceOpen, setIceOpen] = useState(false);
 
-  const navigate = useNavigate();
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
-  const handleLogoClick = async (event) => {
-    event.preventDefault();
-
-    navigate("/home");
+  const closeAll = () => {
+    setMenuOpen(false);
+    setMediaOpen(false);
+    setIceOpen(false);
   };
 
   return (
+    <header className={`site-header${scrolled ? ' scrolled' : ''}`}>
+      <a href="/home" className="header-logo">CS</a>
 
-    <header className="Header d-flex">
-      {/* <img src={require("../../img/Chip_Icon_2023.png")} onClick={(event) => handleLogoClick(event)} className="Logo" alt="Computer Chip Logo" /> */}
-      <Navbar className="d-flex">
-        <Container fluid className="">
+      <nav className={`header-nav${menuOpen ? ' nav-open' : ''}`}>
+        <a href="/Home" className="nav-link" onClick={closeAll}>Home</a>
+        <a href="/DevPortfolio" className="nav-link" onClick={closeAll}>Dev Portfolio</a>
 
-          <Nav.Link className="navBarText text-center" href="/Home">Home</Nav.Link>
-          <Nav.Link className="navBarText text-center" href="/DevPortfolio">Dev Portfolio</Nav.Link>
-          <Navbar.Toggle/>
+        <div className={`nav-dropdown${mediaOpen ? ' open' : ''}`}>
+          <button
+            className="nav-link dropdown-btn"
+            onClick={() => { setMediaOpen(v => !v); setIceOpen(false); }}
+          >
+            Media <span className="dropdown-arrow">▾</span>
+          </button>
+          <div className="dropdown-menu">
+            <a href="/Media/Photo" className="dropdown-item" onClick={closeAll}>Photo Gallery</a>
+            <a href="/Media/Video" className="dropdown-item" onClick={closeAll}>Video Gallery</a>
+            <a href="/Media/Blog" className="dropdown-item" onClick={closeAll}>Blog</a>
+          </div>
+        </div>
 
-          <Navbar.Collapse className="navBarText">
-          
-            <Nav>
-              <NavDropdown
-                title="Media"
-                menuVariant="dark"
-                className="DropMenu navBarText"
-                >
-                  <NavDropdown.Item className="DropMenu" href="/Media/Photo">Photo Gallery</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item className="DropMenu" href="/Media/Video">Video Gallery</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item className="DropMenu" href="/Media/Blog">Blog</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-            <Nav>
-              <NavDropdown
-                title="Ice Climbing Maps"
-                menuVariant="dark"
-                className="DropMenu navBarText"
-                >
-                  <NavDropdown.Item className="DropMenu" href="/IceMaps/Hylaite">Hyalite Canyon, MT</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item className="DropMenu" href="/IceMaps/Cody">Cody, WY</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          <Nav.Link className="navBarText" href="/About">About Me</Nav.Link>
-          <Nav.Link className="navBarText" href="/Contact">Contact</Nav.Link>
-          </Navbar.Collapse>
+        <div className={`nav-dropdown${iceOpen ? ' open' : ''}`}>
+          <button
+            className="nav-link dropdown-btn"
+            onClick={() => { setIceOpen(v => !v); setMediaOpen(false); }}
+          >
+            Ice Maps <span className="dropdown-arrow">▾</span>
+          </button>
+          <div className="dropdown-menu">
+            <a href="/IceMaps/Hylaite" className="dropdown-item" onClick={closeAll}>Hyalite Canyon, MT</a>
+            <a href="/IceMaps/Cody" className="dropdown-item" onClick={closeAll}>Cody, WY</a>
+          </div>
+        </div>
 
-        </Container>
-      </Navbar>
+        <a href="/About" className="nav-link" onClick={closeAll}>About Me</a>
+        <a href="/Contact" className="nav-link" onClick={closeAll}>Contact</a>
+      </nav>
+
+      <button
+        className={`hamburger${menuOpen ? ' active' : ''}`}
+        onClick={() => setMenuOpen(v => !v)}
+        aria-label="Toggle navigation"
+      >
+        <span /><span /><span />
+      </button>
     </header>
-
   );
-}
-
+};
 
 export default Header;
-
-
-//!========================= EOF =========================

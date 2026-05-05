@@ -1,59 +1,44 @@
+/* ===== MEDIA PAGES (Photo Gallery, Video Gallery, Blog) ===== */
 
-/*! Desktop CSS */
-@media screen and (min-width: 600px) {
-
-     .mediaPageTitle {
-          font-family: "SF-Mono";
-          font-size: 50px;
-          border-style: solid;
-          border-width: 10px;
-     }
-
-     .HeaderGallerySpacer {
-          margin-top: 125px;
-          padding-top: 50px;
-          /* margin-bottom: 100px; */
-     }
-
-     .videoListMargin {
-          margin-right: 1%;
-     }
-
-     .blogFooterSpacer {
-          margin-top: 25%;
-     }
-
-     .videoMain {
-          width: 1200px;
-          height: 750px;
-     }
-
+.mediaPageTitle {
+  font-family: var(--font-head);
+  font-weight: 800;
+  color: var(--color-warm);
+  letter-spacing: -0.02em;
+  border-bottom: 2px solid var(--color-sand);
+  padding-bottom: 8px;
 }
 
-/*! Mobile CSS */
+.HeaderGallerySpacer {
+  padding-top: calc(var(--header-height) + 64px);
+  padding-bottom: 24px;
+}
+
+.videoListMargin {
+  padding: 0 2%;
+}
+
+.blogFooterSpacer {
+  min-height: 40vh;
+}
+
+/* desktop */
+@media screen and (min-width: 600px) {
+  .mediaPageTitle {
+    font-size: 44px;
+  }
+  .videoMain {
+    max-width: 100%;
+  }
+}
+
+/* mobile */
 @media screen and (max-width: 600px) {
-
-     .mediaPageTitle {
-          font-family: "SF-Mono";
-          font-size: 30px;
-          text-align: center;
-          width: 350px;
-          border-style: solid;
-          border-width: 10px;
-     }
-
-     .HeaderGallerySpacer {
-          margin-top: 50px;
-          padding-top: 50px;
-          /* margin-bottom: 100px; */
-     }
-
-     .videoListMargin {
-          margin-right: 1%;
-     }
-
-     .blogFooterSpacer {
-          margin-top: 25%;
-     }
-
+  .mediaPageTitle {
+    font-size: 28px;
+    text-align: center;
+  }
+  .HeaderGallerySpacer {
+    padding-top: calc(var(--header-height) + 40px);
+  }
 }
