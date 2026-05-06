@@ -1,13 +1,13 @@
 import { useState, useRef } from 'react';
 import { usePdf } from '@mikecousins/react-pdf';
-import * as pdfjs from 'pdfjs-dist';
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
 import ResumePDF from '../assets/Clayton_Skaggs_Resume.pdf';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import DevTools from '../components/DevTools';
 import '../css/Portfolio.css';
+
+const PDF_WORKER_SRC = '/pdf.worker.min.mjs';
 
 const AltitudeMarker = ({ label }) => (
   <div className="portfolio-altitude-marker">
@@ -19,7 +19,7 @@ const AltitudeMarker = ({ label }) => (
 const DeveloperPortfolio = () => {
   const [page] = useState(1);
   const canvasRef = useRef(null);
-  const { pdfDocument } = usePdf({ file: ResumePDF, page, canvasRef });
+  const { pdfDocument } = usePdf({ file: ResumePDF, page, canvasRef, workerSrc: PDF_WORKER_SRC });
 
   return (
     <div className="page-portfolio">
@@ -53,12 +53,12 @@ const DeveloperPortfolio = () => {
                   Stack: Python, AWS (Lambda, ECS Fargate, DynamoDB, S3, Cognito), React. Models: DeepSeek R1, Claude Sonnet. Test runners: pytest, Jest. Delaware C-Corp, founded 2026.
                 </p>
                 <a
-                  href="https://picoedge.dev"
+                  href="https://www.pico-edge.com"
                   className="pico-live-link"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  picoedge.dev →
+                  www.pico-edge.com →
                 </a>
               </div>
             </div>
