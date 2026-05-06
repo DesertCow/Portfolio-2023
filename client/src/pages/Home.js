@@ -244,28 +244,34 @@ const Home = () => {
           <AltitudeMarker label="SUMMIT LOG" />
           <div className="stats-grid">
             <div className="stat-item">
-              <span className="stat-num">14</span>
-              <span className="stat-label">Pipeline Stages</span>
-            </div>
-            <div className="stat-item">
               <span className="stat-num">Intel</span>
-              <span className="stat-label">Hardware Roots</span>
+              <span className="stat-label">5 Years · Product Development</span>
+              <span className="stat-sub">Server processors, high-volume manufacturing</span>
             </div>
             <div className="stat-item">
-              <span className="stat-num">AWS</span>
-              <span className="stat-label">Cloud Native</span>
+              <span className="stat-num">Pico Edge</span>
+              <span className="stat-label">Autonomous Coding</span>
+              <span className="stat-sub">Ticket in, verified PR out</span>
             </div>
             <div className="stat-item">
-              <span className="stat-num">Denver</span>
+              <span className="stat-num">18,491 ft</span>
+              <span className="stat-label">Highest Summit</span>
+              <span className="stat-sub">Pico de Orizaba, Mexico</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-num">Denver, CO</span>
               <span className="stat-label">Home Base</span>
+              <span className="stat-sub">Mountain time zone</span>
             </div>
             <div className="stat-item">
-              <span className="stat-num">5+</span>
-              <span className="stat-label">Years Engineering</span>
+              <span className="stat-num">Oklahoma State</span>
+              <span className="stat-label">B.S. Computer Engineering</span>
+              <span className="stat-sub">Class of 2012</span>
             </div>
             <div className="stat-item">
-              <span className="stat-num">152</span>
-              <span className="stat-label">Routes Logged</span>
+              <span className="stat-num">Epinephrine</span>
+              <span className="stat-label">Red Rocks · 13 Pitches</span>
+              <span className="stat-sub">50 Classic Climbs of North America</span>
             </div>
           </div>
         </div>

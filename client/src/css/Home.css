@@ -453,6 +453,15 @@
   text-transform: uppercase;
 }
 
+.stat-sub {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text);
+  opacity: 0.6;
+  line-height: 1.4;
+  margin-top: -2px;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .base-camp-grid {
