@@ -24,7 +24,7 @@ const About = () => (
             Computer Engineering graduate from Oklahoma State University. Former Product Development Engineer at Intel, where I worked on PCIe interface development and high-volume manufacturing for world-class processors. AWS certified. Full-stack developer. Founder of Pico Edge Inc. — building autonomous coding agent infrastructure in Denver, Colorado.
           </p>
           <p className="about-hero-bio about-hero-bio-2">
-            The mountains have always run parallel to the work. The same years I was learning to ship production silicon, I was learning to lead ice routes in Hyalite Canyon. In winters, that means ice climbing and splitboarding — backcountry objectives on a snowboard in terrain where almost everyone else is on skis. The same discipline required to manage a 13-stage deterministic pipeline is the same discipline required to manage a multi-pitch alpine objective in changing weather. Preparation, partnership, and comfort with uncertainty under pressure.
+            The mountains have always run parallel to the work. The same years I was learning to ship production silicon, I was learning to lead ice routes in Hyalite Canyon. In winters, that means ice climbing and splitboarding — backcountry objectives on a snowboard in terrain where almost everyone else is on skis. The same discipline required to manage a 14-stage deterministic pipeline is the same discipline required to manage a multi-pitch alpine objective in changing weather. Preparation, partnership, and comfort with uncertainty under pressure.
           </p>
         </div>
         <img
@@ -88,7 +88,7 @@ const About = () => (
                 <div className="timeline-org">Microchip Technology</div>
                 <div className="timeline-role">Product Test Engineer · Greater Phoenix Area</div>
                 <div className="timeline-desc">
-                  Same semiconductor discipline as Intel — testability and manufacturability of ICs from feasibility through production ramp, yield analysis and component spec evaluation. Bridge role between Intel and the career pivot.
+                  Continued the HVM work started at Intel, focusing on yield analysis and production ramp. This was the final hardware role before making the complete pivot into software.
                 </div>
               </div>
 
@@ -133,13 +133,13 @@ const About = () => (
                 <div className="timeline-org">Eldora Mountain Resort</div>
                 <div className="timeline-role">Snowmaker Controller + Lift Operations · Nederland, CO</div>
                 <div className="timeline-desc">
-                  Ran snowmaking equipment — water resources, temperature controls, energy and fuel systems, mechanical maintenance logs. Twelve-hour overnight shifts at altitude in subzero conditions. The kind of work that teaches systems thinking when the system is a mountain and the deadline is weather.
+                  Ran snowmaking equipment — water resources, temperature controls, energy and fuel systems, mechanical maintenance logs. Twelve-hour day shifts at altitude in subzero conditions. The kind of work that teaches systems thinking when the system is a mountain and the deadline is weather.
                 </div>
               </div>
 
               <div className="timeline-entry highlight">
                 <div className="timeline-dot" />
-                <div className="timeline-year">Jan 2026 – Present</div>
+                <div className="timeline-year">2025 – Present</div>
                 <div className="timeline-org">Pico Edge, Inc.</div>
                 <div className="timeline-role">Founder &amp; CEO · Denver, CO</div>
                 <div className="timeline-desc">
@@ -230,11 +230,11 @@ const About = () => (
                 <div className="timeline-desc">
                   Summited Pico de Orizaba as a two-person team with climbing partner Sean. Flew out Wednesday Oct 16th, summited Sunday Oct 19th, home by Monday Oct 21st. A glaciated volcanic peak requiring altitude acclimatization, crevasse navigation, and total self-sufficiency above 18,000 feet. This is the kind of objective that crystallizes everything climbing teaches: preparation, partnership, and execution when it matters.
                 </div>
-                <img
-                  src={require('../img/AboutMe/IMGP0606.jpg')}
-                  alt="Ice climbing"
-                  className="timeline-img"
-                />
+                  <img
+                    src="https://portfolio-site-picture-gallery.s3.us-west-1.amazonaws.com/IMG_20191019_071542-01.jpeg"
+                    alt="Ice climbing"
+                    className="timeline-img"
+                  />
               </div>
 
               <div className="timeline-entry">

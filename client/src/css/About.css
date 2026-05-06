@@ -227,6 +227,8 @@
 /* inline image in timeline */
 .timeline-img {
   margin-top: 14px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   max-width: 340px;
   border-radius: 8px;

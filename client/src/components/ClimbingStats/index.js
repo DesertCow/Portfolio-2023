@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './ClimbingStats.css';
 
 /* ─────────────── DATA ─────────────── */
@@ -81,84 +81,21 @@ const DESTINATIONS = [
 const MAP_YEARS = ['All', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2024', '2026'];
 
 const SKILL_MILESTONES = [
-  { date: '2013-02-04', label: 'First logged route (ice!)',      note: 'Reckless (WI3), Ouray Ice Park, CO',                      marquee: false },
-  { date: '2013-10-21', label: 'First sport climb',              note: 'Adventure Quest (5.8), Queen Creek, AZ',                  marquee: false },
-  { date: '2014-06-08', label: 'First 5.10',                     note: 'Yarlsberg (5.10a), Swiss Wall, AZ',                       marquee: false },
-  { date: '2014-08-25', label: 'First boulder',                  note: 'Screaming Fingers (V0), Bull Creek, TX',                  marquee: false },
-  { date: '2014-09-21', label: 'First trad climb',               note: 'Sassy (5.2 PG13), AZ',                                    marquee: false },
-  { date: '2014-10-09', label: 'First multi-pitch (3p+)',        note: 'Algae on Parade (5.7, 3p), Red Rocks, NV',                marquee: false },
-  { date: '2015-04-10', label: 'First big multi-pitch (5p+)',    note: 'Ewephoria (5.8, 5p), Sheepshead, AZ',                     marquee: false },
-  { date: '2016-02-19', label: 'First ice lead',                 note: 'Twin Falls (WI3), Hyalite Canyon, MT',                    marquee: false },
-  { date: '2016-05-15', label: 'First trad lead',                note: 'Pop Bottle (5.7), Tuolumne, CA',                          marquee: false },
-  { date: '2017-10-07', label: 'First mega route (8p+)',         note: 'Epinephrine (5.9, 13p, 1,600 ft), Red Rocks, NV',         marquee: true  },
-  { date: '2018-02-11', label: 'First sport lead',               note: "Drop 'em South (5.9), AZ",                                marquee: false },
-  { date: '2018-06-09', label: 'First solo',                     note: 'East Face (5.6), Praying Monk, AZ',                       marquee: false },
-  { date: '2019-10-19', label: 'Highest summit ever',            note: 'Pico de Orizaba (18,491 ft), Mexico',                     marquee: true  },
+  { date: '2013-02',    label: 'First ice climb',                  note: 'Reckless (WI3), Ouray Ice Park, CO',                                  marquee: false },
+  { date: '2013-10',    label: 'First sport climb',                note: 'Adventure Quest (5.8), Queen Creek, AZ',                              marquee: false },
+  { date: '2013',       label: 'First sport lead',                 note: 'Queen Creek, AZ',                                                     marquee: false },
+  { date: '2014',       label: 'First trad lead',                  note: 'Arizona',                                                             marquee: false },
+  { date: '2014-06',    label: 'First 5.10',                       note: 'Yarlsberg (5.10a), Swiss Wall, AZ',                                   marquee: false },
+  { date: '2014-10',    label: 'First multi-pitch trad lead',      note: 'Algae on Parade (5.7, 3p), Red Rocks, NV',                            marquee: false },
+  { date: '2015-04',    label: 'First big multi-pitch (5p+)',      note: 'Ewephoria (5.8, 5p), Sheepshead, AZ',                                 marquee: false },
+  { date: '2016-02',    label: 'First ice lead',                   note: 'Twin Falls (WI3), Hyalite Canyon, MT',                                marquee: false },
+  { date: '2017-10',    label: 'Epinephrine — 13 pitches',         note: 'Black Velvet Wall, Red Rocks, NV · #2 on Top 20 Classic Climbs',      marquee: true  },
+  { date: '2018-06',    label: 'First solo',                       note: 'East Face (5.6), Praying Monk, AZ',                                   marquee: false },
+  { date: '2019-10',    label: 'Pico de Orizaba — 18,491 ft',      note: 'Mexico',                                                              marquee: true  },
+  { date: '2022-02',    label: 'First multipitch ice solo',        note: 'Great White Icicle, Salt Lake City, UT',                              marquee: false },
+  { date: '2026-01',    label: 'Longest & tallest ice route',      note: 'Direct North Face (6p, ~1,100 ft), South Mineral Creek, Silverton, CO', marquee: false },
 ];
 
-const STORY_ENTRIES = [
-  {
-    year: '2007',
-    title: 'First outdoor climb',
-    desc: 'Started rock climbing outdoors. The beginning of a lifelong pursuit.',
-    badges: [],
-  },
-  {
-    year: '2013',
-    title: 'Ice + rock begins',
-    desc: 'First logged route: Reckless (WI3) at Ouray Ice Park, CO. First ice season in Hyalite Canyon, MT. Sport climbing at Queen Creek Canyon, AZ. 8 routes.',
-    badges: ['Ice', 'Sport'],
-  },
-  {
-    year: '2014',
-    title: 'The deep end',
-    desc: '42 routes — biggest year by count. First trad placement. First 5.10 (Yarlsberg, Swiss Wall). First multi-pitch: Algae on Parade (3p, Red Rocks). Hyalite ice season 2. Bouldering trips to Austin, TX.',
-    badges: ['Sport', 'Trad', 'Ice', 'Boulder'],
-  },
-  {
-    year: '2015',
-    title: 'Going deeper',
-    desc: '43 routes, 7,260 vertical feet. First big multi-pitch: Ewephoria (5p, Sheepshead). Frogland (6p, Red Rocks). Spice Box (5.10-). Advancing trad placements and self-rescue.',
-    badges: ['Sport', 'Trad', 'Ice'],
-  },
-  {
-    year: '2016',
-    title: 'Leading ice + Tuolumne',
-    desc: 'First ice lead: Twin Falls (Hyalite). First trad lead: Pop Bottle (Tuolumne). Cathedral Peak SE Buttress (5p). 15 ice/mixed routes — more than sport and trad combined.',
-    badges: ['Trad', 'Ice'],
-  },
-  {
-    year: '2017',
-    title: 'Epinephrine + Bobo Like',
-    desc: 'Epinephrine (13p, Black Velvet Wall, Red Rocks) — one of the 50 classic climbs of North America, 1,600 vertical feet. Followed Bobo Like (3p, Hyalite) — hardest ice route on the logbook.',
-    badges: ['Trad', 'Ice'],
-  },
-  {
-    year: '2018–19',
-    title: 'Superstitions + solo',
-    desc: 'Repeat sends of Spice Box (5.10-), Grandfather Hobgoblin (5.9, 4p). Pillow Fight (8p). First solo: East Face of Praying Monk (5.6). Activity tapering as career transitions take priority.',
-    badges: ['Sport', 'Trad'],
-  },
-  {
-    year: 'Oct 2019',
-    title: 'Pico de Orizaba — 18,491 ft',
-    desc: 'Summited Mexico\'s highest peak as a two-man team with Sean. Flew out Wed Oct 16, summited Sun Oct 19, home by Mon Oct 21. Glaciated volcanic peak — altitude acclimatization, crevasse navigation, total self-sufficiency.',
-    badges: ['Alpine'],
-    marquee: true,
-  },
-  {
-    year: '2024',
-    title: 'California trad revival',
-    desc: 'Returned to climbing after founding Pico Edge. Joshua Tree, Tahquitz (White Maiden\'s Walkway 6p), Needles (The Uneventful 7p). All trad, all California.',
-    badges: ['Trad'],
-  },
-  {
-    year: '2026',
-    title: 'Colorado ice — full circle',
-    desc: 'Based in Denver. Ice climbing in Ouray and Silverton. Direct North Face (7p, South Mineral Creek). First ice climb was Ouray 2013 — the circle closes in the San Juans.',
-    badges: ['Ice'],
-  },
-];
 
 const BADGE_COLORS = {
   Sport:   '#378ADD',
@@ -395,58 +332,108 @@ const ClimbingMap = () => {
   );
 };
 
-/* Vertical skill unlock timeline */
-const SkillTimeline = () => (
-  <div className="cs-skill-wrap">
-    <div className="cs-chart-title">13 Firsts — The Skill Unlocks</div>
-    <div className="cs-skill-list">
-      {SKILL_MILESTONES.map((m, i) => (
-        <div key={i} className={`cs-skill-entry${m.marquee ? ' marquee' : ''}`}>
-          <div className={`cs-skill-dot${m.marquee ? ' marquee' : ''}`} />
-          <div className="cs-skill-text">
-            <span className="cs-skill-date">{m.date}</span>
-            <span className="cs-skill-label">{m.label}</span>
-            <span className="cs-skill-note">{m.note}</span>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-);
+/*
+  Zigzag timeline — single source of truth for dot positions.
+  LEFT_X  = 42% of container width  (right edge of left entries)
+  RIGHT_X = 58% of container width  (left edge of right entries)
+  Both the SVG circles AND the SVG path use these same coordinates.
+  Entry refs only supply the Y position (top of each card + 8px offset).
+*/
+const SkillTimeline = () => {
+  const containerRef = useRef(null);
+  const entryRefs    = useRef([]);
+  const [svgData, setSvgData] = useState(null);
 
-/* Narrative story timeline with discipline badges */
-const StoryTimeline = () => (
-  <div className="cs-story-wrap">
-    <div className="cs-chart-title">The Climbing Story</div>
-    <div className="cs-story-list">
-      {STORY_ENTRIES.map((e, i) => (
-        <div key={i} className={`cs-story-entry${e.marquee ? ' marquee' : ''}`}>
-          <div className="cs-story-year-col">
-            <span className="cs-story-year">{e.year}</span>
-            <div className={`cs-story-dot${e.marquee ? ' marquee' : ''}`} />
+  useEffect(() => {
+    let rafId;
+
+    const measure = () => {
+      if (!containerRef.current) return;
+      const cr  = containerRef.current.getBoundingClientRect();
+      const w   = cr.width;
+      const h   = cr.height;
+      const LX  = w * 0.42;
+      const RX  = w * 0.58;
+
+      const circles = entryRefs.current
+        .map((el, i) => {
+          if (!el) return null;
+          const er = el.getBoundingClientRect();
+          return {
+            x:       i % 2 === 0 ? LX : RX,
+            y:       er.top - cr.top + 8,
+            marquee: SKILL_MILESTONES[i]?.marquee ?? false,
+          };
+        })
+        .filter(Boolean);
+
+      if (circles.length < 2) return;
+
+      const maxY  = Math.max(...circles.map(c => c.y));
+      const pathD = `M ${circles[0].x} ${circles[0].y} ` +
+        circles.slice(1).map(c => `L ${c.x} ${c.y}`).join(' ');
+
+      setSvgData({ w, h: Math.max(h, maxY + 20), pathD, circles });
+    };
+
+    /* Defer to rAF so all entries have their final layout positions */
+    rafId = requestAnimationFrame(measure);
+    window.addEventListener('resize', measure);
+    return () => {
+      cancelAnimationFrame(rafId);
+      window.removeEventListener('resize', measure);
+    };
+  }, []);
+
+  return (
+    <div className="cs-skill-wrap">
+      <h3 className="cs-milestone-title">Career Milestones</h3>
+      <div className="cs-zigzag-timeline" ref={containerRef}>
+        {svgData && (
+          <svg
+            className="cs-zigzag-svg"
+            width={svgData.w}
+            height={svgData.h}
+            aria-hidden="true"
+          >
+            <path
+              d={svgData.pathD}
+              fill="none"
+              stroke="var(--color-sand)"
+              strokeWidth="1.5"
+              strokeOpacity="0.28"
+              strokeDasharray="6 4"
+            />
+            {svgData.circles.map((c, i) => (
+              <circle
+                key={i}
+                cx={c.x}
+                cy={c.y}
+                r={c.marquee ? 7 : 6}
+                fill={c.marquee ? '#D85A30' : 'var(--color-alpine)'}
+                stroke="var(--color-dark)"
+                strokeWidth={2}
+              />
+            ))}
+          </svg>
+        )}
+        {SKILL_MILESTONES.map((m, i) => (
+          <div
+            key={i}
+            className={`cs-zigzag-entry${i % 2 === 0 ? ' entry-left' : ' entry-right'}${m.marquee ? ' marquee' : ''}`}
+            ref={el => { entryRefs.current[i] = el; }}
+          >
+            <div className="cs-zigzag-content">
+              <span className="cs-skill-date">{m.date}</span>
+              <span className="cs-skill-label">{m.label}</span>
+              <span className="cs-skill-note">{m.note}</span>
+            </div>
           </div>
-          <div className="cs-story-body">
-            <div className="cs-story-title">{e.title}</div>
-            <p className="cs-story-desc">{e.desc}</p>
-            {e.badges.length > 0 && (
-              <div className="cs-badge-row">
-                {e.badges.map(b => (
-                  <span
-                    key={b}
-                    className="cs-badge"
-                    style={{ background: BADGE_COLORS[b] + '22', color: BADGE_COLORS[b], borderColor: BADGE_COLORS[b] + '55' }}
-                  >
-                    {b}
-                  </span>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 /* ─────────────── MAIN EXPORT ─────────────── */
 
@@ -476,11 +463,8 @@ const ClimbingStats = () => (
       {/* Map */}
       <ClimbingMap />
 
-      {/* Skill unlocks + story side-by-side */}
-      <div className="cs-bottom-row">
-        <SkillTimeline />
-        <StoryTimeline />
-      </div>
+      {/* Skill unlocks timeline */}
+      <SkillTimeline />
     </div>
   </section>
 );

@@ -120,37 +120,35 @@
 }
 
 .hero-roles-wrap {
-  position: relative;
-  height: 2.2em;
+  display: flex;
+  align-items: center;
+  gap: 0;
   margin-bottom: 28px;
-  overflow: hidden;
+  min-height: 2.2em;
 }
 
 .hero-role {
-  position: absolute;
-  left: 0;
-  top: 0;
   font-family: var(--font-head);
   font-style: italic;
   font-weight: 700;
   font-size: clamp(17px, 2.4vw, 26px);
   color: var(--color-sand);
-  opacity: 0;
-  transform: translateY(10px);
   white-space: nowrap;
 }
 
-@keyframes roleShow {
-  0%   { opacity: 0; transform: translateY(10px); }
-  8%   { opacity: 1; transform: translateY(0); }
-  25%  { opacity: 1; transform: translateY(0); }
-  33%  { opacity: 0; transform: translateY(-10px); }
-  100% { opacity: 0; transform: translateY(-10px); }
+.hero-cursor {
+  font-family: var(--font-head);
+  font-weight: 300;
+  font-size: clamp(17px, 2.4vw, 26px);
+  color: var(--color-sand);
+  margin-left: 2px;
+  animation: blink 0.85s step-end infinite;
 }
 
-.role-1 { animation: roleShow 9s ease-in-out infinite 0s; }
-.role-2 { animation: roleShow 9s ease-in-out infinite 3s; }
-.role-3 { animation: roleShow 9s ease-in-out infinite 6s; }
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
 
 .hero-bio {
   font-family: var(--font-body);
@@ -489,7 +487,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 24px 28px;
   }
-  .hero-role {
+  .hero-role,
+  .hero-cursor {
     white-space: normal;
     font-size: 15px;
   }

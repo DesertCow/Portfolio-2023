@@ -435,91 +435,140 @@
 .cs-map-dot-sample.sm { width: 8px;  height: 8px; }
 .cs-map-dot-sample.lg { width: 18px; height: 18px; }
 
-/* ===== BOTTOM ROW: skill unlocks + story ===== */
-.cs-bottom-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-top: 24px;
-}
-
-/* ===== SKILL UNLOCK TIMELINE ===== */
+/* ===== SKILL UNLOCK ZIGZAG TIMELINE ===== */
 .cs-skill-wrap {
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(196, 168, 130, 0.12);
   border-radius: 10px;
-  padding: 28px;
+  padding: 36px 28px 20px;
+  margin-top: 24px;
 }
 
-.cs-skill-list {
+.cs-milestone-title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(22px, 3vw, 34px);
+  color: var(--color-warm);
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0 0 40px;
+  line-height: 1.1;
+}
+
+/* SVG sits behind everything and is sized to match the container */
+.cs-zigzag-timeline {
   position: relative;
-  padding-left: 24px;
+  width: 100%;
+  padding: 8px 0 4px;
+}
+
+.cs-zigzag-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible;
+}
+
+/* ── Entry rows ── */
+/*
+  Each entry occupies 42% of the container width.
+  Left entries sit on the left edge (x = 0–42%), dot at their right edge (x ≈ 42%).
+  Right entries sit on the right edge (x = 58–100%), dot at their left edge (x ≈ 58%).
+  The center corridor x = 42–58% stays empty for the diagonal line to pass through cleanly.
+*/
+.cs-zigzag-entry {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 0;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 32px;
+  z-index: 1;
+  width: 42%;
 }
 
-.cs-skill-list::before {
-  content: '';
-  position: absolute;
-  left: 4px;
-  top: 8px;
-  bottom: 8px;
-  width: 1px;
-  background: linear-gradient(to bottom, var(--color-sand) 0%, rgba(196, 168, 130, 0.08) 100%);
+/* Left entries: JSX [dot][content] → row-reverse renders [content][dot]
+   Content is on the far left, dot is on the right edge of the block (toward center) */
+.cs-zigzag-entry.entry-left {
+  flex-direction: row-reverse;
+  margin-right: auto;
+  text-align: right;
 }
 
-.cs-skill-entry {
-  position: relative;
-  padding: 0 0 22px 14px;
+.cs-zigzag-entry.entry-left .cs-zigzag-content {
+  text-align: right;
 }
 
-.cs-skill-dot {
-  position: absolute;
-  left: -20px;
-  top: 5px;
-  width: 9px;
-  height: 9px;
+/* Right entries: JSX [dot][content] → row renders [dot][content]
+   Dot is on the left edge of the block (toward center), content extends right */
+.cs-zigzag-entry.entry-right {
+  flex-direction: row;
+  margin-left: auto;
+  text-align: left;
+}
+
+.cs-zigzag-entry.entry-right .cs-zigzag-content {
+  text-align: left;
+}
+
+/* ── Dots ── */
+.cs-zigzag-dot {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: var(--color-alpine);
   border: 2px solid var(--color-dark);
   box-shadow: 0 0 0 2px var(--color-alpine);
+  flex-shrink: 0;
+  margin-top: 4px;
 }
 
-.cs-skill-dot.marquee {
+.cs-zigzag-dot.marquee {
   background: #D85A30;
-  box-shadow: 0 0 0 2px #D85A30;
-  width: 11px;
-  height: 11px;
-  left: -21px;
+  box-shadow: 0 0 0 2px #D85A30, 0 0 10px rgba(216, 90, 48, 0.35);
+  width: 14px;
+  height: 14px;
+}
+
+/* ── Entry content text ── */
+.cs-zigzag-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 8px;
+}
+
+/* Keep text clear of the dot on each side */
+.cs-zigzag-entry.entry-left .cs-zigzag-content {
+  padding-right: 20px;
+}
+
+.cs-zigzag-entry.entry-right .cs-zigzag-content {
+  padding-left: 20px;
 }
 
 .cs-skill-date {
-  display: block;
   font-family: var(--font-mono);
   font-size: 10px;
   color: var(--color-sand);
   opacity: 0.8;
-  margin-bottom: 2px;
   letter-spacing: 0.05em;
 }
 
 .cs-skill-label {
-  display: block;
   font-family: var(--font-head);
   font-weight: 700;
   font-size: 14px;
   color: var(--color-warm);
-  margin-bottom: 2px;
   line-height: 1.3;
 }
 
-.cs-skill-entry.marquee .cs-skill-label {
+.cs-zigzag-entry.marquee .cs-skill-label {
   color: #D85A30;
 }
 
 .cs-skill-note {
-  display: block;
   font-family: var(--font-body);
   font-size: 12px;
   color: var(--color-warm);
@@ -527,123 +576,9 @@
   line-height: 1.5;
 }
 
-/* ===== STORY TIMELINE ===== */
-.cs-story-wrap {
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid rgba(196, 168, 130, 0.12);
-  border-radius: 10px;
-  padding: 28px;
-}
-
-.cs-story-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.cs-story-entry {
-  display: grid;
-  grid-template-columns: 72px 1fr;
-  gap: 16px;
-  padding-bottom: 28px;
-  position: relative;
-}
-
-.cs-story-entry:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  left: 72px;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: rgba(196, 168, 130, 0.1);
-  transform: translateX(-50%);
-}
-
-.cs-story-year-col {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 6px;
-  padding-top: 2px;
-}
-
-.cs-story-year {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 600;
-  color: var(--color-sand);
-  letter-spacing: 0.06em;
-  text-align: right;
-  line-height: 1.2;
-}
-
-.cs-story-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--color-alpine);
-  border: 2px solid var(--color-dark);
-  box-shadow: 0 0 0 2px var(--color-alpine);
-  flex-shrink: 0;
-  margin-right: -5px;
-}
-
-.cs-story-dot.marquee {
-  background: #D85A30;
-  box-shadow: 0 0 0 2px #D85A30;
-  width: 12px;
-  height: 12px;
-  margin-right: -6px;
-}
-
-.cs-story-body {
-  padding-left: 8px;
-}
-
-.cs-story-title {
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 15px;
-  color: var(--color-warm);
-  margin-bottom: 6px;
-  line-height: 1.3;
-}
-
-.cs-story-entry.marquee .cs-story-title {
-  color: #D85A30;
-}
-
-.cs-story-desc {
-  font-family: var(--font-body);
-  font-size: 13px;
-  color: var(--color-warm);
-  opacity: 0.65;
-  line-height: 1.65;
-  margin: 0 0 8px;
-}
-
-.cs-badge-row {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.cs-badge {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: 100px;
-  border: 1px solid;
-}
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
-  .cs-charts-row-2,
-  .cs-bottom-row {
+  .cs-charts-row-2 {
     grid-template-columns: 1fr;
   }
 }
@@ -656,6 +591,27 @@
   .cs-stat-row {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Zigzag collapses to single left-aligned column */
+  .cs-zigzag-svg {
+    display: none;
+  }
+
+  .cs-zigzag-entry.entry-left,
+  .cs-zigzag-entry.entry-right {
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .cs-zigzag-entry.entry-left .cs-zigzag-content,
+  .cs-zigzag-entry.entry-right .cs-zigzag-content {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -666,10 +622,5 @@
 
   .cs-bar-label {
     font-size: 7px;
-  }
-
-  .cs-story-entry {
-    grid-template-columns: 56px 1fr;
-    gap: 10px;
   }
 }

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../css/Home.css';
@@ -23,12 +23,46 @@ const RouteConnector = ({ variant }) => (
   </div>
 );
 
+const ROLES = [
+  'Founder & CEO, Pico Edge',
+  'Intel Product Development Engineer',
+  'Silicon to Summits to Software',
+];
+
 const Home = () => {
   const layerBackRef  = useRef(null);
   const layerMidRef   = useRef(null);
   const layerFrontRef = useRef(null);
   const starsRef      = useRef(null);
   const heroRef       = useRef(null);
+
+  const [roleText,    setRoleText]    = useState('');
+  const [roleIndex,   setRoleIndex]   = useState(0);
+  const [charIndex,   setCharIndex]   = useState(0);
+  const [isDeleting,  setIsDeleting]  = useState(false);
+
+  useEffect(() => {
+    const full = ROLES[roleIndex];
+    const typeSpeed   = isDeleting ? 30 : 55;
+    const pauseDelay  = 2600;
+
+    const tick = () => {
+      if (!isDeleting && charIndex === full.length) {
+        setTimeout(() => setIsDeleting(true), pauseDelay);
+        return;
+      }
+      if (isDeleting && charIndex === 0) {
+        setIsDeleting(false);
+        setRoleIndex(i => (i + 1) % ROLES.length);
+        return;
+      }
+      setCharIndex(i => i + (isDeleting ? -1 : 1));
+      setRoleText(full.slice(0, charIndex + (isDeleting ? 0 : 1)));
+    };
+
+    const id = setTimeout(tick, typeSpeed);
+    return () => clearTimeout(id);
+  }, [charIndex, isDeleting, roleIndex]);
 
   useEffect(() => {
     const onScroll = () => {
@@ -149,13 +183,12 @@ const Home = () => {
         <div className="hero-content">
           <div className="altitude-pin">
             <span className="altitude-pin-line" />
-            <span className="altitude-pin-label">14,000 ft</span>
+            <span className="altitude-pin-label">18,491 ft</span>
           </div>
           <h1 className="hero-name">Clayton Skaggs</h1>
           <div className="hero-roles-wrap">
-            <span className="hero-role role-1">Founder &amp; CEO, Pico Edge</span>
-            <span className="hero-role role-2">Former Intel Silicon Engineer</span>
-            <span className="hero-role role-3">5 industries. 1 discipline.</span>
+            <span className="hero-role">{roleText}</span>
+            <span className="hero-cursor">|</span>
           </div>
           <p className="hero-bio">
             From Intel silicon labs to frozen waterfalls to founding Pico Edge — I solve hard problems in unforgiving environments.
