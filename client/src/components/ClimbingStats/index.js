@@ -387,7 +387,7 @@ const SkillTimeline = () => {
 
   return (
     <div className="cs-skill-wrap">
-      <h3 className="cs-milestone-title">Career Milestones</h3>
+      <h3 className="cs-milestone-title">Climbing Milestones</h3>
       <div className="cs-zigzag-timeline" ref={containerRef}>
         {svgData && (
           <svg

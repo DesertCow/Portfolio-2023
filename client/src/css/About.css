@@ -107,10 +107,13 @@
 }
 
 /* ===== DUAL TIMELINE ===== */
-.dual-timeline {
+
+/* Shared grid: headers are first 2 items, then pairs of career/outdoor cells */
+.dual-timeline-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 60px;
+  align-items: start;
 }
 
 .timeline-col-header {
@@ -120,11 +123,72 @@
   color: var(--color-sand);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid rgba(196, 168, 130, 0.2);
 }
 
+/* Garmin lifetime summary inside the outdoor column header */
+.timeline-garmin-header {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--color-sand);
+  opacity: 0.55;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 8px;
+  font-style: normal;
+}
+
+/* Per-slot cells — carry the vertical timeline line */
+.dual-career-cell,
+.dual-outdoor-cell {
+  position: relative;
+  padding-left: 28px;
+  padding-bottom: 4px;
+}
+
+.dual-career-cell::before,
+.dual-outdoor-cell::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(196, 168, 130, 0.2);
+}
+
+/* "Continues" indicator for career spans (Intel, Pico Edge) */
+.career-continues {
+  position: relative;
+  padding: 10px 0;
+}
+
+.career-continues-dot {
+  position: absolute;
+  left: -33px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(196, 168, 130, 0.2);
+  border: 1px solid rgba(196, 168, 130, 0.35);
+}
+
+.career-continues-text {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-sand);
+  opacity: 0.38;
+  letter-spacing: 0.05em;
+  font-style: italic;
+}
+
+/* Legacy: kept for any non-grid timeline usage */
 .timeline-col {
   position: relative;
   padding-left: 28px;
@@ -240,6 +304,44 @@
   margin-top: 16px;
 }
 
+/* ===== GARMIN SUMMARY LINE ===== */
+.timeline-garmin-summary {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--color-sand);
+  opacity: 0.6;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(196, 168, 130, 0.1);
+}
+
+/* ===== SPORT BADGES ===== */
+.sport-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.sport-badge {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+.sport-cycling  { background: rgba(232, 168, 56, 0.12);  color: #E8A838; }
+.sport-surfing  { background: rgba(43, 165, 181, 0.12);  color: #2BA5B5; }
+.sport-running  { background: rgba(224, 85, 85, 0.12);   color: #E05555; }
+.sport-snow     { background: rgba(133, 183, 235, 0.12); color: #85B7EB; }
+.sport-climbing { background: rgba(93, 202, 165, 0.12);  color: #5DCAA5; }
+
 /* ===== CLIMBING INTRO SUBTITLE ===== */
 .climbing-subtitle {
   font-family: var(--font-body);
@@ -276,13 +378,16 @@
   .about-section {
     padding: 60px 28px;
   }
-  .dual-timeline {
-    grid-template-columns: 1fr;
-    gap: 0;
+  /* Stack to flex so CSS order can group career-all then outdoor-all */
+  .dual-timeline-grid {
+    display: flex;
+    flex-direction: column;
   }
-  .dual-timeline .timeline-col:last-child {
-    margin-top: 48px;
-  }
+
+  .career-col-header  { order: 0; }
+  .dual-career-cell   { order: 1; }
+  .outdoor-col-header { order: 100; margin-top: 48px; }
+  .dual-outdoor-cell  { order: 101; }
 }
 
 @media (max-width: 600px) {

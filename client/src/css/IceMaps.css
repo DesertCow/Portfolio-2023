@@ -1,43 +1,115 @@
-/* ===== ICE CLIMBING MAPS ===== */
+/* ===== ICE MAP PAGES ===== */
 
-.codyMap {
-  max-height: 600px;
-  border-radius: 12px;
-  border: 1px solid rgba(196, 168, 130, 0.2);
+.ice-map-page {
+  background-color: var(--color-dark);
+  min-height: 100vh;
 }
 
-.aboutAreaBox {
-  max-width: 600px;
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(196, 168, 130, 0.2);
-  border-radius: 12px;
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.75;
+/* ── Hero ── */
+.ice-map-hero {
+  padding: 120px 24px 48px;
+  text-align: center;
+}
+
+.ice-map-title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(28px, 4vw, 48px);
   color: var(--color-warm);
-  padding: 20px 24px 32px;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  line-height: 1.1;
 }
 
-.googleEarthDownloadBox {
+.ice-map-subtitle {
   font-family: var(--font-mono);
-  font-size: clamp(18px, 3vw, 32px);
+  font-size: 11px;
   font-weight: 600;
+  color: var(--color-sand);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 48px;
+}
+
+/* ── Map image ── */
+.ice-map-image-wrap {
+  max-width: 900px;
+  margin: 0 auto 56px;
+  padding: 0 24px;
+}
+
+.ice-map-image {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(196, 168, 130, 0.15);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.45);
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.ice-map-image:hover {
+  transform: scale(1.005);
+}
+
+/* ── Description ── */
+.ice-map-description {
+  max-width: 680px;
+  margin: 0 auto 56px;
+  padding: 0 24px;
+}
+
+.ice-map-description p {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.78;
   color: var(--color-warm);
-  background: none;
-  border: 2px solid var(--color-sand);
-  border-radius: 8px;
-  padding: 14px 32px;
+  opacity: 0.82;
+  margin: 0 0 18px;
+}
+
+.ice-map-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Download ── */
+.ice-map-download-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 0 24px 96px;
+}
+
+.ice-map-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
   letter-spacing: 0.04em;
-  transition: background 0.2s, color 0.2s;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.googleEarthDownloadBox:hover {
-  background-color: var(--color-sand);
   color: var(--color-dark);
+  background: var(--color-sand);
+  padding: 13px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: 0 2px 14px rgba(196, 168, 130, 0.28);
 }
 
-.googleEarthDownloadLink {
-  text-decoration: none;
+.ice-map-download:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .ice-map-hero {
+    padding: 100px 20px 40px;
+  }
+
+  .ice-map-description,
+  .ice-map-image-wrap {
+    padding: 0 20px;
+  }
 }
