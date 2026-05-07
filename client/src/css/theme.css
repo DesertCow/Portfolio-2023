@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,700;0,800;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --color-dark: #1e2026;
+  --color-mid: #2d3142;
+  --color-warm: #e8dfd5;
+  --color-cream: #f7f4ef;
+  --color-sand: #c4a882;
+  --color-alpine: #6b8cae;
+  --color-rock: #4a5568;
+  --color-text: #4a4540;
+  --color-text-light: #8a847c;
+
+  --font-head: 'Anybody', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --header-height: 68px;
+
+  /* legacy compat for preserved pages */
+  --mainBG-color: #1e2026;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-dark);
+  color: var(--color-warm);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}

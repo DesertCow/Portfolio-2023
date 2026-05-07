@@ -1,0 +1,626 @@
+/* ===== CLIMBING STATS SECTION SHELL ===== */
+.cs-section {
+  background-color: var(--color-dark);
+  padding: 80px 64px;
+  border-top: 1px solid rgba(196, 168, 130, 0.1);
+}
+
+.cs-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* altitude marker */
+.cs-altitude-marker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.cs-altitude-line {
+  flex-shrink: 0;
+  width: 32px;
+  height: 1px;
+  background-color: var(--color-sand);
+}
+
+.cs-altitude-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-sand);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cs-section-title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(22px, 3vw, 36px);
+  color: var(--color-warm);
+  letter-spacing: -0.02em;
+  margin: 0 0 48px;
+  line-height: 1.2;
+}
+
+/* ===== STAT CARDS ===== */
+.cs-stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 56px;
+}
+
+.cs-stat-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(196, 168, 130, 0.15);
+  border-radius: 10px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cs-stat-value {
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-size: clamp(28px, 4vw, 42px);
+  color: var(--color-sand);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.cs-stat-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-warm);
+  opacity: 0.6;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ===== CHART SHARED ===== */
+.cs-chart-wrap {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(196, 168, 130, 0.12);
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.cs-chart-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-sand);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.cs-legend {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-warm);
+  opacity: 0.7;
+  flex-wrap: wrap;
+}
+
+.cs-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cs-legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ===== LAYOUT ROWS ===== */
+.cs-charts-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+/* ===== VERTICAL BAR CHART (year chart) ===== */
+.cs-bar-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 200px;
+  padding-bottom: 28px;
+}
+
+.cs-bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.cs-bar-pair {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 180px;
+}
+
+.cs-bar {
+  min-width: 10px;
+  flex: 1;
+  border-radius: 3px 3px 0 0;
+  transition: opacity 0.2s;
+  cursor: default;
+}
+
+.cs-bar:hover {
+  opacity: 0.8;
+}
+
+.cs-bar-routes {
+  background: var(--color-alpine);
+}
+
+.cs-bar-pitches {
+  background: var(--color-sand);
+  opacity: 0.7;
+}
+
+.cs-bar-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--color-warm);
+  opacity: 0.5;
+  white-space: nowrap;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  margin-top: 2px;
+}
+
+/* ===== HORIZONTAL BAR (grade pyramid) ===== */
+.cs-pyramid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cs-pyramid-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cs-pyramid-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-warm);
+  opacity: 0.7;
+  width: 36px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.cs-pyramid-track {
+  flex: 1;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
+}
+
+.cs-h-bar {
+  height: 100%;
+  background: var(--color-alpine);
+  border-radius: 0 4px 4px 0;
+  transition: width 0.4s ease;
+}
+
+.cs-pyramid-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-warm);
+  opacity: 0.5;
+  width: 20px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* ===== DISCIPLINE STACKED BAR ===== */
+.cs-disc-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 200px;
+  padding-bottom: 28px;
+}
+
+.cs-disc-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.cs-disc-stack {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  min-width: 18px;
+}
+
+.cs-disc-stack > div {
+  min-height: 2px;
+  transition: opacity 0.2s;
+  cursor: default;
+}
+
+.cs-disc-stack > div:hover {
+  opacity: 0.8;
+}
+
+/* ===== STATE CHART ===== */
+.cs-state-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cs-state-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cs-state-name {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-warm);
+  opacity: 0.7;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.cs-state-track {
+  flex: 1;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
+}
+
+.cs-h-bar-state {
+  background: var(--color-sand);
+  opacity: 0.75;
+}
+
+.cs-state-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-warm);
+  opacity: 0.5;
+  width: 28px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* ===== MAP ===== */
+.cs-map-wrap {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(196, 168, 130, 0.12);
+  border-radius: 10px;
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.cs-map-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.cs-year-btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-warm);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(196, 168, 130, 0.18);
+  border-radius: 4px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.cs-year-btn:hover {
+  background: rgba(196, 168, 130, 0.1);
+}
+
+.cs-year-btn.active {
+  background: var(--color-sand);
+  color: var(--color-dark);
+  border-color: var(--color-sand);
+}
+
+.cs-map-container {
+  position: relative;
+}
+
+.cs-map-svg {
+  width: 100%;
+  border-radius: 6px;
+  background: #111318;
+  border: 1px solid rgba(196, 168, 130, 0.08);
+  display: block;
+}
+
+.cs-state-shape {
+  fill: #1c2030;
+  stroke: rgba(196, 168, 130, 0.2);
+  stroke-width: 1;
+}
+
+.cs-state-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  fill: rgba(196, 168, 130, 0.3);
+  text-anchor: middle;
+  dominant-baseline: middle;
+  pointer-events: none;
+  user-select: none;
+}
+
+.cs-map-dot {
+  fill: var(--color-alpine);
+  opacity: 0.85;
+  transition: opacity 0.25s, r 0.25s;
+  cursor: default;
+}
+
+.cs-map-dot-group {
+  transition: opacity 0.25s;
+}
+
+.cs-map-dot-group.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cs-map-dot-group.visible {
+  opacity: 1;
+}
+
+.cs-map-dot-label {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  fill: var(--color-warm);
+  opacity: 0.7;
+  text-anchor: middle;
+  pointer-events: none;
+  user-select: none;
+}
+
+.cs-map-legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-warm);
+  opacity: 0.5;
+}
+
+.cs-map-dot-sample {
+  display: inline-block;
+  background: var(--color-alpine);
+  border-radius: 50%;
+}
+
+.cs-map-dot-sample.sm { width: 8px;  height: 8px; }
+.cs-map-dot-sample.lg { width: 18px; height: 18px; }
+
+/* ===== SKILL UNLOCK ZIGZAG TIMELINE ===== */
+.cs-skill-wrap {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(196, 168, 130, 0.12);
+  border-radius: 10px;
+  padding: 36px 28px 20px;
+  margin-top: 24px;
+}
+
+.cs-milestone-title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(22px, 3vw, 34px);
+  color: var(--color-warm);
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0 0 40px;
+  line-height: 1.1;
+}
+
+/* SVG sits behind everything and is sized to match the container */
+.cs-zigzag-timeline {
+  position: relative;
+  width: 100%;
+  padding: 8px 0 4px;
+}
+
+.cs-zigzag-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible;
+}
+
+/* ── Entry rows ── */
+/*
+  Each entry occupies 42% of the container width.
+  Left entries sit on the left edge (x = 0–42%), dot at their right edge (x ≈ 42%).
+  Right entries sit on the right edge (x = 58–100%), dot at their left edge (x ≈ 58%).
+  The center corridor x = 42–58% stays empty for the diagonal line to pass through cleanly.
+*/
+.cs-zigzag-entry {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 32px;
+  z-index: 1;
+  width: 42%;
+}
+
+/* Left entries: JSX [dot][content] → row-reverse renders [content][dot]
+   Content is on the far left, dot is on the right edge of the block (toward center) */
+.cs-zigzag-entry.entry-left {
+  flex-direction: row-reverse;
+  margin-right: auto;
+  text-align: right;
+}
+
+.cs-zigzag-entry.entry-left .cs-zigzag-content {
+  text-align: right;
+}
+
+/* Right entries: JSX [dot][content] → row renders [dot][content]
+   Dot is on the left edge of the block (toward center), content extends right */
+.cs-zigzag-entry.entry-right {
+  flex-direction: row;
+  margin-left: auto;
+  text-align: left;
+}
+
+.cs-zigzag-entry.entry-right .cs-zigzag-content {
+  text-align: left;
+}
+
+/* ── Dots ── */
+.cs-zigzag-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-alpine);
+  border: 2px solid var(--color-dark);
+  box-shadow: 0 0 0 2px var(--color-alpine);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.cs-zigzag-dot.marquee {
+  background: #D85A30;
+  box-shadow: 0 0 0 2px #D85A30, 0 0 10px rgba(216, 90, 48, 0.35);
+  width: 14px;
+  height: 14px;
+}
+
+/* ── Entry content text ── */
+.cs-zigzag-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 8px;
+}
+
+/* Keep text clear of the dot on each side */
+.cs-zigzag-entry.entry-left .cs-zigzag-content {
+  padding-right: 20px;
+}
+
+.cs-zigzag-entry.entry-right .cs-zigzag-content {
+  padding-left: 20px;
+}
+
+.cs-skill-date {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-sand);
+  opacity: 0.8;
+  letter-spacing: 0.05em;
+}
+
+.cs-skill-label {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-warm);
+  line-height: 1.3;
+}
+
+.cs-zigzag-entry.marquee .cs-skill-label {
+  color: #D85A30;
+}
+
+.cs-skill-note {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-warm);
+  opacity: 0.55;
+  line-height: 1.5;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .cs-charts-row-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-section {
+    padding: 60px 28px;
+  }
+
+  .cs-stat-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Zigzag collapses to single left-aligned column */
+  .cs-zigzag-svg {
+    display: none;
+  }
+
+  .cs-zigzag-entry.entry-left,
+  .cs-zigzag-entry.entry-right {
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .cs-zigzag-entry.entry-left .cs-zigzag-content,
+  .cs-zigzag-entry.entry-right .cs-zigzag-content {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .cs-stat-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .cs-bar-label {
+    font-size: 7px;
+  }
+}

@@ -1,57 +1,115 @@
+/* ===== ICE MAP PAGES ===== */
 
+.ice-map-page {
+  background-color: var(--color-dark);
+  min-height: 100vh;
+}
 
+/* ── Hero ── */
+.ice-map-hero {
+  padding: 120px 24px 48px;
+  text-align: center;
+}
 
+.ice-map-title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(28px, 4vw, 48px);
+  color: var(--color-warm);
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  line-height: 1.1;
+}
 
-@media screen and (min-width: 600px) {
+.ice-map-subtitle {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-sand);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 48px;
+}
 
-  .codyMap {
-    /* max-width: 850px; */
-    max-height: 600px;
-    border-radius: 80px;
-    -webkit-border-radius: 80px;
-    -moz-border-radius: 80px;
-    -ms-border-radius: 80px;
-    -o-border-radius: 80px;
+/* ── Map image ── */
+.ice-map-image-wrap {
+  max-width: 900px;
+  margin: 0 auto 56px;
+  padding: 0 24px;
+}
+
+.ice-map-image {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(196, 168, 130, 0.15);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.45);
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.ice-map-image:hover {
+  transform: scale(1.005);
+}
+
+/* ── Description ── */
+.ice-map-description {
+  max-width: 680px;
+  margin: 0 auto 56px;
+  padding: 0 24px;
+}
+
+.ice-map-description p {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.78;
+  color: var(--color-warm);
+  opacity: 0.82;
+  margin: 0 0 18px;
+}
+
+.ice-map-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Download ── */
+.ice-map-download-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 0 24px 96px;
+}
+
+.ice-map-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-dark);
+  background: var(--color-sand);
+  padding: 13px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: 0 2px 14px rgba(196, 168, 130, 0.28);
+}
+
+.ice-map-download:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .ice-map-hero {
+    padding: 100px 20px 40px;
   }
 
-  .codyDescriptionText{
-    font-size: 25px;
-  }
-
-  .aboutAreaBox {
-      width: 600px;
-      background-image: url("../../src/img/headerBackground/Header_Colorful_Stretched.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-color: white;
-      border-style: solid;
-      border-width: 10px;
-      border-radius: 60px;
-      -webkit-border-radius: 60px;
-      -moz-border-radius: 60px;
-      -ms-border-radius: 60px;
-      -o-border-radius: 60px;
-      font-family: Inter;
-      /* font-family: "SF-Mono"; */
-      font-size: 20px;
-      padding: 5px 10px 30px 10px;
-  }
-
-  .googleEarthDownloadBox {
-      font-family: "SF-Mono";
-      font-size: 50px;
-      border-style: solid;
-      border-width: 10px;
-      text-decoration: none;
-  }
-
-  .googleEarthDownloadLink {
-      text-decoration: none;
-  }
-
-  .googleEarthDownloadBox:hover{
-    /* font-size: 40px; */
-    color: black;
-    background-color: white;
+  .ice-map-description,
+  .ice-map-image-wrap {
+    padding: 0 20px;
   }
 }

@@ -1,0 +1,104 @@
+.contact-altitude-marker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.contact-altitude-line {
+  flex-shrink: 0;
+  width: 32px;
+  height: 1px;
+  background-color: var(--color-sand);
+  display: block;
+}
+
+.contact-altitude-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-sand);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.page-contact {
+  background-color: var(--color-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section {
+  flex: 1;
+  padding: 120px 64px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact-page-title {
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-size: clamp(36px, 6vw, 64px);
+  color: var(--color-warm);
+  letter-spacing: -0.02em;
+  margin: 0 0 48px;
+  line-height: 1.05;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.contact-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(196, 168, 130, 0.15);
+  border-radius: 10px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-card-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-sand);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.contact-card-value {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-warm);
+  text-decoration: none;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+.contact-card-value:hover {
+  color: var(--color-sand);
+}
+
+.contact-card-sub {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-light);
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 700px) {
+  .contact-section {
+    padding: 100px 24px 60px;
+  }
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+}
