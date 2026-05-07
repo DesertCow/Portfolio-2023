@@ -21,10 +21,10 @@ const About = () => (
           <AltitudeMarker label="ABOUT" />
           <h1>Engineer. Founder. Mountaineer.</h1>
           <p className="about-hero-bio">
-            Computer Engineering graduate from Oklahoma State University. Former Product Development Engineer at Intel, where I worked on PCIe interface development and high-volume manufacturing for world-class processors. AWS certified. Full-stack developer. Founder of Pico Edge Inc. — building autonomous coding agent infrastructure in Denver, Colorado.
+            Computer Engineering graduate from Oklahoma State University. Former Product Development Engineer at Intel, where I worked on PCIe interface development and high-volume manufacturing on cutting edge processors. AWS certified. Full-stack developer. Founder of Pico Edge Inc. — building autonomous coding agent infrastructure in Denver, Colorado.
           </p>
           <p className="about-hero-bio about-hero-bio-2">
-            The mountains have always run parallel to the work. The same years I was learning to ship production silicon, I was learning to lead ice routes in Hyalite Canyon. In winters, that means ice climbing and splitboarding — backcountry objectives on a snowboard in terrain where almost everyone else is on skis. The same discipline required to manage a 14-stage deterministic pipeline is the same discipline required to manage a multi-pitch alpine objective in changing weather. Preparation, partnership, and comfort with uncertainty under pressure.
+            The mountains have always run parallel to the work. The same years I was learning to ship production silicon, I was learning to lead ice in Hyalite Canyon. Preparation matters. Partners matter. Building a company from zero works the same way.
           </p>
         </div>
         <img

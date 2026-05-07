@@ -253,7 +253,7 @@ const Home = () => {
             <div className="crux-card">
               <h3 className="crux-card-title">On the mountain</h3>
               <p>
-                Route-finding in whiteout conditions. Ice screws that won't seat. A pitch that looked climbable from below but isn't. You adapt or you retreat.
+                Route-finding in whiteout conditions. Ice screws that won't take. A pitch that looked climbable from below but isn't. You adapt or you retreat.
               </p>
             </div>
             <div className="crux-card">
