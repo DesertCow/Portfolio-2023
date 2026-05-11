@@ -91,227 +91,78 @@ const DeveloperPortfolio = () => {
         </div>
       </section>
 
-      {/* ===== NEWPORT BOARD CLUB — WEB APP ===== */}
-      <section className="project-section alt-bg">
-        <div className="project-section-inner">
-          <div className="project-section-header">
-            <span className="project-tag tag-inactive">Inactive</span>
-            <div>
-              <h2 className="project-title">Newport Board Club</h2>
-              <span className="project-subtitle">Progressive Web App</span>
-            </div>
-          </div>
-          <div className="project-body">
-            <div className="project-demo">
-              <div className="demo-label">Demo</div>
-              <img
-                className="demo-gif"
-                src={require('../img/DemoGIFs/The_Board_Club_App_Demo1.gif')}
-                alt="Newport Board Club App Demo"
-              />
-              <a
-                className="demo-link"
-                href="https://boardclubapp-production.up.railway.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live Demo →
-              </a>
-              <div className="demo-info">
-                <p>App designed for mobile experience</p>
-                <p>Screen width: 470px – 520px</p>
-              </div>
-              <div className="demo-credentials">
-                <div className="demo-cred-title">Demo Login</div>
-                <p className="demo-cred-line">Email: demo@gmail.com</p>
-                <p className="demo-cred-line">Password: demo</p>
-              </div>
-            </div>
-            <div className="project-info">
-              <div className="stack-box">
-                <div className="stack-box-title">Software Stack</div>
-                <ul className="stack-list">
-                  <li>App Type: Progressive Web App</li>
-                  <li>Frontend: React (18.2.0)</li>
-                  <li>Framework: Bootstrap (2.5.0)</li>
-                  <li>API: GraphQL (16.6.0)</li>
-                  <li>Backend: Node.js (16.15.1)</li>
-                  <li>Database: MongoDB (5.6.0)</li>
-                  <li>Photo Host: AWS S3</li>
-                  <li>Hosting: Railway (client/server)</li>
-                  <li>Database: Self-hosted (Docker)</li>
-                </ul>
-              </div>
-              <div>
-                <div className="project-desc-title">Project Overview</div>
-                <p className="project-desc-text">
-                  An application designed to allow members of the board club to view current surf and weather conditions, club events, log surf sessions, view surf tips, rental information, and general club information.
-                </p>
-                <div className="project-desc-title sub">Project Goal</div>
-                <ul className="project-goal-list">
-                  <li>Current surf and weather conditions with detailed weather modal</li>
-                  <li>Events calendar so members can plan and attend club events</li>
-                  <li>Surf log tracking sessions, conditions, and board choices over time</li>
-                  <li>Surf hacks for new members and common problems</li>
-                  <li>Newport surf map for picking the best spot</li>
-                  <li>Community forum for connecting with other members</li>
-                  <li>Admin console for managing surf hacks, events, and shaper list</li>
-                </ul>
-                <div className="github-links">
-                  <a href="https://github.com/DesertCow/NewportBoardClubApp_PWA" className="github-link" target="_blank" rel="noreferrer">
-                    <img src={require('../img/Icons/github.png')} alt="" />
-                    Client
-                  </a>
-                  <a href="https://github.com/DesertCow/NewportBoardClubApp_Server" className="github-link" target="_blank" rel="noreferrer">
-                    <img src={require('../img/Icons/github.png')} alt="" />
-                    Server
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ===== EARLIER WORK DIVIDER ===== */}
+      <div className="earlier-work-header">
+        <AltitudeMarker label="EARLIER WORK" />
+        <h2 className="earlier-work-title">Bootcamp &amp; Side Projects</h2>
+        <p className="earlier-work-subtitle">
+          Built during the UC Irvine Web Development Bootcamp (2022). These projects demonstrate full-stack fundamentals — React, GraphQL, MongoDB, Node.js — and were the foundation for the engineering work at Pico Edge.
+        </p>
+      </div>
 
-      {/* ===== NEWPORT BOARD CLUB — REACT NATIVE ===== */}
-      <section className="project-section">
-        <div className="project-section-inner">
-          <div className="project-section-header">
-            <span className="project-tag tag-inactive">Inactive</span>
-            <div>
-              <h2 className="project-title">Newport Board Club</h2>
-              <span className="project-subtitle">React Native (iOS &amp; Android)</span>
-            </div>
-          </div>
-          <div className="project-body">
-            <div className="project-demo">
-              <div className="demo-label">Demo</div>
-              <img
-                className="demo-gif"
-                src="https://claytonskaggs-s3-portfolio.s3.us-west-1.amazonaws.com/NBC_React_Native_Demo1.gif"
-                alt="Newport Board Club React Native Demo"
-              />
-              <div className="demo-credentials">
-                <div className="demo-cred-title">Demo Login</div>
-                <p className="demo-cred-line">Email: demo@gmail.com</p>
-                <p className="demo-cred-line">Password: demo</p>
-              </div>
-            </div>
-            <div className="project-info">
-              <div className="stack-box">
-                <div className="stack-box-title">Software Stack</div>
-                <ul className="stack-list">
-                  <li>App Type: React Native</li>
-                  <li>Frontend: React Native (0.72.3)</li>
-                  <li>Build Tool: Expo (49.0.6)</li>
-                  <li>API: GraphQL (16.6.0)</li>
-                  <li>Backend: Node.js (16.15.1)</li>
-                  <li>Database: MongoDB (5.6.0)</li>
-                  <li>Photo Host: AWS S3</li>
-                  <li>App Stores: GooglePlay / Apple (WIP)</li>
-                </ul>
-              </div>
-              <div>
-                <div className="project-desc-title">Project Overview</div>
-                <p className="project-desc-text">
-                  A ground-up rebuild of the original Newport Board Club app using React Native and Expo — deployed to both Android and iOS from a single codebase. Uses the same backend API and server as the PWA.
-                </p>
-                <div className="project-desc-title sub">Project Goal</div>
-                <ul className="project-goal-list">
-                  <li>All features from the original web app, native-first UX</li>
-                  <li>Push notifications for surf conditions, events, and new boards</li>
-                  <li>SVG interactive surf map</li>
-                  <li>Admin console for managing content</li>
-                  <li>Community forum and surf log</li>
-                </ul>
-                <div className="github-links">
-                  <a href="https://github.com/DesertCow/NewportBoardClubApp_Native" className="github-link" target="_blank" rel="noreferrer">
-                    <img src={require('../img/Icons/github.png')} alt="" />
-                    Client
-                  </a>
-                  <a href="https://github.com/DesertCow/NewportBoardClubApp_Server" className="github-link" target="_blank" rel="noreferrer">
-                    <img src={require('../img/Icons/github.png')} alt="" />
-                    Server
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ===== LEGACY PROJECT CARDS ===== */}
+      <section className="legacy-projects-section">
+        <div className="legacy-projects-inner">
+          <div className="legacy-grid">
 
-      {/* ===== CHUCKWAGON ===== */}
-      <section className="project-section alt-bg">
-        <div className="project-section-inner">
-          <div className="project-section-header">
-            <span className="project-tag tag-inactive">Inactive</span>
-            <div>
-              <h2 className="project-title">Chuckwagon</h2>
-              <span className="project-subtitle">Food Truck Management — Progressive Web App</span>
-            </div>
-          </div>
-          <div className="project-body">
-            <div className="project-demo">
-              <div className="demo-label">Demo</div>
-              <img
-                className="demo-gif"
-                src={require('../img/DemoGIFs/Chuckwagon_Demo1.gif')}
-                alt="Chuckwagon App Demo"
-              />
-              <a
-                className="demo-link"
-                href="https://saltlicktruck-production.up.railway.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live Demo →
-              </a>
-              <div className="demo-info">
-                <p>App designed for mobile experience</p>
-                <p>Screen width: 390px – 420px</p>
+            <div className="legacy-card">
+              <div className="legacy-card-header">
+                <h3 className="legacy-card-title">Newport Board Club</h3>
+                <span className="project-tag tag-inactive">Inactive</span>
               </div>
-              <div className="demo-credentials">
-                <div className="demo-cred-title">Demo Login</div>
-                <p className="demo-cred-line">Email: demo@gmail.com</p>
-                <p className="demo-cred-line">Password: demo</p>
+              <p className="legacy-card-subtitle">Progressive Web App</p>
+              <p className="legacy-card-desc">
+                Surf club management app — members view conditions, log sessions, track events, and connect via community forum. Admin console for content management. Built for the Newport Beach surfing community Clayton was paddling out with every week.
+              </p>
+              <div className="legacy-tech-pills">
+                <span>React</span><span>GraphQL</span><span>MongoDB</span>
+                <span>Node.js</span><span>AWS S3</span><span>Railway</span>
+              </div>
+              <div className="legacy-card-links">
+                <a href="https://boardclubapp-production.up.railway.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                <a href="https://github.com/DesertCow/NewportBoardClubApp_PWA" target="_blank" rel="noreferrer">GitHub (Client)</a>
+                <a href="https://github.com/DesertCow/NewportBoardClubApp_Server" target="_blank" rel="noreferrer">GitHub (Server)</a>
               </div>
             </div>
-            <div className="project-info">
-              <div className="stack-box">
-                <div className="stack-box-title">Software Stack</div>
-                <ul className="stack-list">
-                  <li>App Type: Progressive Web App</li>
-                  <li>Frontend: React (18.2.0)</li>
-                  <li>Framework: Bootstrap (5.2.1)</li>
-                  <li>API: GraphQL (15.3.0)</li>
-                  <li>Backend: Node.js (16.15.1)</li>
-                  <li>Database: MongoDB (5.6.0) + MySQL (2.3.3)</li>
-                  <li>Hosting: Railway (client/server)</li>
-                  <li>Database: Self-hosted (Docker)</li>
-                </ul>
+
+            <div className="legacy-card">
+              <div className="legacy-card-header">
+                <h3 className="legacy-card-title">Newport Board Club</h3>
+                <span className="project-tag tag-inactive">Inactive</span>
               </div>
-              <div>
-                <div className="project-desc-title">Project Overview</div>
-                <p className="project-desc-text">
-                  Chuckwagon is a comprehensive food truck management application — a customer ordering app plus a separate in-kitchen app for order execution and administration. Built on the MERN stack. Designed to run locally on a food truck and serve customers over WiFi without internet.
-                </p>
-                <div className="project-desc-title sub">Project Goal</div>
-                <ul className="project-goal-list">
-                  <li>Customers view the menu and add items to cart for checkout</li>
-                  <li>Customer accounts for email marketing and repeat business</li>
-                  <li>Dynamic menu from SQL database — real-time item availability</li>
-                  <li>Order status tracking: Submitted → WIP → Ready → Picked Up</li>
-                  <li>Kitchen page for employees to track and complete orders</li>
-                  <li>Order analytics for business owners to increase margins</li>
-                </ul>
-                <div className="github-links">
-                  <a href="https://github.com/DesertCow/SaltLickTruck" className="github-link" target="_blank" rel="noreferrer">
-                    <img src={require('../img/Icons/github.png')} alt="" />
-                    Client + Server
-                  </a>
-                </div>
+              <p className="legacy-card-subtitle">React Native (iOS &amp; Android)</p>
+              <p className="legacy-card-desc">
+                Ground-up React Native rebuild of the web app. Single codebase for Android and iOS via Expo. Push notifications for surf conditions and events, SVG interactive surf map. Same backend API as the PWA.
+              </p>
+              <div className="legacy-tech-pills">
+                <span>React Native</span><span>Expo</span><span>GraphQL</span>
+                <span>MongoDB</span><span>Node.js</span><span>AWS S3</span>
+              </div>
+              <div className="legacy-card-links">
+                <a href="https://github.com/DesertCow/NewportBoardClubApp_Native" target="_blank" rel="noreferrer">GitHub (Client)</a>
+                <a href="https://github.com/DesertCow/NewportBoardClubApp_Server" target="_blank" rel="noreferrer">GitHub (Server)</a>
               </div>
             </div>
+
+            <div className="legacy-card">
+              <div className="legacy-card-header">
+                <h3 className="legacy-card-title">Chuckwagon</h3>
+                <span className="project-tag tag-inactive">Inactive</span>
+              </div>
+              <p className="legacy-card-subtitle">Food Truck Management PWA</p>
+              <p className="legacy-card-desc">
+                Customer ordering app plus in-kitchen order management dashboard. Designed to run locally over WiFi on the truck — no internet required. Order tracking from submission through pickup, dynamic menu via SQL, and order analytics for margin analysis.
+              </p>
+              <div className="legacy-tech-pills">
+                <span>React</span><span>GraphQL</span><span>MongoDB</span>
+                <span>MySQL</span><span>Node.js</span><span>Railway</span>
+              </div>
+              <div className="legacy-card-links">
+                <a href="https://saltlicktruck-production.up.railway.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                <a href="https://github.com/DesertCow/SaltLickTruck" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
