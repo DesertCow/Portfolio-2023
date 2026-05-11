@@ -137,6 +137,11 @@ const About = () => (
               <div className="timeline-desc">
                 Biggest year on rock — 43 routes logged. Multi-pitch trad climbing: Ewephoria (5 pitches), Idiopathic (4 pitches), Frogland (6 pitches, Red Rocks). Second ice season in Hyalite, now combining ice days with backcountry splitboard objectives.
               </div>
+              <div className="sport-badges">
+                <span className="sport-badge sport-climbing">Sport</span>
+                <span className="sport-badge sport-climbing">Trad</span>
+                <span className="sport-badge sport-snow">Ice</span>
+              </div>
             </div>
           </div>
 
@@ -168,6 +173,10 @@ const About = () => (
               <div className="timeline-org">Red Rocks + Tuolumne + Leading Ice</div>
               <div className="timeline-desc">
                 Major progression year. Tuolumne Meadows: Southeast Buttress of Cathedral Peak (5 pitches), multi-pitch routes on Dozier Dome. Started leading ice multi-pitch in Hyalite Canyon. Building the rope leadership skills that would later translate to leading teams.
+              </div>
+              <div className="sport-badges">
+                <span className="sport-badge sport-climbing">Trad</span>
+                <span className="sport-badge sport-snow">Ice</span>
               </div>
             </div>
           </div>
@@ -241,7 +250,7 @@ const About = () => (
           <div className="dual-career-cell">
             <div className="timeline-entry">
               <div className="timeline-dot" />
-              <div className="timeline-year">2017, 2019</div>
+              <div className="timeline-year">Developer Associate (2017) · Cloud Practitioner (2019)</div>
               <div className="timeline-org">AWS Certifications</div>
               <div className="timeline-role">Developer Associate + Cloud Practitioner</div>
               <div className="timeline-desc">
@@ -289,7 +298,7 @@ const About = () => (
               <div className="timeline-org">The Surf Pivot</div>
               <div className="timeline-role">Southern California</div>
               <div className="timeline-desc">
-                COVID reshaped the routine but didn't stop it. Climbing was paused; surfing arrived for real — 44 sessions in the water. Running continued (29 sessions, 199 mi) and trail running began (13 sessions, 121 mi, 42k ft ascent). 10 backcountry snow days. 156 total activities.
+                COVID reshaped the routine but didn't stop it. Climbing slowed to a handful of sessions; surfing arrived for real — 44 sessions in the water. Running continued (29 sessions, 199 mi) and trail running began (13 sessions, 121 mi, 42k ft ascent). 10 backcountry snow days. 156 total activities.
               </div>
               <div className="sport-badges">
                 <span className="sport-badge sport-surfing">Surfing</span>
@@ -433,7 +442,7 @@ const About = () => (
               <div className="timeline-org">Pico Edge, Inc.</div>
               <div className="timeline-role">Founder &amp; CEO · Denver, CO</div>
               <div className="timeline-desc">
-                Founded Delaware C-Corp. Building a 14-stage autonomous coding pipeline that takes the LLM out of the verification position — deterministic test execution is the only acceptable proof of completion. A ticket plus a failing test goes in; verified, documented, production-ready code comes out. Stack: Python, AWS (Lambda, ECS Fargate, DynamoDB, S3, Cognito), React. Models: DeepSeek R1, Claude Sonnet.
+                Building since early 2025. Delaware C-Corp incorporated January 2026. Building a 14-stage autonomous coding pipeline that takes the LLM out of the verification position — deterministic test execution is the only acceptable proof of completion. A ticket plus a failing test goes in; verified, documented, production-ready code comes out. Stack: Python, AWS (Lambda, ECS Fargate, DynamoDB, S3, Cognito), React. Models: DeepSeek R1, Claude Sonnet.
               </div>
             </div>
           </div>

@@ -441,7 +441,7 @@ const ClimbingStats = () => (
   <section className="cs-section">
     <div className="cs-inner">
       <AltitudeMarker label="CLIMBING BY THE NUMBERS" />
-      <h2 className="cs-section-title">152 routes across 6 states + Mexico. 13 years of vertical.</h2>
+      <h2 className="cs-section-title">152 routes across 6 states + Mexico. 19 years of vertical.</h2>
 
       {/* Stat cards */}
       <div className="cs-stat-row">
