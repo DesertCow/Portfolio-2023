@@ -23,16 +23,18 @@ This is a client-only React SPA — there is no backend in this repository. The 
 
 **Routing** (`client/src/App.js`): React Router v6 defines all routes. Adding a new page means creating the component under `client/src/pages/` and adding a `<Route>` here.
 
-**Pages** (`client/src/pages/`): Each page composes `Header` and `Footer` and handles its own layout. Sub-directories exist for related page groups:
+**Pages** (`client/src/pages/`): Each page composes `Header` and `Footer` and handles its own layout. Top-level pages are `Home`, `About`, `Contact`, and `DeveloperPortfolio`. Sub-directories exist for related page groups:
 - `IceMaps/` — ice climbing location maps (HyaliteCanyon, CodyIce)
 - `MediaPages/` — photo gallery, video gallery, blog
 
-**Components** (`client/src/components/`): Three shared components — `Header` (React Bootstrap navbar with dropdown menus), `Footer`, and `DevTools` (skills display used on the portfolio page).
+**Components** (`client/src/components/`): Four shared components, each a directory with an `index.js` and co-located CSS — `Header` (custom navbar with scroll state and dropdown menus; no react-bootstrap), `Footer`, `DevTools` (skills display used on the DeveloperPortfolio page), and `ClimbingStats` (climbing data visualizations used on the About page — location/route data lives in constant arrays at the top of its `index.js`).
 
-**Responsive layout pattern**: Mobile vs. desktop layouts are handled by an `if (window.innerWidth < 600)` branch inside each component that returns a different JSX tree, **not** via CSS media queries. Separate CSS files are used for each breakpoint, named `_Full.css` (desktop) and `_Mobile.css` (mobile), co-located with the page that uses them.
+**Responsive layout**: Handled via CSS `@media` queries in each page/component stylesheet. One legacy exception: `MediaPages/VideoGallery.js` still uses the old pattern of an `if (window.innerWidth < 600)` JS branch returning a separate mobile JSX tree. The `_Full.css` (desktop) / `_Mobile.css` (mobile) file pairs under `css/` (DeveloperPortfolio, AboutMe) are remnants of that old pattern.
 
-**CSS** (`client/src/css/`): Global styles in `style.css`, `reset.css`, and `import.css` (font-face declarations). Per-page CSS imported directly in each page file.
+**CSS** (`client/src/css/`): Global styles loaded in `App.js` — `theme.css`, `reset.css`, `style.css`, and `import.css` (font-face declarations). Per-page CSS imported directly in each page file.
 
 **Assets**: Resume PDF lives at `client/src/assets/Clayton_Skaggs_Resume.pdf`. Images are in `client/src/img/` with subdirectories (`Icons/`, `AboutMe/`, `headerBackground/`, `DemoGIFs/`). The PDF is rendered on the DevPortfolio page using `@mikecousins/react-pdf`'s `usePdf` hook with a `<canvas>` ref.
+
+**Content note — location**: The site owner is based in Phoenix, AZ (relocated from Denver, CO in mid-2026). Current-location copy (Contact card, Home "Home Base" stat tile, About bio, Pico Edge timeline entry) says Phoenix; timezone copy says "MST year-round" (Arizona observes no DST). References to Denver/Colorado in the About timeline and ClimbingStats data are historical and intentional — do not "fix" them.
 
 **Deployment**: Hosted on Railway at `https://www.claytonskaggs.dev`. GitHub repo is `DesertCow/portfolio2023`.
