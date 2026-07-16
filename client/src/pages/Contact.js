@@ -30,8 +30,8 @@ const Contact = () => (
 
         <div className="contact-card">
           <div className="contact-card-label">Location</div>
-          <span className="contact-card-value">Denver, CO</span>
-          <span className="contact-card-sub">Mountain Time Zone</span>
+          <span className="contact-card-value">Phoenix, AZ</span>
+          <span className="contact-card-sub">MST Year-Round</span>
         </div>
 
         <div className="contact-card">

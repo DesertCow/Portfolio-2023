@@ -292,9 +292,9 @@ const Home = () => {
               <span className="stat-sub">Pico de Orizaba, Mexico</span>
             </div>
             <div className="stat-item">
-              <span className="stat-num">Denver, CO</span>
+              <span className="stat-num">Phoenix, AZ</span>
               <span className="stat-label">Home Base</span>
-              <span className="stat-sub">Mountain time zone</span>
+              <span className="stat-sub">Mountain Time Zone</span>
             </div>
             <div className="stat-item">
               <span className="stat-num">Oklahoma State</span>
