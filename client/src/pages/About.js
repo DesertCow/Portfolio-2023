@@ -21,7 +21,7 @@ const About = () => (
           <AltitudeMarker label="ABOUT" />
           <h1>Engineer. Founder. Mountaineer.</h1>
           <p className="about-hero-bio">
-            Computer Engineering graduate from Oklahoma State University. Former Product Development Engineer at Intel, where I worked on PCIe interface development and high-volume manufacturing on cutting edge processors. AWS certified. Full-stack developer. Founder of Pico Edge Inc. — building autonomous coding agent infrastructure in Denver, Colorado.
+            Computer Engineering graduate from Oklahoma State University. Former Product Development Engineer at Intel, where I worked on PCIe interface development and high-volume manufacturing on cutting edge processors. AWS certified. Full-stack developer. Founder of Pico Edge Inc. — building autonomous coding agent infrastructure in Phoenix, Arizona.
           </p>
           <p className="about-hero-bio about-hero-bio-2">
             The mountains have always run parallel to the work. The same years I was learning to ship production silicon, I was learning to lead ice in Hyalite Canyon. Preparation matters. Partners matter. Building a company from zero works the same way.
@@ -440,7 +440,7 @@ const About = () => (
               <div className="timeline-dot" />
               <div className="timeline-year">2025 – Present</div>
               <div className="timeline-org">Pico Edge, Inc.</div>
-              <div className="timeline-role">Founder &amp; CEO · Denver, CO</div>
+              <div className="timeline-role">Founder &amp; CEO · Phoenix, AZ</div>
               <div className="timeline-desc">
                 Building since early 2025. Delaware C-Corp incorporated January 2026. Building a 14-stage autonomous coding pipeline that takes the LLM out of the verification position — deterministic test execution is the only acceptable proof of completion. A ticket plus a failing test goes in; verified, documented, production-ready code comes out. Stack: Python, AWS (Lambda, ECS Fargate, DynamoDB, S3, Cognito), React. Models: DeepSeek R1, Claude Sonnet.
               </div>
@@ -480,7 +480,7 @@ const About = () => (
               <div className="timeline-org">Colorado Ice + Splitboard</div>
               <div className="timeline-role">Ouray / Silverton / San Juans, CO</div>
               <div className="timeline-desc">
-                Based in Denver. Ice climbing in the San Juan Mountains — South Mineral Creek, Camp Bird Road, Ouray. Splitboarding the backcountry terrain in the same range. Almost everyone in the alpine ice scene skis; very few splitboard. Already 38 resort days (306 mi, 338k ft) by May. First ice climb was Ouray 2013 — back in the same range thirteen years later, on a snowboard.
+                Based in Denver through the season. Ice climbing in the San Juan Mountains — South Mineral Creek, Camp Bird Road, Ouray. Splitboarding the backcountry terrain in the same range. Almost everyone in the alpine ice scene skis; very few splitboard. Already 38 resort days (306 mi, 338k ft) by May. First ice climb was Ouray 2013 — back in the same range thirteen years later, on a snowboard.
               </div>
               <div className="sport-badges">
                 <span className="sport-badge sport-climbing">Ice</span>
